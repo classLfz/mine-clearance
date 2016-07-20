@@ -1,0 +1,48 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<!-- <link rel="import" href="../bower_components/paper-input/paper-input.html"> -->
+<link rel="import" href="mc-container.html">
+
+<dom-module id="mc-diy">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+        padding: 10px;
+      }
+    </style>
+
+    <!-- <input type="text" name="name" value="{{width}}">
+    <input type="text" name="name" value="{{height}}">
+
+    <mc-container width="[[width]]" height="[[height]]" mine-number="40"></mc-container> -->
+    <h1>尚有问题，敬请期待！</h1>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'mc-diy',
+
+      properties: {
+        width: {
+          type: Number,
+          notify: true,
+          value: 24
+        },
+
+        height: {
+          type: Number,
+          notify: true,
+          value: 24
+        }
+      }
+
+    });
+
+  </script>
+
+</dom-module>

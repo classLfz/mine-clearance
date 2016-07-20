@@ -1,0 +1,120 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+
+<dom-module id="mc-block">
+
+  <template>
+
+    <style>
+      :host {
+        display: inline-table;
+        cursor: default;
+        margin-right: -4px;
+        border: 1px solid white;
+      }
+    </style>
+
+    <!-- <td id="block" class$="[[blockClass]]">
+      <template is="dom-if" if="[[isOpen]]">
+        {{mineNumber}}
+      </template>
+    </td> -->
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'mc-block',
+
+      properties: {
+        mineObject: {
+          type: Object,
+          notify: true
+        },
+
+        mineNumber: {
+          type: Number,
+          notify: true,
+          computed: '_computeMineNumber(mineObject)'
+        },
+
+        blockXy: {
+          type: Object,
+          notify: true,
+          computed: '_computeBlockXy(mineObject)'
+        },
+
+        isOpen: {
+          type: Boolean,
+          notify: true,
+          value: false
+        },
+
+        isMark: {
+          type: Boolean,
+          notify: true,
+          computed: '_computeIsMark(markStatus)'
+        },
+
+        markStatus: {
+          type: Number,
+          notify: true,
+          value: 0
+        },
+
+        blockClass: {
+          type: String,
+          notify: true,
+          computed: '_computeBlockClass(isOpen, isMark)'
+        }
+      },
+
+      // 屏蔽鼠标右键弹出菜单
+      ready: function() {
+        this.$.block.oncontextmenu = function() {
+          return false;
+        }
+      },
+
+      _computeMineNumber: function(mineObject) {
+        return mineObject.mineNumber;
+      },
+
+      _computeBlockXy: function(mineObject) {
+        return mineObject.blockCoordinate;
+      },
+
+      _computeIsMark: function(markStatus) {
+        if (markStatus === 0) {
+          return false;
+        }
+
+        if (markStatus === 1) {
+          return true;
+        }
+
+        this.markStatus = 0;
+      },
+
+      _computeBlockClass: function(isOpen, isMark) {
+        if (isOpen) {
+          if (this.mineNumber === 0) {
+            this.fire('cleanaround', this.blockXy, {bubble: false});
+          }
+          return 'know';
+        }
+
+        if (isMark) {
+          return 'mark';
+        }
+
+        return 'unknow';
+      }
+
+    });
+
+  </script>
+
+</dom-module>

@@ -1,0 +1,47 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
+<dom-module id="mc-icon">
+
+  <template>
+
+    <style>
+      :host {
+        display: inline-block;
+      }
+    </style>
+
+    <template is="dom-if" if="[[isMine]]">
+      <iron-icon icon="refresh"></iron-icon>
+    </template>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'mc-icon',
+
+      properties: {
+        mineNumber: {
+          type: Number,
+          notify: true
+        },
+
+        isMine: {
+          type: Boolean,
+          notify: true,
+          computed: '_computeIsMine(mineNumber)'
+        }
+      },
+
+      _computeIsMine: function(mineNumber) {
+        return mineNumber === -1 ? true : false;
+      }
+
+    });
+
+  </script>
+
+</dom-module>

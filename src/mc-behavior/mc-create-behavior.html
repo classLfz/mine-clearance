@@ -1,0 +1,111 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<script>
+  Polymer.McCreateBehavior = {
+    properties: {
+      mineArray: {
+        type: Array,
+        notify: true
+      },
+
+      width: {
+        type: Number,
+        notify: true
+      },
+
+      height: {
+        type: Number,
+        notify: true
+      },
+
+      mineNumber: {
+        type: Number,
+        notify: true
+      },
+
+      leftNumber: {
+        type: Number,
+        notify: true
+      }
+    },
+
+    ready: function() {
+      this.leftNumber = this.mineNumber;
+      this.mineInit(this.width, this.height, this.mineNumber);
+    },
+
+    mineInit: function(x, y, mine) {
+      var outArray = new Array();
+
+      // 初始化数组
+      for (var i = 0; i < y; i++) {
+        outArray[i] = new Array;
+
+        for (var j = 0; j < x; j++) {
+          outArray[i][j] = {
+            mineNumber: 0,
+            blockCoordinate: {
+              x: i,
+              y: j
+            }
+          };
+        }
+      }
+
+      outArray = this._arrangementMine(x, y, mine, outArray);
+
+      outArray = this._calculateMine(x, y, outArray);
+
+      this.mineArray = outArray;
+    },
+
+    // 随机布雷
+    _arrangementMine: function(x, y, mine, mineArray) {
+      while (mine > 0) {
+        var i = Math.ceil(Math.random() * y) - 1;
+        var j = Math.ceil(Math.random() * x) - 1;
+
+        if (mineArray[i][j] != undefined) {
+          if (mineArray[i][j].mineNumber !== -1) {
+            mineArray[i][j].mineNumber = -1;
+            mine--;
+          }
+        }
+      }
+
+      return mineArray;
+    },
+
+    // 计算周围的雷：当检测到有雷时，周围的数值加1。
+    _calculateMine: function(x, y, mineArray) {
+      for(var i = 0; i < y; i ++) {
+          for(var j = 0; j < x; j ++) {
+              if(mineArray[i][j].mineNumber == -1) {
+                  mineArray = this._addMine(i, j, mineArray);
+              }
+          }
+      }
+
+      return mineArray;
+    },
+
+    // 给周围数值加1。
+    _addMine: function(i, j, mineArray) {
+      for (var m = i - 1; m <= (i + 1); m++) {
+        for (var n = j - 1; n <= (j + 1); n++) {
+          if (m > -1 && n > -1 && n < this.width) {
+            if (mineArray[m] != undefined) {
+              if (mineArray[m][n].mineNumber != -1) {
+                mineArray[m][n].mineNumber++;
+              }
+            }
+          }
+        }
+        n = j -1;
+      }
+
+      return mineArray;
+    }
+
+  }
+</script>

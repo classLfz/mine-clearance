@@ -1,0 +1,130 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-toast/paper-toast.html">
+
+<link rel="import" href="mc-behavior/mc-create-behavior.html">
+<link rel="import" href="mc-behavior/mc-operator-behavior.html">
+<link rel="import" href="mc-block.html">
+
+<dom-module id="mc-container">
+
+  <template>
+
+    <style>
+      :host {
+        display: flex;
+        padding: 10px;
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      #table {
+        box-shadow: 0px 0px 6px #633173;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .countBox {
+        width: 100%;
+        padding-bottom: 48px;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0px 0px 0px #6f6f6f;
+      }
+
+      #failTipper {
+        background-color: red;
+      }
+
+      #victoryTipper {
+        background-color: green;
+      }
+    </style>
+
+    <paper-toast id="failTipper" horizontal-align="right" text="不好意思，您点到雷了！游戏结束。"></paper-toast>
+
+    <paper-toast id="victoryTipper" horizontal-align="right" text="恭喜您赢了这局游戏！"></paper-toast>
+
+    <div class="countBox">
+      <span>雷阵规格：[[width]] * [[height]]</span>
+      <span>标记：[[leftNumber]] / [[mineNumber]]</span>
+      <span>
+        <paper-button on-tap="restart">重新开始</paper-button>
+      </span>
+    </div>
+
+    <table id="table" cellspacing="0" cellpadding="0">
+      <template is="dom-repeat" items="{{mineArray}}">
+        <div class="row">
+          <template is="dom-repeat" items="{{item}}">
+            <mc-block
+              mine-object="{{item}}"
+              on-mousedown="blockClick"
+              on-dblclick="_exposeAround"
+              on-cleanaround="_exposeZeroAround">
+            </mc-block>
+          </template>
+        </div>
+      </template>
+    </table>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'mc-container',
+
+      behaviors: [
+        Polymer.McCreateBehavior,
+        Polymer.McOperatorBehavior
+      ],
+
+      properties: {
+        width: {
+          type: Number,
+          notify: true
+        },
+
+        height: {
+          type: Number,
+          notify: true
+        },
+
+        mineNumber: {
+          type: Number,
+          notify: true
+        },
+
+        mineArray: {
+          type: Array,
+          notify: true
+        }
+      },
+
+      _exposeZeroAround: function(e) {
+        var blockXy = e.detail;
+        this.exposeZeroAroundBlock(blockXy);
+      },
+
+      _exposeAround: function(e) {
+        var blockXy = e.target.blockXy;
+        this.exposeAroundBlock(blockXy);
+      },
+
+      restart: function() {
+        this.reset();
+        this.mineInit(this.width, this.height, this.mineNumber);
+      }
+
+    });
+
+  </script>
+
+</dom-module>
