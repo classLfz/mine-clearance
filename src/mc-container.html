@@ -50,13 +50,15 @@
 
     <paper-toast id="victoryTipper" horizontal-align="right" text="恭喜您赢了这局游戏！"></paper-toast>
 
-    <div class="countBox">
-      <span>雷阵规格：[[width]] * [[height]]</span>
-      <span>标记：[[leftNumber]] / [[mineNumber]]</span>
-      <span>
-        <paper-button on-tap="restart">重新开始</paper-button>
-      </span>
-    </div>
+    <template is="dom-if" if="[[!hideCountBox]]">
+      <div class="countBox">
+        <span>雷阵规格：[[width]] * [[height]]</span>
+        <span>标记：[[leftNumber]] / [[mineNumber]]</span>
+        <span>
+          <paper-button on-tap="restart">重新开始</paper-button>
+        </span>
+      </div>
+    </template>
 
     <table id="table" cellspacing="0" cellpadding="0">
       <template is="dom-repeat" items="{{mineArray}}">
@@ -88,23 +90,25 @@
 
       properties: {
         width: {
-          type: Number,
-          notify: true
+          type: Number
         },
 
         height: {
-          type: Number,
-          notify: true
+          type: Number
         },
 
         mineNumber: {
-          type: Number,
-          notify: true
+          type: Number
         },
 
         mineArray: {
           type: Array,
           notify: true
+        },
+
+        hideCountBox: {
+          type: Boolean,
+          value: false
         }
       },
 

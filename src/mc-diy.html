@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<!-- <link rel="import" href="../bower_components/paper-input/paper-input.html"> -->
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/iron-form/iron-form.html">
 <link rel="import" href="mc-container.html">
 
 <dom-module id="mc-diy">
@@ -11,13 +12,21 @@
         display: block;
         padding: 10px;
       }
+
+      #form {
+        display: flex;
+      }
     </style>
 
-    <!-- <input type="text" name="name" value="{{width}}">
-    <input type="text" name="name" value="{{height}}">
+    <form id="form" is="iron-form">
+      <paper-input name="width" required label="雷阵宽度数值" type="number" error-message="请输入正确的数值" value="{{width}}"></paper-input>
+      <paper-input name="height" required label="雷阵高度数值" type="number" error-message="请输入正确的数值" value="{{height}}"></paper-input>
+      <paper-input name="mineNumber" required label="雷阵雷数目" type="number" error-message="请输入正确的数值" value="{{mineNumber}}"></paper-input>
+      <paper-button on-tap="_resetGame">自定义游戏</paper-button>
+    </form>
 
-    <mc-container width="[[width]]" height="[[height]]" mine-number="40"></mc-container> -->
-    <h1>尚有问题，敬请期待！</h1>
+    <mc-container id="mcContainer" hide-count-box width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
+    <!-- <h1>尚有问题，敬请期待！</h1> -->
 
   </template>
 
@@ -31,13 +40,30 @@
         width: {
           type: Number,
           notify: true,
-          value: 24
+          value: 9
         },
 
         height: {
           type: Number,
           notify: true,
-          value: 24
+          value: 9
+        },
+
+        mineNumber: {
+          type: Number,
+          notify: true,
+          value: 10
+        }
+      },
+
+      _resetGame: function() {
+        if (this.$.form.validate()) {
+          var mineData = this.$.form.serialize();
+          this.width = mineData.width;
+          this.height = mineData.height;
+          this.mineNumber = mineData.mineNumber;
+
+          this.$.mcContainer.restart();
         }
       }
 
