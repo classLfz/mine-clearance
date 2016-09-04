@@ -1,7 +1,8 @@
 {
-  "name": "app-drawer-template",
+  "name": "mine-clearance-polymer",
+  "version": "0.6.0",
   "authors": [
-    "The Polymer Authors"
+    "class lfz"
   ],
   "private": true,
   "dependencies": {

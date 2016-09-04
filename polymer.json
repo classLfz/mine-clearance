@@ -4,7 +4,16 @@
   "fragments": [
     "src/mc-small.html",
     "src/mc-middle.html",
-    "src/mc-big.html"
+    "src/mc-big.html",
     "src/mc-diy.html"
+  ],
+  "sourceGlobs": [
+   "src/**/*",
+   "images/**/*",
+   "bower.json"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
   ]
 }

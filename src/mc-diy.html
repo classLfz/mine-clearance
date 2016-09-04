@@ -1,6 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="../bower_components/iron-form/iron-form.html">
+<link rel="import" href="../bower_components/paper-toast/paper-toast.html">
 <link rel="import" href="mc-container.html">
 
 <dom-module id="mc-diy">
@@ -19,14 +20,45 @@
     </style>
 
     <form id="form" is="iron-form">
-      <paper-input name="width" required label="雷阵宽度数值" type="number" error-message="请输入正确的数值" value="{{width}}"></paper-input>
-      <paper-input name="height" required label="雷阵高度数值" type="number" error-message="请输入正确的数值" value="{{height}}"></paper-input>
-      <paper-input name="mineNumber" required label="雷阵雷数目" type="number" error-message="请输入正确的数值" value="{{mineNumber}}"></paper-input>
+      <paper-input name="width"
+                   required
+                   label="雷阵宽度数值"
+                   type="number"
+                   min="1"
+                   max="30"
+                   error-message="请输入正确的数值"
+                   value="{{width}}">
+      </paper-input>
+
+      <paper-input name="height"
+                   required
+                   label="雷阵高度数值"
+                   type="number"
+                   min="1"
+                   max="30"
+                   error-message="请输入正确的数值"
+                   value="{{height}}">
+      </paper-input>
+
+      <paper-input name="mineNumber"
+                   required
+                   label="雷阵雷数目"
+                   type="number"
+                   min="1"
+                   max="900"
+                   error-message="请输入正确的数值"
+                   value="{{mineNumber}}">
+      </paper-input>
+
       <paper-button on-tap="_resetGame">自定义游戏</paper-button>
     </form>
 
     <mc-container id="mcContainer" hide-count-box width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
-    <!-- <h1>尚有问题，敬请期待！</h1> -->
+
+    <paper-toast id="tipper"
+                 horizontal-align="right"
+                 text="输入的雷阵数目不合理！">
+    </paper-toast>
 
   </template>
 
@@ -59,10 +91,17 @@
       _resetGame: function() {
         if (this.$.form.validate()) {
           var mineData = this.$.form.serialize();
-          this.width = mineData.width;
-          this.height = mineData.height;
-          this.mineNumber = mineData.mineNumber;
+          var width = mineData.width;
+          var height = mineData.height;
+          var mineNumber = mineData.mineNumber;
 
+          if ((width * height) < mineNumber) {
+            this.$.tipper.open();
+            return;
+          }
+          this.width = width;
+          this.height = height;
+          this.mineNumber = mineNumber;
           this.$.mcContainer.restart();
         }
       }

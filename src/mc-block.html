@@ -162,11 +162,7 @@
       },
 
       _computeIsMine: function(mineNumber) {
-        if (mineNumber === -1) {
-          return true;
-        }
-
-        return false;
+        return mineNumber === -1;
       },
 
       _computeMineNumber: function(mineObject) {

@@ -21,8 +21,8 @@
 
       leftNumber: {
         type: Number,
-        notify: true,
-        observer: '_observerLeftNumber'
+        notify: true
+        // observer: '_observerLeftNumber'
       }
     },
 
@@ -78,6 +78,7 @@
     // 揭露雷数目为0的周围block
     exposeZeroAroundBlock: function(blockXy) {
       if (this.inGame) {
+        this._getBlockArray();
         var x = blockXy.x;
         var y = blockXy.y;
         xy = x * this.width + y;
@@ -87,7 +88,9 @@
             if (m > -1 && n > -1 && n < this.width) {
               var k = m * this.width + n;
               if (m >= 0 && m < this.height && n >= 0 && n < this.width && k != xy) {
-                this.blockArray[k].isOpen = true;
+                if (!this.blockArray[k].isOpen) {
+                  this.blockArray[k].isOpen = true;
+                }
               }
             }
           }
