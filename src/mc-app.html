@@ -1,6 +1,4 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/app-route/app-location.html">
-<link rel="import" href="../bower_components/app-route/app-route.html">
 <link rel="import" href="../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
 <link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
@@ -39,41 +37,35 @@
       .drawer-list {
         margin: 0 20px;
       }
-      .drawer-list a {
+      .drawer-list span {
+        cursor: pointer;
         display: block;
         padding: 0 16px;
         line-height: 40px;
         text-decoration: none;
         color: var(--app-secondary-color);
       }
-      .drawer-list a.iron-selected {
+      .drawer-list span.iron-selected {
         color: black;
         font-weight: bold;
       }
-      .drawer-list a.subroute {
+      .drawer-list span.subroute {
         padding-left: 32px;
       }
 
 
     </style>
 
-    <app-location route="{{route}}"></app-location>
-    <app-route
-        route="{{route}}"
-        pattern="/:page"
-        data="{{routeData}}"
-        tail="{{subroute}}"></app-route>
-
     <app-drawer-layout fullbleed  force-narrow>
 
       <!-- Drawer content -->
       <app-drawer>
         <app-toolbar>Menu</app-toolbar>
-        <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-          <a name="small" href="/small">初级</a>
-          <a name="middle" href="/middle">中级</a>
-          <a name="big" href="/big">高级</a>
-          <!-- <a name="diy" href="/diy">自定义</a> -->
+        <iron-selector selected="{{page}}" attr-for-selected="id" class="drawer-list" role="navigation">
+          <span id="small">初级</span>
+          <span id="middle">中级</span>
+          <span id="big">高级</span>
+          <!-- <a name="diy">自定义</a> -->
         </iron-selector>
       </app-drawer>
 
@@ -87,11 +79,11 @@
           </app-toolbar>
         </app-header>
 
-        <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
-          <mc-small name="small"></mc-small>
-          <mc-middle name="middle"></mc-middle>
-          <mc-big name="big"></mc-big>
-          <!-- <mc-diy name="diy"></mc-diy> -->
+        <iron-pages role="main" selected="[[page]]" attr-for-selected="id">
+          <mc-small id="small"></mc-small>
+          <mc-middle id="middle"></mc-middle>
+          <mc-big id="big"></mc-big>
+          <!-- <mc-diy id="diy"></mc-diy> -->
         </iron-pages>
 
       </app-header-layout>
@@ -107,26 +99,10 @@
       is: 'mc-app',
 
       properties: {
-
         page: {
           type: String,
-          reflectToAttribute: true,
-          observer: '_pageChanged'
-        },
-
-      },
-
-      observers: [
-        '_routePageChanged(routeData.page)'
-      ],
-
-      _routePageChanged: function(page) {
-        this.page = page || 'small';
-      },
-
-      _pageChanged: function(page) {
-        this.importHref(
-          this.resolveUrl('mc-' + page + '.html'), null, null, true);
+          value: 'small'
+        }
       }
 
     });

@@ -2,7 +2,7 @@
 
 网页版扫雷小游戏，使用polymer库协助编写。
 
-*注：尚在开发中，暂时不支持下载本地版。*
+[查看例子](http://classlfz.com/mine-clearance-polymer)
 
 ## Install node.js and bower
 
