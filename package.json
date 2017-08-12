@@ -8,6 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-vulcanize": "^6.1.0"
   },
