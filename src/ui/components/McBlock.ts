@@ -31,14 +31,14 @@ const _temp = html`
     }
   </style>
 
-  <div id="block" class$="[[blockClass]]">
-    <template is="dom-if" if="[[isMark]]">
+  <div id="block" class$="[[blockClass]]" on-mousedown="_blockClick" on-dblclick="_blockDblclick">
+    <template is="dom-if" if="[[mineObject.mark]]">
       <div id="mark">
         <iron-icon icon="grade"></iron-icon>
       </div>
     </template>
 
-    <template is="dom-if" if="[[isOpen]]">
+    <template is="dom-if" if="[[mineObject.open]]">
       <template is="dom-if" if="[[isMine]]">
         <iron-icon icon="error"></iron-icon>
       </template>
@@ -50,14 +50,19 @@ const _temp = html`
   </div>
 `
 
-class McBlock extends PolymerElement {
-  mineObject: object
-  mine: string
+interface MineObject {
   mineNumber: number
-  blockXy: object
+  open: boolean
+  mark: boolean
+  blockCoordinate: object
+}
+
+class McBlock extends PolymerElement {
+  x: number
+  y: number
+  mineObject: MineObject
+  mine: string
   isMine: boolean
-  isOpen: boolean
-  isMark: boolean
   markStatus: number
   blockClass: string
 
@@ -71,36 +76,30 @@ class McBlock extends PolymerElement {
 
   static get properties() {
     return {
+      x: {
+        type: Number,
+        value: 0
+      },
+      y: {
+        type: Number,
+        value: 0
+      },
       mineObject: {
         type: Object,
         value: {
           mineNumber: 1,
+          open: false,
+          mark: false,
           blockCoordinate: { x: 1, y: 1 }
         }
       },
       mine: {
         type: String,
-        computed: '_computeMine(mineNumber)'
-      },
-      mineNumber: {
-        type: Number,
-        computed: '_computeMineNumber(mineObject)'
-      },
-      blockXy: {
-        type: Object,
-        computed: '_computeBlockXy(mineObject)'
+        computed: '_computeMine(mineObject.mineNumber)'
       },
       isMine: {
         type: Boolean,
-        computed: '_computeIsMine(mineNumber)'
-      },
-      isOpen: {
-        type: Boolean,
-        value: false
-      },
-      isMark: {
-        type: Boolean,
-        computed: '_computeIsMark(markStatus)'
+        computed: '_computeIsMine(mineObject.mineNumber)'
       },
       markStatus: {
         type: Number,
@@ -108,22 +107,57 @@ class McBlock extends PolymerElement {
       },
       blockClass: {
         type: String,
-        computed: '_computeBlockClass(mineNumber, isOpen, isMark)'
+        computed: '_computeBlockClass(mineObject)'
       }
     }
   }
 
   connectedCallback() {
+    super.connectedCallback();
     this.oncontextmenu = function() {
       return false;
     }
   }
 
-  _computeMine(mineNumber): any {
+  _blockClick(e) {
+    let btnNum = e.button;
+
+    if (btnNum === 0) {
+      if (this.mineObject.mark) return;
+      this.dispatchEvent(new CustomEvent('block-click', {
+        detail: {
+          x: this.x,
+          y: this.y
+        }
+      }));
+    }
+
+    if (btnNum === 2) {
+      if (this.mineObject.open) return;
+      this.dispatchEvent(new CustomEvent('toogle-mark', {
+        detail: {
+          x: this.x,
+          y: this.y
+        }
+      }))
+    }
+  }
+
+  _blockDblclick(e) {
+    if (this.mineObject.mark) return;
+    this.dispatchEvent(new CustomEvent('block-dblclick', {
+      detail: {
+        x: this.x,
+        y: this.y
+      }
+    }))
+  }
+
+  _computeMine(mineNumber: number): any {
     return mineNumber === 0 ? '' : mineNumber;
   }
 
-  _computeIsMine(mineNumber): boolean {
+  _computeIsMine(mineNumber: number): boolean {
     return mineNumber === -1;
   }
 
@@ -135,27 +169,21 @@ class McBlock extends PolymerElement {
     return mineObject.blockCoordinate;
   }
 
-  _computeIsMark(markStatus): boolean {
-    if (markStatus === 0) {
-      return false;
-    }
+  // _computeIsMark(markStatus: number): boolean {
+  //   if (markStatus === 0) {
+  //     return false;
+  //   }
 
-    if (markStatus === 1) {
-      return true;
-    }
-    this.markStatus = 0;
-    return false;
-  }
+  //   if (markStatus === 1) {
+  //     return true;
+  //   }
+  //   this.markStatus = 0;
+  //   return false;
+  // }
 
-  _computeBlockClass(mineNumber, isOpen, isMark): string {
-    if (isOpen) {
-      if (mineNumber === 0) {
-        this.dispatchEvent(new CustomEvent('cleanaround', {detail: this.blockXy}));
-      }
-      return 'know';
-    }
-
-    if (isMark) return 'mark';
+  _computeBlockClass(mineObject): string {
+    if (mineObject.open) return 'know';
+    if (mineObject.mark) return 'mark';
     return 'unknow';
   }
 }

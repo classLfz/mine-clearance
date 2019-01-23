@@ -1,14 +1,12 @@
-import { PolymerElement } from '@polymer/polymer/polymer-element';
+import { appState } from '../../state/store';
+import { AntiShadowElement } from "../util/AntiShadowElement";
 import { html } from "@polymer/polymer/polymer-element";
-import { mixinBehaviors } from '../../../node_modules/@polymer/polymer/lib/legacy/class.js';
 
 import '@polymer/paper-toast/paper-toast.js';
 import '@polymer/paper-button/paper-button.js';
 
 import './McBlock';
-import '../../mc-behavior/McCreateBehavior';
-import { McCreateBehavior } from '../../mc-behavior/McCreateBehavior';
-import { McOperatorBehavior } from '../../mc-behavior/McOperatorBehavior';
+import { connectToRedux, ReduxBindable } from "../util/ReduxConnector";
 
 const _temp = html`
   <style>
@@ -39,10 +37,28 @@ const _temp = html`
     #victoryTipper {
       background-color: green;
     }
+    .cover-container {
+      width: 100%;
+      height: 40px;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: red;
+    }
   </style>
   <paper-toast id="failTipper" horizontal-align="right" text="Sorry! game over."></paper-toast>
 
   <paper-toast id="victoryTipper" horizontal-align="right" text="YOU WIN!"></paper-toast>
+
+  <div class="cover-container">
+    <template is="dom-if" if="[[gameOver]]">
+      <h3>GAME OVER!</h3>
+    </template>
+    <template is="dom-if" if="[[victory]]">
+      <h3>VICTORY!</h3>
+    </template>
+  </div>
 
   <div class="countBox">
     <span>mine matrix：[[width]] * [[height]]</span>
@@ -53,22 +69,25 @@ const _temp = html`
   </div>
 
   <table id="table" cellspacing="0" cellpadding="0">
-    <template is="dom-repeat" items="[[mineArray]]">
+    <template is="dom-repeat" items="[[mineArray]]" items-index-as="x">
       <div class="row">
-        <template is="dom-repeat" items="[[item]]">
+        <template is="dom-repeat" items="[[item]]" items-index-as="y">
           <mc-block
+            data-x$="[[x]]"
+            data-y$="[[y]]"
+            x="[[x]]"
+            y="[[y]]"
             mine-object="[[item]]"
-            on-mousedown="blockClick"
-            on-dblclick="_exposeAround"
-            on-cleanaround="_exposeZeroAround">
-          </mc-block>
+            on-block-click="_blockClick"
+            on-block-dblclick="_blockDblclick"
+            on-toogle-mark="_toogleMark"></mc-block>
         </template>
       </div>
     </template>
   </table>
 `
 
-class McContainer extends mixinBehaviors([McCreateBehavior, McOperatorBehavior], PolymerElement) {
+class McContainer extends AntiShadowElement implements ReduxBindable {
   width: number
   height: number
   mineNumber: number
@@ -83,8 +102,29 @@ class McContainer extends mixinBehaviors([McCreateBehavior, McOperatorBehavior],
     return _temp;
   }
 
+  stateReceiver(state) {
+    this.victory = state.todoReducer.victory;
+    this.gameOver = state.todoReducer.gameOver;
+    this.mineArray = state.todoReducer.mineArray;
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    connectToRedux(this);
+  }
+
   static get properties() {
     return {
+      // victory
+      victory: {
+        type: Boolean,
+        value: appState.getState().todoReducer.victory
+      },
+      // game over
+      gameOver: {
+        type: Boolean,
+        value: appState.getState().todoReducer.gameOver
+      },
       // mine matrix width number
       width: {
         type: Number,
@@ -102,24 +142,41 @@ class McContainer extends mixinBehaviors([McCreateBehavior, McOperatorBehavior],
       },
       // mine array data
       mineArray: {
-        type: Array
+        type: Array,
+        value: appState.getState().todoReducer.mineArray
       }
     }
   }
 
-  _exposeZeroAround(e) {
-    let blockXy = e.detail;
-    this.exposeZeroAroundBlock(blockXy);
+  _blockClick(e) {
+    if (this.gameOver) return;
+    appState.dispatch({
+      type: 'BLOCK-CLICK',
+      payload: e.detail
+    })
   }
 
-  _exposeAround(e) {
-    let blockXy = e.target.blockXy;
-    this.exposeAroundBlock(blockXy);
+  _blockDblclick(e) {
+    if (this.gameOver) return;
+    appState.dispatch({
+      type: 'BLOCK-DBLCLICK',
+      payload: e.detail
+    })
+  }
+
+  _toogleMark (e) {
+    if (this.gameOver) return;
+    appState.dispatch({
+      type: 'TOOGLE-MARK',
+      payload: e.detail
+    })
   }
 
   restart() {
-    this.reset();
-    this.mineInit(this.width, this.height, this.mineNumber);
+    appState.dispatch({
+      type: 'INIT',
+      payload: { width: this.width, height: this.height, mineNumber: this.mineNumber }
+    })
   }
 }
 
