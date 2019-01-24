@@ -95,7 +95,7 @@ class McContainer extends AntiShadowElement implements ReduxBindable {
   hideCountBox: boolean
 
   constructor() {
-    super()
+    super();
   }
 
   static get template() {
@@ -149,34 +149,34 @@ class McContainer extends AntiShadowElement implements ReduxBindable {
   }
 
   _blockClick(e) {
-    if (this.gameOver) return;
+    if (this.gameOver || this.victory) return;
     appState.dispatch({
       type: 'BLOCK-CLICK',
       payload: e.detail
-    })
+    });
   }
 
   _blockDblclick(e) {
-    if (this.gameOver) return;
+    if (this.gameOver || this.victory) return;
     appState.dispatch({
       type: 'BLOCK-DBLCLICK',
       payload: e.detail
-    })
+    });
   }
 
   _toogleMark (e) {
-    if (this.gameOver) return;
+    if (this.gameOver || this.victory) return;
     appState.dispatch({
       type: 'TOOGLE-MARK',
       payload: e.detail
-    })
+    });
   }
 
   restart() {
     appState.dispatch({
       type: 'INIT',
       payload: { width: this.width, height: this.height, mineNumber: this.mineNumber }
-    })
+    });
   }
 }
 

@@ -102,12 +102,21 @@ const countMine = function(x: number, y: number, mine: number, mineArray: object
   return mineArray;
 }
 
+/**
+ * handle block click diffuse
+ * @param x two-dimensional coordinates: x
+ * @param y two-dimensional coordinates: y
+ * @param mineArray mine matrix array
+ * @returns new mine matrix array data
+ */
 const resolve = function(x: number, y: number, mineArray: object[]): object[] {
   if (mineArray[x][y].mineNumber === 0) {
     if (checkedCoordinate.indexOf(`${x}:${y}`) > 0) return mineArray;
     checkedCoordinate.push(`${x}:${y}`);
-    mineArray[x][y].open = true;
-    foundNum++;
+    if (!mineArray[x][y].open) {
+      mineArray[x][y].open = true;
+      foundNum++;
+    }
     if (mineArray[x - 1]) {
       if (mineArray[x - 1][y - 1]) {
         mineArray = resolve(x - 1, y - 1, mineArray);
@@ -138,7 +147,7 @@ const resolve = function(x: number, y: number, mineArray: object[]): object[] {
         mineArray = resolve(x + 1, y + 1, mineArray);
       }
     }
-  } else {
+  } else if (!mineArray[x][y].open) {
     mineArray[x][y].open = true;
     foundNum++;
   }
@@ -153,58 +162,67 @@ const resolve = function(x: number, y: number, mineArray: object[]): object[] {
  */
 const handleDblclick = function(x: number, y: number, mineArray: object[]) {
   let newGameOver = false
+  let mineObj;
   if (mineArray[x - 1]) {
-    if (mineArray[x - 1][y - 1] && !mineArray[x - 1][y - 1].mark) {
-      mineArray[x - 1][y - 1].open = true;
+    mineObj = mineArray[x - 1][y - 1];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x - 1][y - 1].mineNumber === 0) mineArray = resolve(x - 1, y - 1, mineArray);
-      if (mineArray[x - 1][y - 1].mineNumber === -1) newGameOver = true;
+      if (mineObj.mineNumber === 0) mineArray = resolve(x - 1, y - 1, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true;
     }
-    if (mineArray[x - 1][y] && !mineArray[x - 1][y].mark) {
-      mineArray[x - 1][y].open = true;
+    mineObj = mineArray[x - 1][y];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x - 1][y].mineNumber === 0) mineArray = resolve(x - 1, y, mineArray);
-      if (mineArray[x - 1][y].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x - 1, y, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
-    if (mineArray[x - 1][y + 1] && !mineArray[x - 1][y + 1].mark) {
-      mineArray[x - 1][y + 1].open = true;
+    mineObj = mineArray[x - 1][y + 1];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x - 1][y + 1].mineNumber === 0) mineArray = resolve(x - 1, y + 1, mineArray);
-      if (mineArray[x - 1][y + 1].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x - 1, y + 1, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
   }
   if (mineArray[x]) {
-    if (mineArray[x][y + 1] && !mineArray[x][y + 1].mark) {
-      mineArray[x][y + 1].open = true;
+    mineObj = mineArray[x][y + 1];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x][y + 1].mineNumber === 0) mineArray = resolve(x, y + 1, mineArray);
-      if (mineArray[x][y + 1].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x, y + 1, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
-    if (mineArray[x][y - 1] && !mineArray[x][y - 1].mark) {
-      mineArray[x][y - 1].open = true;
+    mineObj = mineArray[x][y - 1];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x][y - 1].mineNumber === 0) mineArray = resolve(x, y - 1, mineArray);
-      if (mineArray[x][y - 1].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x, y - 1, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
   }
   if (mineArray[x + 1]) {
-    if (mineArray[x + 1][y - 1] && !mineArray[x + 1][y - 1].mark) {
-      mineArray[x + 1][y - 1].open = true;
+    mineObj = mineArray[x + 1][y - 1];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x + 1][y - 1].mineNumber === 0) mineArray = resolve(x + 1, y - 1, mineArray);
-      if (mineArray[x + 1][y - 1].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x + 1, y - 1, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
-    if (mineArray[x + 1][y] && !mineArray[x + 1][y].mark) {
-      mineArray[x + 1][y].open = true;
+    mineObj = mineArray[x + 1][y];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x + 1][y].mineNumber === 0) mineArray = resolve(x + 1, y, mineArray);
-      if (mineArray[x + 1][y].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x + 1, y, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
-    if (mineArray[x + 1][y + 1] && !mineArray[x + 1][y + 1].mark) {
-      mineArray[x + 1][y + 1].open = true;
+    mineObj = mineArray[x + 1][y + 1];
+    if (mineObj && !mineObj.mark && !mineObj.open) {
+      mineObj.open = true;
       foundNum++;
-      if (mineArray[x + 1][y + 1].mineNumber === 0) mineArray = resolve(x + 1, y + 1, mineArray);
-      if (mineArray[x + 1][y + 1].mineNumber === -1) newGameOver = true
+      if (mineObj.mineNumber === 0) mineArray = resolve(x + 1, y + 1, mineArray);
+      if (mineObj.mineNumber === -1) newGameOver = true
     }
   }
 
@@ -217,7 +235,7 @@ const handleDblclick = function(x: number, y: number, mineArray: object[]) {
 const initialState = {
   gameOver: false,
   victory: false,
-  mineArray: mineInit(9, 9, 9),
+  mineArray: mineInit(9, 9, 10),
   width: 9,
   height: 9,
   mineNumber: 10,

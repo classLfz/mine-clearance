@@ -67,7 +67,7 @@ class McBlock extends PolymerElement {
   blockClass: string
 
   constructor() {
-    super()
+    super();
   }
 
   static get template() {
@@ -139,7 +139,7 @@ class McBlock extends PolymerElement {
           x: this.x,
           y: this.y
         }
-      }))
+      }));
     }
   }
 
@@ -150,7 +150,7 @@ class McBlock extends PolymerElement {
         x: this.x,
         y: this.y
       }
-    }))
+    }));
   }
 
   _computeMine(mineNumber: number): any {
@@ -168,18 +168,6 @@ class McBlock extends PolymerElement {
   _computeBlockXy(mineObject): object {
     return mineObject.blockCoordinate;
   }
-
-  // _computeIsMark(markStatus: number): boolean {
-  //   if (markStatus === 0) {
-  //     return false;
-  //   }
-
-  //   if (markStatus === 1) {
-  //     return true;
-  //   }
-  //   this.markStatus = 0;
-  //   return false;
-  // }
 
   _computeBlockClass(mineObject): string {
     if (mineObject.open) return 'know';
