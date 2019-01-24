@@ -11499,6 +11499,9 @@ function setElementClassRaw(element, value) {
   }
 }
 
+/**
+ * @type {function(*):*}
+ */
 const wrap = window['ShadyDOM'] && window['ShadyDOM']['wrap'] || ((node) => node);
 /* unused harmony export wrap */
 
@@ -15807,6 +15810,9 @@ const _temp = __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__["b"
   <custom-style>
     <style is="custom-style">
       :host {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
         --app-drawer-width: 350px;
       }
       app-toolbar {
@@ -15834,7 +15840,8 @@ const _temp = __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__["b"
       .container {
         display: flex;
         justify-content: center;
-        margin-top: 24px;
+        margin: auto;
+        overflow: auto;
       }
       #container {
         height: 100%;
@@ -15852,15 +15859,19 @@ const _temp = __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__["b"
       </iron-selector>
     </app-drawer>
 
-    <app-toolbar>
-      <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-      <h4 main-title>Mine-Clearance-Polymer</h4>
-      <h5>classlfz@qq.com</h5>
-    </app-toolbar>
+    <app-header-layout>
+      <app-header slot="header">
+        <app-toolbar>
+          <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+          <h4 main-title>Mine-Clearance-Polymer</h4>
+          <h5>classlfz@qq.com</h5>
+        </app-toolbar>
+      </app-header>
 
-    <div class="container">
-      <mc-container id="container" width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
-    </div>
+      <div class="container">
+        <mc-container id="container" width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
+      </div>
+    </app-header-layout>
 
   </app-drawer-layout>
 `;
@@ -24548,70 +24559,6 @@ found at http://polymer.github.io/PATENTS.txt
 
 
 
-const template = __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
-<dom-module id="paper-icon-button">
-  <template strip-whitespace>
-    <style>
-      :host {
-        display: inline-block;
-        position: relative;
-        padding: 8px;
-        outline: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor: pointer;
-        z-index: 0;
-        line-height: 1;
-
-        width: 40px;
-        height: 40px;
-
-        /* NOTE: Both values are needed, since some phones require the value to be \`transparent\`. */
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        -webkit-tap-highlight-color: transparent;
-
-        /* Because of polymer/2558, this style has lower specificity than * */
-        box-sizing: border-box !important;
-
-        @apply --paper-icon-button;
-      }
-
-      :host #ink {
-        color: var(--paper-icon-button-ink-color, var(--primary-text-color));
-        opacity: 0.6;
-      }
-
-      :host([disabled]) {
-        color: var(--paper-icon-button-disabled-text, var(--disabled-text-color));
-        pointer-events: none;
-        cursor: auto;
-
-        @apply --paper-icon-button-disabled;
-      }
-
-      :host([hidden]) {
-        display: none !important;
-      }
-
-      :host(:hover) {
-        @apply --paper-icon-button-hover;
-      }
-
-      iron-icon {
-        --iron-icon-width: 100%;
-        --iron-icon-height: 100%;
-      }
-    </style>
-
-    <iron-icon id="icon" src="[[src]]" icon="[[icon]]" alt$="[[alt]]"></iron-icon>
-  </template>
-</dom-module>
-`;
-template.setAttribute('style', 'display: none;');
-document.body.appendChild(template.content);
-
 /**
 Material design: [Icon
 toggles](https://www.google.com/design/spec/components/buttons.html#buttons-toggle-buttons)
@@ -24675,9 +24622,75 @@ Custom property | Description | Default
 Object(__WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
   is: 'paper-icon-button',
 
+  _template: __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
+    <style>
+      :host {
+        display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        line-height: 1;
+
+        width: 40px;
+        height: 40px;
+
+        /*
+          NOTE: Both values are needed, since some phones require the value to
+          be \`transparent\`.
+        */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+        /* Because of polymer/2558, this style has lower specificity than * */
+        box-sizing: border-box !important;
+
+        @apply --paper-icon-button;
+      }
+
+      :host #ink {
+        color: var(--paper-icon-button-ink-color, var(--primary-text-color));
+        opacity: 0.6;
+      }
+
+      :host([disabled]) {
+        color: var(--paper-icon-button-disabled-text, var(--disabled-text-color));
+        pointer-events: none;
+        cursor: auto;
+
+        @apply --paper-icon-button-disabled;
+      }
+
+      :host([hidden]) {
+        display: none !important;
+      }
+
+      :host(:hover) {
+        @apply --paper-icon-button-hover;
+      }
+
+      iron-icon {
+        --iron-icon-width: 100%;
+        --iron-icon-height: 100%;
+      }
+    </style>
+
+    <iron-icon id="icon" src="[[src]]" icon="[[icon]]"
+               alt$="[[alt]]"></iron-icon>
+  `,
+
   hostAttributes: {role: 'button', tabindex: '0'},
 
   behaviors: [__WEBPACK_IMPORTED_MODULE_3__polymer_paper_behaviors_paper_inky_focus_behavior_js__["a" /* PaperInkyFocusBehavior */]],
+
+  registered: function() {
+    this._template.setAttribute('strip-whitespace', '');
+  },
 
   properties: {
     /**
@@ -26656,6 +26669,7 @@ const _temp = __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_polymer_element__["b"
       align-items: center;
       position: relative;
       margin-top: 24px;
+      margin-bottom: 24px;
     }
     .tipper-container {
       width: 100%;
@@ -26669,6 +26683,7 @@ const _temp = __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_polymer_element__["b"
     }
     .victory-tipper {
       color: orange;
+      opacity: 0.5;
     }
     .gameover-tipper {
       color: red;
@@ -26847,6 +26862,7 @@ class McContainer extends __WEBPACK_IMPORTED_MODULE_1__util_AntiShadowElement__[
     }
     restart() {
         this.timeNumber = 0;
+        this.started = false;
         __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].dispatch({
             type: 'INIT',
             payload: { width: this.width, height: this.height, mineNumber: this.mineNumber }
@@ -27423,7 +27439,6 @@ const PaperButtonBehavior = [
 const _temp = __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["b" /* html */] `
   <style>
     :host {
-      display: inline-table;
       cursor: default;
       margin: 0px;
       border: 1px solid white;
