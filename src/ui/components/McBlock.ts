@@ -6,7 +6,6 @@ import '@polymer/iron-icon/iron-icon.js';
 const _temp = html`
   <style>
     :host {
-      display: inline-table;
       cursor: default;
       margin: 0px;
       border: 1px solid white;

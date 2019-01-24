@@ -12,6 +12,9 @@ const _temp = html`
   <custom-style>
     <style is="custom-style">
       :host {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
         --app-drawer-width: 350px;
       }
       app-toolbar {
@@ -39,7 +42,8 @@ const _temp = html`
       .container {
         display: flex;
         justify-content: center;
-        margin-top: 24px;
+        margin: auto;
+        overflow: auto;
       }
       #container {
         height: 100%;
@@ -57,15 +61,19 @@ const _temp = html`
       </iron-selector>
     </app-drawer>
 
-    <app-toolbar>
-      <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-      <h4 main-title>Mine-Clearance-Polymer</h4>
-      <h5>classlfz@qq.com</h5>
-    </app-toolbar>
+    <app-header-layout>
+      <app-header slot="header">
+        <app-toolbar>
+          <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+          <h4 main-title>Mine-Clearance-Polymer</h4>
+          <h5>classlfz@qq.com</h5>
+        </app-toolbar>
+      </app-header>
 
-    <div class="container">
-      <mc-container id="container" width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
-    </div>
+      <div class="container">
+        <mc-container id="container" width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
+      </div>
+    </app-header-layout>
 
   </app-drawer-layout>
 `

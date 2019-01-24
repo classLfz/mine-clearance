@@ -43,6 +43,7 @@ const _temp = html`
       align-items: center;
       position: relative;
       margin-top: 24px;
+      margin-bottom: 24px;
     }
     .tipper-container {
       width: 100%;
@@ -56,6 +57,7 @@ const _temp = html`
     }
     .victory-tipper {
       color: orange;
+      opacity: 0.5;
     }
     .gameover-tipper {
       color: red;
@@ -256,6 +258,7 @@ class McContainer extends AntiShadowElement implements ReduxBindable {
 
   restart() {
     this.timeNumber = 0;
+    this.started = false;
     appState.dispatch({
       type: 'INIT',
       payload: { width: this.width, height: this.height, mineNumber: this.mineNumber }
