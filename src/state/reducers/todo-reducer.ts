@@ -239,7 +239,7 @@ const initialState = {
   width: 9,
   height: 9,
   mineNumber: 10,
-  leftNumber: 0
+  markNumber: 0
 };
 
 const todoReducer = (state, action) => {
@@ -255,7 +255,7 @@ const todoReducer = (state, action) => {
         width: width,
         height: height,
         mineNumber: mineNumber,
-        leftNumber: 0,
+        markNumber: 0,
         mineArray: mineInit(width, height, mineNumber)
       };
     }
@@ -288,9 +288,12 @@ const todoReducer = (state, action) => {
       let x = action.payload.x;
       let y = action.payload.y;
       let newMineArray = JSON.parse(JSON.stringify(state.mineArray));
+      let newMarkNumber = state.markNumber;
       newMineArray[x][y].mark = !newMineArray[x][y].mark;
+      newMineArray[x][y].mark ? newMarkNumber++ : newMarkNumber--;
       return {
         ...state,
+        markNumber: newMarkNumber,
         mineArray: newMineArray
       };
     }
