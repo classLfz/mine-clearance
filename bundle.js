@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 56);
+/******/ 	return __webpack_require__(__webpack_require__.s = 54);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,16 +68,16 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_legacy_legacy_element_mixin_js__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_legacy_legacy_element_mixin_js__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* unused harmony reexport Polymer */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_legacy_templatizer_behavior_js__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_elements_dom_bind_js__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_elements_dom_repeat_js__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_elements_dom_if_js__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_elements_array_selector_js__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_elements_custom_style_js__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_legacy_mutable_data_behavior_js__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_legacy_templatizer_behavior_js__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_elements_dom_bind_js__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_elements_dom_repeat_js__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_elements_dom_if_js__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_elements_array_selector_js__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_elements_custom_style_js__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_legacy_mutable_data_behavior_js__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_utils_html_tag_js__ = __webpack_require__(2);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_9__lib_utils_html_tag_js__["a"]; });
 /**
@@ -290,7 +290,7 @@ const htmlLiteral = function(strings, ...values) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_settings_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_flattened_nodes_observer_js__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_flattened_nodes_observer_js__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_flush_js__ = __webpack_require__(13);
 /* unused harmony reexport flush */
 /* unused harmony reexport addDebouncer */
@@ -725,7 +725,7 @@ const dom = function(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Polymer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__class_js__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__class_js__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_boot_js__ = __webpack_require__(1);
 /**
 @license
@@ -778,50 +778,6 @@ Polymer.Class = __WEBPACK_IMPORTED_MODULE_0__class_js__["a" /* Class */];
 
 /***/ }),
 /* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_mixins_element_mixin_js__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__lib_utils_html_tag_js__["a"]; });
-/* unused harmony reexport version */
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-/**
- * Base class that provides the core API for Polymer's meta-programming
- * features including template stamping, data-binding, attribute deserialization,
- * and property change observation.
- *
- * @customElement
- * @polymer
- * @constructor
- * @implements {Polymer_ElementMixin}
- * @extends HTMLElement
- * @appliesMixin ElementMixin
- * @summary Custom element base class that provides the core API for Polymer's
- *   key meta-programming features including template stamping, data-binding,
- *   attribute deserialization, and property change observation
- */
-const PolymerElement = Object(__WEBPACK_IMPORTED_MODULE_0__lib_mixins_element_mixin_js__["a" /* ElementMixin */])(HTMLElement);
-/* harmony export (immutable) */ __webpack_exports__["a"] = PolymerElement;
-
-
-
-/***/ }),
-/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -895,6 +851,50 @@ const dedupingMixin = function(mixin) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = dedupingMixin;
 
 /* eslint-enable valid-jsdoc */
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_mixins_element_mixin_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_utils_html_tag_js__ = __webpack_require__(2);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__lib_utils_html_tag_js__["a"]; });
+/* unused harmony reexport version */
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+/**
+ * Base class that provides the core API for Polymer's meta-programming
+ * features including template stamping, data-binding, attribute deserialization,
+ * and property change observation.
+ *
+ * @customElement
+ * @polymer
+ * @constructor
+ * @implements {Polymer_ElementMixin}
+ * @extends HTMLElement
+ * @appliesMixin ElementMixin
+ * @summary Custom element base class that provides the core API for Polymer's
+ *   key meta-programming features including template stamping, data-binding,
+ *   attribute deserialization, and property change observation
+ */
+const PolymerElement = Object(__WEBPACK_IMPORTED_MODULE_0__lib_mixins_element_mixin_js__["a" /* ElementMixin */])(HTMLElement);
+/* harmony export (immutable) */ __webpack_exports__["a"] = PolymerElement;
+
 
 
 /***/ }),
@@ -1274,7 +1274,7 @@ const microTask = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixin_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixin_js__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__async_js__ = __webpack_require__(8);
 /**
 @license
@@ -2286,7 +2286,7 @@ const flush = function() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_mixin_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_mixin_js__ = __webpack_require__(5);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -2492,283 +2492,15 @@ MutableData._mutablePropertyChange = mutablePropertyChange;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_settings_js__ = __webpack_require__(7);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return store; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers_todo_reducer__ = __webpack_require__(70);
 
 
-
-
-
-// Contains all connected resizables that do not have a parent.
-var ORPHANS = new Set();
-
-/**
- * `IronResizableBehavior` is a behavior that can be used in Polymer elements to
- * coordinate the flow of resize events between "resizers" (elements that
- *control the size or hidden state of their children) and "resizables" (elements
- *that need to be notified when they are resized or un-hidden by their parents
- *in order to take action on their new measurements).
- *
- * Elements that perform measurement should add the `IronResizableBehavior`
- *behavior to their element definition and listen for the `iron-resize` event on
- *themselves. This event will be fired when they become showing after having
- *been hidden, when they are resized explicitly by another resizable, or when
- *the window has been resized.
- *
- * Note, the `iron-resize` event is non-bubbling.
- *
- * @polymerBehavior
- * @demo demo/index.html
- **/
-const IronResizableBehavior = {
-  properties: {
-    /**
-     * The closest ancestor element that implements `IronResizableBehavior`.
-     */
-    _parentResizable: {
-      type: Object,
-      observer: '_parentResizableChanged',
-    },
-
-    /**
-     * True if this element is currently notifying its descendant elements of
-     * resize.
-     */
-    _notifyingDescendant: {
-      type: Boolean,
-      value: false,
-    }
-  },
-
-  listeners: {
-    'iron-request-resize-notifications': '_onIronRequestResizeNotifications'
-  },
-
-  created: function() {
-    // We don't really need property effects on these, and also we want them
-    // to be created before the `_parentResizable` observer fires:
-    this._interestedResizables = [];
-    this._boundNotifyResize = this.notifyResize.bind(this);
-    this._boundOnDescendantIronResize = this._onDescendantIronResize.bind(this);
-  },
-
-  attached: function() {
-    this._requestResizeNotifications();
-  },
-
-  detached: function() {
-    if (this._parentResizable) {
-      this._parentResizable.stopResizeNotificationsFor(this);
-    } else {
-      ORPHANS.delete(this);
-      window.removeEventListener('resize', this._boundNotifyResize);
-    }
-
-    this._parentResizable = null;
-  },
-
-  /**
-   * Can be called to manually notify a resizable and its descendant
-   * resizables of a resize change.
-   */
-  notifyResize: function() {
-    if (!this.isAttached) {
-      return;
-    }
-
-    this._interestedResizables.forEach(function(resizable) {
-      if (this.resizerShouldNotify(resizable)) {
-        this._notifyDescendant(resizable);
-      }
-    }, this);
-
-    this._fireResize();
-  },
-
-  /**
-   * Used to assign the closest resizable ancestor to this resizable
-   * if the ancestor detects a request for notifications.
-   */
-  assignParentResizable: function(parentResizable) {
-    if (this._parentResizable) {
-      this._parentResizable.stopResizeNotificationsFor(this);
-    }
-
-    this._parentResizable = parentResizable;
-
-    if (parentResizable &&
-        parentResizable._interestedResizables.indexOf(this) === -1) {
-      parentResizable._interestedResizables.push(this);
-      parentResizable._subscribeIronResize(this);
-    }
-  },
-
-  /**
-   * Used to remove a resizable descendant from the list of descendants
-   * that should be notified of a resize change.
-   */
-  stopResizeNotificationsFor: function(target) {
-    var index = this._interestedResizables.indexOf(target);
-
-    if (index > -1) {
-      this._interestedResizables.splice(index, 1);
-      this._unsubscribeIronResize(target);
-    }
-  },
-
-  /**
-   * Subscribe this element to listen to iron-resize events on the given target.
-   *
-   * Preferred over target.listen because the property renamer does not
-   * understand to rename when the target is not specifically "this"
-   *
-   * @param {!HTMLElement} target Element to listen to for iron-resize events.
-   */
-  _subscribeIronResize: function(target) {
-    target.addEventListener('iron-resize', this._boundOnDescendantIronResize);
-  },
-
-  /**
-   * Unsubscribe this element from listening to to iron-resize events on the
-   * given target.
-   *
-   * Preferred over target.unlisten because the property renamer does not
-   * understand to rename when the target is not specifically "this"
-   *
-   * @param {!HTMLElement} target Element to listen to for iron-resize events.
-   */
-  _unsubscribeIronResize: function(target) {
-    target.removeEventListener(
-        'iron-resize', this._boundOnDescendantIronResize);
-  },
-
-  /**
-   * This method can be overridden to filter nested elements that should or
-   * should not be notified by the current element. Return true if an element
-   * should be notified, or false if it should not be notified.
-   *
-   * @param {HTMLElement} element A candidate descendant element that
-   * implements `IronResizableBehavior`.
-   * @return {boolean} True if the `element` should be notified of resize.
-   */
-  resizerShouldNotify: function(element) {
-    return true;
-  },
-
-  _onDescendantIronResize: function(event) {
-    if (this._notifyingDescendant) {
-      event.stopPropagation();
-      return;
-    }
-
-    // no need to use this during shadow dom because of event retargeting
-    if (!__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_settings_js__["f" /* useShadow */]) {
-      this._fireResize();
-    }
-  },
-
-  _fireResize: function() {
-    this.fire('iron-resize', null, {node: this, bubbles: false});
-  },
-
-  _onIronRequestResizeNotifications: function(event) {
-    var target = /** @type {!EventTarget} */ (Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).rootTarget);
-    if (target === this) {
-      return;
-    }
-
-    target.assignParentResizable(this);
-    this._notifyDescendant(target);
-
-    event.stopPropagation();
-  },
-
-  _parentResizableChanged: function(parentResizable) {
-    if (parentResizable) {
-      window.removeEventListener('resize', this._boundNotifyResize);
-    }
-  },
-
-  _notifyDescendant: function(descendant) {
-    // NOTE(cdata): In IE10, attached is fired on children first, so it's
-    // important not to notify them if the parent is not attached yet (or
-    // else they will get redundantly notified when the parent attaches).
-    if (!this.isAttached) {
-      return;
-    }
-
-    this._notifyingDescendant = true;
-    descendant.notifyResize();
-    this._notifyingDescendant = false;
-  },
-
-  _requestResizeNotifications: function() {
-    if (!this.isAttached) {
-      return;
-    }
-
-    if (document.readyState === 'loading') {
-      var _requestResizeNotifications =
-          this._requestResizeNotifications.bind(this);
-      document.addEventListener(
-          'readystatechange', function readystatechanged() {
-            document.removeEventListener('readystatechange', readystatechanged);
-            _requestResizeNotifications();
-          });
-    } else {
-      this._findParent();
-
-      if (!this._parentResizable) {
-        // If this resizable is an orphan, tell other orphans to try to find
-        // their parent again, in case it's this resizable.
-        ORPHANS.forEach(function(orphan) {
-          if (orphan !== this) {
-            orphan._findParent();
-          }
-        }, this);
-
-        window.addEventListener('resize', this._boundNotifyResize);
-        this.notifyResize();
-      } else {
-        // If this resizable has a parent, tell other child resizables of
-        // that parent to try finding their parent again, in case it's this
-        // resizable.
-        this._parentResizable._interestedResizables
-            .forEach(function(resizable) {
-              if (resizable !== this) {
-                resizable._findParent();
-              }
-            }, this);
-      }
-    }
-  },
-
-  _findParent: function() {
-    this.assignParentResizable(null);
-    this.fire(
-        'iron-request-resize-notifications',
-        null,
-        {node: this, bubbles: true, cancelable: true});
-
-    if (!this._parentResizable) {
-      ORPHANS.add(this);
-    } else {
-      ORPHANS.delete(this);
-    }
-  }
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronResizableBehavior;
+const reducers = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["a" /* combineReducers */])({
+    todoReducer: __WEBPACK_IMPORTED_MODULE_1__reducers_todo_reducer__["a" /* todoReducer */]
+});
+const store = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["b" /* createStore */])(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
 
@@ -2782,12 +2514,12 @@ const IronResizableBehavior = {
 /* unused harmony export dumpRegistrations */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_settings_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_style_gather_js__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_style_gather_js__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_resolve_url_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__elements_dom_module_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__elements_dom_module_js__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__property_effects_js__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__properties_mixin_js__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__properties_mixin_js__ = __webpack_require__(73);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -3601,11 +3333,11 @@ const updateStyles = function(props) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_path_js__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_case_map_js__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__property_accessors_js__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_stamp_js__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__property_accessors_js__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_stamp_js__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_settings_js__ = __webpack_require__(7);
 /**
 @license
@@ -6935,11 +6667,5312 @@ function detectMixin(cssText) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export flush */
+/* unused harmony export beforeNextRender */
+/* harmony export (immutable) */ __webpack_exports__["a"] = afterNextRender;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+/**
+ * Module for scheduling flushable pre-render and post-render tasks.
+ *
+ * @summary Module for scheduling flushable pre-render and post-render tasks.
+ */
+
+
+
+let scheduled = false;
+let beforeRenderQueue = [];
+let afterRenderQueue = [];
+
+function schedule() {
+  scheduled = true;
+  // before next render
+  requestAnimationFrame(function() {
+    scheduled = false;
+    flushQueue(beforeRenderQueue);
+    // after the render
+    setTimeout(function() {
+      runQueue(afterRenderQueue);
+    });
+  });
+}
+
+function flushQueue(queue) {
+  while (queue.length) {
+    callMethod(queue.shift());
+  }
+}
+
+function runQueue(queue) {
+  for (let i=0, l=queue.length; i < l; i++) {
+    callMethod(queue.shift());
+  }
+}
+
+function callMethod(info) {
+  const context = info[0];
+  const callback = info[1];
+  const args = info[2];
+  try {
+    callback.apply(context, args);
+  } catch(e) {
+    setTimeout(() => {
+      throw e;
+    });
+  }
+}
+
+/**
+ * Flushes all `beforeNextRender` tasks, followed by all `afterNextRender`
+ * tasks.
+ *
+ * @return {void}
+ */
+function flush() {
+  while (beforeRenderQueue.length || afterRenderQueue.length) {
+    flushQueue(beforeRenderQueue);
+    flushQueue(afterRenderQueue);
+  }
+  scheduled = false;
+}
+
+
+/**
+ * Enqueues a callback which will be run before the next render, at
+ * `requestAnimationFrame` timing.
+ *
+ * This method is useful for enqueuing work that requires DOM measurement,
+ * since measurement may not be reliable in custom element callbacks before
+ * the first render, as well as for batching measurement tasks in general.
+ *
+ * Tasks in this queue may be flushed by calling `flush()`.
+ *
+ * @param {*} context Context object the callback function will be bound to
+ * @param {function(...*):void} callback Callback function
+ * @param {!Array=} args An array of arguments to call the callback function with
+ * @return {void}
+ */
+function beforeNextRender(context, callback, args) {
+  if (!scheduled) {
+    schedule();
+  }
+  beforeRenderQueue.push([context, callback, args]);
+}
+
+/**
+ * Enqueues a callback which will be run after the next render, equivalent
+ * to one task (`setTimeout`) after the next `requestAnimationFrame`.
+ *
+ * This method is useful for tuning the first-render performance of an
+ * element or application by deferring non-critical work until after the
+ * first paint.  Typical non-render-critical work may include adding UI
+ * event listeners and aria attributes.
+ *
+ * @param {*} context Context object the callback function will be bound to
+ * @param {function(...*):void} callback Callback function
+ * @param {!Array=} args An array of arguments to call the callback function with
+ * @return {void}
+ */
+function afterNextRender(context, callback, args) {
+  if (!scheduled) {
+    schedule();
+  }
+  afterRenderQueue.push([context, callback, args]);
+}
+
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = templatize;
+/* harmony export (immutable) */ __webpack_exports__["a"] = modelForElement;
+/* unused harmony export TemplateInstanceBase */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_settings_js__ = __webpack_require__(7);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+/**
+ * Module for preparing and stamping instances of templates that utilize
+ * Polymer's data-binding and declarative event listener features.
+ *
+ * Example:
+ *
+ *     // Get a template from somewhere, e.g. light DOM
+ *     let template = this.querySelector('template');
+ *     // Prepare the template
+ *     let TemplateClass = Templatize.templatize(template);
+ *     // Instance the template with an initial data model
+ *     let instance = new TemplateClass({myProp: 'initial'});
+ *     // Insert the instance's DOM somewhere, e.g. element's shadow DOM
+ *     this.shadowRoot.appendChild(instance.root);
+ *     // Changing a property on the instance will propagate to bindings
+ *     // in the template
+ *     instance.myProp = 'new value';
+ *
+ * The `options` dictionary passed to `templatize` allows for customizing
+ * features of the generated template class, including how outer-scope host
+ * properties should be forwarded into template instances, how any instance
+ * properties added into the template's scope should be notified out to
+ * the host, and whether the instance should be decorated as a "parent model"
+ * of any event handlers.
+ *
+ *     // Customize property forwarding and event model decoration
+ *     let TemplateClass = Templatize.templatize(template, this, {
+ *       parentModel: true,
+ *       forwardHostProp(property, value) {...},
+ *       instanceProps: {...},
+ *       notifyInstanceProp(instance, property, value) {...},
+ *     });
+ *
+ * @summary Module for preparing and stamping instances of templates
+ *   utilizing Polymer templating features.
+ */
+
+
+
+
+
+
+
+// Base class for HTMLTemplateElement extension that has property effects
+// machinery for propagating host properties to children. This is an ES5
+// class only because Babel (incorrectly) requires super() in the class
+// constructor even though no `this` is used and it returns an instance.
+let newInstance = null;
+
+/**
+ * @constructor
+ * @extends {HTMLTemplateElement}
+ * @private
+ */
+function HTMLTemplateElementExtension() { return newInstance; }
+HTMLTemplateElementExtension.prototype = Object.create(HTMLTemplateElement.prototype, {
+  constructor: {
+    value: HTMLTemplateElementExtension,
+    writable: true
+  }
+});
+
+/**
+ * @constructor
+ * @implements {Polymer_PropertyEffects}
+ * @extends {HTMLTemplateElementExtension}
+ * @private
+ */
+const DataTemplate = Object(__WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__["a" /* PropertyEffects */])(HTMLTemplateElementExtension);
+
+/**
+ * @constructor
+ * @implements {Polymer_MutableData}
+ * @extends {DataTemplate}
+ * @private
+ */
+const MutableDataTemplate = Object(__WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__["a" /* MutableData */])(DataTemplate);
+
+// Applies a DataTemplate subclass to a <template> instance
+function upgradeTemplate(template, constructor) {
+  newInstance = template;
+  Object.setPrototypeOf(template, constructor.prototype);
+  new constructor();
+  newInstance = null;
+}
+
+/**
+ * Base class for TemplateInstance.
+ * @constructor
+ * @implements {Polymer_PropertyEffects}
+ * @private
+ */
+const base = Object(__WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__["a" /* PropertyEffects */])(class {});
+
+/**
+ * @polymer
+ * @customElement
+ * @appliesMixin PropertyEffects
+ * @unrestricted
+ */
+class TemplateInstanceBase extends base {
+  constructor(props) {
+    super();
+    this._configureProperties(props);
+    this.root = this._stampTemplate(this.__dataHost);
+    // Save list of stamped children
+    let children = this.children = [];
+    for (let n = this.root.firstChild; n; n=n.nextSibling) {
+      children.push(n);
+      n.__templatizeInstance = this;
+    }
+    if (this.__templatizeOwner &&
+      this.__templatizeOwner.__hideTemplateChildren__) {
+      this._showHideChildren(true);
+    }
+    // Flush props only when props are passed if instance props exist
+    // or when there isn't instance props.
+    let options = this.__templatizeOptions;
+    if ((props && options.instanceProps) || !options.instanceProps) {
+      this._enableProperties();
+    }
+  }
+  /**
+   * Configure the given `props` by calling `_setPendingProperty`. Also
+   * sets any properties stored in `__hostProps`.
+   * @private
+   * @param {Object} props Object of property name-value pairs to set.
+   * @return {void}
+   */
+  _configureProperties(props) {
+    let options = this.__templatizeOptions;
+    if (options.forwardHostProp) {
+      for (let hprop in this.__hostProps) {
+        this._setPendingProperty(hprop, this.__dataHost['_host_' + hprop]);
+      }
+    }
+    // Any instance props passed in the constructor will overwrite host props;
+    // normally this would be a user error but we don't specifically filter them
+    for (let iprop in props) {
+      this._setPendingProperty(iprop, props[iprop]);
+    }
+  }
+  /**
+   * Forwards a host property to this instance.  This method should be
+   * called on instances from the `options.forwardHostProp` callback
+   * to propagate changes of host properties to each instance.
+   *
+   * Note this method enqueues the change, which are flushed as a batch.
+   *
+   * @param {string} prop Property or path name
+   * @param {*} value Value of the property to forward
+   * @return {void}
+   */
+  forwardHostProp(prop, value) {
+    if (this._setPendingPropertyOrPath(prop, value, false, true)) {
+      this.__dataHost._enqueueClient(this);
+    }
+  }
+
+  /**
+   * Override point for adding custom or simulated event handling.
+   *
+   * @override
+   * @param {!Node} node Node to add event listener to
+   * @param {string} eventName Name of event
+   * @param {function(!Event):void} handler Listener function to add
+   * @return {void}
+   */
+  _addEventListenerToNode(node, eventName, handler) {
+    if (this._methodHost && this.__templatizeOptions.parentModel) {
+      // If this instance should be considered a parent model, decorate
+      // events this template instance as `model`
+      this._methodHost._addEventListenerToNode(node, eventName, (e) => {
+        e.model = this;
+        handler(e);
+      });
+    } else {
+      // Otherwise delegate to the template's host (which could be)
+      // another template instance
+      let templateHost = this.__dataHost.__dataHost;
+      if (templateHost) {
+        templateHost._addEventListenerToNode(node, eventName, handler);
+      }
+    }
+  }
+  /**
+   * Shows or hides the template instance top level child elements. For
+   * text nodes, `textContent` is removed while "hidden" and replaced when
+   * "shown."
+   * @param {boolean} hide Set to true to hide the children;
+   * set to false to show them.
+   * @return {void}
+   * @protected
+   */
+  _showHideChildren(hide) {
+    let c = this.children;
+    for (let i=0; i<c.length; i++) {
+      let n = c[i];
+      // Ignore non-changes
+      if (Boolean(hide) != Boolean(n.__hideTemplateChildren__)) {
+        if (n.nodeType === Node.TEXT_NODE) {
+          if (hide) {
+            n.__polymerTextContent__ = n.textContent;
+            n.textContent = '';
+          } else {
+            n.textContent = n.__polymerTextContent__;
+          }
+        // remove and replace slot
+        } else if (n.localName === 'slot') {
+          if (hide) {
+            n.__polymerReplaced__ = document.createComment('hidden-slot');
+            n.parentNode.replaceChild(n.__polymerReplaced__, n);
+          } else {
+            const replace = n.__polymerReplaced__;
+            if (replace) {
+              replace.parentNode.replaceChild(n, replace);
+            }
+          }
+        }
+
+        else if (n.style) {
+          if (hide) {
+            n.__polymerDisplay__ = n.style.display;
+            n.style.display = 'none';
+          } else {
+            n.style.display = n.__polymerDisplay__;
+          }
+        }
+      }
+      n.__hideTemplateChildren__ = hide;
+      if (n._showHideChildren) {
+        n._showHideChildren(hide);
+      }
+    }
+  }
+  /**
+   * Overrides default property-effects implementation to intercept
+   * textContent bindings while children are "hidden" and cache in
+   * private storage for later retrieval.
+   *
+   * @override
+   * @param {!Node} node The node to set a property on
+   * @param {string} prop The property to set
+   * @param {*} value The value to set
+   * @return {void}
+   * @protected
+   */
+  _setUnmanagedPropertyToNode(node, prop, value) {
+    if (node.__hideTemplateChildren__ &&
+        node.nodeType == Node.TEXT_NODE && prop == 'textContent') {
+      node.__polymerTextContent__ = value;
+    } else {
+      super._setUnmanagedPropertyToNode(node, prop, value);
+    }
+  }
+  /**
+   * Find the parent model of this template instance.  The parent model
+   * is either another templatize instance that had option `parentModel: true`,
+   * or else the host element.
+   *
+   * @return {!Polymer_PropertyEffects} The parent model of this instance
+   */
+  get parentModel() {
+    let model = this.__parentModel;
+    if (!model) {
+      let options;
+      model = this;
+      do {
+        // A template instance's `__dataHost` is a <template>
+        // `model.__dataHost.__dataHost` is the template's host
+        model = model.__dataHost.__dataHost;
+      } while ((options = model.__templatizeOptions) && !options.parentModel);
+      this.__parentModel = model;
+    }
+    return model;
+  }
+
+  /**
+   * Stub of HTMLElement's `dispatchEvent`, so that effects that may
+   * dispatch events safely no-op.
+   *
+   * @param {Event} event Event to dispatch
+   * @return {boolean} Always true.
+   */
+   dispatchEvent(event) { // eslint-disable-line no-unused-vars
+     return true;
+  }
+}
+
+/** @type {!DataTemplate} */
+TemplateInstanceBase.prototype.__dataHost;
+/** @type {!TemplatizeOptions} */
+TemplateInstanceBase.prototype.__templatizeOptions;
+/** @type {!Polymer_PropertyEffects} */
+TemplateInstanceBase.prototype._methodHost;
+/** @type {!Object} */
+TemplateInstanceBase.prototype.__templatizeOwner;
+/** @type {!Object} */
+TemplateInstanceBase.prototype.__hostProps;
+
+/**
+ * @constructor
+ * @extends {TemplateInstanceBase}
+ * @implements {Polymer_MutableData}
+ * @private
+ */
+const MutableTemplateInstanceBase = Object(__WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__["a" /* MutableData */])(TemplateInstanceBase);
+
+function findMethodHost(template) {
+  // Technically this should be the owner of the outermost template.
+  // In shadow dom, this is always getRootNode().host, but we can
+  // approximate this via cooperation with our dataHost always setting
+  // `_methodHost` as long as there were bindings (or id's) on this
+  // instance causing it to get a dataHost.
+  let templateHost = template.__dataHost;
+  return templateHost && templateHost._methodHost || templateHost;
+}
+
+/* eslint-disable valid-jsdoc */
+/**
+ * @suppress {missingProperties} class.prototype is not defined for some reason
+ */
+function createTemplatizerClass(template, templateInfo, options) {
+  // Anonymous class created by the templatize
+  let base = options.mutableData ?
+    MutableTemplateInstanceBase : TemplateInstanceBase;
+  /**
+   * @constructor
+   * @extends {base}
+   * @private
+   */
+  let klass = class extends base { };
+  klass.prototype.__templatizeOptions = options;
+  klass.prototype._bindTemplate(template);
+  addNotifyEffects(klass, template, templateInfo, options);
+  return klass;
+}
+
+/**
+ * @suppress {missingProperties} class.prototype is not defined for some reason
+ */
+function addPropagateEffects(template, templateInfo, options) {
+  let userForwardHostProp = options.forwardHostProp;
+  if (userForwardHostProp) {
+    // Provide data API and property effects on memoized template class
+    let klass = templateInfo.templatizeTemplateClass;
+    if (!klass) {
+      let base = options.mutableData ? MutableDataTemplate : DataTemplate;
+      /** @private */
+      klass = templateInfo.templatizeTemplateClass =
+        class TemplatizedTemplate extends base {};
+      // Add template - >instances effects
+      // and host <- template effects
+      let hostProps = templateInfo.hostProps;
+      for (let prop in hostProps) {
+        klass.prototype._addPropertyEffect('_host_' + prop,
+          klass.prototype.PROPERTY_EFFECT_TYPES.PROPAGATE,
+          {fn: createForwardHostPropEffect(prop, userForwardHostProp)});
+        klass.prototype._createNotifyingProperty('_host_' + prop);
+      }
+    }
+    upgradeTemplate(template, klass);
+    // Mix any pre-bound data into __data; no need to flush this to
+    // instances since they pull from the template at instance-time
+    if (template.__dataProto) {
+      // Note, generally `__dataProto` could be chained, but it's guaranteed
+      // to not be since this is a vanilla template we just added effects to
+      Object.assign(template.__data, template.__dataProto);
+    }
+    // Clear any pending data for performance
+    template.__dataTemp = {};
+    template.__dataPending = null;
+    template.__dataOld = null;
+    template._enableProperties();
+  }
+}
+/* eslint-enable valid-jsdoc */
+
+function createForwardHostPropEffect(hostProp, userForwardHostProp) {
+  return function forwardHostProp(template, prop, props) {
+    userForwardHostProp.call(template.__templatizeOwner,
+      prop.substring('_host_'.length), props[prop]);
+  };
+}
+
+function addNotifyEffects(klass, template, templateInfo, options) {
+  let hostProps = templateInfo.hostProps || {};
+  for (let iprop in options.instanceProps) {
+    delete hostProps[iprop];
+    let userNotifyInstanceProp = options.notifyInstanceProp;
+    if (userNotifyInstanceProp) {
+      klass.prototype._addPropertyEffect(iprop,
+        klass.prototype.PROPERTY_EFFECT_TYPES.NOTIFY,
+        {fn: createNotifyInstancePropEffect(iprop, userNotifyInstanceProp)});
+    }
+  }
+  if (options.forwardHostProp && template.__dataHost) {
+    for (let hprop in hostProps) {
+      klass.prototype._addPropertyEffect(hprop,
+        klass.prototype.PROPERTY_EFFECT_TYPES.NOTIFY,
+        {fn: createNotifyHostPropEffect()});
+    }
+  }
+}
+
+function createNotifyInstancePropEffect(instProp, userNotifyInstanceProp) {
+  return function notifyInstanceProp(inst, prop, props) {
+    userNotifyInstanceProp.call(inst.__templatizeOwner,
+      inst, prop, props[prop]);
+  };
+}
+
+function createNotifyHostPropEffect() {
+  return function notifyHostProp(inst, prop, props) {
+    inst.__dataHost._setPendingPropertyOrPath('_host_' + prop, props[prop], true, true);
+  };
+}
+
+
+/**
+ * Returns an anonymous `PropertyEffects` class bound to the
+ * `<template>` provided.  Instancing the class will result in the
+ * template being stamped into a document fragment stored as the instance's
+ * `root` property, after which it can be appended to the DOM.
+ *
+ * Templates may utilize all Polymer data-binding features as well as
+ * declarative event listeners.  Event listeners and inline computing
+ * functions in the template will be called on the host of the template.
+ *
+ * The constructor returned takes a single argument dictionary of initial
+ * property values to propagate into template bindings.  Additionally
+ * host properties can be forwarded in, and instance properties can be
+ * notified out by providing optional callbacks in the `options` dictionary.
+ *
+ * Valid configuration in `options` are as follows:
+ *
+ * - `forwardHostProp(property, value)`: Called when a property referenced
+ *   in the template changed on the template's host. As this library does
+ *   not retain references to templates instanced by the user, it is the
+ *   templatize owner's responsibility to forward host property changes into
+ *   user-stamped instances.  The `instance.forwardHostProp(property, value)`
+ *    method on the generated class should be called to forward host
+ *   properties into the template to prevent unnecessary property-changed
+ *   notifications. Any properties referenced in the template that are not
+ *   defined in `instanceProps` will be notified up to the template's host
+ *   automatically.
+ * - `instanceProps`: Dictionary of property names that will be added
+ *   to the instance by the templatize owner.  These properties shadow any
+ *   host properties, and changes within the template to these properties
+ *   will result in `notifyInstanceProp` being called.
+ * - `mutableData`: When `true`, the generated class will skip strict
+ *   dirty-checking for objects and arrays (always consider them to be
+ *   "dirty").
+ * - `notifyInstanceProp(instance, property, value)`: Called when
+ *   an instance property changes.  Users may choose to call `notifyPath`
+ *   on e.g. the owner to notify the change.
+ * - `parentModel`: When `true`, events handled by declarative event listeners
+ *   (`on-event="handler"`) will be decorated with a `model` property pointing
+ *   to the template instance that stamped it.  It will also be returned
+ *   from `instance.parentModel` in cases where template instance nesting
+ *   causes an inner model to shadow an outer model.
+ *
+ * All callbacks are called bound to the `owner`. Any context
+ * needed for the callbacks (such as references to `instances` stamped)
+ * should be stored on the `owner` such that they can be retrieved via
+ * `this`.
+ *
+ * When `options.forwardHostProp` is declared as an option, any properties
+ * referenced in the template will be automatically forwarded from the host of
+ * the `<template>` to instances, with the exception of any properties listed in
+ * the `options.instanceProps` object.  `instanceProps` are assumed to be
+ * managed by the owner of the instances, either passed into the constructor
+ * or set after the fact.  Note, any properties passed into the constructor will
+ * always be set to the instance (regardless of whether they would normally
+ * be forwarded from the host).
+ *
+ * Note that `templatize()` can be run only once for a given `<template>`.
+ * Further calls will result in an error. Also, there is a special
+ * behavior if the template was duplicated through a mechanism such as
+ * `<dom-repeat>` or `<test-fixture>`. In this case, all calls to
+ * `templatize()` return the same class for all duplicates of a template.
+ * The class returned from `templatize()` is generated only once using
+ * the `options` from the first call. This means that any `options`
+ * provided to subsequent calls will be ignored. Therefore, it is very
+ * important not to close over any variables inside the callbacks. Also,
+ * arrow functions must be avoided because they bind the outer `this`.
+ * Inside the callbacks, any contextual information can be accessed
+ * through `this`, which points to the `owner`.
+ *
+ * @param {!HTMLTemplateElement} template Template to templatize
+ * @param {Polymer_PropertyEffects=} owner Owner of the template instances;
+ *   any optional callbacks will be bound to this owner.
+ * @param {Object=} options Options dictionary (see summary for details)
+ * @return {function(new:TemplateInstanceBase)} Generated class bound to the template
+ *   provided
+ * @suppress {invalidCasts}
+ */
+function templatize(template, owner, options) {
+  // Under strictTemplatePolicy, the templatized element must be owned
+  // by a (trusted) Polymer element, indicated by existence of _methodHost;
+  // e.g. for dom-if & dom-repeat in main document, _methodHost is null
+  if (__WEBPACK_IMPORTED_MODULE_3__utils_settings_js__["e" /* strictTemplatePolicy */] && !findMethodHost(template)) {
+    throw new Error('strictTemplatePolicy: template owner not trusted');
+  }
+  options = /** @type {!TemplatizeOptions} */(options || {});
+  if (template.__templatizeOwner) {
+    throw new Error('A <template> can only be templatized once');
+  }
+  template.__templatizeOwner = owner;
+  const ctor = owner ? owner.constructor : TemplateInstanceBase;
+  let templateInfo = ctor._parseTemplate(template);
+  // Get memoized base class for the prototypical template, which
+  // includes property effects for binding template & forwarding
+  let baseClass = templateInfo.templatizeInstanceClass;
+  if (!baseClass) {
+    baseClass = createTemplatizerClass(template, templateInfo, options);
+    templateInfo.templatizeInstanceClass = baseClass;
+  }
+  // Host property forwarding must be installed onto template instance
+  addPropagateEffects(template, templateInfo, options);
+  // Subclass base class and add reference for this specific template
+  /** @private */
+  let klass = class TemplateInstance extends baseClass {};
+  klass.prototype._methodHost = findMethodHost(template);
+  klass.prototype.__dataHost = template;
+  klass.prototype.__templatizeOwner = owner;
+  klass.prototype.__hostProps = templateInfo.hostProps;
+  klass = /** @type {function(new:TemplateInstanceBase)} */(klass); //eslint-disable-line no-self-assign
+  return klass;
+}
+
+/**
+ * Returns the template "model" associated with a given element, which
+ * serves as the binding scope for the template instance the element is
+ * contained in. A template model is an instance of
+ * `TemplateInstanceBase`, and should be used to manipulate data
+ * associated with this template instance.
+ *
+ * Example:
+ *
+ *   let model = modelForElement(el);
+ *   if (model.index < 10) {
+ *     model.set('item.checked', true);
+ *   }
+ *
+ * @param {HTMLTemplateElement} template The model will be returned for
+ *   elements stamped from this template
+ * @param {Node=} node Node for which to return a template model.
+ * @return {TemplateInstanceBase} Template instance representing the
+ *   binding scope for the element
+ */
+function modelForElement(template, node) {
+  let model;
+  while (node) {
+    // An element with a __templatizeInstance marks the top boundary
+    // of a scope; walk up until we find one, and then ensure that
+    // its __dataHost matches `this`, meaning this dom-repeat stamped it
+    if ((model = node.__templatizeInstance)) {
+      // Found an element stamped by another template; keep walking up
+      // from its __dataHost
+      if (model.__dataHost != template) {
+        node = model.__dataHost;
+      } else {
+        return model;
+      }
+    } else {
+      // Still in a template scope, keep going up until
+      // a __templatizeInstance is found
+      node = node.parentNode;
+    }
+  }
+  return null;
+}
+
+
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_resizable_behavior_iron_resizable_behavior_js__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_async_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_debounce_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_flush_js__ = __webpack_require__(13);
+/**
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+
+
+/**
+ * @polymerBehavior
+ */
+const AppLayoutBehavior = [
+  __WEBPACK_IMPORTED_MODULE_1__polymer_iron_resizable_behavior_iron_resizable_behavior_js__["a" /* IronResizableBehavior */],
+  {
+
+    listeners: {
+      'app-reset-layout': '_appResetLayoutHandler',
+      'iron-resize': 'resetLayout'
+    },
+
+    attached: function() {
+      this.fire('app-reset-layout');
+    },
+
+    _appResetLayoutHandler: function(e) {
+      if (Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(e).path[0] === this) {
+        return;
+      }
+      this.resetLayout();
+      e.stopPropagation();
+    },
+
+    _updateLayoutStates: function() {
+      console.error('unimplemented');
+    },
+
+    /**
+     * Resets the layout. If you changed the size of this element via CSS
+     * you can notify the changes by either firing the `iron-resize` event
+     * or calling `resetLayout` directly.
+     *
+     * @method resetLayout
+     */
+    resetLayout: function() {
+      var self = this;
+      var cb = this._updateLayoutStates.bind(this);
+      this._layoutDebouncer =
+          __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_debounce_js__["a" /* Debouncer */].debounce(this._layoutDebouncer, __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_async_js__["a" /* animationFrame */], cb);
+      Object(__WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_flush_js__["a" /* enqueueDebouncer */])(this._layoutDebouncer);
+      this._notifyDescendantResize();
+    },
+
+    _notifyLayoutChanged: function() {
+      var self = this;
+      // TODO: the event `app-reset-layout` can be fired synchronously
+      // as long as `_updateLayoutStates` waits for all the microtasks after
+      // rAF. E.g. requestAnimationFrame(setTimeOut())
+      requestAnimationFrame(function() {
+        self.fire('app-reset-layout');
+      });
+    },
+
+    _notifyDescendantResize: function() {
+      if (!this.isAttached) {
+        return;
+      }
+      this._interestedResizables.forEach(function(resizable) {
+        if (this.resizerShouldNotify(resizable)) {
+          this._notifyDescendant(resizable);
+        }
+      }, this);
+    }
+  }
+];
+/* harmony export (immutable) */ __webpack_exports__["a"] = AppLayoutBehavior;
+
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_iron_flex_layout_iron_flex_layout_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_meta_iron_meta_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+
+
+/**
+
+The `iron-icon` element displays an icon. By default an icon renders as a 24px
+square.
+
+Example using src:
+
+    <iron-icon src="star.png"></iron-icon>
+
+Example setting size to 32px x 32px:
+
+    <iron-icon class="big" src="big_star.png"></iron-icon>
+
+    <style is="custom-style">
+      .big {
+        --iron-icon-height: 32px;
+        --iron-icon-width: 32px;
+      }
+    </style>
+
+The iron elements include several sets of icons. To use the default set of
+icons, import `iron-icons.js` and use the `icon` attribute to specify an icon:
+
+    <script type="module">
+      import "@polymer/iron-icons/iron-icons.js";
+    </script>
+
+    <iron-icon icon="menu"></iron-icon>
+
+To use a different built-in set of icons, import the specific
+`iron-icons/<iconset>-icons.js`, and specify the icon as `<iconset>:<icon>`.
+For example, to use a communication icon, you would use:
+
+    <script type="module">
+      import "@polymer/iron-icons/communication-icons.js";
+    </script>
+
+    <iron-icon icon="communication:email"></iron-icon>
+
+You can also create custom icon sets of bitmap or SVG icons.
+
+Example of using an icon named `cherry` from a custom iconset with the ID
+`fruit`:
+
+    <iron-icon icon="fruit:cherry"></iron-icon>
+
+See `<iron-iconset>` and `<iron-iconset-svg>` for more information about how to
+create a custom iconset.
+
+See the `iron-icons` demo to see the icons available in the various iconsets.
+
+### Styling
+
+The following custom properties are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--iron-icon` | Mixin applied to the icon | {}
+`--iron-icon-width` | Width of the icon | `24px`
+`--iron-icon-height` | Height of the icon | `24px`
+`--iron-icon-fill-color` | Fill color of the svg icon | `currentcolor`
+`--iron-icon-stroke-color` | Stroke color of the svg icon | none
+
+@group Iron Elements
+@element iron-icon
+@demo demo/index.html
+@hero hero.svg
+@homepage polymer.github.io
+*/
+Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
+  _template: __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
+    <style>
+      :host {
+        @apply --layout-inline;
+        @apply --layout-center-center;
+        position: relative;
+
+        vertical-align: middle;
+
+        fill: var(--iron-icon-fill-color, currentcolor);
+        stroke: var(--iron-icon-stroke-color, none);
+
+        width: var(--iron-icon-width, 24px);
+        height: var(--iron-icon-height, 24px);
+        @apply --iron-icon;
+      }
+
+      :host([hidden]) {
+        display: none;
+      }
+    </style>
+`,
+
+  is: 'iron-icon',
+
+  properties: {
+
+    /**
+     * The name of the icon to use. The name should be of the form:
+     * `iconset_name:icon_name`.
+     */
+    icon: {type: String},
+
+    /**
+     * The name of the theme to used, if one is specified by the
+     * iconset.
+     */
+    theme: {type: String},
+
+    /**
+     * If using iron-icon without an iconset, you can set the src to be
+     * the URL of an individual icon image file. Note that this will take
+     * precedence over a given icon attribute.
+     */
+    src: {type: String},
+
+    /**
+     * @type {!IronMeta}
+     */
+    _meta: {value: __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_polymer_legacy_js__["a" /* Base */].create('iron-meta', {type: 'iconset'})}
+
+  },
+
+  observers: [
+    '_updateIcon(_meta, isAttached)',
+    '_updateIcon(theme, isAttached)',
+    '_srcChanged(src, isAttached)',
+    '_iconChanged(icon, isAttached)'
+  ],
+
+  _DEFAULT_ICONSET: 'icons',
+
+  _iconChanged: function(icon) {
+    var parts = (icon || '').split(':');
+    this._iconName = parts.pop();
+    this._iconsetName = parts.pop() || this._DEFAULT_ICONSET;
+    this._updateIcon();
+  },
+
+  _srcChanged: function(src) {
+    this._updateIcon();
+  },
+
+  _usesIconset: function() {
+    return this.icon || !this.src;
+  },
+
+  /** @suppress {visibility} */
+  _updateIcon: function() {
+    if (this._usesIconset()) {
+      if (this._img && this._img.parentNode) {
+        Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this.root).removeChild(this._img);
+      }
+      if (this._iconName === '') {
+        if (this._iconset) {
+          this._iconset.removeIcon(this);
+        }
+      } else if (this._iconsetName && this._meta) {
+        this._iconset = /** @type {?Polymer.Iconset} */ (
+            this._meta.byKey(this._iconsetName));
+        if (this._iconset) {
+          this._iconset.applyIcon(this, this._iconName, this.theme);
+          this.unlisten(window, 'iron-iconset-added', '_updateIcon');
+        } else {
+          this.listen(window, 'iron-iconset-added', '_updateIcon');
+        }
+      }
+    } else {
+      if (this._iconset) {
+        this._iconset.removeIcon(this);
+      }
+      if (!this._img) {
+        this._img = document.createElement('img');
+        this._img.style.width = '100%';
+        this._img.style.height = '100%';
+        this._img.draggable = false;
+      }
+      this._img.src = this.src;
+      Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this.root).appendChild(this._img);
+    }
+  }
+});
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iron_control_state_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+/**
+ * @demo demo/index.html
+ * @polymerBehavior IronButtonState
+ */
+const IronButtonStateImpl = {
+
+  properties: {
+
+    /**
+     * If true, the user is currently holding down the button.
+     */
+    pressed: {
+      type: Boolean,
+      readOnly: true,
+      value: false,
+      reflectToAttribute: true,
+      observer: '_pressedChanged'
+    },
+
+    /**
+     * If true, the button toggles the active state with each tap or press
+     * of the spacebar.
+     */
+    toggles: {type: Boolean, value: false, reflectToAttribute: true},
+
+    /**
+     * If true, the button is a toggle and is currently in the active state.
+     */
+    active:
+        {type: Boolean, value: false, notify: true, reflectToAttribute: true},
+
+    /**
+     * True if the element is currently being pressed by a "pointer," which
+     * is loosely defined as mouse or touch input (but specifically excluding
+     * keyboard input).
+     */
+    pointerDown: {type: Boolean, readOnly: true, value: false},
+
+    /**
+     * True if the input device that caused the element to receive focus
+     * was a keyboard.
+     */
+    receivedFocusFromKeyboard: {type: Boolean, readOnly: true},
+
+    /**
+     * The aria attribute to be set if the button is a toggle and in the
+     * active state.
+     */
+    ariaActiveAttribute: {
+      type: String,
+      value: 'aria-pressed',
+      observer: '_ariaActiveAttributeChanged'
+    }
+  },
+
+  listeners: {down: '_downHandler', up: '_upHandler', tap: '_tapHandler'},
+
+  observers:
+      ['_focusChanged(focused)', '_activeChanged(active, ariaActiveAttribute)'],
+
+  /**
+   * @type {!Object}
+   */
+  keyBindings: {
+    'enter:keydown': '_asyncClick',
+    'space:keydown': '_spaceKeyDownHandler',
+    'space:keyup': '_spaceKeyUpHandler',
+  },
+
+  _mouseEventRe: /^mouse/,
+
+  _tapHandler: function() {
+    if (this.toggles) {
+      // a tap is needed to toggle the active state
+      this._userActivate(!this.active);
+    } else {
+      this.active = false;
+    }
+  },
+
+  _focusChanged: function(focused) {
+    this._detectKeyboardFocus(focused);
+
+    if (!focused) {
+      this._setPressed(false);
+    }
+  },
+
+  _detectKeyboardFocus: function(focused) {
+    this._setReceivedFocusFromKeyboard(!this.pointerDown && focused);
+  },
+
+  // to emulate native checkbox, (de-)activations from a user interaction fire
+  // 'change' events
+  _userActivate: function(active) {
+    if (this.active !== active) {
+      this.active = active;
+      this.fire('change');
+    }
+  },
+
+  _downHandler: function(event) {
+    this._setPointerDown(true);
+    this._setPressed(true);
+    this._setReceivedFocusFromKeyboard(false);
+  },
+
+  _upHandler: function() {
+    this._setPointerDown(false);
+    this._setPressed(false);
+  },
+
+  /**
+   * @param {!KeyboardEvent} event .
+   */
+  _spaceKeyDownHandler: function(event) {
+    var keyboardEvent = event.detail.keyboardEvent;
+    var target = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(keyboardEvent).localTarget;
+
+    // Ignore the event if this is coming from a focused light child, since that
+    // element will deal with it.
+    if (this.isLightDescendant(/** @type {Node} */ (target)))
+      return;
+
+    keyboardEvent.preventDefault();
+    keyboardEvent.stopImmediatePropagation();
+    this._setPressed(true);
+  },
+
+  /**
+   * @param {!KeyboardEvent} event .
+   */
+  _spaceKeyUpHandler: function(event) {
+    var keyboardEvent = event.detail.keyboardEvent;
+    var target = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(keyboardEvent).localTarget;
+
+    // Ignore the event if this is coming from a focused light child, since that
+    // element will deal with it.
+    if (this.isLightDescendant(/** @type {Node} */ (target)))
+      return;
+
+    if (this.pressed) {
+      this._asyncClick();
+    }
+    this._setPressed(false);
+  },
+
+  // trigger click asynchronously, the asynchrony is useful to allow one
+  // event handler to unwind before triggering another event
+  _asyncClick: function() {
+    this.async(function() {
+      this.click();
+    }, 1);
+  },
+
+  // any of these changes are considered a change to button state
+
+  _pressedChanged: function(pressed) {
+    this._changedButtonState();
+  },
+
+  _ariaActiveAttributeChanged: function(value, oldValue) {
+    if (oldValue && oldValue != value && this.hasAttribute(oldValue)) {
+      this.removeAttribute(oldValue);
+    }
+  },
+
+  _activeChanged: function(active, ariaActiveAttribute) {
+    if (this.toggles) {
+      this.setAttribute(this.ariaActiveAttribute, active ? 'true' : 'false');
+    } else {
+      this.removeAttribute(this.ariaActiveAttribute);
+    }
+    this._changedButtonState();
+  },
+
+  _controlStateChanged: function() {
+    if (this.disabled) {
+      this._setPressed(false);
+    } else {
+      this._changedButtonState();
+    }
+  },
+
+  // provide hook for follow-on behaviors to react to button-state
+
+  _changedButtonState: function() {
+    if (this._buttonStateChanged) {
+      this._buttonStateChanged();  // abstract
+    }
+  }
+
+};
+/* harmony export (immutable) */ __webpack_exports__["b"] = IronButtonStateImpl;
+
+
+/** @polymerBehavior */
+const IronButtonState = [__WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__["a" /* IronA11yKeysBehavior */], IronButtonStateImpl];
+/* harmony export (immutable) */ __webpack_exports__["a"] = IronButtonState;
+
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+/**
+ * @demo demo/index.html
+ * @polymerBehavior
+ */
+const IronControlState = {
+
+  properties: {
+
+    /**
+     * If true, the element currently has focus.
+     */
+    focused: {
+      type: Boolean,
+      value: false,
+      notify: true,
+      readOnly: true,
+      reflectToAttribute: true
+    },
+
+    /**
+     * If true, the user cannot interact with this element.
+     */
+    disabled: {
+      type: Boolean,
+      value: false,
+      notify: true,
+      observer: '_disabledChanged',
+      reflectToAttribute: true
+    },
+
+    /**
+     * Value of the `tabindex` attribute before `disabled` was activated.
+     * `null` means the attribute was not present.
+     * @type {?string|undefined}
+     */
+    _oldTabIndex: {type: String},
+
+    _boundFocusBlurHandler: {
+      type: Function,
+      value: function() {
+        return this._focusBlurHandler.bind(this);
+      }
+    }
+  },
+
+  observers: ['_changedControlState(focused, disabled)'],
+
+  /**
+   * @return {void}
+   */
+  ready: function() {
+    this.addEventListener('focus', this._boundFocusBlurHandler, true);
+    this.addEventListener('blur', this._boundFocusBlurHandler, true);
+  },
+
+  _focusBlurHandler: function(event) {
+    // Polymer takes care of retargeting events.
+    this._setFocused(event.type === 'focus');
+    return;
+  },
+
+  _disabledChanged: function(disabled, old) {
+    this.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+    this.style.pointerEvents = disabled ? 'none' : '';
+    if (disabled) {
+      // Read the `tabindex` attribute instead of the `tabIndex` property.
+      // The property returns `-1` if there is no `tabindex` attribute.
+      // This distinction is important when restoring the value because
+      // leaving `-1` hides shadow root children from the tab order.
+      this._oldTabIndex = this.getAttribute('tabindex');
+      this._setFocused(false);
+      this.tabIndex = -1;
+      this.blur();
+    } else if (this._oldTabIndex !== undefined) {
+      if (this._oldTabIndex === null) {
+        this.removeAttribute('tabindex');
+      } else {
+        this.setAttribute('tabindex', this._oldTabIndex);
+      }
+    }
+  },
+
+  _changedControlState: function() {
+    // _controlStateChanged is abstract, follow-on behaviors may implement it
+    if (this._controlStateChanged) {
+      this._controlStateChanged();
+    }
+  }
+
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = IronControlState;
+
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
+/* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(64);
+
+
+
+/**
+ * These are private action types reserved by Redux.
+ * For any unknown actions, you must return the current state.
+ * If the current state is undefined, you must return the initial state.
+ * Do not reference these action types directly in your code.
+ */
+var ActionTypes = {
+  INIT: '@@redux/INIT'
+
+  /**
+   * Creates a Redux store that holds the state tree.
+   * The only way to change the data in the store is to call `dispatch()` on it.
+   *
+   * There should only be a single store in your app. To specify how different
+   * parts of the state tree respond to actions, you may combine several reducers
+   * into a single reducer function by using `combineReducers`.
+   *
+   * @param {Function} reducer A function that returns the next state tree, given
+   * the current state tree and the action to handle.
+   *
+   * @param {any} [preloadedState] The initial state. You may optionally specify it
+   * to hydrate the state from the server in universal apps, or to restore a
+   * previously serialized user session.
+   * If you use `combineReducers` to produce the root reducer function, this must be
+   * an object with the same shape as `combineReducers` keys.
+   *
+   * @param {Function} [enhancer] The store enhancer. You may optionally specify it
+   * to enhance the store with third-party capabilities such as middleware,
+   * time travel, persistence, etc. The only store enhancer that ships with Redux
+   * is `applyMiddleware()`.
+   *
+   * @returns {Store} A Redux store that lets you read the state, dispatch actions
+   * and subscribe to changes.
+   */
+};function createStore(reducer, preloadedState, enhancer) {
+  var _ref2;
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+    enhancer = preloadedState;
+    preloadedState = undefined;
+  }
+
+  if (typeof enhancer !== 'undefined') {
+    if (typeof enhancer !== 'function') {
+      throw new Error('Expected the enhancer to be a function.');
+    }
+
+    return enhancer(createStore)(reducer, preloadedState);
+  }
+
+  if (typeof reducer !== 'function') {
+    throw new Error('Expected the reducer to be a function.');
+  }
+
+  var currentReducer = reducer;
+  var currentState = preloadedState;
+  var currentListeners = [];
+  var nextListeners = currentListeners;
+  var isDispatching = false;
+
+  function ensureCanMutateNextListeners() {
+    if (nextListeners === currentListeners) {
+      nextListeners = currentListeners.slice();
+    }
+  }
+
+  /**
+   * Reads the state tree managed by the store.
+   *
+   * @returns {any} The current state tree of your application.
+   */
+  function getState() {
+    return currentState;
+  }
+
+  /**
+   * Adds a change listener. It will be called any time an action is dispatched,
+   * and some part of the state tree may potentially have changed. You may then
+   * call `getState()` to read the current state tree inside the callback.
+   *
+   * You may call `dispatch()` from a change listener, with the following
+   * caveats:
+   *
+   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+   * If you subscribe or unsubscribe while the listeners are being invoked, this
+   * will not have any effect on the `dispatch()` that is currently in progress.
+   * However, the next `dispatch()` call, whether nested or not, will use a more
+   * recent snapshot of the subscription list.
+   *
+   * 2. The listener should not expect to see all state changes, as the state
+   * might have been updated multiple times during a nested `dispatch()` before
+   * the listener is called. It is, however, guaranteed that all subscribers
+   * registered before the `dispatch()` started will be called with the latest
+   * state by the time it exits.
+   *
+   * @param {Function} listener A callback to be invoked on every dispatch.
+   * @returns {Function} A function to remove this change listener.
+   */
+  function subscribe(listener) {
+    if (typeof listener !== 'function') {
+      throw new Error('Expected listener to be a function.');
+    }
+
+    var isSubscribed = true;
+
+    ensureCanMutateNextListeners();
+    nextListeners.push(listener);
+
+    return function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+
+      isSubscribed = false;
+
+      ensureCanMutateNextListeners();
+      var index = nextListeners.indexOf(listener);
+      nextListeners.splice(index, 1);
+    };
+  }
+
+  /**
+   * Dispatches an action. It is the only way to trigger a state change.
+   *
+   * The `reducer` function, used to create the store, will be called with the
+   * current state tree and the given `action`. Its return value will
+   * be considered the **next** state of the tree, and the change listeners
+   * will be notified.
+   *
+   * The base implementation only supports plain object actions. If you want to
+   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+   * wrap your store creating function into the corresponding middleware. For
+   * example, see the documentation for the `redux-thunk` package. Even the
+   * middleware will eventually dispatch plain object actions using this method.
+   *
+   * @param {Object} action A plain object representing “what changed”. It is
+   * a good idea to keep actions serializable so you can record and replay user
+   * sessions, or use the time travelling `redux-devtools`. An action must have
+   * a `type` property which may not be `undefined`. It is a good idea to use
+   * string constants for action types.
+   *
+   * @returns {Object} For convenience, the same action object you dispatched.
+   *
+   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+   * return something else (for example, a Promise you can await).
+   */
+  function dispatch(action) {
+    if (!Object(__WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__["a" /* default */])(action)) {
+      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+    }
+
+    if (typeof action.type === 'undefined') {
+      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+    }
+
+    if (isDispatching) {
+      throw new Error('Reducers may not dispatch actions.');
+    }
+
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+
+    var listeners = currentListeners = nextListeners;
+    for (var i = 0; i < listeners.length; i++) {
+      var listener = listeners[i];
+      listener();
+    }
+
+    return action;
+  }
+
+  /**
+   * Replaces the reducer currently used by the store to calculate the state.
+   *
+   * You might need this if your app implements code splitting and you want to
+   * load some of the reducers dynamically. You might also need this if you
+   * implement a hot reloading mechanism for Redux.
+   *
+   * @param {Function} nextReducer The reducer for the store to use instead.
+   * @returns {void}
+   */
+  function replaceReducer(nextReducer) {
+    if (typeof nextReducer !== 'function') {
+      throw new Error('Expected the nextReducer to be a function.');
+    }
+
+    currentReducer = nextReducer;
+    dispatch({ type: ActionTypes.INIT });
+  }
+
+  /**
+   * Interoperability point for observable/reactive libraries.
+   * @returns {observable} A minimal observable of state changes.
+   * For more information, see the observable proposal:
+   * https://github.com/tc39/proposal-observable
+   */
+  function observable() {
+    var _ref;
+
+    var outerSubscribe = subscribe;
+    return _ref = {
+      /**
+       * The minimal observable subscription method.
+       * @param {Object} observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns {subscription} An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+      subscribe: function subscribe(observer) {
+        if (typeof observer !== 'object') {
+          throw new TypeError('Expected the observer to be an object.');
+        }
+
+        function observeState() {
+          if (observer.next) {
+            observer.next(getState());
+          }
+        }
+
+        observeState();
+        var unsubscribe = outerSubscribe(observeState);
+        return { unsubscribe: unsubscribe };
+      }
+    }, _ref[__WEBPACK_IMPORTED_MODULE_1_symbol_observable__["a" /* default */]] = function () {
+      return this;
+    }, _ref;
+  }
+
+  // When a store is created, an "INIT" action is dispatched so that every
+  // reducer returns their initial state. This effectively populates
+  // the initial state tree.
+  dispatch({ type: ActionTypes.INIT });
+
+  return _ref2 = {
+    dispatch: dispatch,
+    subscribe: subscribe,
+    getState: getState,
+    replaceReducer: replaceReducer
+  }, _ref2[__WEBPACK_IMPORTED_MODULE_1_symbol_observable__["a" /* default */]] = observable, _ref2;
+}
+
+/***/ }),
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(63);
+
+
+
+
+/** `Object#toString` result references. */
+var objectTag = '[object Object]';
+
+/** Used for built-in method references. */
+var funcProto = Function.prototype,
+    objectProto = Object.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString = funcProto.toString;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/** Used to infer the `Object` constructor. */
+var objectCtorString = funcToString.call(Object);
+
+/**
+ * Checks if `value` is a plain object, that is, an object created by the
+ * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.8.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ * }
+ *
+ * _.isPlainObject(new Foo);
+ * // => false
+ *
+ * _.isPlainObject([1, 2, 3]);
+ * // => false
+ *
+ * _.isPlainObject({ 'x': 0, 'y': 0 });
+ * // => true
+ *
+ * _.isPlainObject(Object.create(null));
+ * // => true
+ */
+function isPlainObject(value) {
+  if (!Object(__WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__["a" /* default */])(value) || Object(__WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__["a" /* default */])(value) != objectTag) {
+    return false;
+  }
+  var proto = Object(__WEBPACK_IMPORTED_MODULE_1__getPrototype_js__["a" /* default */])(value);
+  if (proto === null) {
+    return true;
+  }
+  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
+  return typeof Ctor == 'function' && Ctor instanceof Ctor &&
+    funcToString.call(Ctor) == objectCtorString;
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (isPlainObject);
+
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(57);
+
+
+/** Built-in value references. */
+var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
+
+/* harmony default export */ __webpack_exports__["a"] = (Symbol);
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = warning;
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+function warning(message) {
+  /* eslint-disable no-console */
+  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+    console.error(message);
+  }
+  /* eslint-enable no-console */
+  try {
+    // This error was thrown as a convenience so that if you enable
+    // "break on all exceptions" in your console,
+    // it would pause the execution at this line.
+    throw new Error(message);
+    /* eslint-disable no-empty */
+  } catch (e) {}
+  /* eslint-enable no-empty */
+}
+
+/***/ }),
+/* 35 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = compose;
+/**
+ * Composes single-argument functions from right to left. The rightmost
+ * function can take multiple arguments as it provides the signature for
+ * the resulting composite function.
+ *
+ * @param {...Function} funcs The functions to compose.
+ * @returns {Function} A function obtained by composing the argument functions
+ * from right to left. For example, compose(f, g, h) is identical to doing
+ * (...args) => f(g(h(...args))).
+ */
+
+function compose() {
+  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+
+  if (funcs.length === 0) {
+    return function (arg) {
+      return arg;
+    };
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0];
+  }
+
+  return funcs.reduce(function (a, b) {
+    return function () {
+      return a(b.apply(undefined, arguments));
+    };
+  });
+}
+
+/***/ }),
+/* 36 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(6);
+
+class AntiShadowElement extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* PolymerElement */] {
+    _attachDom(dom) {
+        return this.appendChild(dom);
+    }
+    connectedCallback() {
+        super.connectedCallback();
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = AntiShadowElement;
+
+
+
+/***/ }),
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export stylesFromModules */
+/* unused harmony export stylesFromModule */
+/* harmony export (immutable) */ __webpack_exports__["c"] = stylesFromTemplate;
+/* harmony export (immutable) */ __webpack_exports__["b"] = stylesFromModuleImports;
+/* harmony export (immutable) */ __webpack_exports__["a"] = cssFromModules;
+/* unused harmony export cssFromModule */
+/* unused harmony export cssFromTemplate */
+/* unused harmony export cssFromModuleImports */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__elements_dom_module_js__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__resolve_url_js__ = __webpack_require__(11);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+/**
+ * Module with utilities for collection CSS text from `<templates>`, external
+ * stylesheets, and `dom-module`s.
+ *
+ * @summary Module with utilities for collection CSS text from various sources.
+ */
+
+
+
+
+const MODULE_STYLE_LINK_SELECTOR = 'link[rel=import][type~=css]';
+const INCLUDE_ATTR = 'include';
+const SHADY_UNSCOPED_ATTR = 'shady-unscoped';
+
+/**
+ * @param {string} moduleId .
+ * @return {?DomModule} .
+ */
+function importModule(moduleId) {
+  return /** @type {?DomModule} */(__WEBPACK_IMPORTED_MODULE_0__elements_dom_module_js__["a" /* DomModule */].import(moduleId));
+}
+
+function styleForImport(importDoc) {
+  // NOTE: polyfill affordance.
+  // under the HTMLImports polyfill, there will be no 'body',
+  // but the import pseudo-doc can be used directly.
+  let container = importDoc.body ? importDoc.body : importDoc;
+  const importCss = Object(__WEBPACK_IMPORTED_MODULE_1__resolve_url_js__["b" /* resolveCss */])(container.textContent,
+    importDoc.baseURI);
+  const style = document.createElement('style');
+  style.textContent = importCss;
+  return style;
+}
+
+/** @typedef {{assetpath: string}} */
+let templateWithAssetPath; // eslint-disable-line no-unused-vars
+
+
+/**
+ * Returns a list of <style> elements in a space-separated list of `dom-module`s.
+ *
+ * @function
+ * @param {string} moduleIds List of dom-module id's within which to
+ * search for css.
+ * @return {!Array<!HTMLStyleElement>} Array of contained <style> elements
+ */
+function stylesFromModules(moduleIds) {
+ const modules = moduleIds.trim().split(/\s+/);
+ const styles = [];
+ for (let i=0; i < modules.length; i++) {
+   styles.push(...stylesFromModule(modules[i]));
+ }
+ return styles;
+}
+
+/**
+ * Returns a list of <style> elements in a given `dom-module`.
+ * Styles in a `dom-module` can come either from `<style>`s within the
+ * first `<template>`, or else from one or more
+ * `<link rel="import" type="css">` links outside the template.
+ *
+ * @param {string} moduleId dom-module id to gather styles from
+ * @return {!Array<!HTMLStyleElement>} Array of contained styles.
+ */
+function stylesFromModule(moduleId) {
+  const m = importModule(moduleId);
+
+  if (!m) {
+    console.warn('Could not find style data in module named', moduleId);
+    return [];
+  }
+
+  if (m._styles === undefined) {
+    const styles = [];
+    // module imports: <link rel="import" type="css">
+    styles.push(..._stylesFromModuleImports(m));
+    // include css from the first template in the module
+    const template = /** @type {?HTMLTemplateElement} */(
+        m.querySelector('template'));
+    if (template) {
+      styles.push(...stylesFromTemplate(template,
+        /** @type {templateWithAssetPath} */(m).assetpath));
+    }
+
+    m._styles = styles;
+  }
+
+  return m._styles;
+}
+
+/**
+ * Returns the `<style>` elements within a given template.
+ *
+ * @param {!HTMLTemplateElement} template Template to gather styles from
+ * @param {string} baseURI baseURI for style content
+ * @return {!Array<!HTMLStyleElement>} Array of styles
+ */
+function stylesFromTemplate(template, baseURI) {
+  if (!template._styles) {
+    const styles = [];
+    // if element is a template, get content from its .content
+    const e$ = template.content.querySelectorAll('style');
+    for (let i=0; i < e$.length; i++) {
+      let e = e$[i];
+      // support style sharing by allowing styles to "include"
+      // other dom-modules that contain styling
+      let include = e.getAttribute(INCLUDE_ATTR);
+      if (include) {
+        styles.push(...stylesFromModules(include).filter(function(item, index, self) {
+          return self.indexOf(item) === index;
+        }));
+      }
+      if (baseURI) {
+        e.textContent = Object(__WEBPACK_IMPORTED_MODULE_1__resolve_url_js__["b" /* resolveCss */])(e.textContent, baseURI);
+      }
+      styles.push(e);
+    }
+    template._styles = styles;
+  }
+  return template._styles;
+}
+
+/**
+ * Returns a list of <style> elements  from stylesheets loaded via `<link rel="import" type="css">` links within the specified `dom-module`.
+ *
+ * @param {string} moduleId Id of `dom-module` to gather CSS from
+ * @return {!Array<!HTMLStyleElement>} Array of contained styles.
+ */
+function stylesFromModuleImports(moduleId) {
+ let m = importModule(moduleId);
+ return m ? _stylesFromModuleImports(m) : [];
+}
+
+/**
+ * @param {!HTMLElement} module dom-module element that could contain `<link rel="import" type="css">` styles
+ * @return {!Array<!HTMLStyleElement>} Array of contained styles
+ */
+function _stylesFromModuleImports(module) {
+  const styles = [];
+  const p$ = module.querySelectorAll(MODULE_STYLE_LINK_SELECTOR);
+  for (let i=0; i < p$.length; i++) {
+    let p = p$[i];
+    if (p.import) {
+      const importDoc = p.import;
+      const unscoped = p.hasAttribute(SHADY_UNSCOPED_ATTR);
+      if (unscoped && !importDoc._unscopedStyle) {
+        const style = styleForImport(importDoc);
+        style.setAttribute(SHADY_UNSCOPED_ATTR, '');
+        importDoc._unscopedStyle = style;
+      } else if (!importDoc._style) {
+        importDoc._style = styleForImport(importDoc);
+      }
+      styles.push(unscoped ? importDoc._unscopedStyle : importDoc._style);
+    }
+  }
+  return styles;
+}
+
+/**
+ *
+ * Returns CSS text of styles in a space-separated list of `dom-module`s.
+ * Note: This method is deprecated, use `stylesFromModules` instead.
+ *
+ * @deprecated
+ * @param {string} moduleIds List of dom-module id's within which to
+ * search for css.
+ * @return {string} Concatenated CSS content from specified `dom-module`s
+ */
+function cssFromModules(moduleIds) {
+ let modules = moduleIds.trim().split(/\s+/);
+ let cssText = '';
+ for (let i=0; i < modules.length; i++) {
+   cssText += cssFromModule(modules[i]);
+ }
+ return cssText;
+}
+
+/**
+ * Returns CSS text of styles in a given `dom-module`.  CSS in a `dom-module`
+ * can come either from `<style>`s within the first `<template>`, or else
+ * from one or more `<link rel="import" type="css">` links outside the
+ * template.
+ *
+ * Any `<styles>` processed are removed from their original location.
+ * Note: This method is deprecated, use `styleFromModule` instead.
+ *
+ * @deprecated
+ * @param {string} moduleId dom-module id to gather styles from
+ * @return {string} Concatenated CSS content from specified `dom-module`
+ */
+function cssFromModule(moduleId) {
+  let m = importModule(moduleId);
+  if (m && m._cssText === undefined) {
+    // module imports: <link rel="import" type="css">
+    let cssText = _cssFromModuleImports(m);
+    // include css from the first template in the module
+    let t = /** @type {?HTMLTemplateElement} */(m.querySelector('template'));
+    if (t) {
+      cssText += cssFromTemplate(t,
+        /** @type {templateWithAssetPath} */(m).assetpath);
+    }
+    m._cssText = cssText || null;
+  }
+  if (!m) {
+    console.warn('Could not find style data in module named', moduleId);
+  }
+  return m && m._cssText || '';
+}
+
+/**
+ * Returns CSS text of `<styles>` within a given template.
+ *
+ * Any `<styles>` processed are removed from their original location.
+ * Note: This method is deprecated, use `styleFromTemplate` instead.
+ *
+ * @deprecated
+ * @param {!HTMLTemplateElement} template Template to gather styles from
+ * @param {string} baseURI Base URI to resolve the URL against
+ * @return {string} Concatenated CSS content from specified template
+ */
+function cssFromTemplate(template, baseURI) {
+  let cssText = '';
+  const e$ = stylesFromTemplate(template, baseURI);
+  // if element is a template, get content from its .content
+  for (let i=0; i < e$.length; i++) {
+    let e = e$[i];
+    if (e.parentNode) {
+      e.parentNode.removeChild(e);
+    }
+    cssText += e.textContent;
+  }
+  return cssText;
+}
+
+/**
+ * Returns CSS text from stylesheets loaded via `<link rel="import" type="css">`
+ * links within the specified `dom-module`.
+ *
+ * Note: This method is deprecated, use `stylesFromModuleImports` instead.
+ *
+ * @deprecated
+ *
+ * @param {string} moduleId Id of `dom-module` to gather CSS from
+ * @return {string} Concatenated CSS content from links in specified `dom-module`
+ */
+function cssFromModuleImports(moduleId) {
+  let m = importModule(moduleId);
+  return m ? _cssFromModuleImports(m) : '';
+}
+
+/**
+ * @deprecated
+ * @param {!HTMLElement} module dom-module element that could contain `<link rel="import" type="css">` styles
+ * @return {string} Concatenated CSS content from links in the dom-module
+ */
+function _cssFromModuleImports(module) {
+  let cssText = '';
+  let styles = _stylesFromModuleImports(module);
+  for (let i=0; i < styles.length; i++) {
+    cssText += styles[i].textContent;
+  }
+  return cssText;
+}
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_resolve_url_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_settings_js__ = __webpack_require__(7);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+let modules = {};
+let lcModules = {};
+/**
+ * Sets a dom-module into the global registry by id.
+ *
+ * @param {string} id dom-module id
+ * @param {DomModule} module dom-module instance
+ * @return {void}
+ */
+function setModule(id, module) {
+  // store id separate from lowercased id so that
+  // in all cases mixedCase id will stored distinctly
+  // and lowercase version is a fallback
+  modules[id] = lcModules[id.toLowerCase()] = module;
+}
+/**
+ * Retrieves a dom-module from the global registry by id.
+ *
+ * @param {string} id dom-module id
+ * @return {DomModule!} dom-module instance
+ */
+function findModule(id) {
+  return modules[id] || lcModules[id.toLowerCase()];
+}
+
+function styleOutsideTemplateCheck(inst) {
+  if (inst.querySelector('style')) {
+    console.warn('dom-module %s has style outside template', inst.id);
+  }
+}
+
+/**
+ * The `dom-module` element registers the dom it contains to the name given
+ * by the module's id attribute. It provides a unified database of dom
+ * accessible via its static `import` API.
+ *
+ * A key use case of `dom-module` is for providing custom element `<template>`s
+ * via HTML imports that are parsed by the native HTML parser, that can be
+ * relocated during a bundling pass and still looked up by `id`.
+ *
+ * Example:
+ *
+ *     <dom-module id="foo">
+ *       <img src="stuff.png">
+ *     </dom-module>
+ *
+ * Then in code in some other location that cannot access the dom-module above
+ *
+ *     let img = customElements.get('dom-module').import('foo', 'img');
+ *
+ * @customElement
+ * @extends HTMLElement
+ * @summary Custom element that provides a registry of relocatable DOM content
+ *   by `id` that is agnostic to bundling.
+ * @unrestricted
+ */
+class DomModule extends HTMLElement {
+
+  static get observedAttributes() { return ['id']; }
+
+  /**
+   * Retrieves the element specified by the css `selector` in the module
+   * registered by `id`. For example, this.import('foo', 'img');
+   * @param {string} id The id of the dom-module in which to search.
+   * @param {string=} selector The css selector by which to find the element.
+   * @return {Element} Returns the element which matches `selector` in the
+   * module registered at the specified `id`.
+   *
+   * @export
+   * @nocollapse Referred to indirectly in style-gather.js
+   */
+  static import(id, selector) {
+    if (id) {
+      let m = findModule(id);
+      if (m && selector) {
+        return m.querySelector(selector);
+      }
+      return m;
+    }
+    return null;
+  }
+
+  /* eslint-disable no-unused-vars */
+  /**
+   * @param {string} name Name of attribute.
+   * @param {?string} old Old value of attribute.
+   * @param {?string} value Current value of attribute.
+   * @param {?string} namespace Attribute namespace.
+   * @return {void}
+   * @override
+   */
+  attributeChangedCallback(name, old, value, namespace) {
+    if (old !== value) {
+      this.register();
+    }
+  }
+  /* eslint-enable no-unused-args */
+
+  /**
+   * The absolute URL of the original location of this `dom-module`.
+   *
+   * This value will differ from this element's `ownerDocument` in the
+   * following ways:
+   * - Takes into account any `assetpath` attribute added during bundling
+   *   to indicate the original location relative to the bundled location
+   * - Uses the HTMLImports polyfill's `importForElement` API to ensure
+   *   the path is relative to the import document's location since
+   *   `ownerDocument` is not currently polyfilled
+   */
+  get assetpath() {
+    // Don't override existing assetpath.
+    if (!this.__assetpath) {
+      // note: assetpath set via an attribute must be relative to this
+      // element's location; accomodate polyfilled HTMLImports
+      const owner = window.HTMLImports && HTMLImports.importForElement ?
+        HTMLImports.importForElement(this) || document : this.ownerDocument;
+      const url = Object(__WEBPACK_IMPORTED_MODULE_1__utils_resolve_url_js__["c" /* resolveUrl */])(
+        this.getAttribute('assetpath') || '', owner.baseURI);
+      this.__assetpath = Object(__WEBPACK_IMPORTED_MODULE_1__utils_resolve_url_js__["a" /* pathFromUrl */])(url);
+    }
+    return this.__assetpath;
+  }
+
+  /**
+   * Registers the dom-module at a given id. This method should only be called
+   * when a dom-module is imperatively created. For
+   * example, `document.createElement('dom-module').register('foo')`.
+   * @param {string=} id The id at which to register the dom-module.
+   * @return {void}
+   */
+  register(id) {
+    id = id || this.id;
+    if (id) {
+      // Under strictTemplatePolicy, reject and null out any re-registered
+      // dom-module since it is ambiguous whether first-in or last-in is trusted
+      if (__WEBPACK_IMPORTED_MODULE_2__utils_settings_js__["e" /* strictTemplatePolicy */] && findModule(id) !== undefined) {
+        setModule(id, null);
+        throw new Error(`strictTemplatePolicy: dom-module ${id} re-registered`);
+      }
+      this.id = id;
+      setModule(id, this);
+      styleOutsideTemplateCheck(this);
+    }
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = DomModule;
+
+
+DomModule.prototype['modules'] = modules;
+
+customElements.define('dom-module', DomModule);
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_case_map_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__properties_changed_js__ = __webpack_require__(40);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+// Save map of native properties; this forms a blacklist or properties
+// that won't have their values "saved" by `saveAccessorValue`, since
+// reading from an HTMLElement accessor from the context of a prototype throws
+const nativeProperties = {};
+let proto = HTMLElement.prototype;
+while (proto) {
+  let props = Object.getOwnPropertyNames(proto);
+  for (let i=0; i<props.length; i++) {
+    nativeProperties[props[i]] = true;
+  }
+  proto = Object.getPrototypeOf(proto);
+}
+
+/**
+ * Used to save the value of a property that will be overridden with
+ * an accessor. If the `model` is a prototype, the values will be saved
+ * in `__dataProto`, and it's up to the user (or downstream mixin) to
+ * decide how/when to set these values back into the accessors.
+ * If `model` is already an instance (it has a `__data` property), then
+ * the value will be set as a pending property, meaning the user should
+ * call `_invalidateProperties` or `_flushProperties` to take effect
+ *
+ * @param {Object} model Prototype or instance
+ * @param {string} property Name of property
+ * @return {void}
+ * @private
+ */
+function saveAccessorValue(model, property) {
+  // Don't read/store value for any native properties since they could throw
+  if (!nativeProperties[property]) {
+    let value = model[property];
+    if (value !== undefined) {
+      if (model.__data) {
+        // Adding accessor to instance; update the property
+        // It is the user's responsibility to call _flushProperties
+        model._setPendingProperty(property, value);
+      } else {
+        // Adding accessor to proto; save proto's value for instance-time use
+        if (!model.__dataProto) {
+          model.__dataProto = {};
+        } else if (!model.hasOwnProperty(JSCompiler_renameProperty('__dataProto', model))) {
+          model.__dataProto = Object.create(model.__dataProto);
+        }
+        model.__dataProto[property] = value;
+      }
+    }
+  }
+}
+
+/**
+ * Element class mixin that provides basic meta-programming for creating one
+ * or more property accessors (getter/setter pair) that enqueue an async
+ * (batched) `_propertiesChanged` callback.
+ *
+ * For basic usage of this mixin:
+ *
+ * -   Declare attributes to observe via the standard `static get observedAttributes()`. Use
+ *     `dash-case` attribute names to represent `camelCase` property names.
+ * -   Implement the `_propertiesChanged` callback on the class.
+ * -   Call `MyClass.createPropertiesForAttributes()` **once** on the class to generate
+ *     property accessors for each observed attribute. This must be called before the first
+ *     instance is created, for example, by calling it before calling `customElements.define`.
+ *     It can also be called lazily from the element's `constructor`, as long as it's guarded so
+ *     that the call is only made once, when the first instance is created.
+ * -   Call `this._enableProperties()` in the element's `connectedCallback` to enable
+ *     the accessors.
+ *
+ * Any `observedAttributes` will automatically be
+ * deserialized via `attributeChangedCallback` and set to the associated
+ * property using `dash-case`-to-`camelCase` convention.
+ *
+ * @mixinFunction
+ * @polymer
+ * @appliesMixin PropertiesChanged
+ * @summary Element class mixin for reacting to property changes from
+ *   generated property accessors.
+ */
+const PropertyAccessors = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* dedupingMixin */])(superClass => {
+
+  /**
+   * @constructor
+   * @extends {superClass}
+   * @implements {Polymer_PropertiesChanged}
+   * @unrestricted
+   * @private
+   */
+   const base = Object(__WEBPACK_IMPORTED_MODULE_3__properties_changed_js__["a" /* PropertiesChanged */])(superClass);
+
+  /**
+   * @polymer
+   * @mixinClass
+   * @implements {Polymer_PropertyAccessors}
+   * @extends {base}
+   * @unrestricted
+   */
+  class PropertyAccessors extends base {
+
+    /**
+     * Generates property accessors for all attributes in the standard
+     * static `observedAttributes` array.
+     *
+     * Attribute names are mapped to property names using the `dash-case` to
+     * `camelCase` convention
+     *
+     * @return {void}
+     */
+    static createPropertiesForAttributes() {
+      let a$ = this.observedAttributes;
+      for (let i=0; i < a$.length; i++) {
+        this.prototype._createPropertyAccessor(Object(__WEBPACK_IMPORTED_MODULE_2__utils_case_map_js__["b" /* dashToCamelCase */])(a$[i]));
+      }
+    }
+
+    /**
+     * Returns an attribute name that corresponds to the given property.
+     * By default, converts camel to dash case, e.g. `fooBar` to `foo-bar`.
+     * @param {string} property Property to convert
+     * @return {string} Attribute name corresponding to the given property.
+     *
+     * @protected
+     */
+    static attributeNameForProperty(property) {
+      return Object(__WEBPACK_IMPORTED_MODULE_2__utils_case_map_js__["a" /* camelToDashCase */])(property);
+    }
+
+    /**
+     * Overrides PropertiesChanged implementation to initialize values for
+     * accessors created for values that already existed on the element
+     * prototype.
+     *
+     * @return {void}
+     * @protected
+     */
+    _initializeProperties() {
+      if (this.__dataProto) {
+        this._initializeProtoProperties(this.__dataProto);
+        this.__dataProto = null;
+      }
+      super._initializeProperties();
+    }
+
+    /**
+     * Called at instance time with bag of properties that were overwritten
+     * by accessors on the prototype when accessors were created.
+     *
+     * The default implementation sets these properties back into the
+     * setter at instance time.  This method is provided as an override
+     * point for customizing or providing more efficient initialization.
+     *
+     * @param {Object} props Bag of property values that were overwritten
+     *   when creating property accessors.
+     * @return {void}
+     * @protected
+     */
+    _initializeProtoProperties(props) {
+      for (let p in props) {
+        this._setProperty(p, props[p]);
+      }
+    }
+
+    /**
+     * Ensures the element has the given attribute. If it does not,
+     * assigns the given value to the attribute.
+     *
+     * @suppress {invalidCasts} Closure can't figure out `this` is infact an element
+     *
+     * @param {string} attribute Name of attribute to ensure is set.
+     * @param {string} value of the attribute.
+     * @return {void}
+     */
+    _ensureAttribute(attribute, value) {
+      const el = /** @type {!HTMLElement} */(this);
+      if (!el.hasAttribute(attribute)) {
+        this._valueToNodeAttribute(el, value, attribute);
+      }
+    }
+
+    /**
+     * Overrides PropertiesChanged implemention to serialize objects as JSON.
+     *
+     * @param {*} value Property value to serialize.
+     * @return {string | undefined} String serialized from the provided property value.
+     */
+    _serializeValue(value) {
+      /* eslint-disable no-fallthrough */
+      switch (typeof value) {
+        case 'object':
+          if (value instanceof Date) {
+            return value.toString();
+          } else if (value) {
+            try {
+              return JSON.stringify(value);
+            } catch(x) {
+              return '';
+            }
+          }
+
+        default:
+          return super._serializeValue(value);
+      }
+    }
+
+    /**
+     * Converts a string to a typed JavaScript value.
+     *
+     * This method is called by Polymer when reading HTML attribute values to
+     * JS properties.  Users may override this method on Polymer element
+     * prototypes to provide deserialization for custom `type`s.  Note,
+     * the `type` argument is the value of the `type` field provided in the
+     * `properties` configuration object for a given property, and is
+     * by convention the constructor for the type to deserialize.
+     *
+     *
+     * @param {?string} value Attribute value to deserialize.
+     * @param {*=} type Type to deserialize the string to.
+     * @return {*} Typed value deserialized from the provided string.
+     */
+    _deserializeValue(value, type) {
+      /**
+       * @type {*}
+       */
+      let outValue;
+      switch (type) {
+        case Object:
+          try {
+            outValue = JSON.parse(/** @type {string} */(value));
+          } catch(x) {
+            // allow non-JSON literals like Strings and Numbers
+            outValue = value;
+          }
+          break;
+        case Array:
+          try {
+            outValue = JSON.parse(/** @type {string} */(value));
+          } catch(x) {
+            outValue = null;
+            console.warn(`Polymer::Attributes: couldn't decode Array as JSON: ${value}`);
+          }
+          break;
+        case Date:
+          outValue = isNaN(value) ? String(value) : Number(value);
+          outValue = new Date(outValue);
+          break;
+        default:
+          outValue = super._deserializeValue(value, type);
+          break;
+      }
+      return outValue;
+    }
+    /* eslint-enable no-fallthrough */
+
+    /**
+     * Overrides PropertiesChanged implementation to save existing prototype
+     * property value so that it can be reset.
+     * @param {string} property Name of the property
+     * @param {boolean=} readOnly When true, no setter is created
+     *
+     * When calling on a prototype, any overwritten values are saved in
+     * `__dataProto`, and it is up to the subclasser to decide how/when
+     * to set those properties back into the accessor.  When calling on an
+     * instance, the overwritten value is set via `_setPendingProperty`,
+     * and the user should call `_invalidateProperties` or `_flushProperties`
+     * for the values to take effect.
+     * @protected
+     * @return {void}
+     */
+    _definePropertyAccessor(property, readOnly) {
+      saveAccessorValue(this, property);
+      super._definePropertyAccessor(property, readOnly);
+    }
+
+    /**
+     * Returns true if this library created an accessor for the given property.
+     *
+     * @param {string} property Property name
+     * @return {boolean} True if an accessor was created
+     */
+    _hasAccessor(property) {
+      return this.__dataHasAccessor && this.__dataHasAccessor[property];
+    }
+
+    /**
+     * Returns true if the specified property has a pending change.
+     *
+     * @param {string} prop Property name
+     * @return {boolean} True if property has a pending change
+     * @protected
+     */
+    _isPropertyPending(prop) {
+      return Boolean(this.__dataPending && (prop in this.__dataPending));
+    }
+
+  }
+
+  return PropertyAccessors;
+
+});
+/* harmony export (immutable) */ __webpack_exports__["a"] = PropertyAccessors;
+
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_async_js__ = __webpack_require__(8);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+/** @const {!AsyncInterface} */
+const microtask = __WEBPACK_IMPORTED_MODULE_2__utils_async_js__["b" /* microTask */];
+
+/**
+ * Element class mixin that provides basic meta-programming for creating one
+ * or more property accessors (getter/setter pair) that enqueue an async
+ * (batched) `_propertiesChanged` callback.
+ *
+ * For basic usage of this mixin, call `MyClass.createProperties(props)`
+ * once at class definition time to create property accessors for properties
+ * named in props, implement `_propertiesChanged` to react as desired to
+ * property changes, and implement `static get observedAttributes()` and
+ * include lowercase versions of any property names that should be set from
+ * attributes. Last, call `this._enableProperties()` in the element's
+ * `connectedCallback` to enable the accessors.
+ *
+ * @mixinFunction
+ * @polymer
+ * @summary Element class mixin for reacting to property changes from
+ *   generated property accessors.
+ */
+const PropertiesChanged = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* dedupingMixin */])(
+    /**
+     * @template T
+     * @param {function(new:T)} superClass Class to apply mixin to.
+     * @return {function(new:T)} superClass with mixin applied.
+     */
+    (superClass) => {
+
+  /**
+   * @polymer
+   * @mixinClass
+   * @implements {Polymer_PropertiesChanged}
+   * @unrestricted
+   */
+  class PropertiesChanged extends superClass {
+
+    /**
+     * Creates property accessors for the given property names.
+     * @param {!Object} props Object whose keys are names of accessors.
+     * @return {void}
+     * @protected
+     */
+    static createProperties(props) {
+      const proto = this.prototype;
+      for (let prop in props) {
+        // don't stomp an existing accessor
+        if (!(prop in proto)) {
+          proto._createPropertyAccessor(prop);
+        }
+      }
+    }
+
+    /**
+     * Returns an attribute name that corresponds to the given property.
+     * The attribute name is the lowercased property name. Override to
+     * customize this mapping.
+     * @param {string} property Property to convert
+     * @return {string} Attribute name corresponding to the given property.
+     *
+     * @protected
+     */
+    static attributeNameForProperty(property) {
+      return property.toLowerCase();
+    }
+
+    /**
+     * Override point to provide a type to which to deserialize a value to
+     * a given property.
+     * @param {string} name Name of property
+     *
+     * @protected
+     */
+    static typeForProperty(name) { } //eslint-disable-line no-unused-vars
+
+    /**
+     * Creates a setter/getter pair for the named property with its own
+     * local storage.  The getter returns the value in the local storage,
+     * and the setter calls `_setProperty`, which updates the local storage
+     * for the property and enqueues a `_propertiesChanged` callback.
+     *
+     * This method may be called on a prototype or an instance.  Calling
+     * this method may overwrite a property value that already exists on
+     * the prototype/instance by creating the accessor.
+     *
+     * @param {string} property Name of the property
+     * @param {boolean=} readOnly When true, no setter is created; the
+     *   protected `_setProperty` function must be used to set the property
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _createPropertyAccessor(property, readOnly) {
+      this._addPropertyToAttributeMap(property);
+      if (!this.hasOwnProperty('__dataHasAccessor')) {
+        this.__dataHasAccessor = Object.assign({}, this.__dataHasAccessor);
+      }
+      if (!this.__dataHasAccessor[property]) {
+        this.__dataHasAccessor[property] = true;
+        this._definePropertyAccessor(property, readOnly);
+      }
+    }
+
+    /**
+     * Adds the given `property` to a map matching attribute names
+     * to property names, using `attributeNameForProperty`. This map is
+     * used when deserializing attribute values to properties.
+     *
+     * @param {string} property Name of the property
+     * @override
+     */
+    _addPropertyToAttributeMap(property) {
+      if (!this.hasOwnProperty('__dataAttributes')) {
+        this.__dataAttributes = Object.assign({}, this.__dataAttributes);
+      }
+      if (!this.__dataAttributes[property]) {
+        const attr = this.constructor.attributeNameForProperty(property);
+        this.__dataAttributes[attr] = property;
+      }
+    }
+
+    /**
+     * Defines a property accessor for the given property.
+     * @param {string} property Name of the property
+     * @param {boolean=} readOnly When true, no setter is created
+     * @return {void}
+     * @override
+     */
+     _definePropertyAccessor(property, readOnly) {
+      Object.defineProperty(this, property, {
+        /* eslint-disable valid-jsdoc */
+        /** @this {PropertiesChanged} */
+        get() {
+          return this._getProperty(property);
+        },
+        /** @this {PropertiesChanged} */
+        set: readOnly ? function () {} : function (value) {
+          this._setProperty(property, value);
+        }
+        /* eslint-enable */
+      });
+    }
+
+    constructor() {
+      super();
+      this.__dataEnabled = false;
+      this.__dataReady = false;
+      this.__dataInvalid = false;
+      this.__data = {};
+      this.__dataPending = null;
+      this.__dataOld = null;
+      this.__dataInstanceProps = null;
+      this.__serializing = false;
+      this._initializeProperties();
+    }
+
+    /**
+     * Lifecycle callback called when properties are enabled via
+     * `_enableProperties`.
+     *
+     * Users may override this function to implement behavior that is
+     * dependent on the element having its property data initialized, e.g.
+     * from defaults (initialized from `constructor`, `_initializeProperties`),
+     * `attributeChangedCallback`, or values propagated from host e.g. via
+     * bindings.  `super.ready()` must be called to ensure the data system
+     * becomes enabled.
+     *
+     * @return {void}
+     * @public
+     * @override
+     */
+    ready() {
+      this.__dataReady = true;
+      this._flushProperties();
+    }
+
+    /**
+     * Initializes the local storage for property accessors.
+     *
+     * Provided as an override point for performing any setup work prior
+     * to initializing the property accessor system.
+     *
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _initializeProperties() {
+      // Capture instance properties; these will be set into accessors
+      // during first flush. Don't set them here, since we want
+      // these to overwrite defaults/constructor assignments
+      for (let p in this.__dataHasAccessor) {
+        if (this.hasOwnProperty(p)) {
+          this.__dataInstanceProps = this.__dataInstanceProps || {};
+          this.__dataInstanceProps[p] = this[p];
+          delete this[p];
+        }
+      }
+    }
+
+    /**
+     * Called at ready time with bag of instance properties that overwrote
+     * accessors when the element upgraded.
+     *
+     * The default implementation sets these properties back into the
+     * setter at ready time.  This method is provided as an override
+     * point for customizing or providing more efficient initialization.
+     *
+     * @param {Object} props Bag of property values that were overwritten
+     *   when creating property accessors.
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _initializeInstanceProperties(props) {
+      Object.assign(this, props);
+    }
+
+    /**
+     * Updates the local storage for a property (via `_setPendingProperty`)
+     * and enqueues a `_proeprtiesChanged` callback.
+     *
+     * @param {string} property Name of the property
+     * @param {*} value Value to set
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _setProperty(property, value) {
+      if (this._setPendingProperty(property, value)) {
+        this._invalidateProperties();
+      }
+    }
+
+    /**
+     * Returns the value for the given property.
+     * @param {string} property Name of property
+     * @return {*} Value for the given property
+     * @protected
+     * @override
+     */
+    _getProperty(property) {
+      return this.__data[property];
+    }
+
+    /* eslint-disable no-unused-vars */
+    /**
+     * Updates the local storage for a property, records the previous value,
+     * and adds it to the set of "pending changes" that will be passed to the
+     * `_propertiesChanged` callback.  This method does not enqueue the
+     * `_propertiesChanged` callback.
+     *
+     * @param {string} property Name of the property
+     * @param {*} value Value to set
+     * @param {boolean=} ext Not used here; affordance for closure
+     * @return {boolean} Returns true if the property changed
+     * @protected
+     * @override
+     */
+    _setPendingProperty(property, value, ext) {
+      let old = this.__data[property];
+      let changed = this._shouldPropertyChange(property, value, old);
+      if (changed) {
+        if (!this.__dataPending) {
+          this.__dataPending = {};
+          this.__dataOld = {};
+        }
+        // Ensure old is captured from the last turn
+        if (this.__dataOld && !(property in this.__dataOld)) {
+          this.__dataOld[property] = old;
+        }
+        this.__data[property] = value;
+        this.__dataPending[property] = value;
+      }
+      return changed;
+    }
+    /* eslint-enable */
+
+    /**
+     * Marks the properties as invalid, and enqueues an async
+     * `_propertiesChanged` callback.
+     *
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _invalidateProperties() {
+      if (!this.__dataInvalid && this.__dataReady) {
+        this.__dataInvalid = true;
+        microtask.run(() => {
+          if (this.__dataInvalid) {
+            this.__dataInvalid = false;
+            this._flushProperties();
+          }
+        });
+      }
+    }
+
+    /**
+     * Call to enable property accessor processing. Before this method is
+     * called accessor values will be set but side effects are
+     * queued. When called, any pending side effects occur immediately.
+     * For elements, generally `connectedCallback` is a normal spot to do so.
+     * It is safe to call this method multiple times as it only turns on
+     * property accessors once.
+     *
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _enableProperties() {
+      if (!this.__dataEnabled) {
+        this.__dataEnabled = true;
+        if (this.__dataInstanceProps) {
+          this._initializeInstanceProperties(this.__dataInstanceProps);
+          this.__dataInstanceProps = null;
+        }
+        this.ready();
+      }
+    }
+
+    /**
+     * Calls the `_propertiesChanged` callback with the current set of
+     * pending changes (and old values recorded when pending changes were
+     * set), and resets the pending set of changes. Generally, this method
+     * should not be called in user code.
+     *
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _flushProperties() {
+      const props = this.__data;
+      const changedProps = this.__dataPending;
+      const old = this.__dataOld;
+      if (this._shouldPropertiesChange(props, changedProps, old)) {
+        this.__dataPending = null;
+        this.__dataOld = null;
+        this._propertiesChanged(props, changedProps, old);
+      }
+    }
+
+    /**
+     * Called in `_flushProperties` to determine if `_propertiesChanged`
+     * should be called. The default implementation returns true if
+     * properties are pending. Override to customize when
+     * `_propertiesChanged` is called.
+     * @param {!Object} currentProps Bag of all current accessor values
+     * @param {?Object} changedProps Bag of properties changed since the last
+     *   call to `_propertiesChanged`
+     * @param {?Object} oldProps Bag of previous values for each property
+     *   in `changedProps`
+     * @return {boolean} true if changedProps is truthy
+     * @override
+     */
+    _shouldPropertiesChange(currentProps, changedProps, oldProps) { // eslint-disable-line no-unused-vars
+      return Boolean(changedProps);
+    }
+
+    /**
+     * Callback called when any properties with accessors created via
+     * `_createPropertyAccessor` have been set.
+     *
+     * @param {!Object} currentProps Bag of all current accessor values
+     * @param {?Object} changedProps Bag of properties changed since the last
+     *   call to `_propertiesChanged`
+     * @param {?Object} oldProps Bag of previous values for each property
+     *   in `changedProps`
+     * @return {void}
+     * @protected
+     * @override
+     */
+    _propertiesChanged(currentProps, changedProps, oldProps) { // eslint-disable-line no-unused-vars
+    }
+
+    /**
+     * Method called to determine whether a property value should be
+     * considered as a change and cause the `_propertiesChanged` callback
+     * to be enqueued.
+     *
+     * The default implementation returns `true` if a strict equality
+     * check fails. The method always returns false for `NaN`.
+     *
+     * Override this method to e.g. provide stricter checking for
+     * Objects/Arrays when using immutable patterns.
+     *
+     * @param {string} property Property name
+     * @param {*} value New property value
+     * @param {*} old Previous property value
+     * @return {boolean} Whether the property should be considered a change
+     *   and enqueue a `_proeprtiesChanged` callback
+     * @protected
+     * @override
+     */
+    _shouldPropertyChange(property, value, old) {
+      return (
+        // Strict equality check
+        (old !== value &&
+          // This ensures (old==NaN, value==NaN) always returns false
+          (old === old || value === value))
+      );
+    }
+
+    /**
+     * Implements native Custom Elements `attributeChangedCallback` to
+     * set an attribute value to a property via `_attributeToProperty`.
+     *
+     * @param {string} name Name of attribute that changed
+     * @param {?string} old Old attribute value
+     * @param {?string} value New attribute value
+     * @param {?string} namespace Attribute namespace.
+     * @return {void}
+     * @suppress {missingProperties} Super may or may not implement the callback
+     * @override
+     */
+    attributeChangedCallback(name, old, value, namespace) {
+      if (old !== value) {
+        this._attributeToProperty(name, value);
+      }
+      if (super.attributeChangedCallback) {
+        super.attributeChangedCallback(name, old, value, namespace);
+      }
+    }
+
+    /**
+     * Deserializes an attribute to its associated property.
+     *
+     * This method calls the `_deserializeValue` method to convert the string to
+     * a typed value.
+     *
+     * @param {string} attribute Name of attribute to deserialize.
+     * @param {?string} value of the attribute.
+     * @param {*=} type type to deserialize to, defaults to the value
+     * returned from `typeForProperty`
+     * @return {void}
+     * @override
+     */
+    _attributeToProperty(attribute, value, type) {
+      if (!this.__serializing) {
+        const map = this.__dataAttributes;
+        const property = map && map[attribute] || attribute;
+        this[property] = this._deserializeValue(value, type ||
+          this.constructor.typeForProperty(property));
+      }
+    }
+
+    /**
+     * Serializes a property to its associated attribute.
+     *
+     * @suppress {invalidCasts} Closure can't figure out `this` is an element.
+     *
+     * @param {string} property Property name to reflect.
+     * @param {string=} attribute Attribute name to reflect to.
+     * @param {*=} value Property value to refect.
+     * @return {void}
+     * @override
+     */
+    _propertyToAttribute(property, attribute, value) {
+      this.__serializing = true;
+      value = (arguments.length < 3) ? this[property] : value;
+      this._valueToNodeAttribute(/** @type {!HTMLElement} */(this), value,
+        attribute || this.constructor.attributeNameForProperty(property));
+      this.__serializing = false;
+    }
+
+    /**
+     * Sets a typed value to an HTML attribute on a node.
+     *
+     * This method calls the `_serializeValue` method to convert the typed
+     * value to a string.  If the `_serializeValue` method returns `undefined`,
+     * the attribute will be removed (this is the default for boolean
+     * type `false`).
+     *
+     * @param {Element} node Element to set attribute to.
+     * @param {*} value Value to serialize.
+     * @param {string} attribute Attribute name to serialize to.
+     * @return {void}
+     * @override
+     */
+    _valueToNodeAttribute(node, value, attribute) {
+      const str = this._serializeValue(value);
+      if (str === undefined) {
+        node.removeAttribute(attribute);
+      } else {
+        node.setAttribute(attribute, str);
+      }
+    }
+
+    /**
+     * Converts a typed JavaScript value to a string.
+     *
+     * This method is called when setting JS property values to
+     * HTML attributes.  Users may override this method to provide
+     * serialization for custom types.
+     *
+     * @param {*} value Property value to serialize.
+     * @return {string | undefined} String serialized from the provided
+     * property  value.
+     * @override
+     */
+    _serializeValue(value) {
+      switch (typeof value) {
+        case 'boolean':
+          return value ? '' : undefined;
+        default:
+          return value != null ? value.toString() : undefined;
+      }
+    }
+
+    /**
+     * Converts a string to a typed JavaScript value.
+     *
+     * This method is called when reading HTML attribute values to
+     * JS properties.  Users may override this method to provide
+     * deserialization for custom `type`s. Types for `Boolean`, `String`,
+     * and `Number` convert attributes to the expected types.
+     *
+     * @param {?string} value Value to deserialize.
+     * @param {*=} type Type to deserialize the string to.
+     * @return {*} Typed value deserialized from the provided string.
+     * @override
+     */
+    _deserializeValue(value, type) {
+      switch (type) {
+        case Boolean:
+          return (value !== null);
+        case Number:
+          return Number(value);
+        default:
+          return value;
+      }
+    }
+
+  }
+
+  return PropertiesChanged;
+});
+/* harmony export (immutable) */ __webpack_exports__["a"] = PropertiesChanged;
+
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export _scrollTimer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/**
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+const _scrollEffects = {};
+/* harmony export (immutable) */ __webpack_exports__["a"] = _scrollEffects;
+
+let _scrollTimer = null;
+
+const scrollTimingFunction = function easeOutQuad(t, b, c, d) {
+  t /= d;
+  return -c * t * (t - 2) + b;
+};
+/* unused harmony export scrollTimingFunction */
+
+
+/**
+ * Registers a scroll effect to be used in elements that implement the
+ * `Polymer.AppScrollEffectsBehavior` behavior.
+ *
+ * @param {string} effectName The effect name.
+ * @param {Object} effectDef The effect definition.
+ */
+const registerEffect = function registerEffect(effectName, effectDef) {
+  if (_scrollEffects[effectName] != null) {
+    throw new Error('effect `' + effectName + '` is already registered.');
+  }
+  _scrollEffects[effectName] = effectDef;
+};
+/* unused harmony export registerEffect */
+
+
+const queryAllRoot = function(selector, root) {
+  var queue = [root];
+  var matches = [];
+
+  while (queue.length > 0) {
+    var node = queue.shift();
+    matches.push.apply(matches, node.querySelectorAll(selector));
+    for (var i = 0; node.children[i]; i++) {
+      if (node.children[i].shadowRoot) {
+        queue.push(node.children[i].shadowRoot);
+      }
+    }
+  }
+  return matches;
+};
+/* unused harmony export queryAllRoot */
+
+
+/**
+ * Scrolls to a particular set of coordinates in a scroll target.
+ * If the scroll target is not defined, then it would use the main document as
+ * the target.
+ *
+ * To scroll in a smooth fashion, you can set the option `behavior: 'smooth'`.
+ * e.g.
+ *
+ * ```js
+ * Polymer.AppLayout.scroll({top: 0, behavior: 'smooth'});
+ * ```
+ *
+ * To scroll in a silent mode, without notifying scroll changes to any
+ * app-layout elements, you can set the option `behavior: 'silent'`. This is
+ * particularly useful we you are using `app-header` and you desire to scroll to
+ * the top of a scrolling region without running scroll effects. e.g.
+ *
+ * ```js
+ * Polymer.AppLayout.scroll({top: 0, behavior: 'silent'});
+ * ```
+ *
+ * @param {Object} options {top: Number, left: Number, behavior: String(smooth | silent)}
+ */
+const scroll = function scroll(options) {
+  options = options || {};
+
+  var docEl = document.documentElement;
+  var target = options.target || docEl;
+  var hasNativeScrollBehavior =
+      'scrollBehavior' in target.style && target.scroll;
+  var scrollClassName = 'app-layout-silent-scroll';
+  var scrollTop = options.top || 0;
+  var scrollLeft = options.left || 0;
+  var scrollTo = target === docEl ? window.scrollTo :
+                                    function scrollTo(scrollLeft, scrollTop) {
+                                      target.scrollLeft = scrollLeft;
+                                      target.scrollTop = scrollTop;
+                                    };
+
+  if (options.behavior === 'smooth') {
+    if (hasNativeScrollBehavior) {
+      target.scroll(options);
+
+    } else {
+      var timingFn = scrollTimingFunction;
+      var startTime = Date.now();
+      var currentScrollTop =
+          target === docEl ? window.pageYOffset : target.scrollTop;
+      var currentScrollLeft =
+          target === docEl ? window.pageXOffset : target.scrollLeft;
+      var deltaScrollTop = scrollTop - currentScrollTop;
+      var deltaScrollLeft = scrollLeft - currentScrollLeft;
+      var duration = 300;
+      var updateFrame =
+          (function updateFrame() {
+            var now = Date.now();
+            var elapsedTime = now - startTime;
+
+            if (elapsedTime < duration) {
+              scrollTo(
+                  timingFn(
+                      elapsedTime,
+                      currentScrollLeft,
+                      deltaScrollLeft,
+                      duration),
+                  timingFn(
+                      elapsedTime, currentScrollTop, deltaScrollTop, duration));
+              requestAnimationFrame(updateFrame);
+            } else {
+              scrollTo(scrollLeft, scrollTop);
+            }
+          }).bind(this);
+
+      updateFrame();
+    }
+
+  } else if (options.behavior === 'silent') {
+    var headers = queryAllRoot('app-header', document.body);
+
+    headers.forEach(function(header) {
+      header.setAttribute('silent-scroll', '');
+    });
+
+    // Browsers keep the scroll momentum even if the bottom of the scrolling
+    // content was reached. This means that calling scroll({top: 0, behavior:
+    // 'silent'}) when the momentum is still going will result in more scroll
+    // events and thus scroll effects. This seems to only apply when using
+    // document scrolling. Therefore, when should we remove the class from the
+    // document element?
+
+    if (_scrollTimer) {
+      window.cancelAnimationFrame(_scrollTimer);
+    }
+
+    _scrollTimer = window.requestAnimationFrame(function() {
+      headers.forEach(function(header) {
+        header.removeAttribute('silent-scroll');
+      });
+      _scrollTimer = null;
+    });
+
+    scrollTo(scrollLeft, scrollTop);
+
+  } else {
+    scrollTo(scrollLeft, scrollTop);
+  }
+};
+/* unused harmony export scroll */
+
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__webcomponents_shadycss_entrypoints_apply_shim_js__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_element_mixin_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_gesture_event_listeners_js__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_dir_mixin_js__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_render_status_js__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_unresolved_js__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_gestures_js__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_debounce_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_async_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_path_js__ = __webpack_require__(12);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let styleInterface = window.ShadyCSS;
+
+/**
+ * Element class mixin that provides Polymer's "legacy" API intended to be
+ * backward-compatible to the greatest extent possible with the API
+ * found on the Polymer 1.x `Polymer.Base` prototype applied to all elements
+ * defined using the `Polymer({...})` function.
+ *
+ * @mixinFunction
+ * @polymer
+ * @appliesMixin ElementMixin
+ * @appliesMixin GestureEventListeners
+ * @property isAttached {boolean} Set to `true` in this element's
+ *   `connectedCallback` and `false` in `disconnectedCallback`
+ * @summary Element class mixin that provides Polymer's "legacy" API
+ */
+const LegacyElementMixin = Object(__WEBPACK_IMPORTED_MODULE_4__utils_mixin_js__["a" /* dedupingMixin */])((base) => {
+
+  /**
+   * @constructor
+   * @extends {base}
+   * @implements {Polymer_ElementMixin}
+   * @implements {Polymer_GestureEventListeners}
+   * @implements {Polymer_DirMixin}
+   * @private
+   */
+  const legacyElementBase = Object(__WEBPACK_IMPORTED_MODULE_3__mixins_dir_mixin_js__["a" /* DirMixin */])(Object(__WEBPACK_IMPORTED_MODULE_2__mixins_gesture_event_listeners_js__["a" /* GestureEventListeners */])(Object(__WEBPACK_IMPORTED_MODULE_1__mixins_element_mixin_js__["a" /* ElementMixin */])(base)));
+
+  /**
+   * Map of simple names to touch action names
+   * @dict
+   */
+  const DIRECTION_MAP = {
+    'x': 'pan-x',
+    'y': 'pan-y',
+    'none': 'none',
+    'all': 'auto'
+  };
+
+  /**
+   * @polymer
+   * @mixinClass
+   * @extends {legacyElementBase}
+   * @implements {Polymer_LegacyElementMixin}
+   * @unrestricted
+   */
+  class LegacyElement extends legacyElementBase {
+
+    constructor() {
+      super();
+      /** @type {boolean} */
+      this.isAttached;
+      /** @type {WeakMap<!Element, !Object<string, !Function>>} */
+      this.__boundListeners;
+      /** @type {Object<string, Function>} */
+      this._debouncers;
+      // Ensure listeners are applied immediately so that they are
+      // added before declarative event listeners. This allows an element to
+      // decorate itself via an event prior to any declarative listeners
+      // seeing the event. Note, this ensures compatibility with 1.x ordering.
+      this._applyListeners();
+    }
+
+    /**
+     * Forwards `importMeta` from the prototype (i.e. from the info object
+     * passed to `Polymer({...})`) to the static API.
+     *
+     * @return {!Object} The `import.meta` object set on the prototype
+     * @suppress {missingProperties} `this` is always in the instance in
+     *  closure for some reason even in a static method, rather than the class
+     */
+    static get importMeta() {
+      return this.prototype.importMeta;
+    }
+
+    /**
+     * Legacy callback called during the `constructor`, for overriding
+     * by the user.
+     * @return {void}
+     */
+    created() {}
+
+    /**
+     * Provides an implementation of `connectedCallback`
+     * which adds Polymer legacy API's `attached` method.
+     * @return {void}
+     * @override
+     */
+    connectedCallback() {
+      super.connectedCallback();
+      this.isAttached = true;
+      this.attached();
+    }
+
+    /**
+     * Legacy callback called during `connectedCallback`, for overriding
+     * by the user.
+     * @return {void}
+     */
+    attached() {}
+
+    /**
+     * Provides an implementation of `disconnectedCallback`
+     * which adds Polymer legacy API's `detached` method.
+     * @return {void}
+     * @override
+     */
+    disconnectedCallback() {
+      super.disconnectedCallback();
+      this.isAttached = false;
+      this.detached();
+    }
+
+    /**
+     * Legacy callback called during `disconnectedCallback`, for overriding
+     * by the user.
+     * @return {void}
+     */
+    detached() {}
+
+    /**
+     * Provides an override implementation of `attributeChangedCallback`
+     * which adds the Polymer legacy API's `attributeChanged` method.
+     * @param {string} name Name of attribute.
+     * @param {?string} old Old value of attribute.
+     * @param {?string} value Current value of attribute.
+     * @param {?string} namespace Attribute namespace.
+     * @return {void}
+     * @override
+     */
+    attributeChangedCallback(name, old, value, namespace) {
+      if (old !== value) {
+        super.attributeChangedCallback(name, old, value, namespace);
+        this.attributeChanged(name, old, value);
+      }
+    }
+
+    /**
+     * Legacy callback called during `attributeChangedChallback`, for overriding
+     * by the user.
+     * @param {string} name Name of attribute.
+     * @param {?string} old Old value of attribute.
+     * @param {?string} value Current value of attribute.
+     * @return {void}
+     */
+    attributeChanged(name, old, value) {} // eslint-disable-line no-unused-vars
+
+    /**
+     * Overrides the default `Polymer.PropertyEffects` implementation to
+     * add support for class initialization via the `_registered` callback.
+     * This is called only when the first instance of the element is created.
+     *
+     * @return {void}
+     * @override
+     * @suppress {invalidCasts}
+     */
+    _initializeProperties() {
+      let proto = Object.getPrototypeOf(this);
+      if (!proto.hasOwnProperty('__hasRegisterFinished')) {
+        proto.__hasRegisterFinished = true;
+        this._registered();
+      }
+      super._initializeProperties();
+      this.root = /** @type {HTMLElement} */(this);
+      this.created();
+    }
+
+    /**
+     * Called automatically when an element is initializing.
+     * Users may override this method to perform class registration time
+     * work. The implementation should ensure the work is performed
+     * only once for the class.
+     * @protected
+     * @return {void}
+     */
+    _registered() {}
+
+    /**
+     * Overrides the default `Polymer.PropertyEffects` implementation to
+     * add support for installing `hostAttributes` and `listeners`.
+     *
+     * @return {void}
+     * @override
+     */
+    ready() {
+      this._ensureAttributes();
+      super.ready();
+    }
+
+    /**
+     * Ensures an element has required attributes. Called when the element
+     * is being readied via `ready`. Users should override to set the
+     * element's required attributes. The implementation should be sure
+     * to check and not override existing attributes added by
+     * the user of the element. Typically, setting attributes should be left
+     * to the element user and not done here; reasonable exceptions include
+     * setting aria roles and focusability.
+     * @protected
+     * @return {void}
+     */
+    _ensureAttributes() {}
+
+    /**
+     * Adds element event listeners. Called when the element
+     * is being readied via `ready`. Users should override to
+     * add any required element event listeners.
+     * In performance critical elements, the work done here should be kept
+     * to a minimum since it is done before the element is rendered. In
+     * these elements, consider adding listeners asynchronously so as not to
+     * block render.
+     * @protected
+     * @return {void}
+     */
+    _applyListeners() {}
+
+    /**
+     * Converts a typed JavaScript value to a string.
+     *
+     * Note this method is provided as backward-compatible legacy API
+     * only.  It is not directly called by any Polymer features. To customize
+     * how properties are serialized to attributes for attribute bindings and
+     * `reflectToAttribute: true` properties as well as this method, override
+     * the `_serializeValue` method provided by `Polymer.PropertyAccessors`.
+     *
+     * @param {*} value Value to deserialize
+     * @return {string | undefined} Serialized value
+     */
+    serialize(value) {
+      return this._serializeValue(value);
+    }
+
+    /**
+     * Converts a string to a typed JavaScript value.
+     *
+     * Note this method is provided as backward-compatible legacy API
+     * only.  It is not directly called by any Polymer features.  To customize
+     * how attributes are deserialized to properties for in
+     * `attributeChangedCallback`, override `_deserializeValue` method
+     * provided by `Polymer.PropertyAccessors`.
+     *
+     * @param {string} value String to deserialize
+     * @param {*} type Type to deserialize the string to
+     * @return {*} Returns the deserialized value in the `type` given.
+     */
+    deserialize(value, type) {
+      return this._deserializeValue(value, type);
+    }
+
+    /**
+     * Serializes a property to its associated attribute.
+     *
+     * Note this method is provided as backward-compatible legacy API
+     * only.  It is not directly called by any Polymer features.
+     *
+     * @param {string} property Property name to reflect.
+     * @param {string=} attribute Attribute name to reflect.
+     * @param {*=} value Property value to reflect.
+     * @return {void}
+     */
+    reflectPropertyToAttribute(property, attribute, value) {
+      this._propertyToAttribute(property, attribute, value);
+    }
+
+    /**
+     * Sets a typed value to an HTML attribute on a node.
+     *
+     * Note this method is provided as backward-compatible legacy API
+     * only.  It is not directly called by any Polymer features.
+     *
+     * @param {*} value Value to serialize.
+     * @param {string} attribute Attribute name to serialize to.
+     * @param {Element} node Element to set attribute to.
+     * @return {void}
+     */
+    serializeValueToAttribute(value, attribute, node) {
+      this._valueToNodeAttribute(/** @type {Element} */ (node || this), value, attribute);
+    }
+
+    /**
+     * Copies own properties (including accessor descriptors) from a source
+     * object to a target object.
+     *
+     * @param {Object} prototype Target object to copy properties to.
+     * @param {Object} api Source object to copy properties from.
+     * @return {Object} prototype object that was passed as first argument.
+     */
+    extend(prototype, api) {
+      if (!(prototype && api)) {
+        return prototype || api;
+      }
+      let n$ = Object.getOwnPropertyNames(api);
+      for (let i=0, n; (i<n$.length) && (n=n$[i]); i++) {
+        let pd = Object.getOwnPropertyDescriptor(api, n);
+        if (pd) {
+          Object.defineProperty(prototype, n, pd);
+        }
+      }
+      return prototype;
+    }
+
+    /**
+     * Copies props from a source object to a target object.
+     *
+     * Note, this method uses a simple `for...in` strategy for enumerating
+     * properties.  To ensure only `ownProperties` are copied from source
+     * to target and that accessor implementations are copied, use `extend`.
+     *
+     * @param {!Object} target Target object to copy properties to.
+     * @param {!Object} source Source object to copy properties from.
+     * @return {!Object} Target object that was passed as first argument.
+     */
+    mixin(target, source) {
+      for (let i in source) {
+        target[i] = source[i];
+      }
+      return target;
+    }
+
+    /**
+     * Sets the prototype of an object.
+     *
+     * Note this method is provided as backward-compatible legacy API
+     * only.  It is not directly called by any Polymer features.
+     * @param {Object} object The object on which to set the prototype.
+     * @param {Object} prototype The prototype that will be set on the given
+     * `object`.
+     * @return {Object} Returns the given `object` with its prototype set
+     * to the given `prototype` object.
+     */
+    chainObject(object, prototype) {
+      if (object && prototype && object !== prototype) {
+        object.__proto__ = prototype;
+      }
+      return object;
+    }
+
+    /* **** Begin Template **** */
+
+    /**
+     * Calls `importNode` on the `content` of the `template` specified and
+     * returns a document fragment containing the imported content.
+     *
+     * @param {HTMLTemplateElement} template HTML template element to instance.
+     * @return {!DocumentFragment} Document fragment containing the imported
+     *   template content.
+    */
+    instanceTemplate(template) {
+      let content = this.constructor._contentForTemplate(template);
+      let dom = /** @type {!DocumentFragment} */
+        (document.importNode(content, true));
+      return dom;
+    }
+
+    /* **** Begin Events **** */
+
+
+
+    /**
+     * Dispatches a custom event with an optional detail value.
+     *
+     * @param {string} type Name of event type.
+     * @param {*=} detail Detail value containing event-specific
+     *   payload.
+     * @param {{ bubbles: (boolean|undefined), cancelable: (boolean|undefined), composed: (boolean|undefined) }=}
+     *  options Object specifying options.  These may include:
+     *  `bubbles` (boolean, defaults to `true`),
+     *  `cancelable` (boolean, defaults to false), and
+     *  `node` on which to fire the event (HTMLElement, defaults to `this`).
+     * @return {!Event} The new event that was fired.
+     */
+    fire(type, detail, options) {
+      options = options || {};
+      detail = (detail === null || detail === undefined) ? {} : detail;
+      let event = new Event(type, {
+        bubbles: options.bubbles === undefined ? true : options.bubbles,
+        cancelable: Boolean(options.cancelable),
+        composed: options.composed === undefined ? true: options.composed
+      });
+      event.detail = detail;
+      let node = options.node || this;
+      node.dispatchEvent(event);
+      return event;
+    }
+
+    /**
+     * Convenience method to add an event listener on a given element,
+     * late bound to a named method on this element.
+     *
+     * @param {?EventTarget} node Element to add event listener to.
+     * @param {string} eventName Name of event to listen for.
+     * @param {string} methodName Name of handler method on `this` to call.
+     * @return {void}
+     */
+    listen(node, eventName, methodName) {
+      node = /** @type {!EventTarget} */ (node || this);
+      let hbl = this.__boundListeners ||
+        (this.__boundListeners = new WeakMap());
+      let bl = hbl.get(node);
+      if (!bl) {
+        bl = {};
+        hbl.set(node, bl);
+      }
+      let key = eventName + methodName;
+      if (!bl[key]) {
+        bl[key] = this._addMethodEventListenerToNode(
+          node, eventName, methodName, this);
+      }
+    }
+
+    /**
+     * Convenience method to remove an event listener from a given element,
+     * late bound to a named method on this element.
+     *
+     * @param {?EventTarget} node Element to remove event listener from.
+     * @param {string} eventName Name of event to stop listening to.
+     * @param {string} methodName Name of handler method on `this` to not call
+     anymore.
+     * @return {void}
+     */
+    unlisten(node, eventName, methodName) {
+      node = /** @type {!EventTarget} */ (node || this);
+      let bl = this.__boundListeners && this.__boundListeners.get(node);
+      let key = eventName + methodName;
+      let handler = bl && bl[key];
+      if (handler) {
+        this._removeEventListenerFromNode(node, eventName, handler);
+        bl[key] = null;
+      }
+    }
+
+    /**
+     * Override scrolling behavior to all direction, one direction, or none.
+     *
+     * Valid scroll directions:
+     *   - 'all': scroll in any direction
+     *   - 'x': scroll only in the 'x' direction
+     *   - 'y': scroll only in the 'y' direction
+     *   - 'none': disable scrolling for this node
+     *
+     * @param {string=} direction Direction to allow scrolling
+     * Defaults to `all`.
+     * @param {Element=} node Element to apply scroll direction setting.
+     * Defaults to `this`.
+     * @return {void}
+     */
+    setScrollDirection(direction, node) {
+      Object(__WEBPACK_IMPORTED_MODULE_8__utils_gestures_js__["c" /* setTouchAction */])(/** @type {Element} */ (node || this), DIRECTION_MAP[direction] || 'auto');
+    }
+    /* **** End Events **** */
+
+    /**
+     * Convenience method to run `querySelector` on this local DOM scope.
+     *
+     * This function calls `Polymer.dom(this.root).querySelector(slctr)`.
+     *
+     * @param {string} slctr Selector to run on this local DOM scope
+     * @return {Element} Element found by the selector, or null if not found.
+     */
+    $$(slctr) {
+      return this.root.querySelector(slctr);
+    }
+
+    /**
+     * Return the element whose local dom within which this element
+     * is contained. This is a shorthand for
+     * `this.getRootNode().host`.
+     * @this {Element}
+     */
+    get domHost() {
+      let root = this.getRootNode();
+      return (root instanceof DocumentFragment) ? /** @type {ShadowRoot} */ (root).host : root;
+    }
+
+    /**
+     * Force this element to distribute its children to its local dom.
+     * This should not be necessary as of Polymer 2.0.2 and is provided only
+     * for backwards compatibility.
+     * @return {void}
+     */
+    distributeContent() {
+      if (window.ShadyDOM && this.shadowRoot) {
+        ShadyDOM.flush();
+      }
+    }
+
+    /**
+     * Returns a list of nodes that are the effective childNodes. The effective
+     * childNodes list is the same as the element's childNodes except that
+     * any `<content>` elements are replaced with the list of nodes distributed
+     * to the `<content>`, the result of its `getDistributedNodes` method.
+     * @return {!Array<!Node>} List of effective child nodes.
+     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
+     */
+    getEffectiveChildNodes() {
+      const thisEl = /** @type {Element} */ (this);
+      const domApi = /** @type {DomApi} */(Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["a" /* dom */])(thisEl));
+      return domApi.getEffectiveChildNodes();
+    }
+
+    /**
+     * Returns a list of nodes distributed within this element that match
+     * `selector`. These can be dom children or elements distributed to
+     * children that are insertion points.
+     * @param {string} selector Selector to run.
+     * @return {!Array<!Node>} List of distributed elements that match selector.
+     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
+     */
+    queryDistributedElements(selector) {
+      const thisEl = /** @type {Element} */ (this);
+      const domApi = /** @type {DomApi} */(Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["a" /* dom */])(thisEl));
+      return domApi.queryDistributedElements(selector);
+    }
+
+    /**
+     * Returns a list of elements that are the effective children. The effective
+     * children list is the same as the element's children except that
+     * any `<content>` elements are replaced with the list of elements
+     * distributed to the `<content>`.
+     *
+     * @return {!Array<!Node>} List of effective children.
+     */
+    getEffectiveChildren() {
+      let list = this.getEffectiveChildNodes();
+      return list.filter(function(/** @type {!Node} */ n) {
+        return (n.nodeType === Node.ELEMENT_NODE);
+      });
+    }
+
+    /**
+     * Returns a string of text content that is the concatenation of the
+     * text content's of the element's effective childNodes (the elements
+     * returned by <a href="#getEffectiveChildNodes>getEffectiveChildNodes</a>.
+     *
+     * @return {string} List of effective children.
+     */
+    getEffectiveTextContent() {
+      let cn = this.getEffectiveChildNodes();
+      let tc = [];
+      for (let i=0, c; (c = cn[i]); i++) {
+        if (c.nodeType !== Node.COMMENT_NODE) {
+          tc.push(c.textContent);
+        }
+      }
+      return tc.join('');
+    }
+
+    /**
+     * Returns the first effective childNode within this element that
+     * match `selector`. These can be dom child nodes or elements distributed
+     * to children that are insertion points.
+     * @param {string} selector Selector to run.
+     * @return {Node} First effective child node that matches selector.
+     */
+    queryEffectiveChildren(selector) {
+      let e$ = this.queryDistributedElements(selector);
+      return e$ && e$[0];
+    }
+
+    /**
+     * Returns a list of effective childNodes within this element that
+     * match `selector`. These can be dom child nodes or elements distributed
+     * to children that are insertion points.
+     * @param {string} selector Selector to run.
+     * @return {!Array<!Node>} List of effective child nodes that match selector.
+     */
+    queryAllEffectiveChildren(selector) {
+      return this.queryDistributedElements(selector);
+    }
+
+    /**
+     * Returns a list of nodes distributed to this element's `<slot>`.
+     *
+     * If this element contains more than one `<slot>` in its local DOM,
+     * an optional selector may be passed to choose the desired content.
+     *
+     * @param {string=} slctr CSS selector to choose the desired
+     *   `<slot>`.  Defaults to `content`.
+     * @return {!Array<!Node>} List of distributed nodes for the `<slot>`.
+     */
+    getContentChildNodes(slctr) {
+      let content = this.root.querySelector(slctr || 'slot');
+      return content ? /** @type {DomApi} */(Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["a" /* dom */])(content)).getDistributedNodes() : [];
+    }
+
+    /**
+     * Returns a list of element children distributed to this element's
+     * `<slot>`.
+     *
+     * If this element contains more than one `<slot>` in its
+     * local DOM, an optional selector may be passed to choose the desired
+     * content.  This method differs from `getContentChildNodes` in that only
+     * elements are returned.
+     *
+     * @param {string=} slctr CSS selector to choose the desired
+     *   `<content>`.  Defaults to `content`.
+     * @return {!Array<!HTMLElement>} List of distributed nodes for the
+     *   `<slot>`.
+     * @suppress {invalidCasts}
+     */
+    getContentChildren(slctr) {
+      let children = /** @type {!Array<!HTMLElement>} */(this.getContentChildNodes(slctr).filter(function(n) {
+        return (n.nodeType === Node.ELEMENT_NODE);
+      }));
+      return children;
+    }
+
+    /**
+     * Checks whether an element is in this element's light DOM tree.
+     *
+     * @param {?Node} node The element to be checked.
+     * @return {boolean} true if node is in this element's light DOM tree.
+     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
+     */
+    isLightDescendant(node) {
+      const thisNode = /** @type {Node} */ (this);
+      return thisNode !== node && thisNode.contains(node) &&
+        thisNode.getRootNode() === node.getRootNode();
+    }
+
+    /**
+     * Checks whether an element is in this element's local DOM tree.
+     *
+     * @param {!Element} node The element to be checked.
+     * @return {boolean} true if node is in this element's local DOM tree.
+     */
+    isLocalDescendant(node) {
+      return this.root === node.getRootNode();
+    }
+
+    /**
+     * No-op for backwards compatibility. This should now be handled by
+     * ShadyCss library.
+     * @param  {*} container Unused
+     * @param  {*} shouldObserve Unused
+     * @return {void}
+     */
+    scopeSubtree(container, shouldObserve) { // eslint-disable-line no-unused-vars
+    }
+
+    /**
+     * Returns the computed style value for the given property.
+     * @param {string} property The css property name.
+     * @return {string} Returns the computed css property value for the given
+     * `property`.
+     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
+     */
+    getComputedStyleValue(property) {
+      return styleInterface.getComputedStyleValue(/** @type {!Element} */(this), property);
+    }
+
+    // debounce
+
+    /**
+     * Call `debounce` to collapse multiple requests for a named task into
+     * one invocation which is made after the wait time has elapsed with
+     * no new request.  If no wait time is given, the callback will be called
+     * at microtask timing (guaranteed before paint).
+     *
+     *     debouncedClickAction(e) {
+     *       // will not call `processClick` more than once per 100ms
+     *       this.debounce('click', function() {
+     *        this.processClick();
+     *       } 100);
+     *     }
+     *
+     * @param {string} jobName String to identify the debounce job.
+     * @param {function():void} callback Function that is called (with `this`
+     *   context) when the wait time elapses.
+     * @param {number} wait Optional wait time in milliseconds (ms) after the
+     *   last signal that must elapse before invoking `callback`
+     * @return {!Object} Returns a debouncer object on which exists the
+     * following methods: `isActive()` returns true if the debouncer is
+     * active; `cancel()` cancels the debouncer if it is active;
+     * `flush()` immediately invokes the debounced callback if the debouncer
+     * is active.
+     */
+    debounce(jobName, callback, wait) {
+      this._debouncers = this._debouncers || {};
+      return this._debouncers[jobName] = __WEBPACK_IMPORTED_MODULE_9__utils_debounce_js__["a" /* Debouncer */].debounce(
+            this._debouncers[jobName]
+          , wait > 0 ? __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["c" /* timeOut */].after(wait) : __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["b" /* microTask */]
+          , callback.bind(this));
+    }
+
+    /**
+     * Returns whether a named debouncer is active.
+     *
+     * @param {string} jobName The name of the debouncer started with `debounce`
+     * @return {boolean} Whether the debouncer is active (has not yet fired).
+     */
+    isDebouncerActive(jobName) {
+      this._debouncers = this._debouncers || {};
+      let debouncer = this._debouncers[jobName];
+      return !!(debouncer && debouncer.isActive());
+    }
+
+    /**
+     * Immediately calls the debouncer `callback` and inactivates it.
+     *
+     * @param {string} jobName The name of the debouncer started with `debounce`
+     * @return {void}
+     */
+    flushDebouncer(jobName) {
+      this._debouncers = this._debouncers || {};
+      let debouncer = this._debouncers[jobName];
+      if (debouncer) {
+        debouncer.flush();
+      }
+    }
+
+    /**
+     * Cancels an active debouncer.  The `callback` will not be called.
+     *
+     * @param {string} jobName The name of the debouncer started with `debounce`
+     * @return {void}
+     */
+    cancelDebouncer(jobName) {
+      this._debouncers = this._debouncers || {};
+      let debouncer = this._debouncers[jobName];
+      if (debouncer) {
+        debouncer.cancel();
+      }
+    }
+
+    /**
+     * Runs a callback function asynchronously.
+     *
+     * By default (if no waitTime is specified), async callbacks are run at
+     * microtask timing, which will occur before paint.
+     *
+     * @param {!Function} callback The callback function to run, bound to `this`.
+     * @param {number=} waitTime Time to wait before calling the
+     *   `callback`.  If unspecified or 0, the callback will be run at microtask
+     *   timing (before paint).
+     * @return {number} Handle that may be used to cancel the async job.
+     */
+    async(callback, waitTime) {
+      return waitTime > 0 ? __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["c" /* timeOut */].run(callback.bind(this), waitTime) :
+          ~__WEBPACK_IMPORTED_MODULE_10__utils_async_js__["b" /* microTask */].run(callback.bind(this));
+    }
+
+    /**
+     * Cancels an async operation started with `async`.
+     *
+     * @param {number} handle Handle returned from original `async` call to
+     *   cancel.
+     * @return {void}
+     */
+    cancelAsync(handle) {
+      handle < 0 ? __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["b" /* microTask */].cancel(~handle) :
+          __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["c" /* timeOut */].cancel(handle);
+    }
+
+    // other
+
+    /**
+     * Convenience method for creating an element and configuring it.
+     *
+     * @param {string} tag HTML element tag to create.
+     * @param {Object=} props Object of properties to configure on the
+     *    instance.
+     * @return {!Element} Newly created and configured element.
+     */
+    create(tag, props) {
+      let elt = document.createElement(tag);
+      if (props) {
+        if (elt.setProperties) {
+          elt.setProperties(props);
+        } else {
+          for (let n in props) {
+            elt[n] = props[n];
+          }
+        }
+      }
+      return elt;
+    }
+
+    /**
+     * Polyfill for Element.prototype.matches, which is sometimes still
+     * prefixed.
+     *
+     * @param {string} selector Selector to test.
+     * @param {!Element=} node Element to test the selector against.
+     * @return {boolean} Whether the element matches the selector.
+     */
+    elementMatches(selector, node) {
+      return Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["b" /* matchesSelector */])( (node || this), selector);
+    }
+
+    /**
+     * Toggles an HTML attribute on or off.
+     *
+     * @param {string} name HTML attribute name
+     * @param {boolean=} bool Boolean to force the attribute on or off.
+     *    When unspecified, the state of the attribute will be reversed.
+     * @return {boolean} true if the attribute now exists
+     */
+    toggleAttribute(name, bool) {
+      let node = /** @type {Element} */ this;
+      if (arguments.length === 3) {
+        node = /** @type {Element} */ arguments[2];
+      }
+      if (arguments.length == 1) {
+        bool = !node.hasAttribute(name);
+      }
+      if (bool) {
+        node.setAttribute(name, '');
+        return true;
+      } else {
+        node.removeAttribute(name);
+        return false;
+      }
+    }
+
+
+    /**
+     * Toggles a CSS class on or off.
+     *
+     * @param {string} name CSS class name
+     * @param {boolean=} bool Boolean to force the class on or off.
+     *    When unspecified, the state of the class will be reversed.
+     * @param {Element=} node Node to target.  Defaults to `this`.
+     * @return {void}
+     */
+    toggleClass(name, bool, node) {
+      node = /** @type {Element} */ (node || this);
+      if (arguments.length == 1) {
+        bool = !node.classList.contains(name);
+      }
+      if (bool) {
+        node.classList.add(name);
+      } else {
+        node.classList.remove(name);
+      }
+    }
+
+    /**
+     * Cross-platform helper for setting an element's CSS `transform` property.
+     *
+     * @param {string} transformText Transform setting.
+     * @param {Element=} node Element to apply the transform to.
+     * Defaults to `this`
+     * @return {void}
+     */
+    transform(transformText, node) {
+      node = /** @type {Element} */ (node || this);
+      node.style.webkitTransform = transformText;
+      node.style.transform = transformText;
+    }
+
+    /**
+     * Cross-platform helper for setting an element's CSS `translate3d`
+     * property.
+     *
+     * @param {number} x X offset.
+     * @param {number} y Y offset.
+     * @param {number} z Z offset.
+     * @param {Element=} node Element to apply the transform to.
+     * Defaults to `this`.
+     * @return {void}
+     */
+    translate3d(x, y, z, node) {
+      node = /** @type {Element} */ (node || this);
+      this.transform('translate3d(' + x + ',' + y + ',' + z + ')', node);
+    }
+
+    /**
+     * Removes an item from an array, if it exists.
+     *
+     * If the array is specified by path, a change notification is
+     * generated, so that observers, data bindings and computed
+     * properties watching that path can update.
+     *
+     * If the array is passed directly, **no change
+     * notification is generated**.
+     *
+     * @param {string | !Array<number|string>} arrayOrPath Path to array from which to remove the item
+     *   (or the array itself).
+     * @param {*} item Item to remove.
+     * @return {Array} Array containing item removed.
+     */
+    arrayDelete(arrayOrPath, item) {
+      let index;
+      if (Array.isArray(arrayOrPath)) {
+        index = arrayOrPath.indexOf(item);
+        if (index >= 0) {
+          return arrayOrPath.splice(index, 1);
+        }
+      } else {
+        let arr = Object(__WEBPACK_IMPORTED_MODULE_11__utils_path_js__["a" /* get */])(this, arrayOrPath);
+        index = arr.indexOf(item);
+        if (index >= 0) {
+          return this.splice(arrayOrPath, index, 1);
+        }
+      }
+      return null;
+    }
+
+    // logging
+
+    /**
+     * Facades `console.log`/`warn`/`error` as override point.
+     *
+     * @param {string} level One of 'log', 'warn', 'error'
+     * @param {Array} args Array of strings or objects to log
+     * @return {void}
+     */
+    _logger(level, args) {
+      // accept ['foo', 'bar'] and [['foo', 'bar']]
+      if (Array.isArray(args) && args.length === 1 && Array.isArray(args[0])) {
+        args = args[0];
+      }
+      switch(level) {
+        case 'log':
+        case 'warn':
+        case 'error':
+          console[level](...args);
+      }
+    }
+
+    /**
+     * Facades `console.log` as an override point.
+     *
+     * @param {...*} args Array of strings or objects to log
+     * @return {void}
+     */
+    _log(...args) {
+      this._logger('log', args);
+    }
+
+    /**
+     * Facades `console.warn` as an override point.
+     *
+     * @param {...*} args Array of strings or objects to log
+     * @return {void}
+     */
+    _warn(...args) {
+      this._logger('warn', args);
+    }
+
+    /**
+     * Facades `console.error` as an override point.
+     *
+     * @param {...*} args Array of strings or objects to log
+     * @return {void}
+     */
+    _error(...args) {
+      this._logger('error', args);
+    }
+
+    /**
+     * Formats a message using the element type an a method name.
+     *
+     * @param {string} methodName Method name to associate with message
+     * @param {...*} args Array of strings or objects to log
+     * @return {Array} Array with formatting information for `console`
+     *   logging.
+     */
+    _logf(methodName, ...args) {
+      return ['[%s::%s]', this.is, methodName, ...args];
+    }
+
+  }
+
+  LegacyElement.prototype.is = '';
+
+  return LegacyElement;
+
+});
+/* harmony export (immutable) */ __webpack_exports__["a"] = LegacyElementMixin;
+
+
+
+/***/ }),
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["g"] = toCssText;
+/* harmony export (immutable) */ __webpack_exports__["f"] = rulesForStyle;
+/* unused harmony export isKeyframesSelector */
+/* harmony export (immutable) */ __webpack_exports__["b"] = forEachRule;
+/* unused harmony export applyCss */
+/* unused harmony export createScopeStyle */
+/* unused harmony export applyStylePlaceHolder */
+/* unused harmony export applyStyle */
+/* unused harmony export isTargetedBuild */
+/* unused harmony export findMatchingParen */
+/* harmony export (immutable) */ __webpack_exports__["e"] = processVariableAndFallback;
+/* unused harmony export setElementClassRaw */
+/* harmony export (immutable) */ __webpack_exports__["d"] = getIsExtends;
+/* harmony export (immutable) */ __webpack_exports__["c"] = gatherStyleText;
+/* unused harmony export splitSelectorList */
+/* unused harmony export getCssBuild */
+/* harmony export (immutable) */ __webpack_exports__["a"] = elementHasBuiltCss;
+/* unused harmony export getBuildComment */
+/* unused harmony export isOptimalCssBuild */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_settings_js__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_parse_js__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_regex_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__unscoped_style_handler_js__ = __webpack_require__(77);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+ // eslint-disable-line no-unused-vars
+
+
+
+/**
+ * @param {string|StyleNode} rules
+ * @param {function(StyleNode)=} callback
+ * @return {string}
+ */
+function toCssText (rules, callback) {
+  if (!rules) {
+    return '';
+  }
+  if (typeof rules === 'string') {
+    rules = Object(__WEBPACK_IMPORTED_MODULE_1__css_parse_js__["a" /* parse */])(rules);
+  }
+  if (callback) {
+    forEachRule(rules, callback);
+  }
+  return Object(__WEBPACK_IMPORTED_MODULE_1__css_parse_js__["b" /* stringify */])(rules, __WEBPACK_IMPORTED_MODULE_0__style_settings_js__["b" /* nativeCssVariables */]);
+}
+
+/**
+ * @param {HTMLStyleElement} style
+ * @return {StyleNode}
+ */
+function rulesForStyle(style) {
+  if (!style['__cssRules'] && style.textContent) {
+    style['__cssRules'] = Object(__WEBPACK_IMPORTED_MODULE_1__css_parse_js__["a" /* parse */])(style.textContent);
+  }
+  return style['__cssRules'] || null;
+}
+
+// Tests if a rule is a keyframes selector, which looks almost exactly
+// like a normal selector but is not (it has nothing to do with scoping
+// for example).
+/**
+ * @param {StyleNode} rule
+ * @return {boolean}
+ */
+function isKeyframesSelector(rule) {
+  return Boolean(rule['parent']) &&
+  rule['parent']['type'] === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].KEYFRAMES_RULE;
+}
+
+/**
+ * @param {StyleNode} node
+ * @param {Function=} styleRuleCallback
+ * @param {Function=} keyframesRuleCallback
+ * @param {boolean=} onlyActiveRules
+ */
+function forEachRule(node, styleRuleCallback, keyframesRuleCallback, onlyActiveRules) {
+  if (!node) {
+    return;
+  }
+  let skipRules = false;
+  let type = node['type'];
+  if (onlyActiveRules) {
+    if (type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].MEDIA_RULE) {
+      let matchMedia = node['selector'].match(__WEBPACK_IMPORTED_MODULE_2__common_regex_js__["a" /* MEDIA_MATCH */]);
+      if (matchMedia) {
+        // if rule is a non matching @media rule, skip subrules
+        if (!window.matchMedia(matchMedia[1]).matches) {
+          skipRules = true;
+        }
+      }
+    }
+  }
+  if (type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].STYLE_RULE) {
+    styleRuleCallback(node);
+  } else if (keyframesRuleCallback &&
+    type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].KEYFRAMES_RULE) {
+    keyframesRuleCallback(node);
+  } else if (type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].MIXIN_RULE) {
+    skipRules = true;
+  }
+  let r$ = node['rules'];
+  if (r$ && !skipRules) {
+    for (let i=0, l=r$.length, r; (i<l) && (r=r$[i]); i++) {
+      forEachRule(r, styleRuleCallback, keyframesRuleCallback, onlyActiveRules);
+    }
+  }
+}
+
+// add a string of cssText to the document.
+/**
+ * @param {string} cssText
+ * @param {string} moniker
+ * @param {Node} target
+ * @param {Node} contextNode
+ * @return {HTMLStyleElement}
+ */
+function applyCss(cssText, moniker, target, contextNode) {
+  let style = createScopeStyle(cssText, moniker);
+  applyStyle(style, target, contextNode);
+  return style;
+}
+
+/**
+ * @param {string} cssText
+ * @param {string} moniker
+ * @return {HTMLStyleElement}
+ */
+function createScopeStyle(cssText, moniker) {
+  let style = /** @type {HTMLStyleElement} */(document.createElement('style'));
+  if (moniker) {
+    style.setAttribute('scope', moniker);
+  }
+  style.textContent = cssText;
+  return style;
+}
+
+/**
+ * Track the position of the last added style for placing placeholders
+ * @type {Node}
+ */
+let lastHeadApplyNode = null;
+
+// insert a comment node as a styling position placeholder.
+/**
+ * @param {string} moniker
+ * @return {!Comment}
+ */
+function applyStylePlaceHolder(moniker) {
+  let placeHolder = document.createComment(' Shady DOM styles for ' +
+    moniker + ' ');
+  let after = lastHeadApplyNode ?
+    lastHeadApplyNode['nextSibling'] : null;
+  let scope = document.head;
+  scope.insertBefore(placeHolder, after || scope.firstChild);
+  lastHeadApplyNode = placeHolder;
+  return placeHolder;
+}
+
+/**
+ * @param {HTMLStyleElement} style
+ * @param {?Node} target
+ * @param {?Node} contextNode
+ */
+function applyStyle(style, target, contextNode) {
+  target = target || document.head;
+  let after = (contextNode && contextNode.nextSibling) ||
+    target.firstChild;
+  target.insertBefore(style, after);
+  if (!lastHeadApplyNode) {
+    lastHeadApplyNode = style;
+  } else {
+    // only update lastHeadApplyNode if the new style is inserted after the old lastHeadApplyNode
+    let position = style.compareDocumentPosition(lastHeadApplyNode);
+    if (position === Node.DOCUMENT_POSITION_PRECEDING) {
+      lastHeadApplyNode = style;
+    }
+  }
+}
+
+/**
+ * @param {string} buildType
+ * @return {boolean}
+ */
+function isTargetedBuild(buildType) {
+  return __WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */] ? buildType === 'shadow' : buildType === 'shady';
+}
+
+/**
+ * Walk from text[start] matching parens and
+ * returns position of the outer end paren
+ * @param {string} text
+ * @param {number} start
+ * @return {number}
+ */
+function findMatchingParen(text, start) {
+  let level = 0;
+  for (let i=start, l=text.length; i < l; i++) {
+    if (text[i] === '(') {
+      level++;
+    } else if (text[i] === ')') {
+      if (--level === 0) {
+        return i;
+      }
+    }
+  }
+  return -1;
+}
+
+/**
+ * @param {string} str
+ * @param {function(string, string, string, string)} callback
+ */
+function processVariableAndFallback(str, callback) {
+  // find 'var('
+  let start = str.indexOf('var(');
+  if (start === -1) {
+    // no var?, everything is prefix
+    return callback(str, '', '', '');
+  }
+  //${prefix}var(${inner})${suffix}
+  let end = findMatchingParen(str, start + 3);
+  let inner = str.substring(start + 4, end);
+  let prefix = str.substring(0, start);
+  // suffix may have other variables
+  let suffix = processVariableAndFallback(str.substring(end + 1), callback);
+  let comma = inner.indexOf(',');
+  // value and fallback args should be trimmed to match in property lookup
+  if (comma === -1) {
+    // variable, no fallback
+    return callback(prefix, inner.trim(), '', suffix);
+  }
+  // var(${value},${fallback})
+  let value = inner.substring(0, comma).trim();
+  let fallback = inner.substring(comma + 1).trim();
+  return callback(prefix, value, fallback, suffix);
+}
+
+/**
+ * @param {Element} element
+ * @param {string} value
+ */
+function setElementClassRaw(element, value) {
+  // use native setAttribute provided by ShadyDOM when setAttribute is patched
+  if (__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */]) {
+    element.setAttribute('class', value);
+  } else {
+    window['ShadyDOM']['nativeMethods']['setAttribute'].call(element, 'class', value);
+  }
+}
+
+const wrap = window['ShadyDOM'] && window['ShadyDOM']['wrap'] || ((node) => node);
+/* unused harmony export wrap */
+
+
+/**
+ * @param {Element | {is: string, extends: string}} element
+ * @return {{is: string, typeExtension: string}}
+ */
+function getIsExtends(element) {
+  let localName = element['localName'];
+  let is = '', typeExtension = '';
+  /*
+  NOTE: technically, this can be wrong for certain svg elements
+  with `-` in the name like `<font-face>`
+  */
+  if (localName) {
+    if (localName.indexOf('-') > -1) {
+      is = localName;
+    } else {
+      typeExtension = localName;
+      is = (element.getAttribute && element.getAttribute('is')) || '';
+    }
+  } else {
+    is = /** @type {?} */(element).is;
+    typeExtension = /** @type {?} */(element).extends;
+  }
+  return {is, typeExtension};
+}
+
+/**
+ * @param {Element|DocumentFragment} element
+ * @return {string}
+ */
+function gatherStyleText(element) {
+  /** @type {!Array<string>} */
+  const styleTextParts = [];
+  const styles = /** @type {!NodeList<!HTMLStyleElement>} */(element.querySelectorAll('style'));
+  for (let i = 0; i < styles.length; i++) {
+    const style = styles[i];
+    if (Object(__WEBPACK_IMPORTED_MODULE_3__unscoped_style_handler_js__["a" /* isUnscopedStyle */])(style)) {
+      if (!__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */]) {
+        Object(__WEBPACK_IMPORTED_MODULE_3__unscoped_style_handler_js__["b" /* processUnscopedStyle */])(style);
+        style.parentNode.removeChild(style);
+      }
+    } else {
+      styleTextParts.push(style.textContent);
+      style.parentNode.removeChild(style);
+    }
+  }
+  return styleTextParts.join('').trim();
+}
+
+/**
+ * Split a selector separated by commas into an array in a smart way
+ * @param {string} selector
+ * @return {!Array<string>}
+ */
+function splitSelectorList(selector) {
+  const parts = [];
+  let part = '';
+  for (let i = 0; i >= 0 && i < selector.length; i++) {
+    // A selector with parentheses will be one complete part
+    if (selector[i] === '(') {
+      // find the matching paren
+      const end = findMatchingParen(selector, i);
+      // push the paren block into the part
+      part += selector.slice(i, end + 1);
+      // move the index to after the paren block
+      i = end;
+    } else if (selector[i] === ',') {
+      parts.push(part);
+      part = '';
+    } else {
+      part += selector[i];
+    }
+  }
+  // catch any pieces after the last comma
+  if (part) {
+    parts.push(part);
+  }
+  return parts;
+}
+
+const CSS_BUILD_ATTR = 'css-build';
+
+/**
+ * Return the polymer-css-build "build type" applied to this element
+ *
+ * @param {!HTMLElement} element
+ * @return {string} Can be "", "shady", or "shadow"
+ */
+function getCssBuild(element) {
+  if (__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["a" /* cssBuild */] !== undefined) {
+    return /** @type {string} */(__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["a" /* cssBuild */]);
+  }
+  if (element.__cssBuild === undefined) {
+    // try attribute first, as it is the common case
+    const attrValue = element.getAttribute(CSS_BUILD_ATTR);
+    if (attrValue) {
+      element.__cssBuild = attrValue;
+    } else {
+      const buildComment = getBuildComment(element);
+      if (buildComment !== '') {
+        // remove build comment so it is not needlessly copied into every element instance
+        removeBuildComment(element);
+      }
+      element.__cssBuild = buildComment;
+    }
+  }
+  return element.__cssBuild || '';
+}
+
+/**
+ * Check if the given element, either a <template> or <style>, has been processed
+ * by polymer-css-build.
+ *
+ * If so, then we can make a number of optimizations:
+ * - polymer-css-build will decompose mixins into individual CSS Custom Properties,
+ * so the ApplyShim can be skipped entirely.
+ * - Under native ShadowDOM, the style text can just be copied into each instance
+ * without modification
+ * - If the build is "shady" and ShadyDOM is in use, the styling does not need
+ * scoping beyond the shimming of CSS Custom Properties
+ *
+ * @param {!HTMLElement} element
+ * @return {boolean}
+ */
+function elementHasBuiltCss(element) {
+  return getCssBuild(element) !== '';
+}
+
+/**
+ * For templates made with tagged template literals, polymer-css-build will
+ * insert a comment of the form `<!--css-build:shadow-->`
+ *
+ * @param {!HTMLElement} element
+ * @return {string}
+ */
+function getBuildComment(element) {
+  const buildComment = element.localName === 'template' ?
+      /** @type {!HTMLTemplateElement} */ (element).content.firstChild :
+      element.firstChild;
+  if (buildComment instanceof Comment) {
+    const commentParts = buildComment.textContent.trim().split(':');
+    if (commentParts[0] === CSS_BUILD_ATTR) {
+      return commentParts[1];
+    }
+  }
+  return '';
+}
+
+/**
+ * Check if the css build status is optimal, and do no unneeded work.
+ *
+ * @param {string=} cssBuild CSS build status
+ * @return {boolean} css build is optimal or not
+ */
+function isOptimalCssBuild(cssBuild = '') {
+  // CSS custom property shim always requires work
+  if (cssBuild === '' || !__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["b" /* nativeCssVariables */]) {
+    return false;
+  }
+  return __WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */] ? cssBuild === 'shadow' : cssBuild === 'shady';
+}
+
+/**
+ * @param {!HTMLElement} element
+ */
+function removeBuildComment(element) {
+  const buildComment = element.localName === 'template' ?
+      /** @type {!HTMLTemplateElement} */ (element).content.firstChild :
+      element.firstChild;
+  buildComment.parentNode.removeChild(buildComment);
+}
+
+
+/***/ }),
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+/**
+ * @const {!Object<string, !HTMLTemplateElement>}
+ */
+const templateMap = {};
+/* harmony default export */ __webpack_exports__["a"] = (templateMap);
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export CustomStyleProvider */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__document_wait_js__ = __webpack_require__(79);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+/**
+ * @typedef {HTMLStyleElement | {getStyle: function():HTMLStyleElement}}
+ */
+let CustomStyleProvider;
+
+const SEEN_MARKER = '__seenByShadyCSS';
+const CACHED_STYLE = '__shadyCSSCachedStyle';
+
+/** @type {?function(!HTMLStyleElement)} */
+let transformFn = null;
+
+/** @type {?function()} */
+let validateFn = null;
+
+/**
+This interface is provided to add document-level <style> elements to ShadyCSS for processing.
+These styles must be processed by ShadyCSS to simulate ShadowRoot upper-bound encapsulation from outside styles
+In addition, these styles may also need to be processed for @apply rules and CSS Custom Properties
+
+To add document-level styles to ShadyCSS, one can call `ShadyCSS.addDocumentStyle(styleElement)` or `ShadyCSS.addDocumentStyle({getStyle: () => styleElement})`
+
+In addition, if the process used to discover document-level styles can be synchronously flushed, one should set `ShadyCSS.documentStyleFlush`.
+This function will be called when calculating styles.
+
+An example usage of the document-level styling api can be found in `examples/document-style-lib.js`
+
+@unrestricted
+*/
+class CustomStyleInterface {
+  constructor() {
+    /** @type {!Array<!CustomStyleProvider>} */
+    this['customStyles'] = [];
+    this['enqueued'] = false;
+    // NOTE(dfreedm): use quotes here to prevent closure inlining to `function(){}`;
+    Object(__WEBPACK_IMPORTED_MODULE_0__document_wait_js__["a" /* default */])(() => {
+      if (window['ShadyCSS']['flushCustomStyles']) {
+        window['ShadyCSS']['flushCustomStyles']();
+      }
+    })
+  }
+  /**
+   * Queue a validation for new custom styles to batch style recalculations
+   */
+  enqueueDocumentValidation() {
+    if (this['enqueued'] || !validateFn) {
+      return;
+    }
+    this['enqueued'] = true;
+    Object(__WEBPACK_IMPORTED_MODULE_0__document_wait_js__["a" /* default */])(validateFn);
+  }
+  /**
+   * @param {!HTMLStyleElement} style
+   */
+  addCustomStyle(style) {
+    if (!style[SEEN_MARKER]) {
+      style[SEEN_MARKER] = true;
+      this['customStyles'].push(style);
+      this.enqueueDocumentValidation();
+    }
+  }
+  /**
+   * @param {!CustomStyleProvider} customStyle
+   * @return {HTMLStyleElement}
+   */
+  getStyleForCustomStyle(customStyle) {
+    if (customStyle[CACHED_STYLE]) {
+      return customStyle[CACHED_STYLE];
+    }
+    let style;
+    if (customStyle['getStyle']) {
+      style = customStyle['getStyle']();
+    } else {
+      style = customStyle;
+    }
+    return style;
+  }
+  /**
+   * @return {!Array<!CustomStyleProvider>}
+   */
+  processStyles() {
+    const cs = this['customStyles'];
+    for (let i = 0; i < cs.length; i++) {
+      const customStyle = cs[i];
+      if (customStyle[CACHED_STYLE]) {
+        continue;
+      }
+      const style = this.getStyleForCustomStyle(customStyle);
+      if (style) {
+        // HTMLImports polyfill may have cloned the style into the main document,
+        // which is referenced with __appliedElement.
+        const styleToTransform = /** @type {!HTMLStyleElement} */(style['__appliedElement'] || style);
+        if (transformFn) {
+          transformFn(styleToTransform);
+        }
+        customStyle[CACHED_STYLE] = styleToTransform;
+      }
+    }
+    return cs;
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = CustomStyleInterface;
+
+
+/* eslint-disable no-self-assign */
+CustomStyleInterface.prototype['addCustomStyle'] = CustomStyleInterface.prototype.addCustomStyle;
+CustomStyleInterface.prototype['getStyleForCustomStyle'] = CustomStyleInterface.prototype.getStyleForCustomStyle;
+CustomStyleInterface.prototype['processStyles'] = CustomStyleInterface.prototype.processStyles;
+/* eslint-enable no-self-assign */
+
+Object.defineProperties(CustomStyleInterface.prototype, {
+  'transformCallback': {
+    /** @return {?function(!HTMLStyleElement)} */
+    get() {
+      return transformFn;
+    },
+    /** @param {?function(!HTMLStyleElement)} fn */
+    set(fn) {
+      transformFn = fn;
+    }
+  },
+  'validateCallback': {
+    /** @return {?function()} */
+    get() {
+      return validateFn;
+    },
+    /**
+     * @param {?function()} fn
+     * @this {CustomStyleInterface}
+     */
+    set(fn) {
+      let needsEnqueue = false;
+      if (!validateFn) {
+        needsEnqueue = true;
+      }
+      validateFn = fn;
+      if (needsEnqueue) {
+        this.enqueueDocumentValidation();
+      }
+    },
+  }
+})
+
+/** @typedef {{
+ * customStyles: !Array<!CustomStyleProvider>,
+ * addCustomStyle: function(!CustomStyleProvider),
+ * getStyleForCustomStyle: function(!CustomStyleProvider): HTMLStyleElement,
+ * findStyles: function(),
+ * transformCallback: ?function(!HTMLStyleElement),
+ * validateCallback: ?function()
+ * }}
+ */
+const CustomStyleInterfaceInterface = {};
+/* unused harmony export CustomStyleInterfaceInterface */
+
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_gestures_js__ = __webpack_require__(47);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+/**
+ * Element class mixin that provides API for adding Polymer's cross-platform
+ * gesture events to nodes.
+ *
+ * The API is designed to be compatible with override points implemented
+ * in `TemplateStamp` such that declarative event listeners in
+ * templates will support gesture events when this mixin is applied along with
+ * `TemplateStamp`.
+ *
+ * @mixinFunction
+ * @polymer
+ * @summary Element class mixin that provides API for adding Polymer's
+ *   cross-platform
+ * gesture events to nodes
+ */
+const GestureEventListeners = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* dedupingMixin */])(
+    /**
+     * @template T
+     * @param {function(new:T)} superClass Class to apply mixin to.
+     * @return {function(new:T)} superClass with mixin applied.
+     */
+    (superClass) => {
+      /**
+       * @polymer
+       * @mixinClass
+       * @implements {Polymer_GestureEventListeners}
+       */
+      class GestureEventListeners extends superClass {
+        /**
+         * Add the event listener to the node if it is a gestures event.
+         *
+         * @param {!EventTarget} node Node to add event listener to
+         * @param {string} eventName Name of event
+         * @param {function(!Event):void} handler Listener function to add
+         * @return {void}
+         * @override
+         */
+        _addEventListenerToNode(node, eventName, handler) {
+          if (!Object(__WEBPACK_IMPORTED_MODULE_2__utils_gestures_js__["a" /* addListener */])(node, eventName, handler)) {
+            super._addEventListenerToNode(node, eventName, handler);
+          }
+        }
+
+        /**
+         * Remove the event listener to the node if it is a gestures event.
+         *
+         * @param {!EventTarget} node Node to remove event listener from
+         * @param {string} eventName Name of event
+         * @param {function(!Event):void} handler Listener function to remove
+         * @return {void}
+         * @override
+         */
+        _removeEventListenerFromNode(node, eventName, handler) {
+          if (!Object(__WEBPACK_IMPORTED_MODULE_2__utils_gestures_js__["b" /* removeListener */])(node, eventName, handler)) {
+            super._removeEventListenerFromNode(node, eventName, handler);
+          }
+        }
+      }
+
+      return GestureEventListeners;
+    });
+/* harmony export (immutable) */ __webpack_exports__["a"] = GestureEventListeners;
+
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* unused harmony export deepTargetFind */
-/* harmony export (immutable) */ __webpack_exports__["b"] = addListener;
-/* harmony export (immutable) */ __webpack_exports__["c"] = removeListener;
+/* harmony export (immutable) */ __webpack_exports__["a"] = addListener;
+/* harmony export (immutable) */ __webpack_exports__["b"] = removeListener;
 /* unused harmony export register */
-/* harmony export (immutable) */ __webpack_exports__["d"] = setTouchAction;
+/* harmony export (immutable) */ __webpack_exports__["c"] = setTouchAction;
 /* unused harmony export prevent */
 /* unused harmony export resetMouseCanceller */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
@@ -8026,7 +13059,7 @@ const findOriginalTarget = _findOriginalTarget;
 
 /** @deprecated */
 const add = addListener;
-/* harmony export (immutable) */ __webpack_exports__["a"] = add;
+/* unused harmony export add */
 
 
 /** @deprecated */
@@ -8036,13 +13069,11 @@ const remove = removeListener;
 
 
 /***/ }),
-/* 24 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export flush */
-/* unused harmony export beforeNextRender */
-/* harmony export (immutable) */ __webpack_exports__["a"] = afterNextRender;
+/* harmony export (immutable) */ __webpack_exports__["a"] = calculateSplices;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
 /**
 @license
@@ -8054,726 +13085,590 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-/**
- * Module for scheduling flushable pre-render and post-render tasks.
- *
- * @summary Module for scheduling flushable pre-render and post-render tasks.
- */
 
-
-
-let scheduled = false;
-let beforeRenderQueue = [];
-let afterRenderQueue = [];
-
-function schedule() {
-  scheduled = true;
-  // before next render
-  requestAnimationFrame(function() {
-    scheduled = false;
-    flushQueue(beforeRenderQueue);
-    // after the render
-    setTimeout(function() {
-      runQueue(afterRenderQueue);
-    });
-  });
-}
-
-function flushQueue(queue) {
-  while (queue.length) {
-    callMethod(queue.shift());
-  }
-}
-
-function runQueue(queue) {
-  for (let i=0, l=queue.length; i < l; i++) {
-    callMethod(queue.shift());
-  }
-}
-
-function callMethod(info) {
-  const context = info[0];
-  const callback = info[1];
-  const args = info[2];
-  try {
-    callback.apply(context, args);
-  } catch(e) {
-    setTimeout(() => {
-      throw e;
-    });
-  }
-}
-
-/**
- * Flushes all `beforeNextRender` tasks, followed by all `afterNextRender`
- * tasks.
- *
- * @return {void}
- */
-function flush() {
-  while (beforeRenderQueue.length || afterRenderQueue.length) {
-    flushQueue(beforeRenderQueue);
-    flushQueue(afterRenderQueue);
-  }
-  scheduled = false;
-}
-
-
-/**
- * Enqueues a callback which will be run before the next render, at
- * `requestAnimationFrame` timing.
- *
- * This method is useful for enqueuing work that requires DOM measurement,
- * since measurement may not be reliable in custom element callbacks before
- * the first render, as well as for batching measurement tasks in general.
- *
- * Tasks in this queue may be flushed by calling `flush()`.
- *
- * @param {*} context Context object the callback function will be bound to
- * @param {function(...*):void} callback Callback function
- * @param {!Array=} args An array of arguments to call the callback function with
- * @return {void}
- */
-function beforeNextRender(context, callback, args) {
-  if (!scheduled) {
-    schedule();
-  }
-  beforeRenderQueue.push([context, callback, args]);
-}
-
-/**
- * Enqueues a callback which will be run after the next render, equivalent
- * to one task (`setTimeout`) after the next `requestAnimationFrame`.
- *
- * This method is useful for tuning the first-render performance of an
- * element or application by deferring non-critical work until after the
- * first paint.  Typical non-render-critical work may include adding UI
- * event listeners and aria attributes.
- *
- * @param {*} context Context object the callback function will be bound to
- * @param {function(...*):void} callback Callback function
- * @param {!Array=} args An array of arguments to call the callback function with
- * @return {void}
- */
-function afterNextRender(context, callback, args) {
-  if (!scheduled) {
-    schedule();
-  }
-  afterRenderQueue.push([context, callback, args]);
-}
-
-
-
-/***/ }),
-/* 25 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = templatize;
-/* harmony export (immutable) */ __webpack_exports__["a"] = modelForElement;
-/* unused harmony export TemplateInstanceBase */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_settings_js__ = __webpack_require__(7);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-/**
- * Module for preparing and stamping instances of templates that utilize
- * Polymer's data-binding and declarative event listener features.
- *
- * Example:
- *
- *     // Get a template from somewhere, e.g. light DOM
- *     let template = this.querySelector('template');
- *     // Prepare the template
- *     let TemplateClass = Templatize.templatize(template);
- *     // Instance the template with an initial data model
- *     let instance = new TemplateClass({myProp: 'initial'});
- *     // Insert the instance's DOM somewhere, e.g. element's shadow DOM
- *     this.shadowRoot.appendChild(instance.root);
- *     // Changing a property on the instance will propagate to bindings
- *     // in the template
- *     instance.myProp = 'new value';
- *
- * The `options` dictionary passed to `templatize` allows for customizing
- * features of the generated template class, including how outer-scope host
- * properties should be forwarded into template instances, how any instance
- * properties added into the template's scope should be notified out to
- * the host, and whether the instance should be decorated as a "parent model"
- * of any event handlers.
- *
- *     // Customize property forwarding and event model decoration
- *     let TemplateClass = Templatize.templatize(template, this, {
- *       parentModel: true,
- *       forwardHostProp(property, value) {...},
- *       instanceProps: {...},
- *       notifyInstanceProp(instance, property, value) {...},
- *     });
- *
- * @summary Module for preparing and stamping instances of templates
- *   utilizing Polymer templating features.
- */
-
-
-
-
-
-
-
-// Base class for HTMLTemplateElement extension that has property effects
-// machinery for propagating host properties to children. This is an ES5
-// class only because Babel (incorrectly) requires super() in the class
-// constructor even though no `this` is used and it returns an instance.
-let newInstance = null;
-
-/**
- * @constructor
- * @extends {HTMLTemplateElement}
- * @private
- */
-function HTMLTemplateElementExtension() { return newInstance; }
-HTMLTemplateElementExtension.prototype = Object.create(HTMLTemplateElement.prototype, {
-  constructor: {
-    value: HTMLTemplateElementExtension,
-    writable: true
-  }
-});
-
-/**
- * @constructor
- * @implements {Polymer_PropertyEffects}
- * @extends {HTMLTemplateElementExtension}
- * @private
- */
-const DataTemplate = Object(__WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__["a" /* PropertyEffects */])(HTMLTemplateElementExtension);
-
-/**
- * @constructor
- * @implements {Polymer_MutableData}
- * @extends {DataTemplate}
- * @private
- */
-const MutableDataTemplate = Object(__WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__["a" /* MutableData */])(DataTemplate);
-
-// Applies a DataTemplate subclass to a <template> instance
-function upgradeTemplate(template, constructor) {
-  newInstance = template;
-  Object.setPrototypeOf(template, constructor.prototype);
-  new constructor();
-  newInstance = null;
-}
-
-/**
- * Base class for TemplateInstance.
- * @constructor
- * @implements {Polymer_PropertyEffects}
- * @private
- */
-const base = Object(__WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__["a" /* PropertyEffects */])(class {});
-
-/**
- * @polymer
- * @customElement
- * @appliesMixin PropertyEffects
- * @unrestricted
- */
-class TemplateInstanceBase extends base {
-  constructor(props) {
-    super();
-    this._configureProperties(props);
-    this.root = this._stampTemplate(this.__dataHost);
-    // Save list of stamped children
-    let children = this.children = [];
-    for (let n = this.root.firstChild; n; n=n.nextSibling) {
-      children.push(n);
-      n.__templatizeInstance = this;
-    }
-    if (this.__templatizeOwner &&
-      this.__templatizeOwner.__hideTemplateChildren__) {
-      this._showHideChildren(true);
-    }
-    // Flush props only when props are passed if instance props exist
-    // or when there isn't instance props.
-    let options = this.__templatizeOptions;
-    if ((props && options.instanceProps) || !options.instanceProps) {
-      this._enableProperties();
-    }
-  }
-  /**
-   * Configure the given `props` by calling `_setPendingProperty`. Also
-   * sets any properties stored in `__hostProps`.
-   * @private
-   * @param {Object} props Object of property name-value pairs to set.
-   * @return {void}
-   */
-  _configureProperties(props) {
-    let options = this.__templatizeOptions;
-    if (options.forwardHostProp) {
-      for (let hprop in this.__hostProps) {
-        this._setPendingProperty(hprop, this.__dataHost['_host_' + hprop]);
-      }
-    }
-    // Any instance props passed in the constructor will overwrite host props;
-    // normally this would be a user error but we don't specifically filter them
-    for (let iprop in props) {
-      this._setPendingProperty(iprop, props[iprop]);
-    }
-  }
-  /**
-   * Forwards a host property to this instance.  This method should be
-   * called on instances from the `options.forwardHostProp` callback
-   * to propagate changes of host properties to each instance.
-   *
-   * Note this method enqueues the change, which are flushed as a batch.
-   *
-   * @param {string} prop Property or path name
-   * @param {*} value Value of the property to forward
-   * @return {void}
-   */
-  forwardHostProp(prop, value) {
-    if (this._setPendingPropertyOrPath(prop, value, false, true)) {
-      this.__dataHost._enqueueClient(this);
-    }
-  }
-
-  /**
-   * Override point for adding custom or simulated event handling.
-   *
-   * @override
-   * @param {!Node} node Node to add event listener to
-   * @param {string} eventName Name of event
-   * @param {function(!Event):void} handler Listener function to add
-   * @return {void}
-   */
-  _addEventListenerToNode(node, eventName, handler) {
-    if (this._methodHost && this.__templatizeOptions.parentModel) {
-      // If this instance should be considered a parent model, decorate
-      // events this template instance as `model`
-      this._methodHost._addEventListenerToNode(node, eventName, (e) => {
-        e.model = this;
-        handler(e);
-      });
-    } else {
-      // Otherwise delegate to the template's host (which could be)
-      // another template instance
-      let templateHost = this.__dataHost.__dataHost;
-      if (templateHost) {
-        templateHost._addEventListenerToNode(node, eventName, handler);
-      }
-    }
-  }
-  /**
-   * Shows or hides the template instance top level child elements. For
-   * text nodes, `textContent` is removed while "hidden" and replaced when
-   * "shown."
-   * @param {boolean} hide Set to true to hide the children;
-   * set to false to show them.
-   * @return {void}
-   * @protected
-   */
-  _showHideChildren(hide) {
-    let c = this.children;
-    for (let i=0; i<c.length; i++) {
-      let n = c[i];
-      // Ignore non-changes
-      if (Boolean(hide) != Boolean(n.__hideTemplateChildren__)) {
-        if (n.nodeType === Node.TEXT_NODE) {
-          if (hide) {
-            n.__polymerTextContent__ = n.textContent;
-            n.textContent = '';
-          } else {
-            n.textContent = n.__polymerTextContent__;
-          }
-        // remove and replace slot
-        } else if (n.localName === 'slot') {
-          if (hide) {
-            n.__polymerReplaced__ = document.createComment('hidden-slot');
-            n.parentNode.replaceChild(n.__polymerReplaced__, n);
-          } else {
-            const replace = n.__polymerReplaced__;
-            if (replace) {
-              replace.parentNode.replaceChild(n, replace);
-            }
-          }
-        }
-
-        else if (n.style) {
-          if (hide) {
-            n.__polymerDisplay__ = n.style.display;
-            n.style.display = 'none';
-          } else {
-            n.style.display = n.__polymerDisplay__;
-          }
-        }
-      }
-      n.__hideTemplateChildren__ = hide;
-      if (n._showHideChildren) {
-        n._showHideChildren(hide);
-      }
-    }
-  }
-  /**
-   * Overrides default property-effects implementation to intercept
-   * textContent bindings while children are "hidden" and cache in
-   * private storage for later retrieval.
-   *
-   * @override
-   * @param {!Node} node The node to set a property on
-   * @param {string} prop The property to set
-   * @param {*} value The value to set
-   * @return {void}
-   * @protected
-   */
-  _setUnmanagedPropertyToNode(node, prop, value) {
-    if (node.__hideTemplateChildren__ &&
-        node.nodeType == Node.TEXT_NODE && prop == 'textContent') {
-      node.__polymerTextContent__ = value;
-    } else {
-      super._setUnmanagedPropertyToNode(node, prop, value);
-    }
-  }
-  /**
-   * Find the parent model of this template instance.  The parent model
-   * is either another templatize instance that had option `parentModel: true`,
-   * or else the host element.
-   *
-   * @return {!Polymer_PropertyEffects} The parent model of this instance
-   */
-  get parentModel() {
-    let model = this.__parentModel;
-    if (!model) {
-      let options;
-      model = this;
-      do {
-        // A template instance's `__dataHost` is a <template>
-        // `model.__dataHost.__dataHost` is the template's host
-        model = model.__dataHost.__dataHost;
-      } while ((options = model.__templatizeOptions) && !options.parentModel);
-      this.__parentModel = model;
-    }
-    return model;
-  }
-
-  /**
-   * Stub of HTMLElement's `dispatchEvent`, so that effects that may
-   * dispatch events safely no-op.
-   *
-   * @param {Event} event Event to dispatch
-   * @return {boolean} Always true.
-   */
-   dispatchEvent(event) { // eslint-disable-line no-unused-vars
-     return true;
-  }
-}
-
-/** @type {!DataTemplate} */
-TemplateInstanceBase.prototype.__dataHost;
-/** @type {!TemplatizeOptions} */
-TemplateInstanceBase.prototype.__templatizeOptions;
-/** @type {!Polymer_PropertyEffects} */
-TemplateInstanceBase.prototype._methodHost;
-/** @type {!Object} */
-TemplateInstanceBase.prototype.__templatizeOwner;
-/** @type {!Object} */
-TemplateInstanceBase.prototype.__hostProps;
-
-/**
- * @constructor
- * @extends {TemplateInstanceBase}
- * @implements {Polymer_MutableData}
- * @private
- */
-const MutableTemplateInstanceBase = Object(__WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__["a" /* MutableData */])(TemplateInstanceBase);
-
-function findMethodHost(template) {
-  // Technically this should be the owner of the outermost template.
-  // In shadow dom, this is always getRootNode().host, but we can
-  // approximate this via cooperation with our dataHost always setting
-  // `_methodHost` as long as there were bindings (or id's) on this
-  // instance causing it to get a dataHost.
-  let templateHost = template.__dataHost;
-  return templateHost && templateHost._methodHost || templateHost;
-}
-
-/* eslint-disable valid-jsdoc */
-/**
- * @suppress {missingProperties} class.prototype is not defined for some reason
- */
-function createTemplatizerClass(template, templateInfo, options) {
-  // Anonymous class created by the templatize
-  let base = options.mutableData ?
-    MutableTemplateInstanceBase : TemplateInstanceBase;
-  /**
-   * @constructor
-   * @extends {base}
-   * @private
-   */
-  let klass = class extends base { };
-  klass.prototype.__templatizeOptions = options;
-  klass.prototype._bindTemplate(template);
-  addNotifyEffects(klass, template, templateInfo, options);
-  return klass;
-}
-
-/**
- * @suppress {missingProperties} class.prototype is not defined for some reason
- */
-function addPropagateEffects(template, templateInfo, options) {
-  let userForwardHostProp = options.forwardHostProp;
-  if (userForwardHostProp) {
-    // Provide data API and property effects on memoized template class
-    let klass = templateInfo.templatizeTemplateClass;
-    if (!klass) {
-      let base = options.mutableData ? MutableDataTemplate : DataTemplate;
-      /** @private */
-      klass = templateInfo.templatizeTemplateClass =
-        class TemplatizedTemplate extends base {};
-      // Add template - >instances effects
-      // and host <- template effects
-      let hostProps = templateInfo.hostProps;
-      for (let prop in hostProps) {
-        klass.prototype._addPropertyEffect('_host_' + prop,
-          klass.prototype.PROPERTY_EFFECT_TYPES.PROPAGATE,
-          {fn: createForwardHostPropEffect(prop, userForwardHostProp)});
-        klass.prototype._createNotifyingProperty('_host_' + prop);
-      }
-    }
-    upgradeTemplate(template, klass);
-    // Mix any pre-bound data into __data; no need to flush this to
-    // instances since they pull from the template at instance-time
-    if (template.__dataProto) {
-      // Note, generally `__dataProto` could be chained, but it's guaranteed
-      // to not be since this is a vanilla template we just added effects to
-      Object.assign(template.__data, template.__dataProto);
-    }
-    // Clear any pending data for performance
-    template.__dataTemp = {};
-    template.__dataPending = null;
-    template.__dataOld = null;
-    template._enableProperties();
-  }
-}
-/* eslint-enable valid-jsdoc */
-
-function createForwardHostPropEffect(hostProp, userForwardHostProp) {
-  return function forwardHostProp(template, prop, props) {
-    userForwardHostProp.call(template.__templatizeOwner,
-      prop.substring('_host_'.length), props[prop]);
+function newSplice(index, removed, addedCount) {
+  return {
+    index: index,
+    removed: removed,
+    addedCount: addedCount
   };
 }
 
-function addNotifyEffects(klass, template, templateInfo, options) {
-  let hostProps = templateInfo.hostProps || {};
-  for (let iprop in options.instanceProps) {
-    delete hostProps[iprop];
-    let userNotifyInstanceProp = options.notifyInstanceProp;
-    if (userNotifyInstanceProp) {
-      klass.prototype._addPropertyEffect(iprop,
-        klass.prototype.PROPERTY_EFFECT_TYPES.NOTIFY,
-        {fn: createNotifyInstancePropEffect(iprop, userNotifyInstanceProp)});
+const EDIT_LEAVE = 0;
+const EDIT_UPDATE = 1;
+const EDIT_ADD = 2;
+const EDIT_DELETE = 3;
+
+// Note: This function is *based* on the computation of the Levenshtein
+// "edit" distance. The one change is that "updates" are treated as two
+// edits - not one. With Array splices, an update is really a delete
+// followed by an add. By retaining this, we optimize for "keeping" the
+// maximum array items in the original array. For example:
+//
+//   'xxxx123' -> '123yyyy'
+//
+// With 1-edit updates, the shortest path would be just to update all seven
+// characters. With 2-edit updates, we delete 4, leave 3, and add 4. This
+// leaves the substring '123' intact.
+function calcEditDistances(current, currentStart, currentEnd,
+                            old, oldStart, oldEnd) {
+  // "Deletion" columns
+  let rowCount = oldEnd - oldStart + 1;
+  let columnCount = currentEnd - currentStart + 1;
+  let distances = new Array(rowCount);
+
+  // "Addition" rows. Initialize null column.
+  for (let i = 0; i < rowCount; i++) {
+    distances[i] = new Array(columnCount);
+    distances[i][0] = i;
+  }
+
+  // Initialize null row
+  for (let j = 0; j < columnCount; j++)
+    distances[0][j] = j;
+
+  for (let i = 1; i < rowCount; i++) {
+    for (let j = 1; j < columnCount; j++) {
+      if (equals(current[currentStart + j - 1], old[oldStart + i - 1]))
+        distances[i][j] = distances[i - 1][j - 1];
+      else {
+        let north = distances[i - 1][j] + 1;
+        let west = distances[i][j - 1] + 1;
+        distances[i][j] = north < west ? north : west;
+      }
     }
   }
-  if (options.forwardHostProp && template.__dataHost) {
-    for (let hprop in hostProps) {
-      klass.prototype._addPropertyEffect(hprop,
-        klass.prototype.PROPERTY_EFFECT_TYPES.NOTIFY,
-        {fn: createNotifyHostPropEffect()});
+
+  return distances;
+}
+
+// This starts at the final weight, and walks "backward" by finding
+// the minimum previous weight recursively until the origin of the weight
+// matrix.
+function spliceOperationsFromEditDistances(distances) {
+  let i = distances.length - 1;
+  let j = distances[0].length - 1;
+  let current = distances[i][j];
+  let edits = [];
+  while (i > 0 || j > 0) {
+    if (i == 0) {
+      edits.push(EDIT_ADD);
+      j--;
+      continue;
     }
-  }
-}
+    if (j == 0) {
+      edits.push(EDIT_DELETE);
+      i--;
+      continue;
+    }
+    let northWest = distances[i - 1][j - 1];
+    let west = distances[i - 1][j];
+    let north = distances[i][j - 1];
 
-function createNotifyInstancePropEffect(instProp, userNotifyInstanceProp) {
-  return function notifyInstanceProp(inst, prop, props) {
-    userNotifyInstanceProp.call(inst.__templatizeOwner,
-      inst, prop, props[prop]);
-  };
-}
+    let min;
+    if (west < north)
+      min = west < northWest ? west : northWest;
+    else
+      min = north < northWest ? north : northWest;
 
-function createNotifyHostPropEffect() {
-  return function notifyHostProp(inst, prop, props) {
-    inst.__dataHost._setPendingPropertyOrPath('_host_' + prop, props[prop], true, true);
-  };
-}
-
-
-/**
- * Returns an anonymous `PropertyEffects` class bound to the
- * `<template>` provided.  Instancing the class will result in the
- * template being stamped into a document fragment stored as the instance's
- * `root` property, after which it can be appended to the DOM.
- *
- * Templates may utilize all Polymer data-binding features as well as
- * declarative event listeners.  Event listeners and inline computing
- * functions in the template will be called on the host of the template.
- *
- * The constructor returned takes a single argument dictionary of initial
- * property values to propagate into template bindings.  Additionally
- * host properties can be forwarded in, and instance properties can be
- * notified out by providing optional callbacks in the `options` dictionary.
- *
- * Valid configuration in `options` are as follows:
- *
- * - `forwardHostProp(property, value)`: Called when a property referenced
- *   in the template changed on the template's host. As this library does
- *   not retain references to templates instanced by the user, it is the
- *   templatize owner's responsibility to forward host property changes into
- *   user-stamped instances.  The `instance.forwardHostProp(property, value)`
- *    method on the generated class should be called to forward host
- *   properties into the template to prevent unnecessary property-changed
- *   notifications. Any properties referenced in the template that are not
- *   defined in `instanceProps` will be notified up to the template's host
- *   automatically.
- * - `instanceProps`: Dictionary of property names that will be added
- *   to the instance by the templatize owner.  These properties shadow any
- *   host properties, and changes within the template to these properties
- *   will result in `notifyInstanceProp` being called.
- * - `mutableData`: When `true`, the generated class will skip strict
- *   dirty-checking for objects and arrays (always consider them to be
- *   "dirty").
- * - `notifyInstanceProp(instance, property, value)`: Called when
- *   an instance property changes.  Users may choose to call `notifyPath`
- *   on e.g. the owner to notify the change.
- * - `parentModel`: When `true`, events handled by declarative event listeners
- *   (`on-event="handler"`) will be decorated with a `model` property pointing
- *   to the template instance that stamped it.  It will also be returned
- *   from `instance.parentModel` in cases where template instance nesting
- *   causes an inner model to shadow an outer model.
- *
- * All callbacks are called bound to the `owner`. Any context
- * needed for the callbacks (such as references to `instances` stamped)
- * should be stored on the `owner` such that they can be retrieved via
- * `this`.
- *
- * When `options.forwardHostProp` is declared as an option, any properties
- * referenced in the template will be automatically forwarded from the host of
- * the `<template>` to instances, with the exception of any properties listed in
- * the `options.instanceProps` object.  `instanceProps` are assumed to be
- * managed by the owner of the instances, either passed into the constructor
- * or set after the fact.  Note, any properties passed into the constructor will
- * always be set to the instance (regardless of whether they would normally
- * be forwarded from the host).
- *
- * Note that `templatize()` can be run only once for a given `<template>`.
- * Further calls will result in an error. Also, there is a special
- * behavior if the template was duplicated through a mechanism such as
- * `<dom-repeat>` or `<test-fixture>`. In this case, all calls to
- * `templatize()` return the same class for all duplicates of a template.
- * The class returned from `templatize()` is generated only once using
- * the `options` from the first call. This means that any `options`
- * provided to subsequent calls will be ignored. Therefore, it is very
- * important not to close over any variables inside the callbacks. Also,
- * arrow functions must be avoided because they bind the outer `this`.
- * Inside the callbacks, any contextual information can be accessed
- * through `this`, which points to the `owner`.
- *
- * @param {!HTMLTemplateElement} template Template to templatize
- * @param {Polymer_PropertyEffects=} owner Owner of the template instances;
- *   any optional callbacks will be bound to this owner.
- * @param {Object=} options Options dictionary (see summary for details)
- * @return {function(new:TemplateInstanceBase)} Generated class bound to the template
- *   provided
- * @suppress {invalidCasts}
- */
-function templatize(template, owner, options) {
-  // Under strictTemplatePolicy, the templatized element must be owned
-  // by a (trusted) Polymer element, indicated by existence of _methodHost;
-  // e.g. for dom-if & dom-repeat in main document, _methodHost is null
-  if (__WEBPACK_IMPORTED_MODULE_3__utils_settings_js__["e" /* strictTemplatePolicy */] && !findMethodHost(template)) {
-    throw new Error('strictTemplatePolicy: template owner not trusted');
-  }
-  options = /** @type {!TemplatizeOptions} */(options || {});
-  if (template.__templatizeOwner) {
-    throw new Error('A <template> can only be templatized once');
-  }
-  template.__templatizeOwner = owner;
-  const ctor = owner ? owner.constructor : TemplateInstanceBase;
-  let templateInfo = ctor._parseTemplate(template);
-  // Get memoized base class for the prototypical template, which
-  // includes property effects for binding template & forwarding
-  let baseClass = templateInfo.templatizeInstanceClass;
-  if (!baseClass) {
-    baseClass = createTemplatizerClass(template, templateInfo, options);
-    templateInfo.templatizeInstanceClass = baseClass;
-  }
-  // Host property forwarding must be installed onto template instance
-  addPropagateEffects(template, templateInfo, options);
-  // Subclass base class and add reference for this specific template
-  /** @private */
-  let klass = class TemplateInstance extends baseClass {};
-  klass.prototype._methodHost = findMethodHost(template);
-  klass.prototype.__dataHost = template;
-  klass.prototype.__templatizeOwner = owner;
-  klass.prototype.__hostProps = templateInfo.hostProps;
-  klass = /** @type {function(new:TemplateInstanceBase)} */(klass); //eslint-disable-line no-self-assign
-  return klass;
-}
-
-/**
- * Returns the template "model" associated with a given element, which
- * serves as the binding scope for the template instance the element is
- * contained in. A template model is an instance of
- * `TemplateInstanceBase`, and should be used to manipulate data
- * associated with this template instance.
- *
- * Example:
- *
- *   let model = modelForElement(el);
- *   if (model.index < 10) {
- *     model.set('item.checked', true);
- *   }
- *
- * @param {HTMLTemplateElement} template The model will be returned for
- *   elements stamped from this template
- * @param {Node=} node Node for which to return a template model.
- * @return {TemplateInstanceBase} Template instance representing the
- *   binding scope for the element
- */
-function modelForElement(template, node) {
-  let model;
-  while (node) {
-    // An element with a __templatizeInstance marks the top boundary
-    // of a scope; walk up until we find one, and then ensure that
-    // its __dataHost matches `this`, meaning this dom-repeat stamped it
-    if ((model = node.__templatizeInstance)) {
-      // Found an element stamped by another template; keep walking up
-      // from its __dataHost
-      if (model.__dataHost != template) {
-        node = model.__dataHost;
+    if (min == northWest) {
+      if (northWest == current) {
+        edits.push(EDIT_LEAVE);
       } else {
-        return model;
+        edits.push(EDIT_UPDATE);
+        current = northWest;
       }
+      i--;
+      j--;
+    } else if (min == west) {
+      edits.push(EDIT_DELETE);
+      i--;
+      current = west;
     } else {
-      // Still in a template scope, keep going up until
-      // a __templatizeInstance is found
-      node = node.parentNode;
+      edits.push(EDIT_ADD);
+      j--;
+      current = north;
     }
   }
-  return null;
+
+  edits.reverse();
+  return edits;
+}
+
+/**
+ * Splice Projection functions:
+ *
+ * A splice map is a representation of how a previous array of items
+ * was transformed into a new array of items. Conceptually it is a list of
+ * tuples of
+ *
+ *   <index, removed, addedCount>
+ *
+ * which are kept in ascending index order of. The tuple represents that at
+ * the |index|, |removed| sequence of items were removed, and counting forward
+ * from |index|, |addedCount| items were added.
+ */
+
+/**
+ * Lacking individual splice mutation information, the minimal set of
+ * splices can be synthesized given the previous state and final state of an
+ * array. The basic approach is to calculate the edit distance matrix and
+ * choose the shortest path through it.
+ *
+ * Complexity: O(l * p)
+ *   l: The length of the current array
+ *   p: The length of the old array
+ *
+ * @param {!Array} current The current "changed" array for which to
+ * calculate splices.
+ * @param {number} currentStart Starting index in the `current` array for
+ * which splices are calculated.
+ * @param {number} currentEnd Ending index in the `current` array for
+ * which splices are calculated.
+ * @param {!Array} old The original "unchanged" array to compare `current`
+ * against to determine splices.
+ * @param {number} oldStart Starting index in the `old` array for
+ * which splices are calculated.
+ * @param {number} oldEnd Ending index in the `old` array for
+ * which splices are calculated.
+ * @return {!Array} Returns an array of splice record objects. Each of these
+ * contains: `index` the location where the splice occurred; `removed`
+ * the array of removed items from this location; `addedCount` the number
+ * of items added at this location.
+ */
+function calcSplices(current, currentStart, currentEnd,
+                      old, oldStart, oldEnd) {
+  let prefixCount = 0;
+  let suffixCount = 0;
+  let splice;
+
+  let minLength = Math.min(currentEnd - currentStart, oldEnd - oldStart);
+  if (currentStart == 0 && oldStart == 0)
+    prefixCount = sharedPrefix(current, old, minLength);
+
+  if (currentEnd == current.length && oldEnd == old.length)
+    suffixCount = sharedSuffix(current, old, minLength - prefixCount);
+
+  currentStart += prefixCount;
+  oldStart += prefixCount;
+  currentEnd -= suffixCount;
+  oldEnd -= suffixCount;
+
+  if (currentEnd - currentStart == 0 && oldEnd - oldStart == 0)
+    return [];
+
+  if (currentStart == currentEnd) {
+    splice = newSplice(currentStart, [], 0);
+    while (oldStart < oldEnd)
+      splice.removed.push(old[oldStart++]);
+
+    return [ splice ];
+  } else if (oldStart == oldEnd)
+    return [ newSplice(currentStart, [], currentEnd - currentStart) ];
+
+  let ops = spliceOperationsFromEditDistances(
+      calcEditDistances(current, currentStart, currentEnd,
+                             old, oldStart, oldEnd));
+
+  splice = undefined;
+  let splices = [];
+  let index = currentStart;
+  let oldIndex = oldStart;
+  for (let i = 0; i < ops.length; i++) {
+    switch(ops[i]) {
+      case EDIT_LEAVE:
+        if (splice) {
+          splices.push(splice);
+          splice = undefined;
+        }
+
+        index++;
+        oldIndex++;
+        break;
+      case EDIT_UPDATE:
+        if (!splice)
+          splice = newSplice(index, [], 0);
+
+        splice.addedCount++;
+        index++;
+
+        splice.removed.push(old[oldIndex]);
+        oldIndex++;
+        break;
+      case EDIT_ADD:
+        if (!splice)
+          splice = newSplice(index, [], 0);
+
+        splice.addedCount++;
+        index++;
+        break;
+      case EDIT_DELETE:
+        if (!splice)
+          splice = newSplice(index, [], 0);
+
+        splice.removed.push(old[oldIndex]);
+        oldIndex++;
+        break;
+    }
+  }
+
+  if (splice) {
+    splices.push(splice);
+  }
+  return splices;
+}
+
+function sharedPrefix(current, old, searchLength) {
+  for (let i = 0; i < searchLength; i++)
+    if (!equals(current[i], old[i]))
+      return i;
+  return searchLength;
+}
+
+function sharedSuffix(current, old, searchLength) {
+  let index1 = current.length;
+  let index2 = old.length;
+  let count = 0;
+  while (count < searchLength && equals(current[--index1], old[--index2]))
+    count++;
+
+  return count;
+}
+
+/**
+ * Returns an array of splice records indicating the minimum edits required
+ * to transform the `previous` array into the `current` array.
+ *
+ * Splice records are ordered by index and contain the following fields:
+ * - `index`: index where edit started
+ * - `removed`: array of removed items from this index
+ * - `addedCount`: number of items added at this index
+ *
+ * This function is based on the Levenshtein "minimum edit distance"
+ * algorithm. Note that updates are treated as removal followed by addition.
+ *
+ * The worst-case time complexity of this algorithm is `O(l * p)`
+ *   l: The length of the current array
+ *   p: The length of the previous array
+ *
+ * However, the worst-case complexity is reduced by an `O(n)` optimization
+ * to detect any shared prefix & suffix between the two arrays and only
+ * perform the more expensive minimum edit distance calculation over the
+ * non-shared portions of the arrays.
+ *
+ * @function
+ * @param {!Array} current The "changed" array for which splices will be
+ * calculated.
+ * @param {!Array} previous The "unchanged" original array to compare
+ * `current` against to determine the splices.
+ * @return {!Array} Returns an array of splice record objects. Each of these
+ * contains: `index` the location where the splice occurred; `removed`
+ * the array of removed items from this location; `addedCount` the number
+ * of items added at this location.
+ */
+function calculateSplices(current, previous) {
+  return calcSplices(current, 0, current.length, previous, 0,
+                          previous.length);
+}
+
+function equals(currentValue, previousValue) {
+  return currentValue === previousValue;
 }
 
 
-
-
 /***/ }),
-/* 26 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_resizable_behavior_iron_resizable_behavior_js__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_async_js__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_debounce_js__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_flush_js__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_settings_js__ = __webpack_require__(7);
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+// Contains all connected resizables that do not have a parent.
+var ORPHANS = new Set();
+
+/**
+ * `IronResizableBehavior` is a behavior that can be used in Polymer elements to
+ * coordinate the flow of resize events between "resizers" (elements that
+ *control the size or hidden state of their children) and "resizables" (elements
+ *that need to be notified when they are resized or un-hidden by their parents
+ *in order to take action on their new measurements).
+ *
+ * Elements that perform measurement should add the `IronResizableBehavior`
+ *behavior to their element definition and listen for the `iron-resize` event on
+ *themselves. This event will be fired when they become showing after having
+ *been hidden, when they are resized explicitly by another resizable, or when
+ *the window has been resized.
+ *
+ * Note, the `iron-resize` event is non-bubbling.
+ *
+ * @polymerBehavior
+ * @demo demo/index.html
+ **/
+const IronResizableBehavior = {
+  properties: {
+    /**
+     * The closest ancestor element that implements `IronResizableBehavior`.
+     */
+    _parentResizable: {
+      type: Object,
+      observer: '_parentResizableChanged',
+    },
+
+    /**
+     * True if this element is currently notifying its descendant elements of
+     * resize.
+     */
+    _notifyingDescendant: {
+      type: Boolean,
+      value: false,
+    }
+  },
+
+  listeners: {
+    'iron-request-resize-notifications': '_onIronRequestResizeNotifications'
+  },
+
+  created: function() {
+    // We don't really need property effects on these, and also we want them
+    // to be created before the `_parentResizable` observer fires:
+    this._interestedResizables = [];
+    this._boundNotifyResize = this.notifyResize.bind(this);
+    this._boundOnDescendantIronResize = this._onDescendantIronResize.bind(this);
+  },
+
+  attached: function() {
+    this._requestResizeNotifications();
+  },
+
+  detached: function() {
+    if (this._parentResizable) {
+      this._parentResizable.stopResizeNotificationsFor(this);
+    } else {
+      ORPHANS.delete(this);
+      window.removeEventListener('resize', this._boundNotifyResize);
+    }
+
+    this._parentResizable = null;
+  },
+
+  /**
+   * Can be called to manually notify a resizable and its descendant
+   * resizables of a resize change.
+   */
+  notifyResize: function() {
+    if (!this.isAttached) {
+      return;
+    }
+
+    this._interestedResizables.forEach(function(resizable) {
+      if (this.resizerShouldNotify(resizable)) {
+        this._notifyDescendant(resizable);
+      }
+    }, this);
+
+    this._fireResize();
+  },
+
+  /**
+   * Used to assign the closest resizable ancestor to this resizable
+   * if the ancestor detects a request for notifications.
+   */
+  assignParentResizable: function(parentResizable) {
+    if (this._parentResizable) {
+      this._parentResizable.stopResizeNotificationsFor(this);
+    }
+
+    this._parentResizable = parentResizable;
+
+    if (parentResizable &&
+        parentResizable._interestedResizables.indexOf(this) === -1) {
+      parentResizable._interestedResizables.push(this);
+      parentResizable._subscribeIronResize(this);
+    }
+  },
+
+  /**
+   * Used to remove a resizable descendant from the list of descendants
+   * that should be notified of a resize change.
+   */
+  stopResizeNotificationsFor: function(target) {
+    var index = this._interestedResizables.indexOf(target);
+
+    if (index > -1) {
+      this._interestedResizables.splice(index, 1);
+      this._unsubscribeIronResize(target);
+    }
+  },
+
+  /**
+   * Subscribe this element to listen to iron-resize events on the given target.
+   *
+   * Preferred over target.listen because the property renamer does not
+   * understand to rename when the target is not specifically "this"
+   *
+   * @param {!HTMLElement} target Element to listen to for iron-resize events.
+   */
+  _subscribeIronResize: function(target) {
+    target.addEventListener('iron-resize', this._boundOnDescendantIronResize);
+  },
+
+  /**
+   * Unsubscribe this element from listening to to iron-resize events on the
+   * given target.
+   *
+   * Preferred over target.unlisten because the property renamer does not
+   * understand to rename when the target is not specifically "this"
+   *
+   * @param {!HTMLElement} target Element to listen to for iron-resize events.
+   */
+  _unsubscribeIronResize: function(target) {
+    target.removeEventListener(
+        'iron-resize', this._boundOnDescendantIronResize);
+  },
+
+  /**
+   * This method can be overridden to filter nested elements that should or
+   * should not be notified by the current element. Return true if an element
+   * should be notified, or false if it should not be notified.
+   *
+   * @param {HTMLElement} element A candidate descendant element that
+   * implements `IronResizableBehavior`.
+   * @return {boolean} True if the `element` should be notified of resize.
+   */
+  resizerShouldNotify: function(element) {
+    return true;
+  },
+
+  _onDescendantIronResize: function(event) {
+    if (this._notifyingDescendant) {
+      event.stopPropagation();
+      return;
+    }
+
+    // no need to use this during shadow dom because of event retargeting
+    if (!__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_settings_js__["f" /* useShadow */]) {
+      this._fireResize();
+    }
+  },
+
+  _fireResize: function() {
+    this.fire('iron-resize', null, {node: this, bubbles: false});
+  },
+
+  _onIronRequestResizeNotifications: function(event) {
+    var target = /** @type {!EventTarget} */ (Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).rootTarget);
+    if (target === this) {
+      return;
+    }
+
+    target.assignParentResizable(this);
+    this._notifyDescendant(target);
+
+    event.stopPropagation();
+  },
+
+  _parentResizableChanged: function(parentResizable) {
+    if (parentResizable) {
+      window.removeEventListener('resize', this._boundNotifyResize);
+    }
+  },
+
+  _notifyDescendant: function(descendant) {
+    // NOTE(cdata): In IE10, attached is fired on children first, so it's
+    // important not to notify them if the parent is not attached yet (or
+    // else they will get redundantly notified when the parent attaches).
+    if (!this.isAttached) {
+      return;
+    }
+
+    this._notifyingDescendant = true;
+    descendant.notifyResize();
+    this._notifyingDescendant = false;
+  },
+
+  _requestResizeNotifications: function() {
+    if (!this.isAttached) {
+      return;
+    }
+
+    if (document.readyState === 'loading') {
+      var _requestResizeNotifications =
+          this._requestResizeNotifications.bind(this);
+      document.addEventListener(
+          'readystatechange', function readystatechanged() {
+            document.removeEventListener('readystatechange', readystatechanged);
+            _requestResizeNotifications();
+          });
+    } else {
+      this._findParent();
+
+      if (!this._parentResizable) {
+        // If this resizable is an orphan, tell other orphans to try to find
+        // their parent again, in case it's this resizable.
+        ORPHANS.forEach(function(orphan) {
+          if (orphan !== this) {
+            orphan._findParent();
+          }
+        }, this);
+
+        window.addEventListener('resize', this._boundNotifyResize);
+        this.notifyResize();
+      } else {
+        // If this resizable has a parent, tell other child resizables of
+        // that parent to try finding their parent again, in case it's this
+        // resizable.
+        this._parentResizable._interestedResizables
+            .forEach(function(resizable) {
+              if (resizable !== this) {
+                resizable._findParent();
+              }
+            }, this);
+      }
+    }
+  },
+
+  _findParent: function() {
+    this.assignParentResizable(null);
+    this.fire(
+        'iron-request-resize-notifications',
+        null,
+        {node: this, bubbles: true, cancelable: true});
+
+    if (!this._parentResizable) {
+      ORPHANS.add(this);
+    } else {
+      ORPHANS.delete(this);
+    }
+  }
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = IronResizableBehavior;
+
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_scroll_target_behavior_iron_scroll_target_behavior_js__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_helpers_js__ = __webpack_require__(41);
 /**
 @license
 Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
@@ -8789,90 +13684,407 @@ found at http://polymer.github.io/PATENTS.txt
 
 
 
-
-
-
 /**
+ * `Polymer.AppScrollEffectsBehavior` provides an interface that allows an
+ * element to use scrolls effects.
+ *
+ * ### Importing the app-layout effects
+ *
+ * app-layout provides a set of scroll effects that can be used by explicitly
+ * importing `app-scroll-effects.js`:
+ *
+ * ```js
+ * import '@polymer/app-layout/app-scroll-effects/app-scroll-effects.js';
+ * ```
+ *
+ * The scroll effects can also be used by individually importing
+ * `@polymer/app-layout/app-scroll-effects/effects/[effectName].js`. For
+ * example:
+ *
+ * ```js
+ * import '@polymer/app-layout/app-scroll-effects/effects/waterfall.js';
+ * ```
+ *
+ * ### Consuming effects
+ *
+ * Effects can be consumed via the `effects` property. For example:
+ *
+ * ```html
+ * <app-header effects="waterfall"></app-header>
+ * ```
+ *
+ * ### Creating scroll effects
+ *
+ * You may want to create a custom scroll effect if you need to modify the CSS
+ * of an element based on the scroll position.
+ *
+ * A scroll effect definition is an object with `setUp()`, `tearDown()` and
+ * `run()` functions.
+ *
+ * To register the effect, you can use
+ * `Polymer.AppLayout.registerEffect(effectName, effectDef)` For example, let's
+ * define an effect that resizes the header's logo:
+ *
+ * ```js
+ * Polymer.AppLayout.registerEffect('resizable-logo', {
+ *   setUp: function(config) {
+ *     // the effect's config is passed to the setUp.
+ *     this._fxResizeLogo = { logo: Polymer.dom(this).querySelector('[logo]') };
+ *   },
+ *
+ *   run: function(progress) {
+ *      // the progress of the effect
+ *      this.transform('scale3d(' + progress + ', '+ progress +', 1)',
+ * this._fxResizeLogo.logo);
+ *   },
+ *
+ *   tearDown: function() {
+ *      // clean up and reset of states
+ *      delete this._fxResizeLogo;
+ *   }
+ * });
+ * ```
+ * Now, you can consume the effect:
+ *
+ * ```html
+ * <app-header id="appHeader" effects="resizable-logo">
+ *   <img logo src="logo.svg">
+ * </app-header>
+ * ```
+ *
+ * ### Imperative API
+ *
+ * ```js
+ * var logoEffect = appHeader.createEffect('resizable-logo', effectConfig);
+ * // run the effect: logoEffect.run(progress);
+ * // tear down the effect: logoEffect.tearDown();
+ * ```
+ *
+ * ### Configuring effects
+ *
+ * For effects installed via the `effects` property, their configuration can be
+ * set via the `effectsConfig` property. For example:
+ *
+ * ```html
+ * <app-header effects="waterfall"
+ *   effects-config='{"waterfall": {"startsAt": 0, "endsAt": 0.5}}'>
+ * </app-header>
+ * ```
+ *
+ * All effects have a `startsAt` and `endsAt` config property. They specify at
+ * what point the effect should start and end. This value goes from 0 to 1
+ * inclusive.
+ *
  * @polymerBehavior
  */
-const AppLayoutBehavior = [
-  __WEBPACK_IMPORTED_MODULE_1__polymer_iron_resizable_behavior_iron_resizable_behavior_js__["a" /* IronResizableBehavior */],
+const AppScrollEffectsBehavior = [
+  __WEBPACK_IMPORTED_MODULE_1__polymer_iron_scroll_target_behavior_iron_scroll_target_behavior_js__["a" /* IronScrollTargetBehavior */],
   {
 
-    listeners: {
-      'app-reset-layout': '_appResetLayoutHandler',
-      'iron-resize': 'resetLayout'
-    },
+    properties: {
 
-    attached: function() {
-      this.fire('app-reset-layout');
-    },
+      /**
+       * A space-separated list of the effects names that will be triggered when
+       * the user scrolls. e.g. `waterfall parallax-background` installs the
+       * `waterfall` and `parallax-background`.
+       */
+      effects: {type: String},
 
-    _appResetLayoutHandler: function(e) {
-      if (Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(e).path[0] === this) {
-        return;
+      /**
+       * An object that configurates the effects installed via the `effects`
+       * property. e.g.
+       * ```js
+       *  element.effectsConfig = {
+       *   "blend-background": {
+       *     "startsAt": 0.5
+       *   }
+       * };
+       * ```
+       * Every effect has at least two config properties: `startsAt` and
+       * `endsAt`. These properties indicate when the event should start and end
+       * respectively and relative to the overall element progress. So for
+       * example, if `blend-background` starts at `0.5`, the effect will only
+       * start once the current element reaches 0.5 of its progress. In this
+       * context, the progress is a value in the range of `[0, 1]` that
+       * indicates where this element is on the screen relative to the viewport.
+       */
+      effectsConfig: {
+        type: Object,
+        value: function() {
+          return {};
+        }
+      },
+
+      /**
+       * Disables CSS transitions and scroll effects on the element.
+       */
+      disabled: {type: Boolean, reflectToAttribute: true, value: false},
+
+      /**
+       * Allows to set a `scrollTop` threshold. When greater than 0,
+       * `thresholdTriggered` is true only when the scroll target's `scrollTop`
+       * has reached this value.
+       *
+       * For example, if `threshold = 100`, `thresholdTriggered` is true when
+       * the `scrollTop` is at least `100`.
+       */
+      threshold: {type: Number, value: 0},
+
+      /**
+       * True if the `scrollTop` threshold (set in `scrollTopThreshold`) has
+       * been reached.
+       */
+      thresholdTriggered: {
+        type: Boolean,
+        notify: true,
+        readOnly: true,
+        reflectToAttribute: true
       }
-      this.resetLayout();
-      e.stopPropagation();
     },
 
-    _updateLayoutStates: function() {
-      console.error('unimplemented');
+    observers: ['_effectsChanged(effects, effectsConfig, isAttached)'],
+
+    /**
+     * Updates the scroll state. This method should be overridden
+     * by the consumer of this behavior.
+     *
+     * @method _updateScrollState
+     * @param {number} scrollTop
+     */
+    _updateScrollState: function(scrollTop) {},
+
+    /**
+     * Returns true if the current element is on the screen.
+     * That is, visible in the current viewport. This method should be
+     * overridden by the consumer of this behavior.
+     *
+     * @method isOnScreen
+     * @return {boolean}
+     */
+    isOnScreen: function() {
+      return false;
     },
 
     /**
-     * Resets the layout. If you changed the size of this element via CSS
-     * you can notify the changes by either firing the `iron-resize` event
-     * or calling `resetLayout` directly.
+     * Returns true if there's content below the current element. This method
+     * should be overridden by the consumer of this behavior.
      *
-     * @method resetLayout
+     * @method isContentBelow
+     * @return {boolean}
      */
-    resetLayout: function() {
-      var self = this;
-      var cb = this._updateLayoutStates.bind(this);
-      this._layoutDebouncer =
-          __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_debounce_js__["a" /* Debouncer */].debounce(this._layoutDebouncer, __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_async_js__["a" /* animationFrame */], cb);
-      Object(__WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_flush_js__["a" /* enqueueDebouncer */])(this._layoutDebouncer);
-      this._notifyDescendantResize();
+    isContentBelow: function() {
+      return false;
     },
 
-    _notifyLayoutChanged: function() {
-      var self = this;
-      // TODO: the event `app-reset-layout` can be fired synchronously
-      // as long as `_updateLayoutStates` waits for all the microtasks after
-      // rAF. E.g. requestAnimationFrame(setTimeOut())
-      requestAnimationFrame(function() {
-        self.fire('app-reset-layout');
-      });
+    /**
+     * List of effects handlers that will take place during scroll.
+     *
+     * @type {Array<Function>}
+     */
+    _effectsRunFn: null,
+
+    /**
+     * List of the effects definitions installed via the `effects` property.
+     *
+     * @type {Array<Object>}
+     */
+    _effects: null,
+
+    /**
+     * The clamped value of `_scrollTop`.
+     * @type number
+     */
+    get _clampedScrollTop() {
+      return Math.max(0, this._scrollTop);
     },
 
-    _notifyDescendantResize: function() {
-      if (!this.isAttached) {
+    attached: function() {
+      this._scrollStateChanged();
+    },
+
+    detached: function() {
+      this._tearDownEffects();
+    },
+
+    /**
+     * Creates an effect object from an effect's name that can be used to run
+     * effects programmatically.
+     *
+     * @method createEffect
+     * @param {string} effectName The effect's name registered via `Polymer.AppLayout.registerEffect`.
+     * @param {Object=} effectConfig The effect config object. (Optional)
+     * @return {Object} An effect object with the following functions:
+     *
+     *  * `effect.setUp()`, Sets up the requirements for the effect.
+     *       This function is called automatically before the `effect` function
+     * returns.
+     *  * `effect.run(progress, y)`, Runs the effect given a `progress`.
+     *  * `effect.tearDown()`, Cleans up any DOM nodes or element references
+     * used by the effect.
+     *
+     * Example:
+     * ```js
+     * var parallax = element.createEffect('parallax-background');
+     * // runs the effect
+     * parallax.run(0.5, 0);
+     * ```
+     */
+    createEffect: function(effectName, effectConfig) {
+      var effectDef = __WEBPACK_IMPORTED_MODULE_2__helpers_helpers_js__["a" /* _scrollEffects */][effectName];
+      if (!effectDef) {
+        throw new ReferenceError(this._getUndefinedMsg(effectName));
+      }
+      var prop = this._boundEffect(effectDef, effectConfig || {});
+      prop.setUp();
+      return prop;
+    },
+
+    /**
+     * Called when `effects` or `effectsConfig` changes.
+     */
+    _effectsChanged: function(effects, effectsConfig, isAttached) {
+      this._tearDownEffects();
+
+      if (!effects || !isAttached) {
         return;
       }
-      this._interestedResizables.forEach(function(resizable) {
-        if (this.resizerShouldNotify(resizable)) {
-          this._notifyDescendant(resizable);
+      effects.split(' ').forEach(function(effectName) {
+        var effectDef;
+        if (effectName !== '') {
+          if ((effectDef = __WEBPACK_IMPORTED_MODULE_2__helpers_helpers_js__["a" /* _scrollEffects */][effectName])) {
+            this._effects.push(
+                this._boundEffect(effectDef, effectsConfig[effectName]));
+          } else {
+            console.warn(this._getUndefinedMsg(effectName));
+          }
         }
       }, this);
+
+      this._setUpEffect();
+    },
+
+    /**
+     * Forces layout
+     */
+    _layoutIfDirty: function() {
+      return this.offsetWidth;
+    },
+
+    /**
+     * Returns an effect object bound to the current context.
+     *
+     * @param {Object} effectDef
+     * @param {Object=} effectsConfig The effect config object if the effect accepts config values. (Optional)
+     */
+    _boundEffect: function(effectDef, effectsConfig) {
+      effectsConfig = effectsConfig || {};
+      var startsAt = parseFloat(effectsConfig.startsAt || 0);
+      var endsAt = parseFloat(effectsConfig.endsAt || 1);
+      var deltaS = endsAt - startsAt;
+      var noop = function() {};
+      // fast path if possible
+      var runFn = (startsAt === 0 && endsAt === 1) ?
+          effectDef.run :
+          function(progress, y) {
+            effectDef.run.call(
+                this, Math.max(0, (progress - startsAt) / deltaS), y);
+          };
+      return {
+        setUp: effectDef.setUp ? effectDef.setUp.bind(this, effectsConfig) :
+                                 noop,
+        run: effectDef.run ? runFn.bind(this) : noop,
+        tearDown: effectDef.tearDown ? effectDef.tearDown.bind(this) : noop
+      };
+    },
+
+    /**
+     * Sets up the effects.
+     */
+    _setUpEffect: function() {
+      if (this.isAttached && this._effects) {
+        this._effectsRunFn = [];
+        this._effects.forEach(function(effectDef) {
+          // install the effect only if no error was reported
+          if (effectDef.setUp() !== false) {
+            this._effectsRunFn.push(effectDef.run);
+          }
+        }, this);
+      }
+    },
+
+    /**
+     * Tears down the effects.
+     */
+    _tearDownEffects: function() {
+      if (this._effects) {
+        this._effects.forEach(function(effectDef) {
+          effectDef.tearDown();
+        });
+      }
+      this._effectsRunFn = [];
+      this._effects = [];
+    },
+
+    /**
+     * Runs the effects.
+     *
+     * @param {number} p The progress
+     * @param {number} y The top position of the current element relative to the viewport.
+     */
+    _runEffects: function(p, y) {
+      if (this._effectsRunFn) {
+        this._effectsRunFn.forEach(function(run) {
+          run(p, y);
+        });
+      }
+    },
+
+    /**
+     * Overrides the `_scrollHandler`.
+     */
+    _scrollHandler: function() {
+      this._scrollStateChanged();
+    },
+
+    _scrollStateChanged: function() {
+      if (!this.disabled) {
+        var scrollTop = this._clampedScrollTop;
+        this._updateScrollState(scrollTop);
+        if (this.threshold > 0) {
+          this._setThresholdTriggered(scrollTop >= this.threshold);
+        }
+      }
+    },
+
+    /**
+     * Override this method to return a reference to a node in the local DOM.
+     * The node is consumed by a scroll effect.
+     *
+     * @param {string} id The id for the node.
+     */
+    _getDOMRef: function(id) {
+      console.warn('_getDOMRef', '`' + id + '` is undefined');
+    },
+
+    _getUndefinedMsg: function(effectName) {
+      return 'Scroll effect `' + effectName + '` is undefined. ' +
+          'Did you forget to import app-layout/app-scroll-effects/effects/' +
+          effectName + '.html ?';
     }
+
   }
 ];
-/* harmony export (immutable) */ __webpack_exports__["a"] = AppLayoutBehavior;
+/* harmony export (immutable) */ __webpack_exports__["a"] = AppScrollEffectsBehavior;
 
 
 
 /***/ }),
-/* 27 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_iron_flex_layout_iron_flex_layout_js__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_meta_iron_meta_js__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -8887,538 +14099,208 @@ found at http://polymer.github.io/PATENTS.txt
 
 
 
+class IronMeta {
+  /**
+   * @param {{
+   *   type: (string|null|undefined),
+   *   key: (string|null|undefined),
+   *   value: *,
+   * }=} options
+   */
+  constructor(options) {
+    IronMeta[' '](options);
 
+    /** @type {string} */
+    this.type = (options && options.type) || 'default';
+    /** @type {string|null|undefined} */
+    this.key = options && options.key;
+    if (options && 'value' in options) {
+      /** @type {*} */
+      this.value = options.value;
+    }
+  }
 
+  /** @return {*} */
+  get value() {
+    var type = this.type;
+    var key = this.key;
 
+    if (type && key) {
+      return IronMeta.types[type] && IronMeta.types[type][key];
+    }
+  }
+
+  /** @param {*} value */
+  set value(value) {
+    var type = this.type;
+    var key = this.key;
+
+    if (type && key) {
+      type = IronMeta.types[type] = IronMeta.types[type] || {};
+      if (value == null) {
+        delete type[key];
+      } else {
+        type[key] = value;
+      }
+    }
+  }
+
+  /** @return {!Array<*>} */
+  get list() {
+    var type = this.type;
+
+    if (type) {
+      var items = IronMeta.types[this.type];
+      if (!items) {
+        return [];
+      }
+
+      return Object.keys(items).map(function(key) {
+        return metaDatas[this.type][key];
+      }, this);
+    }
+  }
+
+  /**
+   * @param {string} key
+   * @return {*}
+   */
+  byKey(key) {
+    this.key = key;
+    return this.value;
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = IronMeta;
+;
+
+// This function is used to convince Closure not to remove constructor calls
+// for instances that are not held anywhere. For example, when
+// `new IronMeta({...})` is used only for the side effect of adding a value.
+IronMeta[' '] = function() {};
+
+IronMeta.types = {};
+
+var metaDatas = IronMeta.types;
 
 /**
+`iron-meta` is a generic element you can use for sharing information across the
+DOM tree. It uses [monostate pattern](http://c2.com/cgi/wiki?MonostatePattern)
+such that any instance of iron-meta has access to the shared information. You
+can use `iron-meta` to share whatever you want (or create an extension [like
+x-meta] for enhancements).
 
-The `iron-icon` element displays an icon. By default an icon renders as a 24px
-square.
+The `iron-meta` instances containing your actual data can be loaded in an
+import, or constructed in any way you see fit. The only requirement is that you
+create them before you try to access them.
 
-Example using src:
+Examples:
 
-    <iron-icon src="star.png"></iron-icon>
+If I create an instance like this:
 
-Example setting size to 32px x 32px:
+    <iron-meta key="info" value="foo/bar"></iron-meta>
 
-    <iron-icon class="big" src="big_star.png"></iron-icon>
+Note that value="foo/bar" is the metadata I've defined. I could define more
+attributes or use child nodes to define additional metadata.
 
-    <style is="custom-style">
-      .big {
-        --iron-icon-height: 32px;
-        --iron-icon-width: 32px;
-      }
-    </style>
+Now I can access that element (and it's metadata) from any iron-meta instance
+via the byKey method, e.g.
 
-The iron elements include several sets of icons. To use the default set of
-icons, import `iron-icons.js` and use the `icon` attribute to specify an icon:
+    meta.byKey('info');
 
-    <script type="module">
-      import "@polymer/iron-icons/iron-icons.js";
-    </script>
+Pure imperative form would be like:
 
-    <iron-icon icon="menu"></iron-icon>
+    document.createElement('iron-meta').byKey('info');
 
-To use a different built-in set of icons, import the specific
-`iron-icons/<iconset>-icons.js`, and specify the icon as `<iconset>:<icon>`.
-For example, to use a communication icon, you would use:
+Or, in a Polymer element, you can include a meta in your template:
 
-    <script type="module">
-      import "@polymer/iron-icons/communication-icons.js";
-    </script>
-
-    <iron-icon icon="communication:email"></iron-icon>
-
-You can also create custom icon sets of bitmap or SVG icons.
-
-Example of using an icon named `cherry` from a custom iconset with the ID
-`fruit`:
-
-    <iron-icon icon="fruit:cherry"></iron-icon>
-
-See `<iron-iconset>` and `<iron-iconset-svg>` for more information about how to
-create a custom iconset.
-
-See the `iron-icons` demo to see the icons available in the various iconsets.
-
-### Styling
-
-The following custom properties are available for styling:
-
-Custom property | Description | Default
-----------------|-------------|----------
-`--iron-icon` | Mixin applied to the icon | {}
-`--iron-icon-width` | Width of the icon | `24px`
-`--iron-icon-height` | Height of the icon | `24px`
-`--iron-icon-fill-color` | Fill color of the svg icon | `currentcolor`
-`--iron-icon-stroke-color` | Stroke color of the svg icon | none
+    <iron-meta id="meta"></iron-meta>
+    ...
+    this.$.meta.byKey('info');
 
 @group Iron Elements
-@element iron-icon
 @demo demo/index.html
-@hero hero.svg
-@homepage polymer.github.io
+@element iron-meta
 */
-Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
-  _template: __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
-    <style>
-      :host {
-        @apply --layout-inline;
-        @apply --layout-center-center;
-        position: relative;
+Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
 
-        vertical-align: middle;
-
-        fill: var(--iron-icon-fill-color, currentcolor);
-        stroke: var(--iron-icon-stroke-color, none);
-
-        width: var(--iron-icon-width, 24px);
-        height: var(--iron-icon-height, 24px);
-        @apply --iron-icon;
-      }
-
-      :host([hidden]) {
-        display: none;
-      }
-    </style>
-`,
-
-  is: 'iron-icon',
+  is: 'iron-meta',
 
   properties: {
 
     /**
-     * The name of the icon to use. The name should be of the form:
-     * `iconset_name:icon_name`.
+     * The type of meta-data.  All meta-data of the same type is stored
+     * together.
+     * @type {string}
      */
-    icon: {type: String},
+    type: {
+      type: String,
+      value: 'default',
+    },
 
     /**
-     * The name of the theme to used, if one is specified by the
-     * iconset.
+     * The key used to store `value` under the `type` namespace.
+     * @type {?string}
      */
-    theme: {type: String},
+    key: {
+      type: String,
+    },
 
     /**
-     * If using iron-icon without an iconset, you can set the src to be
-     * the URL of an individual icon image file. Note that this will take
-     * precedence over a given icon attribute.
+     * The meta-data to store or retrieve.
+     * @type {*}
      */
-    src: {type: String},
+    value: {
+      type: String,
+      notify: true,
+    },
 
     /**
-     * @type {!IronMeta}
+     * If true, `value` is set to the iron-meta instance itself.
      */
-    _meta: {value: __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_polymer_legacy_js__["a" /* Base */].create('iron-meta', {type: 'iconset'})}
+    self: {type: Boolean, observer: '_selfChanged'},
 
+    __meta: {type: Boolean, computed: '__computeMeta(type, key, value)'}
   },
 
-  observers: [
-    '_updateIcon(_meta, isAttached)',
-    '_updateIcon(theme, isAttached)',
-    '_srcChanged(src, isAttached)',
-    '_iconChanged(icon, isAttached)'
-  ],
+  hostAttributes: {hidden: true},
 
-  _DEFAULT_ICONSET: 'icons',
+  __computeMeta: function(type, key, value) {
+    var meta = new IronMeta({type: type, key: key});
 
-  _iconChanged: function(icon) {
-    var parts = (icon || '').split(':');
-    this._iconName = parts.pop();
-    this._iconsetName = parts.pop() || this._DEFAULT_ICONSET;
-    this._updateIcon();
-  },
-
-  _srcChanged: function(src) {
-    this._updateIcon();
-  },
-
-  _usesIconset: function() {
-    return this.icon || !this.src;
-  },
-
-  /** @suppress {visibility} */
-  _updateIcon: function() {
-    if (this._usesIconset()) {
-      if (this._img && this._img.parentNode) {
-        Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this.root).removeChild(this._img);
-      }
-      if (this._iconName === '') {
-        if (this._iconset) {
-          this._iconset.removeIcon(this);
-        }
-      } else if (this._iconsetName && this._meta) {
-        this._iconset = /** @type {?Polymer.Iconset} */ (
-            this._meta.byKey(this._iconsetName));
-        if (this._iconset) {
-          this._iconset.applyIcon(this, this._iconName, this.theme);
-          this.unlisten(window, 'iron-iconset-added', '_updateIcon');
-        } else {
-          this.listen(window, 'iron-iconset-added', '_updateIcon');
-        }
-      }
-    } else {
-      if (this._iconset) {
-        this._iconset.removeIcon(this);
-      }
-      if (!this._img) {
-        this._img = document.createElement('img');
-        this._img.style.width = '100%';
-        this._img.style.height = '100%';
-        this._img.draggable = false;
-      }
-      this._img.src = this.src;
-      Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this.root).appendChild(this._img);
+    if (value !== undefined && value !== meta.value) {
+      meta.value = value;
+    } else if (this.value !== meta.value) {
+      this.value = meta.value;
     }
+
+    return meta;
+  },
+
+  get list() {
+    return this.__meta && this.__meta.list;
+  },
+
+  _selfChanged: function(self) {
+    if (self) {
+      this.value = this;
+    }
+  },
+
+  /**
+   * Retrieves meta data value by key.
+   *
+   * @method byKey
+   * @param {string} key The key of the meta-data to be returned.
+   * @return {*}
+   */
+  byKey: function(key) {
+    return new IronMeta({type: this.type, key: key}).value;
   }
 });
 
 
 /***/ }),
-/* 28 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iron_control_state_js__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-/**
- * @demo demo/index.html
- * @polymerBehavior IronButtonState
- */
-const IronButtonStateImpl = {
-
-  properties: {
-
-    /**
-     * If true, the user is currently holding down the button.
-     */
-    pressed: {
-      type: Boolean,
-      readOnly: true,
-      value: false,
-      reflectToAttribute: true,
-      observer: '_pressedChanged'
-    },
-
-    /**
-     * If true, the button toggles the active state with each tap or press
-     * of the spacebar.
-     */
-    toggles: {type: Boolean, value: false, reflectToAttribute: true},
-
-    /**
-     * If true, the button is a toggle and is currently in the active state.
-     */
-    active:
-        {type: Boolean, value: false, notify: true, reflectToAttribute: true},
-
-    /**
-     * True if the element is currently being pressed by a "pointer," which
-     * is loosely defined as mouse or touch input (but specifically excluding
-     * keyboard input).
-     */
-    pointerDown: {type: Boolean, readOnly: true, value: false},
-
-    /**
-     * True if the input device that caused the element to receive focus
-     * was a keyboard.
-     */
-    receivedFocusFromKeyboard: {type: Boolean, readOnly: true},
-
-    /**
-     * The aria attribute to be set if the button is a toggle and in the
-     * active state.
-     */
-    ariaActiveAttribute: {
-      type: String,
-      value: 'aria-pressed',
-      observer: '_ariaActiveAttributeChanged'
-    }
-  },
-
-  listeners: {down: '_downHandler', up: '_upHandler', tap: '_tapHandler'},
-
-  observers:
-      ['_focusChanged(focused)', '_activeChanged(active, ariaActiveAttribute)'],
-
-  /**
-   * @type {!Object}
-   */
-  keyBindings: {
-    'enter:keydown': '_asyncClick',
-    'space:keydown': '_spaceKeyDownHandler',
-    'space:keyup': '_spaceKeyUpHandler',
-  },
-
-  _mouseEventRe: /^mouse/,
-
-  _tapHandler: function() {
-    if (this.toggles) {
-      // a tap is needed to toggle the active state
-      this._userActivate(!this.active);
-    } else {
-      this.active = false;
-    }
-  },
-
-  _focusChanged: function(focused) {
-    this._detectKeyboardFocus(focused);
-
-    if (!focused) {
-      this._setPressed(false);
-    }
-  },
-
-  _detectKeyboardFocus: function(focused) {
-    this._setReceivedFocusFromKeyboard(!this.pointerDown && focused);
-  },
-
-  // to emulate native checkbox, (de-)activations from a user interaction fire
-  // 'change' events
-  _userActivate: function(active) {
-    if (this.active !== active) {
-      this.active = active;
-      this.fire('change');
-    }
-  },
-
-  _downHandler: function(event) {
-    this._setPointerDown(true);
-    this._setPressed(true);
-    this._setReceivedFocusFromKeyboard(false);
-  },
-
-  _upHandler: function() {
-    this._setPointerDown(false);
-    this._setPressed(false);
-  },
-
-  /**
-   * @param {!KeyboardEvent} event .
-   */
-  _spaceKeyDownHandler: function(event) {
-    var keyboardEvent = event.detail.keyboardEvent;
-    var target = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(keyboardEvent).localTarget;
-
-    // Ignore the event if this is coming from a focused light child, since that
-    // element will deal with it.
-    if (this.isLightDescendant(/** @type {Node} */ (target)))
-      return;
-
-    keyboardEvent.preventDefault();
-    keyboardEvent.stopImmediatePropagation();
-    this._setPressed(true);
-  },
-
-  /**
-   * @param {!KeyboardEvent} event .
-   */
-  _spaceKeyUpHandler: function(event) {
-    var keyboardEvent = event.detail.keyboardEvent;
-    var target = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(keyboardEvent).localTarget;
-
-    // Ignore the event if this is coming from a focused light child, since that
-    // element will deal with it.
-    if (this.isLightDescendant(/** @type {Node} */ (target)))
-      return;
-
-    if (this.pressed) {
-      this._asyncClick();
-    }
-    this._setPressed(false);
-  },
-
-  // trigger click asynchronously, the asynchrony is useful to allow one
-  // event handler to unwind before triggering another event
-  _asyncClick: function() {
-    this.async(function() {
-      this.click();
-    }, 1);
-  },
-
-  // any of these changes are considered a change to button state
-
-  _pressedChanged: function(pressed) {
-    this._changedButtonState();
-  },
-
-  _ariaActiveAttributeChanged: function(value, oldValue) {
-    if (oldValue && oldValue != value && this.hasAttribute(oldValue)) {
-      this.removeAttribute(oldValue);
-    }
-  },
-
-  _activeChanged: function(active, ariaActiveAttribute) {
-    if (this.toggles) {
-      this.setAttribute(this.ariaActiveAttribute, active ? 'true' : 'false');
-    } else {
-      this.removeAttribute(this.ariaActiveAttribute);
-    }
-    this._changedButtonState();
-  },
-
-  _controlStateChanged: function() {
-    if (this.disabled) {
-      this._setPressed(false);
-    } else {
-      this._changedButtonState();
-    }
-  },
-
-  // provide hook for follow-on behaviors to react to button-state
-
-  _changedButtonState: function() {
-    if (this._buttonStateChanged) {
-      this._buttonStateChanged();  // abstract
-    }
-  }
-
-};
-/* harmony export (immutable) */ __webpack_exports__["b"] = IronButtonStateImpl;
-
-
-/** @polymerBehavior */
-const IronButtonState = [__WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__["a" /* IronA11yKeysBehavior */], IronButtonStateImpl];
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronButtonState;
-
-
-
-/***/ }),
-/* 29 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-/**
- * @demo demo/index.html
- * @polymerBehavior
- */
-const IronControlState = {
-
-  properties: {
-
-    /**
-     * If true, the element currently has focus.
-     */
-    focused: {
-      type: Boolean,
-      value: false,
-      notify: true,
-      readOnly: true,
-      reflectToAttribute: true
-    },
-
-    /**
-     * If true, the user cannot interact with this element.
-     */
-    disabled: {
-      type: Boolean,
-      value: false,
-      notify: true,
-      observer: '_disabledChanged',
-      reflectToAttribute: true
-    },
-
-    /**
-     * Value of the `tabindex` attribute before `disabled` was activated.
-     * `null` means the attribute was not present.
-     * @type {?string|undefined}
-     */
-    _oldTabIndex: {type: String},
-
-    _boundFocusBlurHandler: {
-      type: Function,
-      value: function() {
-        return this._focusBlurHandler.bind(this);
-      }
-    }
-  },
-
-  observers: ['_changedControlState(focused, disabled)'],
-
-  /**
-   * @return {void}
-   */
-  ready: function() {
-    this.addEventListener('focus', this._boundFocusBlurHandler, true);
-    this.addEventListener('blur', this._boundFocusBlurHandler, true);
-  },
-
-  _focusBlurHandler: function(event) {
-    // Polymer takes care of retargeting events.
-    this._setFocused(event.type === 'focus');
-    return;
-  },
-
-  _disabledChanged: function(disabled, old) {
-    this.setAttribute('aria-disabled', disabled ? 'true' : 'false');
-    this.style.pointerEvents = disabled ? 'none' : '';
-    if (disabled) {
-      // Read the `tabindex` attribute instead of the `tabIndex` property.
-      // The property returns `-1` if there is no `tabindex` attribute.
-      // This distinction is important when restoring the value because
-      // leaving `-1` hides shadow root children from the tab order.
-      this._oldTabIndex = this.getAttribute('tabindex');
-      this._setFocused(false);
-      this.tabIndex = -1;
-      this.blur();
-    } else if (this._oldTabIndex !== undefined) {
-      if (this._oldTabIndex === null) {
-        this.removeAttribute('tabindex');
-      } else {
-        this.setAttribute('tabindex', this._oldTabIndex);
-      }
-    }
-  },
-
-  _changedControlState: function() {
-    // _controlStateChanged is abstract, follow-on behaviors may implement it
-    if (this._controlStateChanged) {
-      this._controlStateChanged();
-    }
-  }
-
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronControlState;
-
-
-
-/***/ }),
-/* 30 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9912,5759 +14794,13 @@ const IronA11yKeysBehavior = {
 
 
 /***/ }),
-/* 31 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export McContainer */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_polymer_polymer_lib_legacy_class_js__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_paper_toast_paper_toast_js__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_paper_button_paper_button_js__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__McBlock__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mc_behavior_McCreateBehavior__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mc_behavior_McOperatorBehavior__ = __webpack_require__(129);
-
-
-
-
-
-
-
-
-
-const _temp = __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["b" /* html */] `
-  <style>
-    :host {
-      display: flex;
-      padding: 10px;
-      margin: 0 20px;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    #table {
-      box-shadow: 0px 0px 6px #633173;
-    }
-    .row {
-      display: flex;
-    }
-    .countBox {
-      width: 100%;
-      padding-bottom: 48px;
-      margin: 0 auto;
-      text-align: center;
-      box-shadow: 0px 0px 0px #6f6f6f;
-    }
-    #failTipper {
-      background-color: red;
-    }
-    #victoryTipper {
-      background-color: green;
-    }
-  </style>
-  <paper-toast id="failTipper" horizontal-align="right" text="Sorry! game over."></paper-toast>
-
-  <paper-toast id="victoryTipper" horizontal-align="right" text="YOU WIN!"></paper-toast>
-
-  <div class="countBox">
-    <span>mine matrix：[[width]] * [[height]]</span>
-    <span>tags：[[leftNumber]] / [[mineNumber]]</span>
-    <span>
-      <paper-button on-tap="restart">restart</paper-button>
-    </span>
-  </div>
-
-  <table id="table" cellspacing="0" cellpadding="0">
-    <template is="dom-repeat" items="[[mineArray]]">
-      <div class="row">
-        <template is="dom-repeat" items="[[item]]">
-          <mc-block
-            mine-object="[[item]]"
-            on-mousedown="blockClick"
-            on-dblclick="_exposeAround"
-            on-cleanaround="_exposeZeroAround">
-          </mc-block>
-        </template>
-      </div>
-    </template>
-  </table>
-`;
-class McContainer extends Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_polymer_polymer_lib_legacy_class_js__["b" /* mixinBehaviors */])([__WEBPACK_IMPORTED_MODULE_5__mc_behavior_McCreateBehavior__["a" /* McCreateBehavior */], __WEBPACK_IMPORTED_MODULE_6__mc_behavior_McOperatorBehavior__["a" /* McOperatorBehavior */]], __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* PolymerElement */]) {
-    constructor() {
-        super();
-    }
-    static get template() {
-        return _temp;
-    }
-    static get properties() {
-        return {
-            width: {
-                type: Number,
-                value: 9
-            },
-            height: {
-                type: Number,
-                value: 9
-            },
-            mineNumber: {
-                type: Number,
-                value: 10
-            },
-            mineArray: {
-                type: Array
-            }
-        };
-    }
-    _exposeZeroAround(e) {
-        let blockXy = e.detail;
-        this.exposeZeroAroundBlock(blockXy);
-    }
-    _exposeAround(e) {
-        let blockXy = e.target.blockXy;
-        this.exposeAroundBlock(blockXy);
-    }
-    restart() {
-        this.reset();
-        this.mineInit(this.width, this.height, this.mineNumber);
-    }
-}
-customElements.define('mc-container', McContainer);
-
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-/* 33 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(67);
-
-
-
-/**
- * These are private action types reserved by Redux.
- * For any unknown actions, you must return the current state.
- * If the current state is undefined, you must return the initial state.
- * Do not reference these action types directly in your code.
- */
-var ActionTypes = {
-  INIT: '@@redux/INIT'
-
-  /**
-   * Creates a Redux store that holds the state tree.
-   * The only way to change the data in the store is to call `dispatch()` on it.
-   *
-   * There should only be a single store in your app. To specify how different
-   * parts of the state tree respond to actions, you may combine several reducers
-   * into a single reducer function by using `combineReducers`.
-   *
-   * @param {Function} reducer A function that returns the next state tree, given
-   * the current state tree and the action to handle.
-   *
-   * @param {any} [preloadedState] The initial state. You may optionally specify it
-   * to hydrate the state from the server in universal apps, or to restore a
-   * previously serialized user session.
-   * If you use `combineReducers` to produce the root reducer function, this must be
-   * an object with the same shape as `combineReducers` keys.
-   *
-   * @param {Function} [enhancer] The store enhancer. You may optionally specify it
-   * to enhance the store with third-party capabilities such as middleware,
-   * time travel, persistence, etc. The only store enhancer that ships with Redux
-   * is `applyMiddleware()`.
-   *
-   * @returns {Store} A Redux store that lets you read the state, dispatch actions
-   * and subscribe to changes.
-   */
-};function createStore(reducer, preloadedState, enhancer) {
-  var _ref2;
-
-  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
-    enhancer = preloadedState;
-    preloadedState = undefined;
-  }
-
-  if (typeof enhancer !== 'undefined') {
-    if (typeof enhancer !== 'function') {
-      throw new Error('Expected the enhancer to be a function.');
-    }
-
-    return enhancer(createStore)(reducer, preloadedState);
-  }
-
-  if (typeof reducer !== 'function') {
-    throw new Error('Expected the reducer to be a function.');
-  }
-
-  var currentReducer = reducer;
-  var currentState = preloadedState;
-  var currentListeners = [];
-  var nextListeners = currentListeners;
-  var isDispatching = false;
-
-  function ensureCanMutateNextListeners() {
-    if (nextListeners === currentListeners) {
-      nextListeners = currentListeners.slice();
-    }
-  }
-
-  /**
-   * Reads the state tree managed by the store.
-   *
-   * @returns {any} The current state tree of your application.
-   */
-  function getState() {
-    return currentState;
-  }
-
-  /**
-   * Adds a change listener. It will be called any time an action is dispatched,
-   * and some part of the state tree may potentially have changed. You may then
-   * call `getState()` to read the current state tree inside the callback.
-   *
-   * You may call `dispatch()` from a change listener, with the following
-   * caveats:
-   *
-   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
-   * If you subscribe or unsubscribe while the listeners are being invoked, this
-   * will not have any effect on the `dispatch()` that is currently in progress.
-   * However, the next `dispatch()` call, whether nested or not, will use a more
-   * recent snapshot of the subscription list.
-   *
-   * 2. The listener should not expect to see all state changes, as the state
-   * might have been updated multiple times during a nested `dispatch()` before
-   * the listener is called. It is, however, guaranteed that all subscribers
-   * registered before the `dispatch()` started will be called with the latest
-   * state by the time it exits.
-   *
-   * @param {Function} listener A callback to be invoked on every dispatch.
-   * @returns {Function} A function to remove this change listener.
-   */
-  function subscribe(listener) {
-    if (typeof listener !== 'function') {
-      throw new Error('Expected listener to be a function.');
-    }
-
-    var isSubscribed = true;
-
-    ensureCanMutateNextListeners();
-    nextListeners.push(listener);
-
-    return function unsubscribe() {
-      if (!isSubscribed) {
-        return;
-      }
-
-      isSubscribed = false;
-
-      ensureCanMutateNextListeners();
-      var index = nextListeners.indexOf(listener);
-      nextListeners.splice(index, 1);
-    };
-  }
-
-  /**
-   * Dispatches an action. It is the only way to trigger a state change.
-   *
-   * The `reducer` function, used to create the store, will be called with the
-   * current state tree and the given `action`. Its return value will
-   * be considered the **next** state of the tree, and the change listeners
-   * will be notified.
-   *
-   * The base implementation only supports plain object actions. If you want to
-   * dispatch a Promise, an Observable, a thunk, or something else, you need to
-   * wrap your store creating function into the corresponding middleware. For
-   * example, see the documentation for the `redux-thunk` package. Even the
-   * middleware will eventually dispatch plain object actions using this method.
-   *
-   * @param {Object} action A plain object representing “what changed”. It is
-   * a good idea to keep actions serializable so you can record and replay user
-   * sessions, or use the time travelling `redux-devtools`. An action must have
-   * a `type` property which may not be `undefined`. It is a good idea to use
-   * string constants for action types.
-   *
-   * @returns {Object} For convenience, the same action object you dispatched.
-   *
-   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
-   * return something else (for example, a Promise you can await).
-   */
-  function dispatch(action) {
-    if (!Object(__WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__["a" /* default */])(action)) {
-      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
-    }
-
-    if (typeof action.type === 'undefined') {
-      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
-    }
-
-    if (isDispatching) {
-      throw new Error('Reducers may not dispatch actions.');
-    }
-
-    try {
-      isDispatching = true;
-      currentState = currentReducer(currentState, action);
-    } finally {
-      isDispatching = false;
-    }
-
-    var listeners = currentListeners = nextListeners;
-    for (var i = 0; i < listeners.length; i++) {
-      var listener = listeners[i];
-      listener();
-    }
-
-    return action;
-  }
-
-  /**
-   * Replaces the reducer currently used by the store to calculate the state.
-   *
-   * You might need this if your app implements code splitting and you want to
-   * load some of the reducers dynamically. You might also need this if you
-   * implement a hot reloading mechanism for Redux.
-   *
-   * @param {Function} nextReducer The reducer for the store to use instead.
-   * @returns {void}
-   */
-  function replaceReducer(nextReducer) {
-    if (typeof nextReducer !== 'function') {
-      throw new Error('Expected the nextReducer to be a function.');
-    }
-
-    currentReducer = nextReducer;
-    dispatch({ type: ActionTypes.INIT });
-  }
-
-  /**
-   * Interoperability point for observable/reactive libraries.
-   * @returns {observable} A minimal observable of state changes.
-   * For more information, see the observable proposal:
-   * https://github.com/tc39/proposal-observable
-   */
-  function observable() {
-    var _ref;
-
-    var outerSubscribe = subscribe;
-    return _ref = {
-      /**
-       * The minimal observable subscription method.
-       * @param {Object} observer Any object that can be used as an observer.
-       * The observer object should have a `next` method.
-       * @returns {subscription} An object with an `unsubscribe` method that can
-       * be used to unsubscribe the observable from the store, and prevent further
-       * emission of values from the observable.
-       */
-      subscribe: function subscribe(observer) {
-        if (typeof observer !== 'object') {
-          throw new TypeError('Expected the observer to be an object.');
-        }
-
-        function observeState() {
-          if (observer.next) {
-            observer.next(getState());
-          }
-        }
-
-        observeState();
-        var unsubscribe = outerSubscribe(observeState);
-        return { unsubscribe: unsubscribe };
-      }
-    }, _ref[__WEBPACK_IMPORTED_MODULE_1_symbol_observable__["a" /* default */]] = function () {
-      return this;
-    }, _ref;
-  }
-
-  // When a store is created, an "INIT" action is dispatched so that every
-  // reducer returns their initial state. This effectively populates
-  // the initial state tree.
-  dispatch({ type: ActionTypes.INIT });
-
-  return _ref2 = {
-    dispatch: dispatch,
-    subscribe: subscribe,
-    getState: getState,
-    replaceReducer: replaceReducer
-  }, _ref2[__WEBPACK_IMPORTED_MODULE_1_symbol_observable__["a" /* default */]] = observable, _ref2;
-}
-
-/***/ }),
-/* 34 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(66);
-
-
-
-
-/** `Object#toString` result references. */
-var objectTag = '[object Object]';
-
-/** Used for built-in method references. */
-var funcProto = Function.prototype,
-    objectProto = Object.prototype;
-
-/** Used to resolve the decompiled source of functions. */
-var funcToString = funcProto.toString;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/** Used to infer the `Object` constructor. */
-var objectCtorString = funcToString.call(Object);
-
-/**
- * Checks if `value` is a plain object, that is, an object created by the
- * `Object` constructor or one with a `[[Prototype]]` of `null`.
- *
- * @static
- * @memberOf _
- * @since 0.8.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
- * @example
- *
- * function Foo() {
- *   this.a = 1;
- * }
- *
- * _.isPlainObject(new Foo);
- * // => false
- *
- * _.isPlainObject([1, 2, 3]);
- * // => false
- *
- * _.isPlainObject({ 'x': 0, 'y': 0 });
- * // => true
- *
- * _.isPlainObject(Object.create(null));
- * // => true
- */
-function isPlainObject(value) {
-  if (!Object(__WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__["a" /* default */])(value) || Object(__WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__["a" /* default */])(value) != objectTag) {
-    return false;
-  }
-  var proto = Object(__WEBPACK_IMPORTED_MODULE_1__getPrototype_js__["a" /* default */])(value);
-  if (proto === null) {
-    return true;
-  }
-  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
-  return typeof Ctor == 'function' && Ctor instanceof Ctor &&
-    funcToString.call(Ctor) == objectCtorString;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (isPlainObject);
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(60);
-
-
-/** Built-in value references. */
-var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
-
-/* harmony default export */ __webpack_exports__["a"] = (Symbol);
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 37 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = warning;
-/**
- * Prints a warning in the console if it exists.
- *
- * @param {String} message The warning message.
- * @returns {void}
- */
-function warning(message) {
-  /* eslint-disable no-console */
-  if (typeof console !== 'undefined' && typeof console.error === 'function') {
-    console.error(message);
-  }
-  /* eslint-enable no-console */
-  try {
-    // This error was thrown as a convenience so that if you enable
-    // "break on all exceptions" in your console,
-    // it would pause the execution at this line.
-    throw new Error(message);
-    /* eslint-disable no-empty */
-  } catch (e) {}
-  /* eslint-enable no-empty */
-}
-
-/***/ }),
-/* 38 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = compose;
-/**
- * Composes single-argument functions from right to left. The rightmost
- * function can take multiple arguments as it provides the signature for
- * the resulting composite function.
- *
- * @param {...Function} funcs The functions to compose.
- * @returns {Function} A function obtained by composing the argument functions
- * from right to left. For example, compose(f, g, h) is identical to doing
- * (...args) => f(g(h(...args))).
- */
-
-function compose() {
-  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
-    funcs[_key] = arguments[_key];
-  }
-
-  if (funcs.length === 0) {
-    return function (arg) {
-      return arg;
-    };
-  }
-
-  if (funcs.length === 1) {
-    return funcs[0];
-  }
-
-  return funcs.reduce(function (a, b) {
-    return function () {
-      return a(b.apply(undefined, arguments));
-    };
-  });
-}
-
-/***/ }),
-/* 39 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export stylesFromModules */
-/* unused harmony export stylesFromModule */
-/* harmony export (immutable) */ __webpack_exports__["c"] = stylesFromTemplate;
-/* harmony export (immutable) */ __webpack_exports__["b"] = stylesFromModuleImports;
-/* harmony export (immutable) */ __webpack_exports__["a"] = cssFromModules;
-/* unused harmony export cssFromModule */
-/* unused harmony export cssFromTemplate */
-/* unused harmony export cssFromModuleImports */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__elements_dom_module_js__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__resolve_url_js__ = __webpack_require__(11);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-/**
- * Module with utilities for collection CSS text from `<templates>`, external
- * stylesheets, and `dom-module`s.
- *
- * @summary Module with utilities for collection CSS text from various sources.
- */
-
-
-
-
-const MODULE_STYLE_LINK_SELECTOR = 'link[rel=import][type~=css]';
-const INCLUDE_ATTR = 'include';
-const SHADY_UNSCOPED_ATTR = 'shady-unscoped';
-
-/**
- * @param {string} moduleId .
- * @return {?DomModule} .
- */
-function importModule(moduleId) {
-  return /** @type {?DomModule} */(__WEBPACK_IMPORTED_MODULE_0__elements_dom_module_js__["a" /* DomModule */].import(moduleId));
-}
-
-function styleForImport(importDoc) {
-  // NOTE: polyfill affordance.
-  // under the HTMLImports polyfill, there will be no 'body',
-  // but the import pseudo-doc can be used directly.
-  let container = importDoc.body ? importDoc.body : importDoc;
-  const importCss = Object(__WEBPACK_IMPORTED_MODULE_1__resolve_url_js__["b" /* resolveCss */])(container.textContent,
-    importDoc.baseURI);
-  const style = document.createElement('style');
-  style.textContent = importCss;
-  return style;
-}
-
-/** @typedef {{assetpath: string}} */
-let templateWithAssetPath; // eslint-disable-line no-unused-vars
-
-
-/**
- * Returns a list of <style> elements in a space-separated list of `dom-module`s.
- *
- * @function
- * @param {string} moduleIds List of dom-module id's within which to
- * search for css.
- * @return {!Array<!HTMLStyleElement>} Array of contained <style> elements
- */
-function stylesFromModules(moduleIds) {
- const modules = moduleIds.trim().split(/\s+/);
- const styles = [];
- for (let i=0; i < modules.length; i++) {
-   styles.push(...stylesFromModule(modules[i]));
- }
- return styles;
-}
-
-/**
- * Returns a list of <style> elements in a given `dom-module`.
- * Styles in a `dom-module` can come either from `<style>`s within the
- * first `<template>`, or else from one or more
- * `<link rel="import" type="css">` links outside the template.
- *
- * @param {string} moduleId dom-module id to gather styles from
- * @return {!Array<!HTMLStyleElement>} Array of contained styles.
- */
-function stylesFromModule(moduleId) {
-  const m = importModule(moduleId);
-
-  if (!m) {
-    console.warn('Could not find style data in module named', moduleId);
-    return [];
-  }
-
-  if (m._styles === undefined) {
-    const styles = [];
-    // module imports: <link rel="import" type="css">
-    styles.push(..._stylesFromModuleImports(m));
-    // include css from the first template in the module
-    const template = /** @type {?HTMLTemplateElement} */(
-        m.querySelector('template'));
-    if (template) {
-      styles.push(...stylesFromTemplate(template,
-        /** @type {templateWithAssetPath} */(m).assetpath));
-    }
-
-    m._styles = styles;
-  }
-
-  return m._styles;
-}
-
-/**
- * Returns the `<style>` elements within a given template.
- *
- * @param {!HTMLTemplateElement} template Template to gather styles from
- * @param {string} baseURI baseURI for style content
- * @return {!Array<!HTMLStyleElement>} Array of styles
- */
-function stylesFromTemplate(template, baseURI) {
-  if (!template._styles) {
-    const styles = [];
-    // if element is a template, get content from its .content
-    const e$ = template.content.querySelectorAll('style');
-    for (let i=0; i < e$.length; i++) {
-      let e = e$[i];
-      // support style sharing by allowing styles to "include"
-      // other dom-modules that contain styling
-      let include = e.getAttribute(INCLUDE_ATTR);
-      if (include) {
-        styles.push(...stylesFromModules(include).filter(function(item, index, self) {
-          return self.indexOf(item) === index;
-        }));
-      }
-      if (baseURI) {
-        e.textContent = Object(__WEBPACK_IMPORTED_MODULE_1__resolve_url_js__["b" /* resolveCss */])(e.textContent, baseURI);
-      }
-      styles.push(e);
-    }
-    template._styles = styles;
-  }
-  return template._styles;
-}
-
-/**
- * Returns a list of <style> elements  from stylesheets loaded via `<link rel="import" type="css">` links within the specified `dom-module`.
- *
- * @param {string} moduleId Id of `dom-module` to gather CSS from
- * @return {!Array<!HTMLStyleElement>} Array of contained styles.
- */
-function stylesFromModuleImports(moduleId) {
- let m = importModule(moduleId);
- return m ? _stylesFromModuleImports(m) : [];
-}
-
-/**
- * @param {!HTMLElement} module dom-module element that could contain `<link rel="import" type="css">` styles
- * @return {!Array<!HTMLStyleElement>} Array of contained styles
- */
-function _stylesFromModuleImports(module) {
-  const styles = [];
-  const p$ = module.querySelectorAll(MODULE_STYLE_LINK_SELECTOR);
-  for (let i=0; i < p$.length; i++) {
-    let p = p$[i];
-    if (p.import) {
-      const importDoc = p.import;
-      const unscoped = p.hasAttribute(SHADY_UNSCOPED_ATTR);
-      if (unscoped && !importDoc._unscopedStyle) {
-        const style = styleForImport(importDoc);
-        style.setAttribute(SHADY_UNSCOPED_ATTR, '');
-        importDoc._unscopedStyle = style;
-      } else if (!importDoc._style) {
-        importDoc._style = styleForImport(importDoc);
-      }
-      styles.push(unscoped ? importDoc._unscopedStyle : importDoc._style);
-    }
-  }
-  return styles;
-}
-
-/**
- *
- * Returns CSS text of styles in a space-separated list of `dom-module`s.
- * Note: This method is deprecated, use `stylesFromModules` instead.
- *
- * @deprecated
- * @param {string} moduleIds List of dom-module id's within which to
- * search for css.
- * @return {string} Concatenated CSS content from specified `dom-module`s
- */
-function cssFromModules(moduleIds) {
- let modules = moduleIds.trim().split(/\s+/);
- let cssText = '';
- for (let i=0; i < modules.length; i++) {
-   cssText += cssFromModule(modules[i]);
- }
- return cssText;
-}
-
-/**
- * Returns CSS text of styles in a given `dom-module`.  CSS in a `dom-module`
- * can come either from `<style>`s within the first `<template>`, or else
- * from one or more `<link rel="import" type="css">` links outside the
- * template.
- *
- * Any `<styles>` processed are removed from their original location.
- * Note: This method is deprecated, use `styleFromModule` instead.
- *
- * @deprecated
- * @param {string} moduleId dom-module id to gather styles from
- * @return {string} Concatenated CSS content from specified `dom-module`
- */
-function cssFromModule(moduleId) {
-  let m = importModule(moduleId);
-  if (m && m._cssText === undefined) {
-    // module imports: <link rel="import" type="css">
-    let cssText = _cssFromModuleImports(m);
-    // include css from the first template in the module
-    let t = /** @type {?HTMLTemplateElement} */(m.querySelector('template'));
-    if (t) {
-      cssText += cssFromTemplate(t,
-        /** @type {templateWithAssetPath} */(m).assetpath);
-    }
-    m._cssText = cssText || null;
-  }
-  if (!m) {
-    console.warn('Could not find style data in module named', moduleId);
-  }
-  return m && m._cssText || '';
-}
-
-/**
- * Returns CSS text of `<styles>` within a given template.
- *
- * Any `<styles>` processed are removed from their original location.
- * Note: This method is deprecated, use `styleFromTemplate` instead.
- *
- * @deprecated
- * @param {!HTMLTemplateElement} template Template to gather styles from
- * @param {string} baseURI Base URI to resolve the URL against
- * @return {string} Concatenated CSS content from specified template
- */
-function cssFromTemplate(template, baseURI) {
-  let cssText = '';
-  const e$ = stylesFromTemplate(template, baseURI);
-  // if element is a template, get content from its .content
-  for (let i=0; i < e$.length; i++) {
-    let e = e$[i];
-    if (e.parentNode) {
-      e.parentNode.removeChild(e);
-    }
-    cssText += e.textContent;
-  }
-  return cssText;
-}
-
-/**
- * Returns CSS text from stylesheets loaded via `<link rel="import" type="css">`
- * links within the specified `dom-module`.
- *
- * Note: This method is deprecated, use `stylesFromModuleImports` instead.
- *
- * @deprecated
- *
- * @param {string} moduleId Id of `dom-module` to gather CSS from
- * @return {string} Concatenated CSS content from links in specified `dom-module`
- */
-function cssFromModuleImports(moduleId) {
-  let m = importModule(moduleId);
-  return m ? _cssFromModuleImports(m) : '';
-}
-
-/**
- * @deprecated
- * @param {!HTMLElement} module dom-module element that could contain `<link rel="import" type="css">` styles
- * @return {string} Concatenated CSS content from links in the dom-module
- */
-function _cssFromModuleImports(module) {
-  let cssText = '';
-  let styles = _stylesFromModuleImports(module);
-  for (let i=0; i < styles.length; i++) {
-    cssText += styles[i].textContent;
-  }
-  return cssText;
-}
-
-
-/***/ }),
-/* 40 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_resolve_url_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_settings_js__ = __webpack_require__(7);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-let modules = {};
-let lcModules = {};
-/**
- * Sets a dom-module into the global registry by id.
- *
- * @param {string} id dom-module id
- * @param {DomModule} module dom-module instance
- * @return {void}
- */
-function setModule(id, module) {
-  // store id separate from lowercased id so that
-  // in all cases mixedCase id will stored distinctly
-  // and lowercase version is a fallback
-  modules[id] = lcModules[id.toLowerCase()] = module;
-}
-/**
- * Retrieves a dom-module from the global registry by id.
- *
- * @param {string} id dom-module id
- * @return {DomModule!} dom-module instance
- */
-function findModule(id) {
-  return modules[id] || lcModules[id.toLowerCase()];
-}
-
-function styleOutsideTemplateCheck(inst) {
-  if (inst.querySelector('style')) {
-    console.warn('dom-module %s has style outside template', inst.id);
-  }
-}
-
-/**
- * The `dom-module` element registers the dom it contains to the name given
- * by the module's id attribute. It provides a unified database of dom
- * accessible via its static `import` API.
- *
- * A key use case of `dom-module` is for providing custom element `<template>`s
- * via HTML imports that are parsed by the native HTML parser, that can be
- * relocated during a bundling pass and still looked up by `id`.
- *
- * Example:
- *
- *     <dom-module id="foo">
- *       <img src="stuff.png">
- *     </dom-module>
- *
- * Then in code in some other location that cannot access the dom-module above
- *
- *     let img = customElements.get('dom-module').import('foo', 'img');
- *
- * @customElement
- * @extends HTMLElement
- * @summary Custom element that provides a registry of relocatable DOM content
- *   by `id` that is agnostic to bundling.
- * @unrestricted
- */
-class DomModule extends HTMLElement {
-
-  static get observedAttributes() { return ['id']; }
-
-  /**
-   * Retrieves the element specified by the css `selector` in the module
-   * registered by `id`. For example, this.import('foo', 'img');
-   * @param {string} id The id of the dom-module in which to search.
-   * @param {string=} selector The css selector by which to find the element.
-   * @return {Element} Returns the element which matches `selector` in the
-   * module registered at the specified `id`.
-   *
-   * @export
-   * @nocollapse Referred to indirectly in style-gather.js
-   */
-  static import(id, selector) {
-    if (id) {
-      let m = findModule(id);
-      if (m && selector) {
-        return m.querySelector(selector);
-      }
-      return m;
-    }
-    return null;
-  }
-
-  /* eslint-disable no-unused-vars */
-  /**
-   * @param {string} name Name of attribute.
-   * @param {?string} old Old value of attribute.
-   * @param {?string} value Current value of attribute.
-   * @param {?string} namespace Attribute namespace.
-   * @return {void}
-   * @override
-   */
-  attributeChangedCallback(name, old, value, namespace) {
-    if (old !== value) {
-      this.register();
-    }
-  }
-  /* eslint-enable no-unused-args */
-
-  /**
-   * The absolute URL of the original location of this `dom-module`.
-   *
-   * This value will differ from this element's `ownerDocument` in the
-   * following ways:
-   * - Takes into account any `assetpath` attribute added during bundling
-   *   to indicate the original location relative to the bundled location
-   * - Uses the HTMLImports polyfill's `importForElement` API to ensure
-   *   the path is relative to the import document's location since
-   *   `ownerDocument` is not currently polyfilled
-   */
-  get assetpath() {
-    // Don't override existing assetpath.
-    if (!this.__assetpath) {
-      // note: assetpath set via an attribute must be relative to this
-      // element's location; accomodate polyfilled HTMLImports
-      const owner = window.HTMLImports && HTMLImports.importForElement ?
-        HTMLImports.importForElement(this) || document : this.ownerDocument;
-      const url = Object(__WEBPACK_IMPORTED_MODULE_1__utils_resolve_url_js__["c" /* resolveUrl */])(
-        this.getAttribute('assetpath') || '', owner.baseURI);
-      this.__assetpath = Object(__WEBPACK_IMPORTED_MODULE_1__utils_resolve_url_js__["a" /* pathFromUrl */])(url);
-    }
-    return this.__assetpath;
-  }
-
-  /**
-   * Registers the dom-module at a given id. This method should only be called
-   * when a dom-module is imperatively created. For
-   * example, `document.createElement('dom-module').register('foo')`.
-   * @param {string=} id The id at which to register the dom-module.
-   * @return {void}
-   */
-  register(id) {
-    id = id || this.id;
-    if (id) {
-      // Under strictTemplatePolicy, reject and null out any re-registered
-      // dom-module since it is ambiguous whether first-in or last-in is trusted
-      if (__WEBPACK_IMPORTED_MODULE_2__utils_settings_js__["e" /* strictTemplatePolicy */] && findModule(id) !== undefined) {
-        setModule(id, null);
-        throw new Error(`strictTemplatePolicy: dom-module ${id} re-registered`);
-      }
-      this.id = id;
-      setModule(id, this);
-      styleOutsideTemplateCheck(this);
-    }
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = DomModule;
-
-
-DomModule.prototype['modules'] = modules;
-
-customElements.define('dom-module', DomModule);
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_case_map_js__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__properties_changed_js__ = __webpack_require__(42);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-// Save map of native properties; this forms a blacklist or properties
-// that won't have their values "saved" by `saveAccessorValue`, since
-// reading from an HTMLElement accessor from the context of a prototype throws
-const nativeProperties = {};
-let proto = HTMLElement.prototype;
-while (proto) {
-  let props = Object.getOwnPropertyNames(proto);
-  for (let i=0; i<props.length; i++) {
-    nativeProperties[props[i]] = true;
-  }
-  proto = Object.getPrototypeOf(proto);
-}
-
-/**
- * Used to save the value of a property that will be overridden with
- * an accessor. If the `model` is a prototype, the values will be saved
- * in `__dataProto`, and it's up to the user (or downstream mixin) to
- * decide how/when to set these values back into the accessors.
- * If `model` is already an instance (it has a `__data` property), then
- * the value will be set as a pending property, meaning the user should
- * call `_invalidateProperties` or `_flushProperties` to take effect
- *
- * @param {Object} model Prototype or instance
- * @param {string} property Name of property
- * @return {void}
- * @private
- */
-function saveAccessorValue(model, property) {
-  // Don't read/store value for any native properties since they could throw
-  if (!nativeProperties[property]) {
-    let value = model[property];
-    if (value !== undefined) {
-      if (model.__data) {
-        // Adding accessor to instance; update the property
-        // It is the user's responsibility to call _flushProperties
-        model._setPendingProperty(property, value);
-      } else {
-        // Adding accessor to proto; save proto's value for instance-time use
-        if (!model.__dataProto) {
-          model.__dataProto = {};
-        } else if (!model.hasOwnProperty(JSCompiler_renameProperty('__dataProto', model))) {
-          model.__dataProto = Object.create(model.__dataProto);
-        }
-        model.__dataProto[property] = value;
-      }
-    }
-  }
-}
-
-/**
- * Element class mixin that provides basic meta-programming for creating one
- * or more property accessors (getter/setter pair) that enqueue an async
- * (batched) `_propertiesChanged` callback.
- *
- * For basic usage of this mixin:
- *
- * -   Declare attributes to observe via the standard `static get observedAttributes()`. Use
- *     `dash-case` attribute names to represent `camelCase` property names.
- * -   Implement the `_propertiesChanged` callback on the class.
- * -   Call `MyClass.createPropertiesForAttributes()` **once** on the class to generate
- *     property accessors for each observed attribute. This must be called before the first
- *     instance is created, for example, by calling it before calling `customElements.define`.
- *     It can also be called lazily from the element's `constructor`, as long as it's guarded so
- *     that the call is only made once, when the first instance is created.
- * -   Call `this._enableProperties()` in the element's `connectedCallback` to enable
- *     the accessors.
- *
- * Any `observedAttributes` will automatically be
- * deserialized via `attributeChangedCallback` and set to the associated
- * property using `dash-case`-to-`camelCase` convention.
- *
- * @mixinFunction
- * @polymer
- * @appliesMixin PropertiesChanged
- * @summary Element class mixin for reacting to property changes from
- *   generated property accessors.
- */
-const PropertyAccessors = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* dedupingMixin */])(superClass => {
-
-  /**
-   * @constructor
-   * @extends {superClass}
-   * @implements {Polymer_PropertiesChanged}
-   * @unrestricted
-   * @private
-   */
-   const base = Object(__WEBPACK_IMPORTED_MODULE_3__properties_changed_js__["a" /* PropertiesChanged */])(superClass);
-
-  /**
-   * @polymer
-   * @mixinClass
-   * @implements {Polymer_PropertyAccessors}
-   * @extends {base}
-   * @unrestricted
-   */
-  class PropertyAccessors extends base {
-
-    /**
-     * Generates property accessors for all attributes in the standard
-     * static `observedAttributes` array.
-     *
-     * Attribute names are mapped to property names using the `dash-case` to
-     * `camelCase` convention
-     *
-     * @return {void}
-     */
-    static createPropertiesForAttributes() {
-      let a$ = this.observedAttributes;
-      for (let i=0; i < a$.length; i++) {
-        this.prototype._createPropertyAccessor(Object(__WEBPACK_IMPORTED_MODULE_2__utils_case_map_js__["b" /* dashToCamelCase */])(a$[i]));
-      }
-    }
-
-    /**
-     * Returns an attribute name that corresponds to the given property.
-     * By default, converts camel to dash case, e.g. `fooBar` to `foo-bar`.
-     * @param {string} property Property to convert
-     * @return {string} Attribute name corresponding to the given property.
-     *
-     * @protected
-     */
-    static attributeNameForProperty(property) {
-      return Object(__WEBPACK_IMPORTED_MODULE_2__utils_case_map_js__["a" /* camelToDashCase */])(property);
-    }
-
-    /**
-     * Overrides PropertiesChanged implementation to initialize values for
-     * accessors created for values that already existed on the element
-     * prototype.
-     *
-     * @return {void}
-     * @protected
-     */
-    _initializeProperties() {
-      if (this.__dataProto) {
-        this._initializeProtoProperties(this.__dataProto);
-        this.__dataProto = null;
-      }
-      super._initializeProperties();
-    }
-
-    /**
-     * Called at instance time with bag of properties that were overwritten
-     * by accessors on the prototype when accessors were created.
-     *
-     * The default implementation sets these properties back into the
-     * setter at instance time.  This method is provided as an override
-     * point for customizing or providing more efficient initialization.
-     *
-     * @param {Object} props Bag of property values that were overwritten
-     *   when creating property accessors.
-     * @return {void}
-     * @protected
-     */
-    _initializeProtoProperties(props) {
-      for (let p in props) {
-        this._setProperty(p, props[p]);
-      }
-    }
-
-    /**
-     * Ensures the element has the given attribute. If it does not,
-     * assigns the given value to the attribute.
-     *
-     * @suppress {invalidCasts} Closure can't figure out `this` is infact an element
-     *
-     * @param {string} attribute Name of attribute to ensure is set.
-     * @param {string} value of the attribute.
-     * @return {void}
-     */
-    _ensureAttribute(attribute, value) {
-      const el = /** @type {!HTMLElement} */(this);
-      if (!el.hasAttribute(attribute)) {
-        this._valueToNodeAttribute(el, value, attribute);
-      }
-    }
-
-    /**
-     * Overrides PropertiesChanged implemention to serialize objects as JSON.
-     *
-     * @param {*} value Property value to serialize.
-     * @return {string | undefined} String serialized from the provided property value.
-     */
-    _serializeValue(value) {
-      /* eslint-disable no-fallthrough */
-      switch (typeof value) {
-        case 'object':
-          if (value instanceof Date) {
-            return value.toString();
-          } else if (value) {
-            try {
-              return JSON.stringify(value);
-            } catch(x) {
-              return '';
-            }
-          }
-
-        default:
-          return super._serializeValue(value);
-      }
-    }
-
-    /**
-     * Converts a string to a typed JavaScript value.
-     *
-     * This method is called by Polymer when reading HTML attribute values to
-     * JS properties.  Users may override this method on Polymer element
-     * prototypes to provide deserialization for custom `type`s.  Note,
-     * the `type` argument is the value of the `type` field provided in the
-     * `properties` configuration object for a given property, and is
-     * by convention the constructor for the type to deserialize.
-     *
-     *
-     * @param {?string} value Attribute value to deserialize.
-     * @param {*=} type Type to deserialize the string to.
-     * @return {*} Typed value deserialized from the provided string.
-     */
-    _deserializeValue(value, type) {
-      /**
-       * @type {*}
-       */
-      let outValue;
-      switch (type) {
-        case Object:
-          try {
-            outValue = JSON.parse(/** @type {string} */(value));
-          } catch(x) {
-            // allow non-JSON literals like Strings and Numbers
-            outValue = value;
-          }
-          break;
-        case Array:
-          try {
-            outValue = JSON.parse(/** @type {string} */(value));
-          } catch(x) {
-            outValue = null;
-            console.warn(`Polymer::Attributes: couldn't decode Array as JSON: ${value}`);
-          }
-          break;
-        case Date:
-          outValue = isNaN(value) ? String(value) : Number(value);
-          outValue = new Date(outValue);
-          break;
-        default:
-          outValue = super._deserializeValue(value, type);
-          break;
-      }
-      return outValue;
-    }
-    /* eslint-enable no-fallthrough */
-
-    /**
-     * Overrides PropertiesChanged implementation to save existing prototype
-     * property value so that it can be reset.
-     * @param {string} property Name of the property
-     * @param {boolean=} readOnly When true, no setter is created
-     *
-     * When calling on a prototype, any overwritten values are saved in
-     * `__dataProto`, and it is up to the subclasser to decide how/when
-     * to set those properties back into the accessor.  When calling on an
-     * instance, the overwritten value is set via `_setPendingProperty`,
-     * and the user should call `_invalidateProperties` or `_flushProperties`
-     * for the values to take effect.
-     * @protected
-     * @return {void}
-     */
-    _definePropertyAccessor(property, readOnly) {
-      saveAccessorValue(this, property);
-      super._definePropertyAccessor(property, readOnly);
-    }
-
-    /**
-     * Returns true if this library created an accessor for the given property.
-     *
-     * @param {string} property Property name
-     * @return {boolean} True if an accessor was created
-     */
-    _hasAccessor(property) {
-      return this.__dataHasAccessor && this.__dataHasAccessor[property];
-    }
-
-    /**
-     * Returns true if the specified property has a pending change.
-     *
-     * @param {string} prop Property name
-     * @return {boolean} True if property has a pending change
-     * @protected
-     */
-    _isPropertyPending(prop) {
-      return Boolean(this.__dataPending && (prop in this.__dataPending));
-    }
-
-  }
-
-  return PropertyAccessors;
-
-});
-/* harmony export (immutable) */ __webpack_exports__["a"] = PropertyAccessors;
-
-
-
-/***/ }),
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_async_js__ = __webpack_require__(8);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-/** @const {!AsyncInterface} */
-const microtask = __WEBPACK_IMPORTED_MODULE_2__utils_async_js__["b" /* microTask */];
-
-/**
- * Element class mixin that provides basic meta-programming for creating one
- * or more property accessors (getter/setter pair) that enqueue an async
- * (batched) `_propertiesChanged` callback.
- *
- * For basic usage of this mixin, call `MyClass.createProperties(props)`
- * once at class definition time to create property accessors for properties
- * named in props, implement `_propertiesChanged` to react as desired to
- * property changes, and implement `static get observedAttributes()` and
- * include lowercase versions of any property names that should be set from
- * attributes. Last, call `this._enableProperties()` in the element's
- * `connectedCallback` to enable the accessors.
- *
- * @mixinFunction
- * @polymer
- * @summary Element class mixin for reacting to property changes from
- *   generated property accessors.
- */
-const PropertiesChanged = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* dedupingMixin */])(
-    /**
-     * @template T
-     * @param {function(new:T)} superClass Class to apply mixin to.
-     * @return {function(new:T)} superClass with mixin applied.
-     */
-    (superClass) => {
-
-  /**
-   * @polymer
-   * @mixinClass
-   * @implements {Polymer_PropertiesChanged}
-   * @unrestricted
-   */
-  class PropertiesChanged extends superClass {
-
-    /**
-     * Creates property accessors for the given property names.
-     * @param {!Object} props Object whose keys are names of accessors.
-     * @return {void}
-     * @protected
-     */
-    static createProperties(props) {
-      const proto = this.prototype;
-      for (let prop in props) {
-        // don't stomp an existing accessor
-        if (!(prop in proto)) {
-          proto._createPropertyAccessor(prop);
-        }
-      }
-    }
-
-    /**
-     * Returns an attribute name that corresponds to the given property.
-     * The attribute name is the lowercased property name. Override to
-     * customize this mapping.
-     * @param {string} property Property to convert
-     * @return {string} Attribute name corresponding to the given property.
-     *
-     * @protected
-     */
-    static attributeNameForProperty(property) {
-      return property.toLowerCase();
-    }
-
-    /**
-     * Override point to provide a type to which to deserialize a value to
-     * a given property.
-     * @param {string} name Name of property
-     *
-     * @protected
-     */
-    static typeForProperty(name) { } //eslint-disable-line no-unused-vars
-
-    /**
-     * Creates a setter/getter pair for the named property with its own
-     * local storage.  The getter returns the value in the local storage,
-     * and the setter calls `_setProperty`, which updates the local storage
-     * for the property and enqueues a `_propertiesChanged` callback.
-     *
-     * This method may be called on a prototype or an instance.  Calling
-     * this method may overwrite a property value that already exists on
-     * the prototype/instance by creating the accessor.
-     *
-     * @param {string} property Name of the property
-     * @param {boolean=} readOnly When true, no setter is created; the
-     *   protected `_setProperty` function must be used to set the property
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _createPropertyAccessor(property, readOnly) {
-      this._addPropertyToAttributeMap(property);
-      if (!this.hasOwnProperty('__dataHasAccessor')) {
-        this.__dataHasAccessor = Object.assign({}, this.__dataHasAccessor);
-      }
-      if (!this.__dataHasAccessor[property]) {
-        this.__dataHasAccessor[property] = true;
-        this._definePropertyAccessor(property, readOnly);
-      }
-    }
-
-    /**
-     * Adds the given `property` to a map matching attribute names
-     * to property names, using `attributeNameForProperty`. This map is
-     * used when deserializing attribute values to properties.
-     *
-     * @param {string} property Name of the property
-     * @override
-     */
-    _addPropertyToAttributeMap(property) {
-      if (!this.hasOwnProperty('__dataAttributes')) {
-        this.__dataAttributes = Object.assign({}, this.__dataAttributes);
-      }
-      if (!this.__dataAttributes[property]) {
-        const attr = this.constructor.attributeNameForProperty(property);
-        this.__dataAttributes[attr] = property;
-      }
-    }
-
-    /**
-     * Defines a property accessor for the given property.
-     * @param {string} property Name of the property
-     * @param {boolean=} readOnly When true, no setter is created
-     * @return {void}
-     * @override
-     */
-     _definePropertyAccessor(property, readOnly) {
-      Object.defineProperty(this, property, {
-        /* eslint-disable valid-jsdoc */
-        /** @this {PropertiesChanged} */
-        get() {
-          return this._getProperty(property);
-        },
-        /** @this {PropertiesChanged} */
-        set: readOnly ? function () {} : function (value) {
-          this._setProperty(property, value);
-        }
-        /* eslint-enable */
-      });
-    }
-
-    constructor() {
-      super();
-      this.__dataEnabled = false;
-      this.__dataReady = false;
-      this.__dataInvalid = false;
-      this.__data = {};
-      this.__dataPending = null;
-      this.__dataOld = null;
-      this.__dataInstanceProps = null;
-      this.__serializing = false;
-      this._initializeProperties();
-    }
-
-    /**
-     * Lifecycle callback called when properties are enabled via
-     * `_enableProperties`.
-     *
-     * Users may override this function to implement behavior that is
-     * dependent on the element having its property data initialized, e.g.
-     * from defaults (initialized from `constructor`, `_initializeProperties`),
-     * `attributeChangedCallback`, or values propagated from host e.g. via
-     * bindings.  `super.ready()` must be called to ensure the data system
-     * becomes enabled.
-     *
-     * @return {void}
-     * @public
-     * @override
-     */
-    ready() {
-      this.__dataReady = true;
-      this._flushProperties();
-    }
-
-    /**
-     * Initializes the local storage for property accessors.
-     *
-     * Provided as an override point for performing any setup work prior
-     * to initializing the property accessor system.
-     *
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _initializeProperties() {
-      // Capture instance properties; these will be set into accessors
-      // during first flush. Don't set them here, since we want
-      // these to overwrite defaults/constructor assignments
-      for (let p in this.__dataHasAccessor) {
-        if (this.hasOwnProperty(p)) {
-          this.__dataInstanceProps = this.__dataInstanceProps || {};
-          this.__dataInstanceProps[p] = this[p];
-          delete this[p];
-        }
-      }
-    }
-
-    /**
-     * Called at ready time with bag of instance properties that overwrote
-     * accessors when the element upgraded.
-     *
-     * The default implementation sets these properties back into the
-     * setter at ready time.  This method is provided as an override
-     * point for customizing or providing more efficient initialization.
-     *
-     * @param {Object} props Bag of property values that were overwritten
-     *   when creating property accessors.
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _initializeInstanceProperties(props) {
-      Object.assign(this, props);
-    }
-
-    /**
-     * Updates the local storage for a property (via `_setPendingProperty`)
-     * and enqueues a `_proeprtiesChanged` callback.
-     *
-     * @param {string} property Name of the property
-     * @param {*} value Value to set
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _setProperty(property, value) {
-      if (this._setPendingProperty(property, value)) {
-        this._invalidateProperties();
-      }
-    }
-
-    /**
-     * Returns the value for the given property.
-     * @param {string} property Name of property
-     * @return {*} Value for the given property
-     * @protected
-     * @override
-     */
-    _getProperty(property) {
-      return this.__data[property];
-    }
-
-    /* eslint-disable no-unused-vars */
-    /**
-     * Updates the local storage for a property, records the previous value,
-     * and adds it to the set of "pending changes" that will be passed to the
-     * `_propertiesChanged` callback.  This method does not enqueue the
-     * `_propertiesChanged` callback.
-     *
-     * @param {string} property Name of the property
-     * @param {*} value Value to set
-     * @param {boolean=} ext Not used here; affordance for closure
-     * @return {boolean} Returns true if the property changed
-     * @protected
-     * @override
-     */
-    _setPendingProperty(property, value, ext) {
-      let old = this.__data[property];
-      let changed = this._shouldPropertyChange(property, value, old);
-      if (changed) {
-        if (!this.__dataPending) {
-          this.__dataPending = {};
-          this.__dataOld = {};
-        }
-        // Ensure old is captured from the last turn
-        if (this.__dataOld && !(property in this.__dataOld)) {
-          this.__dataOld[property] = old;
-        }
-        this.__data[property] = value;
-        this.__dataPending[property] = value;
-      }
-      return changed;
-    }
-    /* eslint-enable */
-
-    /**
-     * Marks the properties as invalid, and enqueues an async
-     * `_propertiesChanged` callback.
-     *
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _invalidateProperties() {
-      if (!this.__dataInvalid && this.__dataReady) {
-        this.__dataInvalid = true;
-        microtask.run(() => {
-          if (this.__dataInvalid) {
-            this.__dataInvalid = false;
-            this._flushProperties();
-          }
-        });
-      }
-    }
-
-    /**
-     * Call to enable property accessor processing. Before this method is
-     * called accessor values will be set but side effects are
-     * queued. When called, any pending side effects occur immediately.
-     * For elements, generally `connectedCallback` is a normal spot to do so.
-     * It is safe to call this method multiple times as it only turns on
-     * property accessors once.
-     *
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _enableProperties() {
-      if (!this.__dataEnabled) {
-        this.__dataEnabled = true;
-        if (this.__dataInstanceProps) {
-          this._initializeInstanceProperties(this.__dataInstanceProps);
-          this.__dataInstanceProps = null;
-        }
-        this.ready();
-      }
-    }
-
-    /**
-     * Calls the `_propertiesChanged` callback with the current set of
-     * pending changes (and old values recorded when pending changes were
-     * set), and resets the pending set of changes. Generally, this method
-     * should not be called in user code.
-     *
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _flushProperties() {
-      const props = this.__data;
-      const changedProps = this.__dataPending;
-      const old = this.__dataOld;
-      if (this._shouldPropertiesChange(props, changedProps, old)) {
-        this.__dataPending = null;
-        this.__dataOld = null;
-        this._propertiesChanged(props, changedProps, old);
-      }
-    }
-
-    /**
-     * Called in `_flushProperties` to determine if `_propertiesChanged`
-     * should be called. The default implementation returns true if
-     * properties are pending. Override to customize when
-     * `_propertiesChanged` is called.
-     * @param {!Object} currentProps Bag of all current accessor values
-     * @param {?Object} changedProps Bag of properties changed since the last
-     *   call to `_propertiesChanged`
-     * @param {?Object} oldProps Bag of previous values for each property
-     *   in `changedProps`
-     * @return {boolean} true if changedProps is truthy
-     * @override
-     */
-    _shouldPropertiesChange(currentProps, changedProps, oldProps) { // eslint-disable-line no-unused-vars
-      return Boolean(changedProps);
-    }
-
-    /**
-     * Callback called when any properties with accessors created via
-     * `_createPropertyAccessor` have been set.
-     *
-     * @param {!Object} currentProps Bag of all current accessor values
-     * @param {?Object} changedProps Bag of properties changed since the last
-     *   call to `_propertiesChanged`
-     * @param {?Object} oldProps Bag of previous values for each property
-     *   in `changedProps`
-     * @return {void}
-     * @protected
-     * @override
-     */
-    _propertiesChanged(currentProps, changedProps, oldProps) { // eslint-disable-line no-unused-vars
-    }
-
-    /**
-     * Method called to determine whether a property value should be
-     * considered as a change and cause the `_propertiesChanged` callback
-     * to be enqueued.
-     *
-     * The default implementation returns `true` if a strict equality
-     * check fails. The method always returns false for `NaN`.
-     *
-     * Override this method to e.g. provide stricter checking for
-     * Objects/Arrays when using immutable patterns.
-     *
-     * @param {string} property Property name
-     * @param {*} value New property value
-     * @param {*} old Previous property value
-     * @return {boolean} Whether the property should be considered a change
-     *   and enqueue a `_proeprtiesChanged` callback
-     * @protected
-     * @override
-     */
-    _shouldPropertyChange(property, value, old) {
-      return (
-        // Strict equality check
-        (old !== value &&
-          // This ensures (old==NaN, value==NaN) always returns false
-          (old === old || value === value))
-      );
-    }
-
-    /**
-     * Implements native Custom Elements `attributeChangedCallback` to
-     * set an attribute value to a property via `_attributeToProperty`.
-     *
-     * @param {string} name Name of attribute that changed
-     * @param {?string} old Old attribute value
-     * @param {?string} value New attribute value
-     * @param {?string} namespace Attribute namespace.
-     * @return {void}
-     * @suppress {missingProperties} Super may or may not implement the callback
-     * @override
-     */
-    attributeChangedCallback(name, old, value, namespace) {
-      if (old !== value) {
-        this._attributeToProperty(name, value);
-      }
-      if (super.attributeChangedCallback) {
-        super.attributeChangedCallback(name, old, value, namespace);
-      }
-    }
-
-    /**
-     * Deserializes an attribute to its associated property.
-     *
-     * This method calls the `_deserializeValue` method to convert the string to
-     * a typed value.
-     *
-     * @param {string} attribute Name of attribute to deserialize.
-     * @param {?string} value of the attribute.
-     * @param {*=} type type to deserialize to, defaults to the value
-     * returned from `typeForProperty`
-     * @return {void}
-     * @override
-     */
-    _attributeToProperty(attribute, value, type) {
-      if (!this.__serializing) {
-        const map = this.__dataAttributes;
-        const property = map && map[attribute] || attribute;
-        this[property] = this._deserializeValue(value, type ||
-          this.constructor.typeForProperty(property));
-      }
-    }
-
-    /**
-     * Serializes a property to its associated attribute.
-     *
-     * @suppress {invalidCasts} Closure can't figure out `this` is an element.
-     *
-     * @param {string} property Property name to reflect.
-     * @param {string=} attribute Attribute name to reflect to.
-     * @param {*=} value Property value to refect.
-     * @return {void}
-     * @override
-     */
-    _propertyToAttribute(property, attribute, value) {
-      this.__serializing = true;
-      value = (arguments.length < 3) ? this[property] : value;
-      this._valueToNodeAttribute(/** @type {!HTMLElement} */(this), value,
-        attribute || this.constructor.attributeNameForProperty(property));
-      this.__serializing = false;
-    }
-
-    /**
-     * Sets a typed value to an HTML attribute on a node.
-     *
-     * This method calls the `_serializeValue` method to convert the typed
-     * value to a string.  If the `_serializeValue` method returns `undefined`,
-     * the attribute will be removed (this is the default for boolean
-     * type `false`).
-     *
-     * @param {Element} node Element to set attribute to.
-     * @param {*} value Value to serialize.
-     * @param {string} attribute Attribute name to serialize to.
-     * @return {void}
-     * @override
-     */
-    _valueToNodeAttribute(node, value, attribute) {
-      const str = this._serializeValue(value);
-      if (str === undefined) {
-        node.removeAttribute(attribute);
-      } else {
-        node.setAttribute(attribute, str);
-      }
-    }
-
-    /**
-     * Converts a typed JavaScript value to a string.
-     *
-     * This method is called when setting JS property values to
-     * HTML attributes.  Users may override this method to provide
-     * serialization for custom types.
-     *
-     * @param {*} value Property value to serialize.
-     * @return {string | undefined} String serialized from the provided
-     * property  value.
-     * @override
-     */
-    _serializeValue(value) {
-      switch (typeof value) {
-        case 'boolean':
-          return value ? '' : undefined;
-        default:
-          return value != null ? value.toString() : undefined;
-      }
-    }
-
-    /**
-     * Converts a string to a typed JavaScript value.
-     *
-     * This method is called when reading HTML attribute values to
-     * JS properties.  Users may override this method to provide
-     * deserialization for custom `type`s. Types for `Boolean`, `String`,
-     * and `Number` convert attributes to the expected types.
-     *
-     * @param {?string} value Value to deserialize.
-     * @param {*=} type Type to deserialize the string to.
-     * @return {*} Typed value deserialized from the provided string.
-     * @override
-     */
-    _deserializeValue(value, type) {
-      switch (type) {
-        case Boolean:
-          return (value !== null);
-        case Number:
-          return Number(value);
-        default:
-          return value;
-      }
-    }
-
-  }
-
-  return PropertiesChanged;
-});
-/* harmony export (immutable) */ __webpack_exports__["a"] = PropertiesChanged;
-
-
-
-/***/ }),
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export _scrollTimer */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/**
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-const _scrollEffects = {};
-/* harmony export (immutable) */ __webpack_exports__["a"] = _scrollEffects;
-
-let _scrollTimer = null;
-
-const scrollTimingFunction = function easeOutQuad(t, b, c, d) {
-  t /= d;
-  return -c * t * (t - 2) + b;
-};
-/* unused harmony export scrollTimingFunction */
-
-
-/**
- * Registers a scroll effect to be used in elements that implement the
- * `Polymer.AppScrollEffectsBehavior` behavior.
- *
- * @param {string} effectName The effect name.
- * @param {Object} effectDef The effect definition.
- */
-const registerEffect = function registerEffect(effectName, effectDef) {
-  if (_scrollEffects[effectName] != null) {
-    throw new Error('effect `' + effectName + '` is already registered.');
-  }
-  _scrollEffects[effectName] = effectDef;
-};
-/* unused harmony export registerEffect */
-
-
-const queryAllRoot = function(selector, root) {
-  var queue = [root];
-  var matches = [];
-
-  while (queue.length > 0) {
-    var node = queue.shift();
-    matches.push.apply(matches, node.querySelectorAll(selector));
-    for (var i = 0; node.children[i]; i++) {
-      if (node.children[i].shadowRoot) {
-        queue.push(node.children[i].shadowRoot);
-      }
-    }
-  }
-  return matches;
-};
-/* unused harmony export queryAllRoot */
-
-
-/**
- * Scrolls to a particular set of coordinates in a scroll target.
- * If the scroll target is not defined, then it would use the main document as
- * the target.
- *
- * To scroll in a smooth fashion, you can set the option `behavior: 'smooth'`.
- * e.g.
- *
- * ```js
- * Polymer.AppLayout.scroll({top: 0, behavior: 'smooth'});
- * ```
- *
- * To scroll in a silent mode, without notifying scroll changes to any
- * app-layout elements, you can set the option `behavior: 'silent'`. This is
- * particularly useful we you are using `app-header` and you desire to scroll to
- * the top of a scrolling region without running scroll effects. e.g.
- *
- * ```js
- * Polymer.AppLayout.scroll({top: 0, behavior: 'silent'});
- * ```
- *
- * @param {Object} options {top: Number, left: Number, behavior: String(smooth | silent)}
- */
-const scroll = function scroll(options) {
-  options = options || {};
-
-  var docEl = document.documentElement;
-  var target = options.target || docEl;
-  var hasNativeScrollBehavior =
-      'scrollBehavior' in target.style && target.scroll;
-  var scrollClassName = 'app-layout-silent-scroll';
-  var scrollTop = options.top || 0;
-  var scrollLeft = options.left || 0;
-  var scrollTo = target === docEl ? window.scrollTo :
-                                    function scrollTo(scrollLeft, scrollTop) {
-                                      target.scrollLeft = scrollLeft;
-                                      target.scrollTop = scrollTop;
-                                    };
-
-  if (options.behavior === 'smooth') {
-    if (hasNativeScrollBehavior) {
-      target.scroll(options);
-
-    } else {
-      var timingFn = scrollTimingFunction;
-      var startTime = Date.now();
-      var currentScrollTop =
-          target === docEl ? window.pageYOffset : target.scrollTop;
-      var currentScrollLeft =
-          target === docEl ? window.pageXOffset : target.scrollLeft;
-      var deltaScrollTop = scrollTop - currentScrollTop;
-      var deltaScrollLeft = scrollLeft - currentScrollLeft;
-      var duration = 300;
-      var updateFrame =
-          (function updateFrame() {
-            var now = Date.now();
-            var elapsedTime = now - startTime;
-
-            if (elapsedTime < duration) {
-              scrollTo(
-                  timingFn(
-                      elapsedTime,
-                      currentScrollLeft,
-                      deltaScrollLeft,
-                      duration),
-                  timingFn(
-                      elapsedTime, currentScrollTop, deltaScrollTop, duration));
-              requestAnimationFrame(updateFrame);
-            } else {
-              scrollTo(scrollLeft, scrollTop);
-            }
-          }).bind(this);
-
-      updateFrame();
-    }
-
-  } else if (options.behavior === 'silent') {
-    var headers = queryAllRoot('app-header', document.body);
-
-    headers.forEach(function(header) {
-      header.setAttribute('silent-scroll', '');
-    });
-
-    // Browsers keep the scroll momentum even if the bottom of the scrolling
-    // content was reached. This means that calling scroll({top: 0, behavior:
-    // 'silent'}) when the momentum is still going will result in more scroll
-    // events and thus scroll effects. This seems to only apply when using
-    // document scrolling. Therefore, when should we remove the class from the
-    // document element?
-
-    if (_scrollTimer) {
-      window.cancelAnimationFrame(_scrollTimer);
-    }
-
-    _scrollTimer = window.requestAnimationFrame(function() {
-      headers.forEach(function(header) {
-        header.removeAttribute('silent-scroll');
-      });
-      _scrollTimer = null;
-    });
-
-    scrollTo(scrollLeft, scrollTop);
-
-  } else {
-    scrollTo(scrollLeft, scrollTop);
-  }
-};
-/* unused harmony export scroll */
-
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__webcomponents_shadycss_entrypoints_apply_shim_js__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_element_mixin_js__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_gesture_event_listeners_js__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_dir_mixin_js__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_render_status_js__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_unresolved_js__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_gestures_js__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_debounce_js__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_async_js__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_path_js__ = __webpack_require__(12);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let styleInterface = window.ShadyCSS;
-
-/**
- * Element class mixin that provides Polymer's "legacy" API intended to be
- * backward-compatible to the greatest extent possible with the API
- * found on the Polymer 1.x `Polymer.Base` prototype applied to all elements
- * defined using the `Polymer({...})` function.
- *
- * @mixinFunction
- * @polymer
- * @appliesMixin ElementMixin
- * @appliesMixin GestureEventListeners
- * @property isAttached {boolean} Set to `true` in this element's
- *   `connectedCallback` and `false` in `disconnectedCallback`
- * @summary Element class mixin that provides Polymer's "legacy" API
- */
-const LegacyElementMixin = Object(__WEBPACK_IMPORTED_MODULE_4__utils_mixin_js__["a" /* dedupingMixin */])((base) => {
-
-  /**
-   * @constructor
-   * @extends {base}
-   * @implements {Polymer_ElementMixin}
-   * @implements {Polymer_GestureEventListeners}
-   * @implements {Polymer_DirMixin}
-   * @private
-   */
-  const legacyElementBase = Object(__WEBPACK_IMPORTED_MODULE_3__mixins_dir_mixin_js__["a" /* DirMixin */])(Object(__WEBPACK_IMPORTED_MODULE_2__mixins_gesture_event_listeners_js__["a" /* GestureEventListeners */])(Object(__WEBPACK_IMPORTED_MODULE_1__mixins_element_mixin_js__["a" /* ElementMixin */])(base)));
-
-  /**
-   * Map of simple names to touch action names
-   * @dict
-   */
-  const DIRECTION_MAP = {
-    'x': 'pan-x',
-    'y': 'pan-y',
-    'none': 'none',
-    'all': 'auto'
-  };
-
-  /**
-   * @polymer
-   * @mixinClass
-   * @extends {legacyElementBase}
-   * @implements {Polymer_LegacyElementMixin}
-   * @unrestricted
-   */
-  class LegacyElement extends legacyElementBase {
-
-    constructor() {
-      super();
-      /** @type {boolean} */
-      this.isAttached;
-      /** @type {WeakMap<!Element, !Object<string, !Function>>} */
-      this.__boundListeners;
-      /** @type {Object<string, Function>} */
-      this._debouncers;
-      // Ensure listeners are applied immediately so that they are
-      // added before declarative event listeners. This allows an element to
-      // decorate itself via an event prior to any declarative listeners
-      // seeing the event. Note, this ensures compatibility with 1.x ordering.
-      this._applyListeners();
-    }
-
-    /**
-     * Forwards `importMeta` from the prototype (i.e. from the info object
-     * passed to `Polymer({...})`) to the static API.
-     *
-     * @return {!Object} The `import.meta` object set on the prototype
-     * @suppress {missingProperties} `this` is always in the instance in
-     *  closure for some reason even in a static method, rather than the class
-     */
-    static get importMeta() {
-      return this.prototype.importMeta;
-    }
-
-    /**
-     * Legacy callback called during the `constructor`, for overriding
-     * by the user.
-     * @return {void}
-     */
-    created() {}
-
-    /**
-     * Provides an implementation of `connectedCallback`
-     * which adds Polymer legacy API's `attached` method.
-     * @return {void}
-     * @override
-     */
-    connectedCallback() {
-      super.connectedCallback();
-      this.isAttached = true;
-      this.attached();
-    }
-
-    /**
-     * Legacy callback called during `connectedCallback`, for overriding
-     * by the user.
-     * @return {void}
-     */
-    attached() {}
-
-    /**
-     * Provides an implementation of `disconnectedCallback`
-     * which adds Polymer legacy API's `detached` method.
-     * @return {void}
-     * @override
-     */
-    disconnectedCallback() {
-      super.disconnectedCallback();
-      this.isAttached = false;
-      this.detached();
-    }
-
-    /**
-     * Legacy callback called during `disconnectedCallback`, for overriding
-     * by the user.
-     * @return {void}
-     */
-    detached() {}
-
-    /**
-     * Provides an override implementation of `attributeChangedCallback`
-     * which adds the Polymer legacy API's `attributeChanged` method.
-     * @param {string} name Name of attribute.
-     * @param {?string} old Old value of attribute.
-     * @param {?string} value Current value of attribute.
-     * @param {?string} namespace Attribute namespace.
-     * @return {void}
-     * @override
-     */
-    attributeChangedCallback(name, old, value, namespace) {
-      if (old !== value) {
-        super.attributeChangedCallback(name, old, value, namespace);
-        this.attributeChanged(name, old, value);
-      }
-    }
-
-    /**
-     * Legacy callback called during `attributeChangedChallback`, for overriding
-     * by the user.
-     * @param {string} name Name of attribute.
-     * @param {?string} old Old value of attribute.
-     * @param {?string} value Current value of attribute.
-     * @return {void}
-     */
-    attributeChanged(name, old, value) {} // eslint-disable-line no-unused-vars
-
-    /**
-     * Overrides the default `Polymer.PropertyEffects` implementation to
-     * add support for class initialization via the `_registered` callback.
-     * This is called only when the first instance of the element is created.
-     *
-     * @return {void}
-     * @override
-     * @suppress {invalidCasts}
-     */
-    _initializeProperties() {
-      let proto = Object.getPrototypeOf(this);
-      if (!proto.hasOwnProperty('__hasRegisterFinished')) {
-        proto.__hasRegisterFinished = true;
-        this._registered();
-      }
-      super._initializeProperties();
-      this.root = /** @type {HTMLElement} */(this);
-      this.created();
-    }
-
-    /**
-     * Called automatically when an element is initializing.
-     * Users may override this method to perform class registration time
-     * work. The implementation should ensure the work is performed
-     * only once for the class.
-     * @protected
-     * @return {void}
-     */
-    _registered() {}
-
-    /**
-     * Overrides the default `Polymer.PropertyEffects` implementation to
-     * add support for installing `hostAttributes` and `listeners`.
-     *
-     * @return {void}
-     * @override
-     */
-    ready() {
-      this._ensureAttributes();
-      super.ready();
-    }
-
-    /**
-     * Ensures an element has required attributes. Called when the element
-     * is being readied via `ready`. Users should override to set the
-     * element's required attributes. The implementation should be sure
-     * to check and not override existing attributes added by
-     * the user of the element. Typically, setting attributes should be left
-     * to the element user and not done here; reasonable exceptions include
-     * setting aria roles and focusability.
-     * @protected
-     * @return {void}
-     */
-    _ensureAttributes() {}
-
-    /**
-     * Adds element event listeners. Called when the element
-     * is being readied via `ready`. Users should override to
-     * add any required element event listeners.
-     * In performance critical elements, the work done here should be kept
-     * to a minimum since it is done before the element is rendered. In
-     * these elements, consider adding listeners asynchronously so as not to
-     * block render.
-     * @protected
-     * @return {void}
-     */
-    _applyListeners() {}
-
-    /**
-     * Converts a typed JavaScript value to a string.
-     *
-     * Note this method is provided as backward-compatible legacy API
-     * only.  It is not directly called by any Polymer features. To customize
-     * how properties are serialized to attributes for attribute bindings and
-     * `reflectToAttribute: true` properties as well as this method, override
-     * the `_serializeValue` method provided by `Polymer.PropertyAccessors`.
-     *
-     * @param {*} value Value to deserialize
-     * @return {string | undefined} Serialized value
-     */
-    serialize(value) {
-      return this._serializeValue(value);
-    }
-
-    /**
-     * Converts a string to a typed JavaScript value.
-     *
-     * Note this method is provided as backward-compatible legacy API
-     * only.  It is not directly called by any Polymer features.  To customize
-     * how attributes are deserialized to properties for in
-     * `attributeChangedCallback`, override `_deserializeValue` method
-     * provided by `Polymer.PropertyAccessors`.
-     *
-     * @param {string} value String to deserialize
-     * @param {*} type Type to deserialize the string to
-     * @return {*} Returns the deserialized value in the `type` given.
-     */
-    deserialize(value, type) {
-      return this._deserializeValue(value, type);
-    }
-
-    /**
-     * Serializes a property to its associated attribute.
-     *
-     * Note this method is provided as backward-compatible legacy API
-     * only.  It is not directly called by any Polymer features.
-     *
-     * @param {string} property Property name to reflect.
-     * @param {string=} attribute Attribute name to reflect.
-     * @param {*=} value Property value to reflect.
-     * @return {void}
-     */
-    reflectPropertyToAttribute(property, attribute, value) {
-      this._propertyToAttribute(property, attribute, value);
-    }
-
-    /**
-     * Sets a typed value to an HTML attribute on a node.
-     *
-     * Note this method is provided as backward-compatible legacy API
-     * only.  It is not directly called by any Polymer features.
-     *
-     * @param {*} value Value to serialize.
-     * @param {string} attribute Attribute name to serialize to.
-     * @param {Element} node Element to set attribute to.
-     * @return {void}
-     */
-    serializeValueToAttribute(value, attribute, node) {
-      this._valueToNodeAttribute(/** @type {Element} */ (node || this), value, attribute);
-    }
-
-    /**
-     * Copies own properties (including accessor descriptors) from a source
-     * object to a target object.
-     *
-     * @param {Object} prototype Target object to copy properties to.
-     * @param {Object} api Source object to copy properties from.
-     * @return {Object} prototype object that was passed as first argument.
-     */
-    extend(prototype, api) {
-      if (!(prototype && api)) {
-        return prototype || api;
-      }
-      let n$ = Object.getOwnPropertyNames(api);
-      for (let i=0, n; (i<n$.length) && (n=n$[i]); i++) {
-        let pd = Object.getOwnPropertyDescriptor(api, n);
-        if (pd) {
-          Object.defineProperty(prototype, n, pd);
-        }
-      }
-      return prototype;
-    }
-
-    /**
-     * Copies props from a source object to a target object.
-     *
-     * Note, this method uses a simple `for...in` strategy for enumerating
-     * properties.  To ensure only `ownProperties` are copied from source
-     * to target and that accessor implementations are copied, use `extend`.
-     *
-     * @param {!Object} target Target object to copy properties to.
-     * @param {!Object} source Source object to copy properties from.
-     * @return {!Object} Target object that was passed as first argument.
-     */
-    mixin(target, source) {
-      for (let i in source) {
-        target[i] = source[i];
-      }
-      return target;
-    }
-
-    /**
-     * Sets the prototype of an object.
-     *
-     * Note this method is provided as backward-compatible legacy API
-     * only.  It is not directly called by any Polymer features.
-     * @param {Object} object The object on which to set the prototype.
-     * @param {Object} prototype The prototype that will be set on the given
-     * `object`.
-     * @return {Object} Returns the given `object` with its prototype set
-     * to the given `prototype` object.
-     */
-    chainObject(object, prototype) {
-      if (object && prototype && object !== prototype) {
-        object.__proto__ = prototype;
-      }
-      return object;
-    }
-
-    /* **** Begin Template **** */
-
-    /**
-     * Calls `importNode` on the `content` of the `template` specified and
-     * returns a document fragment containing the imported content.
-     *
-     * @param {HTMLTemplateElement} template HTML template element to instance.
-     * @return {!DocumentFragment} Document fragment containing the imported
-     *   template content.
-    */
-    instanceTemplate(template) {
-      let content = this.constructor._contentForTemplate(template);
-      let dom = /** @type {!DocumentFragment} */
-        (document.importNode(content, true));
-      return dom;
-    }
-
-    /* **** Begin Events **** */
-
-
-
-    /**
-     * Dispatches a custom event with an optional detail value.
-     *
-     * @param {string} type Name of event type.
-     * @param {*=} detail Detail value containing event-specific
-     *   payload.
-     * @param {{ bubbles: (boolean|undefined), cancelable: (boolean|undefined), composed: (boolean|undefined) }=}
-     *  options Object specifying options.  These may include:
-     *  `bubbles` (boolean, defaults to `true`),
-     *  `cancelable` (boolean, defaults to false), and
-     *  `node` on which to fire the event (HTMLElement, defaults to `this`).
-     * @return {!Event} The new event that was fired.
-     */
-    fire(type, detail, options) {
-      options = options || {};
-      detail = (detail === null || detail === undefined) ? {} : detail;
-      let event = new Event(type, {
-        bubbles: options.bubbles === undefined ? true : options.bubbles,
-        cancelable: Boolean(options.cancelable),
-        composed: options.composed === undefined ? true: options.composed
-      });
-      event.detail = detail;
-      let node = options.node || this;
-      node.dispatchEvent(event);
-      return event;
-    }
-
-    /**
-     * Convenience method to add an event listener on a given element,
-     * late bound to a named method on this element.
-     *
-     * @param {?EventTarget} node Element to add event listener to.
-     * @param {string} eventName Name of event to listen for.
-     * @param {string} methodName Name of handler method on `this` to call.
-     * @return {void}
-     */
-    listen(node, eventName, methodName) {
-      node = /** @type {!EventTarget} */ (node || this);
-      let hbl = this.__boundListeners ||
-        (this.__boundListeners = new WeakMap());
-      let bl = hbl.get(node);
-      if (!bl) {
-        bl = {};
-        hbl.set(node, bl);
-      }
-      let key = eventName + methodName;
-      if (!bl[key]) {
-        bl[key] = this._addMethodEventListenerToNode(
-          node, eventName, methodName, this);
-      }
-    }
-
-    /**
-     * Convenience method to remove an event listener from a given element,
-     * late bound to a named method on this element.
-     *
-     * @param {?EventTarget} node Element to remove event listener from.
-     * @param {string} eventName Name of event to stop listening to.
-     * @param {string} methodName Name of handler method on `this` to not call
-     anymore.
-     * @return {void}
-     */
-    unlisten(node, eventName, methodName) {
-      node = /** @type {!EventTarget} */ (node || this);
-      let bl = this.__boundListeners && this.__boundListeners.get(node);
-      let key = eventName + methodName;
-      let handler = bl && bl[key];
-      if (handler) {
-        this._removeEventListenerFromNode(node, eventName, handler);
-        bl[key] = null;
-      }
-    }
-
-    /**
-     * Override scrolling behavior to all direction, one direction, or none.
-     *
-     * Valid scroll directions:
-     *   - 'all': scroll in any direction
-     *   - 'x': scroll only in the 'x' direction
-     *   - 'y': scroll only in the 'y' direction
-     *   - 'none': disable scrolling for this node
-     *
-     * @param {string=} direction Direction to allow scrolling
-     * Defaults to `all`.
-     * @param {Element=} node Element to apply scroll direction setting.
-     * Defaults to `this`.
-     * @return {void}
-     */
-    setScrollDirection(direction, node) {
-      Object(__WEBPACK_IMPORTED_MODULE_8__utils_gestures_js__["d" /* setTouchAction */])(/** @type {Element} */ (node || this), DIRECTION_MAP[direction] || 'auto');
-    }
-    /* **** End Events **** */
-
-    /**
-     * Convenience method to run `querySelector` on this local DOM scope.
-     *
-     * This function calls `Polymer.dom(this.root).querySelector(slctr)`.
-     *
-     * @param {string} slctr Selector to run on this local DOM scope
-     * @return {Element} Element found by the selector, or null if not found.
-     */
-    $$(slctr) {
-      return this.root.querySelector(slctr);
-    }
-
-    /**
-     * Return the element whose local dom within which this element
-     * is contained. This is a shorthand for
-     * `this.getRootNode().host`.
-     * @this {Element}
-     */
-    get domHost() {
-      let root = this.getRootNode();
-      return (root instanceof DocumentFragment) ? /** @type {ShadowRoot} */ (root).host : root;
-    }
-
-    /**
-     * Force this element to distribute its children to its local dom.
-     * This should not be necessary as of Polymer 2.0.2 and is provided only
-     * for backwards compatibility.
-     * @return {void}
-     */
-    distributeContent() {
-      if (window.ShadyDOM && this.shadowRoot) {
-        ShadyDOM.flush();
-      }
-    }
-
-    /**
-     * Returns a list of nodes that are the effective childNodes. The effective
-     * childNodes list is the same as the element's childNodes except that
-     * any `<content>` elements are replaced with the list of nodes distributed
-     * to the `<content>`, the result of its `getDistributedNodes` method.
-     * @return {!Array<!Node>} List of effective child nodes.
-     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
-     */
-    getEffectiveChildNodes() {
-      const thisEl = /** @type {Element} */ (this);
-      const domApi = /** @type {DomApi} */(Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["a" /* dom */])(thisEl));
-      return domApi.getEffectiveChildNodes();
-    }
-
-    /**
-     * Returns a list of nodes distributed within this element that match
-     * `selector`. These can be dom children or elements distributed to
-     * children that are insertion points.
-     * @param {string} selector Selector to run.
-     * @return {!Array<!Node>} List of distributed elements that match selector.
-     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
-     */
-    queryDistributedElements(selector) {
-      const thisEl = /** @type {Element} */ (this);
-      const domApi = /** @type {DomApi} */(Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["a" /* dom */])(thisEl));
-      return domApi.queryDistributedElements(selector);
-    }
-
-    /**
-     * Returns a list of elements that are the effective children. The effective
-     * children list is the same as the element's children except that
-     * any `<content>` elements are replaced with the list of elements
-     * distributed to the `<content>`.
-     *
-     * @return {!Array<!Node>} List of effective children.
-     */
-    getEffectiveChildren() {
-      let list = this.getEffectiveChildNodes();
-      return list.filter(function(/** @type {!Node} */ n) {
-        return (n.nodeType === Node.ELEMENT_NODE);
-      });
-    }
-
-    /**
-     * Returns a string of text content that is the concatenation of the
-     * text content's of the element's effective childNodes (the elements
-     * returned by <a href="#getEffectiveChildNodes>getEffectiveChildNodes</a>.
-     *
-     * @return {string} List of effective children.
-     */
-    getEffectiveTextContent() {
-      let cn = this.getEffectiveChildNodes();
-      let tc = [];
-      for (let i=0, c; (c = cn[i]); i++) {
-        if (c.nodeType !== Node.COMMENT_NODE) {
-          tc.push(c.textContent);
-        }
-      }
-      return tc.join('');
-    }
-
-    /**
-     * Returns the first effective childNode within this element that
-     * match `selector`. These can be dom child nodes or elements distributed
-     * to children that are insertion points.
-     * @param {string} selector Selector to run.
-     * @return {Node} First effective child node that matches selector.
-     */
-    queryEffectiveChildren(selector) {
-      let e$ = this.queryDistributedElements(selector);
-      return e$ && e$[0];
-    }
-
-    /**
-     * Returns a list of effective childNodes within this element that
-     * match `selector`. These can be dom child nodes or elements distributed
-     * to children that are insertion points.
-     * @param {string} selector Selector to run.
-     * @return {!Array<!Node>} List of effective child nodes that match selector.
-     */
-    queryAllEffectiveChildren(selector) {
-      return this.queryDistributedElements(selector);
-    }
-
-    /**
-     * Returns a list of nodes distributed to this element's `<slot>`.
-     *
-     * If this element contains more than one `<slot>` in its local DOM,
-     * an optional selector may be passed to choose the desired content.
-     *
-     * @param {string=} slctr CSS selector to choose the desired
-     *   `<slot>`.  Defaults to `content`.
-     * @return {!Array<!Node>} List of distributed nodes for the `<slot>`.
-     */
-    getContentChildNodes(slctr) {
-      let content = this.root.querySelector(slctr || 'slot');
-      return content ? /** @type {DomApi} */(Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["a" /* dom */])(content)).getDistributedNodes() : [];
-    }
-
-    /**
-     * Returns a list of element children distributed to this element's
-     * `<slot>`.
-     *
-     * If this element contains more than one `<slot>` in its
-     * local DOM, an optional selector may be passed to choose the desired
-     * content.  This method differs from `getContentChildNodes` in that only
-     * elements are returned.
-     *
-     * @param {string=} slctr CSS selector to choose the desired
-     *   `<content>`.  Defaults to `content`.
-     * @return {!Array<!HTMLElement>} List of distributed nodes for the
-     *   `<slot>`.
-     * @suppress {invalidCasts}
-     */
-    getContentChildren(slctr) {
-      let children = /** @type {!Array<!HTMLElement>} */(this.getContentChildNodes(slctr).filter(function(n) {
-        return (n.nodeType === Node.ELEMENT_NODE);
-      }));
-      return children;
-    }
-
-    /**
-     * Checks whether an element is in this element's light DOM tree.
-     *
-     * @param {?Node} node The element to be checked.
-     * @return {boolean} true if node is in this element's light DOM tree.
-     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
-     */
-    isLightDescendant(node) {
-      const thisNode = /** @type {Node} */ (this);
-      return thisNode !== node && thisNode.contains(node) &&
-        thisNode.getRootNode() === node.getRootNode();
-    }
-
-    /**
-     * Checks whether an element is in this element's local DOM tree.
-     *
-     * @param {!Element} node The element to be checked.
-     * @return {boolean} true if node is in this element's local DOM tree.
-     */
-    isLocalDescendant(node) {
-      return this.root === node.getRootNode();
-    }
-
-    /**
-     * No-op for backwards compatibility. This should now be handled by
-     * ShadyCss library.
-     * @param  {*} container Unused
-     * @param  {*} shouldObserve Unused
-     * @return {void}
-     */
-    scopeSubtree(container, shouldObserve) { // eslint-disable-line no-unused-vars
-    }
-
-    /**
-     * Returns the computed style value for the given property.
-     * @param {string} property The css property name.
-     * @return {string} Returns the computed css property value for the given
-     * `property`.
-     * @suppress {invalidCasts} LegacyElementMixin must be applied to an HTMLElement
-     */
-    getComputedStyleValue(property) {
-      return styleInterface.getComputedStyleValue(/** @type {!Element} */(this), property);
-    }
-
-    // debounce
-
-    /**
-     * Call `debounce` to collapse multiple requests for a named task into
-     * one invocation which is made after the wait time has elapsed with
-     * no new request.  If no wait time is given, the callback will be called
-     * at microtask timing (guaranteed before paint).
-     *
-     *     debouncedClickAction(e) {
-     *       // will not call `processClick` more than once per 100ms
-     *       this.debounce('click', function() {
-     *        this.processClick();
-     *       } 100);
-     *     }
-     *
-     * @param {string} jobName String to identify the debounce job.
-     * @param {function():void} callback Function that is called (with `this`
-     *   context) when the wait time elapses.
-     * @param {number} wait Optional wait time in milliseconds (ms) after the
-     *   last signal that must elapse before invoking `callback`
-     * @return {!Object} Returns a debouncer object on which exists the
-     * following methods: `isActive()` returns true if the debouncer is
-     * active; `cancel()` cancels the debouncer if it is active;
-     * `flush()` immediately invokes the debounced callback if the debouncer
-     * is active.
-     */
-    debounce(jobName, callback, wait) {
-      this._debouncers = this._debouncers || {};
-      return this._debouncers[jobName] = __WEBPACK_IMPORTED_MODULE_9__utils_debounce_js__["a" /* Debouncer */].debounce(
-            this._debouncers[jobName]
-          , wait > 0 ? __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["c" /* timeOut */].after(wait) : __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["b" /* microTask */]
-          , callback.bind(this));
-    }
-
-    /**
-     * Returns whether a named debouncer is active.
-     *
-     * @param {string} jobName The name of the debouncer started with `debounce`
-     * @return {boolean} Whether the debouncer is active (has not yet fired).
-     */
-    isDebouncerActive(jobName) {
-      this._debouncers = this._debouncers || {};
-      let debouncer = this._debouncers[jobName];
-      return !!(debouncer && debouncer.isActive());
-    }
-
-    /**
-     * Immediately calls the debouncer `callback` and inactivates it.
-     *
-     * @param {string} jobName The name of the debouncer started with `debounce`
-     * @return {void}
-     */
-    flushDebouncer(jobName) {
-      this._debouncers = this._debouncers || {};
-      let debouncer = this._debouncers[jobName];
-      if (debouncer) {
-        debouncer.flush();
-      }
-    }
-
-    /**
-     * Cancels an active debouncer.  The `callback` will not be called.
-     *
-     * @param {string} jobName The name of the debouncer started with `debounce`
-     * @return {void}
-     */
-    cancelDebouncer(jobName) {
-      this._debouncers = this._debouncers || {};
-      let debouncer = this._debouncers[jobName];
-      if (debouncer) {
-        debouncer.cancel();
-      }
-    }
-
-    /**
-     * Runs a callback function asynchronously.
-     *
-     * By default (if no waitTime is specified), async callbacks are run at
-     * microtask timing, which will occur before paint.
-     *
-     * @param {!Function} callback The callback function to run, bound to `this`.
-     * @param {number=} waitTime Time to wait before calling the
-     *   `callback`.  If unspecified or 0, the callback will be run at microtask
-     *   timing (before paint).
-     * @return {number} Handle that may be used to cancel the async job.
-     */
-    async(callback, waitTime) {
-      return waitTime > 0 ? __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["c" /* timeOut */].run(callback.bind(this), waitTime) :
-          ~__WEBPACK_IMPORTED_MODULE_10__utils_async_js__["b" /* microTask */].run(callback.bind(this));
-    }
-
-    /**
-     * Cancels an async operation started with `async`.
-     *
-     * @param {number} handle Handle returned from original `async` call to
-     *   cancel.
-     * @return {void}
-     */
-    cancelAsync(handle) {
-      handle < 0 ? __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["b" /* microTask */].cancel(~handle) :
-          __WEBPACK_IMPORTED_MODULE_10__utils_async_js__["c" /* timeOut */].cancel(handle);
-    }
-
-    // other
-
-    /**
-     * Convenience method for creating an element and configuring it.
-     *
-     * @param {string} tag HTML element tag to create.
-     * @param {Object=} props Object of properties to configure on the
-     *    instance.
-     * @return {!Element} Newly created and configured element.
-     */
-    create(tag, props) {
-      let elt = document.createElement(tag);
-      if (props) {
-        if (elt.setProperties) {
-          elt.setProperties(props);
-        } else {
-          for (let n in props) {
-            elt[n] = props[n];
-          }
-        }
-      }
-      return elt;
-    }
-
-    /**
-     * Polyfill for Element.prototype.matches, which is sometimes still
-     * prefixed.
-     *
-     * @param {string} selector Selector to test.
-     * @param {!Element=} node Element to test the selector against.
-     * @return {boolean} Whether the element matches the selector.
-     */
-    elementMatches(selector, node) {
-      return Object(__WEBPACK_IMPORTED_MODULE_7__polymer_dom_js__["b" /* matchesSelector */])( (node || this), selector);
-    }
-
-    /**
-     * Toggles an HTML attribute on or off.
-     *
-     * @param {string} name HTML attribute name
-     * @param {boolean=} bool Boolean to force the attribute on or off.
-     *    When unspecified, the state of the attribute will be reversed.
-     * @return {boolean} true if the attribute now exists
-     */
-    toggleAttribute(name, bool) {
-      let node = /** @type {Element} */ this;
-      if (arguments.length === 3) {
-        node = /** @type {Element} */ arguments[2];
-      }
-      if (arguments.length == 1) {
-        bool = !node.hasAttribute(name);
-      }
-      if (bool) {
-        node.setAttribute(name, '');
-        return true;
-      } else {
-        node.removeAttribute(name);
-        return false;
-      }
-    }
-
-
-    /**
-     * Toggles a CSS class on or off.
-     *
-     * @param {string} name CSS class name
-     * @param {boolean=} bool Boolean to force the class on or off.
-     *    When unspecified, the state of the class will be reversed.
-     * @param {Element=} node Node to target.  Defaults to `this`.
-     * @return {void}
-     */
-    toggleClass(name, bool, node) {
-      node = /** @type {Element} */ (node || this);
-      if (arguments.length == 1) {
-        bool = !node.classList.contains(name);
-      }
-      if (bool) {
-        node.classList.add(name);
-      } else {
-        node.classList.remove(name);
-      }
-    }
-
-    /**
-     * Cross-platform helper for setting an element's CSS `transform` property.
-     *
-     * @param {string} transformText Transform setting.
-     * @param {Element=} node Element to apply the transform to.
-     * Defaults to `this`
-     * @return {void}
-     */
-    transform(transformText, node) {
-      node = /** @type {Element} */ (node || this);
-      node.style.webkitTransform = transformText;
-      node.style.transform = transformText;
-    }
-
-    /**
-     * Cross-platform helper for setting an element's CSS `translate3d`
-     * property.
-     *
-     * @param {number} x X offset.
-     * @param {number} y Y offset.
-     * @param {number} z Z offset.
-     * @param {Element=} node Element to apply the transform to.
-     * Defaults to `this`.
-     * @return {void}
-     */
-    translate3d(x, y, z, node) {
-      node = /** @type {Element} */ (node || this);
-      this.transform('translate3d(' + x + ',' + y + ',' + z + ')', node);
-    }
-
-    /**
-     * Removes an item from an array, if it exists.
-     *
-     * If the array is specified by path, a change notification is
-     * generated, so that observers, data bindings and computed
-     * properties watching that path can update.
-     *
-     * If the array is passed directly, **no change
-     * notification is generated**.
-     *
-     * @param {string | !Array<number|string>} arrayOrPath Path to array from which to remove the item
-     *   (or the array itself).
-     * @param {*} item Item to remove.
-     * @return {Array} Array containing item removed.
-     */
-    arrayDelete(arrayOrPath, item) {
-      let index;
-      if (Array.isArray(arrayOrPath)) {
-        index = arrayOrPath.indexOf(item);
-        if (index >= 0) {
-          return arrayOrPath.splice(index, 1);
-        }
-      } else {
-        let arr = Object(__WEBPACK_IMPORTED_MODULE_11__utils_path_js__["a" /* get */])(this, arrayOrPath);
-        index = arr.indexOf(item);
-        if (index >= 0) {
-          return this.splice(arrayOrPath, index, 1);
-        }
-      }
-      return null;
-    }
-
-    // logging
-
-    /**
-     * Facades `console.log`/`warn`/`error` as override point.
-     *
-     * @param {string} level One of 'log', 'warn', 'error'
-     * @param {Array} args Array of strings or objects to log
-     * @return {void}
-     */
-    _logger(level, args) {
-      // accept ['foo', 'bar'] and [['foo', 'bar']]
-      if (Array.isArray(args) && args.length === 1 && Array.isArray(args[0])) {
-        args = args[0];
-      }
-      switch(level) {
-        case 'log':
-        case 'warn':
-        case 'error':
-          console[level](...args);
-      }
-    }
-
-    /**
-     * Facades `console.log` as an override point.
-     *
-     * @param {...*} args Array of strings or objects to log
-     * @return {void}
-     */
-    _log(...args) {
-      this._logger('log', args);
-    }
-
-    /**
-     * Facades `console.warn` as an override point.
-     *
-     * @param {...*} args Array of strings or objects to log
-     * @return {void}
-     */
-    _warn(...args) {
-      this._logger('warn', args);
-    }
-
-    /**
-     * Facades `console.error` as an override point.
-     *
-     * @param {...*} args Array of strings or objects to log
-     * @return {void}
-     */
-    _error(...args) {
-      this._logger('error', args);
-    }
-
-    /**
-     * Formats a message using the element type an a method name.
-     *
-     * @param {string} methodName Method name to associate with message
-     * @param {...*} args Array of strings or objects to log
-     * @return {Array} Array with formatting information for `console`
-     *   logging.
-     */
-    _logf(methodName, ...args) {
-      return ['[%s::%s]', this.is, methodName, ...args];
-    }
-
-  }
-
-  LegacyElement.prototype.is = '';
-
-  return LegacyElement;
-
-});
-/* harmony export (immutable) */ __webpack_exports__["a"] = LegacyElementMixin;
-
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["g"] = toCssText;
-/* harmony export (immutable) */ __webpack_exports__["f"] = rulesForStyle;
-/* unused harmony export isKeyframesSelector */
-/* harmony export (immutable) */ __webpack_exports__["b"] = forEachRule;
-/* unused harmony export applyCss */
-/* unused harmony export createScopeStyle */
-/* unused harmony export applyStylePlaceHolder */
-/* unused harmony export applyStyle */
-/* unused harmony export isTargetedBuild */
-/* unused harmony export findMatchingParen */
-/* harmony export (immutable) */ __webpack_exports__["e"] = processVariableAndFallback;
-/* unused harmony export setElementClassRaw */
-/* harmony export (immutable) */ __webpack_exports__["d"] = getIsExtends;
-/* harmony export (immutable) */ __webpack_exports__["c"] = gatherStyleText;
-/* unused harmony export splitSelectorList */
-/* unused harmony export getCssBuild */
-/* harmony export (immutable) */ __webpack_exports__["a"] = elementHasBuiltCss;
-/* unused harmony export getBuildComment */
-/* unused harmony export isOptimalCssBuild */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_settings_js__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_parse_js__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_regex_js__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__unscoped_style_handler_js__ = __webpack_require__(81);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
- // eslint-disable-line no-unused-vars
-
-
-
-/**
- * @param {string|StyleNode} rules
- * @param {function(StyleNode)=} callback
- * @return {string}
- */
-function toCssText (rules, callback) {
-  if (!rules) {
-    return '';
-  }
-  if (typeof rules === 'string') {
-    rules = Object(__WEBPACK_IMPORTED_MODULE_1__css_parse_js__["a" /* parse */])(rules);
-  }
-  if (callback) {
-    forEachRule(rules, callback);
-  }
-  return Object(__WEBPACK_IMPORTED_MODULE_1__css_parse_js__["b" /* stringify */])(rules, __WEBPACK_IMPORTED_MODULE_0__style_settings_js__["b" /* nativeCssVariables */]);
-}
-
-/**
- * @param {HTMLStyleElement} style
- * @return {StyleNode}
- */
-function rulesForStyle(style) {
-  if (!style['__cssRules'] && style.textContent) {
-    style['__cssRules'] = Object(__WEBPACK_IMPORTED_MODULE_1__css_parse_js__["a" /* parse */])(style.textContent);
-  }
-  return style['__cssRules'] || null;
-}
-
-// Tests if a rule is a keyframes selector, which looks almost exactly
-// like a normal selector but is not (it has nothing to do with scoping
-// for example).
-/**
- * @param {StyleNode} rule
- * @return {boolean}
- */
-function isKeyframesSelector(rule) {
-  return Boolean(rule['parent']) &&
-  rule['parent']['type'] === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].KEYFRAMES_RULE;
-}
-
-/**
- * @param {StyleNode} node
- * @param {Function=} styleRuleCallback
- * @param {Function=} keyframesRuleCallback
- * @param {boolean=} onlyActiveRules
- */
-function forEachRule(node, styleRuleCallback, keyframesRuleCallback, onlyActiveRules) {
-  if (!node) {
-    return;
-  }
-  let skipRules = false;
-  let type = node['type'];
-  if (onlyActiveRules) {
-    if (type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].MEDIA_RULE) {
-      let matchMedia = node['selector'].match(__WEBPACK_IMPORTED_MODULE_2__common_regex_js__["a" /* MEDIA_MATCH */]);
-      if (matchMedia) {
-        // if rule is a non matching @media rule, skip subrules
-        if (!window.matchMedia(matchMedia[1]).matches) {
-          skipRules = true;
-        }
-      }
-    }
-  }
-  if (type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].STYLE_RULE) {
-    styleRuleCallback(node);
-  } else if (keyframesRuleCallback &&
-    type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].KEYFRAMES_RULE) {
-    keyframesRuleCallback(node);
-  } else if (type === __WEBPACK_IMPORTED_MODULE_1__css_parse_js__["c" /* types */].MIXIN_RULE) {
-    skipRules = true;
-  }
-  let r$ = node['rules'];
-  if (r$ && !skipRules) {
-    for (let i=0, l=r$.length, r; (i<l) && (r=r$[i]); i++) {
-      forEachRule(r, styleRuleCallback, keyframesRuleCallback, onlyActiveRules);
-    }
-  }
-}
-
-// add a string of cssText to the document.
-/**
- * @param {string} cssText
- * @param {string} moniker
- * @param {Node} target
- * @param {Node} contextNode
- * @return {HTMLStyleElement}
- */
-function applyCss(cssText, moniker, target, contextNode) {
-  let style = createScopeStyle(cssText, moniker);
-  applyStyle(style, target, contextNode);
-  return style;
-}
-
-/**
- * @param {string} cssText
- * @param {string} moniker
- * @return {HTMLStyleElement}
- */
-function createScopeStyle(cssText, moniker) {
-  let style = /** @type {HTMLStyleElement} */(document.createElement('style'));
-  if (moniker) {
-    style.setAttribute('scope', moniker);
-  }
-  style.textContent = cssText;
-  return style;
-}
-
-/**
- * Track the position of the last added style for placing placeholders
- * @type {Node}
- */
-let lastHeadApplyNode = null;
-
-// insert a comment node as a styling position placeholder.
-/**
- * @param {string} moniker
- * @return {!Comment}
- */
-function applyStylePlaceHolder(moniker) {
-  let placeHolder = document.createComment(' Shady DOM styles for ' +
-    moniker + ' ');
-  let after = lastHeadApplyNode ?
-    lastHeadApplyNode['nextSibling'] : null;
-  let scope = document.head;
-  scope.insertBefore(placeHolder, after || scope.firstChild);
-  lastHeadApplyNode = placeHolder;
-  return placeHolder;
-}
-
-/**
- * @param {HTMLStyleElement} style
- * @param {?Node} target
- * @param {?Node} contextNode
- */
-function applyStyle(style, target, contextNode) {
-  target = target || document.head;
-  let after = (contextNode && contextNode.nextSibling) ||
-    target.firstChild;
-  target.insertBefore(style, after);
-  if (!lastHeadApplyNode) {
-    lastHeadApplyNode = style;
-  } else {
-    // only update lastHeadApplyNode if the new style is inserted after the old lastHeadApplyNode
-    let position = style.compareDocumentPosition(lastHeadApplyNode);
-    if (position === Node.DOCUMENT_POSITION_PRECEDING) {
-      lastHeadApplyNode = style;
-    }
-  }
-}
-
-/**
- * @param {string} buildType
- * @return {boolean}
- */
-function isTargetedBuild(buildType) {
-  return __WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */] ? buildType === 'shadow' : buildType === 'shady';
-}
-
-/**
- * Walk from text[start] matching parens and
- * returns position of the outer end paren
- * @param {string} text
- * @param {number} start
- * @return {number}
- */
-function findMatchingParen(text, start) {
-  let level = 0;
-  for (let i=start, l=text.length; i < l; i++) {
-    if (text[i] === '(') {
-      level++;
-    } else if (text[i] === ')') {
-      if (--level === 0) {
-        return i;
-      }
-    }
-  }
-  return -1;
-}
-
-/**
- * @param {string} str
- * @param {function(string, string, string, string)} callback
- */
-function processVariableAndFallback(str, callback) {
-  // find 'var('
-  let start = str.indexOf('var(');
-  if (start === -1) {
-    // no var?, everything is prefix
-    return callback(str, '', '', '');
-  }
-  //${prefix}var(${inner})${suffix}
-  let end = findMatchingParen(str, start + 3);
-  let inner = str.substring(start + 4, end);
-  let prefix = str.substring(0, start);
-  // suffix may have other variables
-  let suffix = processVariableAndFallback(str.substring(end + 1), callback);
-  let comma = inner.indexOf(',');
-  // value and fallback args should be trimmed to match in property lookup
-  if (comma === -1) {
-    // variable, no fallback
-    return callback(prefix, inner.trim(), '', suffix);
-  }
-  // var(${value},${fallback})
-  let value = inner.substring(0, comma).trim();
-  let fallback = inner.substring(comma + 1).trim();
-  return callback(prefix, value, fallback, suffix);
-}
-
-/**
- * @param {Element} element
- * @param {string} value
- */
-function setElementClassRaw(element, value) {
-  // use native setAttribute provided by ShadyDOM when setAttribute is patched
-  if (__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */]) {
-    element.setAttribute('class', value);
-  } else {
-    window['ShadyDOM']['nativeMethods']['setAttribute'].call(element, 'class', value);
-  }
-}
-
-const wrap = window['ShadyDOM'] && window['ShadyDOM']['wrap'] || ((node) => node);
-/* unused harmony export wrap */
-
-
-/**
- * @param {Element | {is: string, extends: string}} element
- * @return {{is: string, typeExtension: string}}
- */
-function getIsExtends(element) {
-  let localName = element['localName'];
-  let is = '', typeExtension = '';
-  /*
-  NOTE: technically, this can be wrong for certain svg elements
-  with `-` in the name like `<font-face>`
-  */
-  if (localName) {
-    if (localName.indexOf('-') > -1) {
-      is = localName;
-    } else {
-      typeExtension = localName;
-      is = (element.getAttribute && element.getAttribute('is')) || '';
-    }
-  } else {
-    is = /** @type {?} */(element).is;
-    typeExtension = /** @type {?} */(element).extends;
-  }
-  return {is, typeExtension};
-}
-
-/**
- * @param {Element|DocumentFragment} element
- * @return {string}
- */
-function gatherStyleText(element) {
-  /** @type {!Array<string>} */
-  const styleTextParts = [];
-  const styles = /** @type {!NodeList<!HTMLStyleElement>} */(element.querySelectorAll('style'));
-  for (let i = 0; i < styles.length; i++) {
-    const style = styles[i];
-    if (Object(__WEBPACK_IMPORTED_MODULE_3__unscoped_style_handler_js__["a" /* isUnscopedStyle */])(style)) {
-      if (!__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */]) {
-        Object(__WEBPACK_IMPORTED_MODULE_3__unscoped_style_handler_js__["b" /* processUnscopedStyle */])(style);
-        style.parentNode.removeChild(style);
-      }
-    } else {
-      styleTextParts.push(style.textContent);
-      style.parentNode.removeChild(style);
-    }
-  }
-  return styleTextParts.join('').trim();
-}
-
-/**
- * Split a selector separated by commas into an array in a smart way
- * @param {string} selector
- * @return {!Array<string>}
- */
-function splitSelectorList(selector) {
-  const parts = [];
-  let part = '';
-  for (let i = 0; i >= 0 && i < selector.length; i++) {
-    // A selector with parentheses will be one complete part
-    if (selector[i] === '(') {
-      // find the matching paren
-      const end = findMatchingParen(selector, i);
-      // push the paren block into the part
-      part += selector.slice(i, end + 1);
-      // move the index to after the paren block
-      i = end;
-    } else if (selector[i] === ',') {
-      parts.push(part);
-      part = '';
-    } else {
-      part += selector[i];
-    }
-  }
-  // catch any pieces after the last comma
-  if (part) {
-    parts.push(part);
-  }
-  return parts;
-}
-
-const CSS_BUILD_ATTR = 'css-build';
-
-/**
- * Return the polymer-css-build "build type" applied to this element
- *
- * @param {!HTMLElement} element
- * @return {string} Can be "", "shady", or "shadow"
- */
-function getCssBuild(element) {
-  if (__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["a" /* cssBuild */] !== undefined) {
-    return /** @type {string} */(__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["a" /* cssBuild */]);
-  }
-  if (element.__cssBuild === undefined) {
-    // try attribute first, as it is the common case
-    const attrValue = element.getAttribute(CSS_BUILD_ATTR);
-    if (attrValue) {
-      element.__cssBuild = attrValue;
-    } else {
-      const buildComment = getBuildComment(element);
-      if (buildComment !== '') {
-        // remove build comment so it is not needlessly copied into every element instance
-        removeBuildComment(element);
-      }
-      element.__cssBuild = buildComment;
-    }
-  }
-  return element.__cssBuild || '';
-}
-
-/**
- * Check if the given element, either a <template> or <style>, has been processed
- * by polymer-css-build.
- *
- * If so, then we can make a number of optimizations:
- * - polymer-css-build will decompose mixins into individual CSS Custom Properties,
- * so the ApplyShim can be skipped entirely.
- * - Under native ShadowDOM, the style text can just be copied into each instance
- * without modification
- * - If the build is "shady" and ShadyDOM is in use, the styling does not need
- * scoping beyond the shimming of CSS Custom Properties
- *
- * @param {!HTMLElement} element
- * @return {boolean}
- */
-function elementHasBuiltCss(element) {
-  return getCssBuild(element) !== '';
-}
-
-/**
- * For templates made with tagged template literals, polymer-css-build will
- * insert a comment of the form `<!--css-build:shadow-->`
- *
- * @param {!HTMLElement} element
- * @return {string}
- */
-function getBuildComment(element) {
-  const buildComment = element.localName === 'template' ?
-      /** @type {!HTMLTemplateElement} */ (element).content.firstChild :
-      element.firstChild;
-  if (buildComment instanceof Comment) {
-    const commentParts = buildComment.textContent.trim().split(':');
-    if (commentParts[0] === CSS_BUILD_ATTR) {
-      return commentParts[1];
-    }
-  }
-  return '';
-}
-
-/**
- * Check if the css build status is optimal, and do no unneeded work.
- *
- * @param {string=} cssBuild CSS build status
- * @return {boolean} css build is optimal or not
- */
-function isOptimalCssBuild(cssBuild = '') {
-  // CSS custom property shim always requires work
-  if (cssBuild === '' || !__WEBPACK_IMPORTED_MODULE_0__style_settings_js__["b" /* nativeCssVariables */]) {
-    return false;
-  }
-  return __WEBPACK_IMPORTED_MODULE_0__style_settings_js__["c" /* nativeShadow */] ? cssBuild === 'shadow' : cssBuild === 'shady';
-}
-
-/**
- * @param {!HTMLElement} element
- */
-function removeBuildComment(element) {
-  const buildComment = element.localName === 'template' ?
-      /** @type {!HTMLTemplateElement} */ (element).content.firstChild :
-      element.firstChild;
-  buildComment.parentNode.removeChild(buildComment);
-}
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-/**
- * @const {!Object<string, !HTMLTemplateElement>}
- */
-const templateMap = {};
-/* harmony default export */ __webpack_exports__["a"] = (templateMap);
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export CustomStyleProvider */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__document_wait_js__ = __webpack_require__(83);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-/**
- * @typedef {HTMLStyleElement | {getStyle: function():HTMLStyleElement}}
- */
-let CustomStyleProvider;
-
-const SEEN_MARKER = '__seenByShadyCSS';
-const CACHED_STYLE = '__shadyCSSCachedStyle';
-
-/** @type {?function(!HTMLStyleElement)} */
-let transformFn = null;
-
-/** @type {?function()} */
-let validateFn = null;
-
-/**
-This interface is provided to add document-level <style> elements to ShadyCSS for processing.
-These styles must be processed by ShadyCSS to simulate ShadowRoot upper-bound encapsulation from outside styles
-In addition, these styles may also need to be processed for @apply rules and CSS Custom Properties
-
-To add document-level styles to ShadyCSS, one can call `ShadyCSS.addDocumentStyle(styleElement)` or `ShadyCSS.addDocumentStyle({getStyle: () => styleElement})`
-
-In addition, if the process used to discover document-level styles can be synchronously flushed, one should set `ShadyCSS.documentStyleFlush`.
-This function will be called when calculating styles.
-
-An example usage of the document-level styling api can be found in `examples/document-style-lib.js`
-
-@unrestricted
-*/
-class CustomStyleInterface {
-  constructor() {
-    /** @type {!Array<!CustomStyleProvider>} */
-    this['customStyles'] = [];
-    this['enqueued'] = false;
-    // NOTE(dfreedm): use quotes here to prevent closure inlining to `function(){}`;
-    Object(__WEBPACK_IMPORTED_MODULE_0__document_wait_js__["a" /* default */])(() => {
-      if (window['ShadyCSS']['flushCustomStyles']) {
-        window['ShadyCSS']['flushCustomStyles']();
-      }
-    })
-  }
-  /**
-   * Queue a validation for new custom styles to batch style recalculations
-   */
-  enqueueDocumentValidation() {
-    if (this['enqueued'] || !validateFn) {
-      return;
-    }
-    this['enqueued'] = true;
-    Object(__WEBPACK_IMPORTED_MODULE_0__document_wait_js__["a" /* default */])(validateFn);
-  }
-  /**
-   * @param {!HTMLStyleElement} style
-   */
-  addCustomStyle(style) {
-    if (!style[SEEN_MARKER]) {
-      style[SEEN_MARKER] = true;
-      this['customStyles'].push(style);
-      this.enqueueDocumentValidation();
-    }
-  }
-  /**
-   * @param {!CustomStyleProvider} customStyle
-   * @return {HTMLStyleElement}
-   */
-  getStyleForCustomStyle(customStyle) {
-    if (customStyle[CACHED_STYLE]) {
-      return customStyle[CACHED_STYLE];
-    }
-    let style;
-    if (customStyle['getStyle']) {
-      style = customStyle['getStyle']();
-    } else {
-      style = customStyle;
-    }
-    return style;
-  }
-  /**
-   * @return {!Array<!CustomStyleProvider>}
-   */
-  processStyles() {
-    const cs = this['customStyles'];
-    for (let i = 0; i < cs.length; i++) {
-      const customStyle = cs[i];
-      if (customStyle[CACHED_STYLE]) {
-        continue;
-      }
-      const style = this.getStyleForCustomStyle(customStyle);
-      if (style) {
-        // HTMLImports polyfill may have cloned the style into the main document,
-        // which is referenced with __appliedElement.
-        const styleToTransform = /** @type {!HTMLStyleElement} */(style['__appliedElement'] || style);
-        if (transformFn) {
-          transformFn(styleToTransform);
-        }
-        customStyle[CACHED_STYLE] = styleToTransform;
-      }
-    }
-    return cs;
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = CustomStyleInterface;
-
-
-/* eslint-disable no-self-assign */
-CustomStyleInterface.prototype['addCustomStyle'] = CustomStyleInterface.prototype.addCustomStyle;
-CustomStyleInterface.prototype['getStyleForCustomStyle'] = CustomStyleInterface.prototype.getStyleForCustomStyle;
-CustomStyleInterface.prototype['processStyles'] = CustomStyleInterface.prototype.processStyles;
-/* eslint-enable no-self-assign */
-
-Object.defineProperties(CustomStyleInterface.prototype, {
-  'transformCallback': {
-    /** @return {?function(!HTMLStyleElement)} */
-    get() {
-      return transformFn;
-    },
-    /** @param {?function(!HTMLStyleElement)} fn */
-    set(fn) {
-      transformFn = fn;
-    }
-  },
-  'validateCallback': {
-    /** @return {?function()} */
-    get() {
-      return validateFn;
-    },
-    /**
-     * @param {?function()} fn
-     * @this {CustomStyleInterface}
-     */
-    set(fn) {
-      let needsEnqueue = false;
-      if (!validateFn) {
-        needsEnqueue = true;
-      }
-      validateFn = fn;
-      if (needsEnqueue) {
-        this.enqueueDocumentValidation();
-      }
-    },
-  }
-})
-
-/** @typedef {{
- * customStyles: !Array<!CustomStyleProvider>,
- * addCustomStyle: function(!CustomStyleProvider),
- * getStyleForCustomStyle: function(!CustomStyleProvider): HTMLStyleElement,
- * findStyles: function(),
- * transformCallback: ?function(!HTMLStyleElement),
- * validateCallback: ?function()
- * }}
- */
-const CustomStyleInterfaceInterface = {};
-/* unused harmony export CustomStyleInterfaceInterface */
-
-
-
-/***/ }),
-/* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_gestures_js__ = __webpack_require__(23);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-/**
- * Element class mixin that provides API for adding Polymer's cross-platform
- * gesture events to nodes.
- *
- * The API is designed to be compatible with override points implemented
- * in `TemplateStamp` such that declarative event listeners in
- * templates will support gesture events when this mixin is applied along with
- * `TemplateStamp`.
- *
- * @mixinFunction
- * @polymer
- * @summary Element class mixin that provides API for adding Polymer's
- *   cross-platform
- * gesture events to nodes
- */
-const GestureEventListeners = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* dedupingMixin */])(
-    /**
-     * @template T
-     * @param {function(new:T)} superClass Class to apply mixin to.
-     * @return {function(new:T)} superClass with mixin applied.
-     */
-    (superClass) => {
-      /**
-       * @polymer
-       * @mixinClass
-       * @implements {Polymer_GestureEventListeners}
-       */
-      class GestureEventListeners extends superClass {
-        /**
-         * Add the event listener to the node if it is a gestures event.
-         *
-         * @param {!EventTarget} node Node to add event listener to
-         * @param {string} eventName Name of event
-         * @param {function(!Event):void} handler Listener function to add
-         * @return {void}
-         * @override
-         */
-        _addEventListenerToNode(node, eventName, handler) {
-          if (!Object(__WEBPACK_IMPORTED_MODULE_2__utils_gestures_js__["b" /* addListener */])(node, eventName, handler)) {
-            super._addEventListenerToNode(node, eventName, handler);
-          }
-        }
-
-        /**
-         * Remove the event listener to the node if it is a gestures event.
-         *
-         * @param {!EventTarget} node Node to remove event listener from
-         * @param {string} eventName Name of event
-         * @param {function(!Event):void} handler Listener function to remove
-         * @return {void}
-         * @override
-         */
-        _removeEventListenerFromNode(node, eventName, handler) {
-          if (!Object(__WEBPACK_IMPORTED_MODULE_2__utils_gestures_js__["c" /* removeListener */])(node, eventName, handler)) {
-            super._removeEventListenerFromNode(node, eventName, handler);
-          }
-        }
-      }
-
-      return GestureEventListeners;
-    });
-/* harmony export (immutable) */ __webpack_exports__["a"] = GestureEventListeners;
-
-
-
-/***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = calculateSplices;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-function newSplice(index, removed, addedCount) {
-  return {
-    index: index,
-    removed: removed,
-    addedCount: addedCount
-  };
-}
-
-const EDIT_LEAVE = 0;
-const EDIT_UPDATE = 1;
-const EDIT_ADD = 2;
-const EDIT_DELETE = 3;
-
-// Note: This function is *based* on the computation of the Levenshtein
-// "edit" distance. The one change is that "updates" are treated as two
-// edits - not one. With Array splices, an update is really a delete
-// followed by an add. By retaining this, we optimize for "keeping" the
-// maximum array items in the original array. For example:
-//
-//   'xxxx123' -> '123yyyy'
-//
-// With 1-edit updates, the shortest path would be just to update all seven
-// characters. With 2-edit updates, we delete 4, leave 3, and add 4. This
-// leaves the substring '123' intact.
-function calcEditDistances(current, currentStart, currentEnd,
-                            old, oldStart, oldEnd) {
-  // "Deletion" columns
-  let rowCount = oldEnd - oldStart + 1;
-  let columnCount = currentEnd - currentStart + 1;
-  let distances = new Array(rowCount);
-
-  // "Addition" rows. Initialize null column.
-  for (let i = 0; i < rowCount; i++) {
-    distances[i] = new Array(columnCount);
-    distances[i][0] = i;
-  }
-
-  // Initialize null row
-  for (let j = 0; j < columnCount; j++)
-    distances[0][j] = j;
-
-  for (let i = 1; i < rowCount; i++) {
-    for (let j = 1; j < columnCount; j++) {
-      if (equals(current[currentStart + j - 1], old[oldStart + i - 1]))
-        distances[i][j] = distances[i - 1][j - 1];
-      else {
-        let north = distances[i - 1][j] + 1;
-        let west = distances[i][j - 1] + 1;
-        distances[i][j] = north < west ? north : west;
-      }
-    }
-  }
-
-  return distances;
-}
-
-// This starts at the final weight, and walks "backward" by finding
-// the minimum previous weight recursively until the origin of the weight
-// matrix.
-function spliceOperationsFromEditDistances(distances) {
-  let i = distances.length - 1;
-  let j = distances[0].length - 1;
-  let current = distances[i][j];
-  let edits = [];
-  while (i > 0 || j > 0) {
-    if (i == 0) {
-      edits.push(EDIT_ADD);
-      j--;
-      continue;
-    }
-    if (j == 0) {
-      edits.push(EDIT_DELETE);
-      i--;
-      continue;
-    }
-    let northWest = distances[i - 1][j - 1];
-    let west = distances[i - 1][j];
-    let north = distances[i][j - 1];
-
-    let min;
-    if (west < north)
-      min = west < northWest ? west : northWest;
-    else
-      min = north < northWest ? north : northWest;
-
-    if (min == northWest) {
-      if (northWest == current) {
-        edits.push(EDIT_LEAVE);
-      } else {
-        edits.push(EDIT_UPDATE);
-        current = northWest;
-      }
-      i--;
-      j--;
-    } else if (min == west) {
-      edits.push(EDIT_DELETE);
-      i--;
-      current = west;
-    } else {
-      edits.push(EDIT_ADD);
-      j--;
-      current = north;
-    }
-  }
-
-  edits.reverse();
-  return edits;
-}
-
-/**
- * Splice Projection functions:
- *
- * A splice map is a representation of how a previous array of items
- * was transformed into a new array of items. Conceptually it is a list of
- * tuples of
- *
- *   <index, removed, addedCount>
- *
- * which are kept in ascending index order of. The tuple represents that at
- * the |index|, |removed| sequence of items were removed, and counting forward
- * from |index|, |addedCount| items were added.
- */
-
-/**
- * Lacking individual splice mutation information, the minimal set of
- * splices can be synthesized given the previous state and final state of an
- * array. The basic approach is to calculate the edit distance matrix and
- * choose the shortest path through it.
- *
- * Complexity: O(l * p)
- *   l: The length of the current array
- *   p: The length of the old array
- *
- * @param {!Array} current The current "changed" array for which to
- * calculate splices.
- * @param {number} currentStart Starting index in the `current` array for
- * which splices are calculated.
- * @param {number} currentEnd Ending index in the `current` array for
- * which splices are calculated.
- * @param {!Array} old The original "unchanged" array to compare `current`
- * against to determine splices.
- * @param {number} oldStart Starting index in the `old` array for
- * which splices are calculated.
- * @param {number} oldEnd Ending index in the `old` array for
- * which splices are calculated.
- * @return {!Array} Returns an array of splice record objects. Each of these
- * contains: `index` the location where the splice occurred; `removed`
- * the array of removed items from this location; `addedCount` the number
- * of items added at this location.
- */
-function calcSplices(current, currentStart, currentEnd,
-                      old, oldStart, oldEnd) {
-  let prefixCount = 0;
-  let suffixCount = 0;
-  let splice;
-
-  let minLength = Math.min(currentEnd - currentStart, oldEnd - oldStart);
-  if (currentStart == 0 && oldStart == 0)
-    prefixCount = sharedPrefix(current, old, minLength);
-
-  if (currentEnd == current.length && oldEnd == old.length)
-    suffixCount = sharedSuffix(current, old, minLength - prefixCount);
-
-  currentStart += prefixCount;
-  oldStart += prefixCount;
-  currentEnd -= suffixCount;
-  oldEnd -= suffixCount;
-
-  if (currentEnd - currentStart == 0 && oldEnd - oldStart == 0)
-    return [];
-
-  if (currentStart == currentEnd) {
-    splice = newSplice(currentStart, [], 0);
-    while (oldStart < oldEnd)
-      splice.removed.push(old[oldStart++]);
-
-    return [ splice ];
-  } else if (oldStart == oldEnd)
-    return [ newSplice(currentStart, [], currentEnd - currentStart) ];
-
-  let ops = spliceOperationsFromEditDistances(
-      calcEditDistances(current, currentStart, currentEnd,
-                             old, oldStart, oldEnd));
-
-  splice = undefined;
-  let splices = [];
-  let index = currentStart;
-  let oldIndex = oldStart;
-  for (let i = 0; i < ops.length; i++) {
-    switch(ops[i]) {
-      case EDIT_LEAVE:
-        if (splice) {
-          splices.push(splice);
-          splice = undefined;
-        }
-
-        index++;
-        oldIndex++;
-        break;
-      case EDIT_UPDATE:
-        if (!splice)
-          splice = newSplice(index, [], 0);
-
-        splice.addedCount++;
-        index++;
-
-        splice.removed.push(old[oldIndex]);
-        oldIndex++;
-        break;
-      case EDIT_ADD:
-        if (!splice)
-          splice = newSplice(index, [], 0);
-
-        splice.addedCount++;
-        index++;
-        break;
-      case EDIT_DELETE:
-        if (!splice)
-          splice = newSplice(index, [], 0);
-
-        splice.removed.push(old[oldIndex]);
-        oldIndex++;
-        break;
-    }
-  }
-
-  if (splice) {
-    splices.push(splice);
-  }
-  return splices;
-}
-
-function sharedPrefix(current, old, searchLength) {
-  for (let i = 0; i < searchLength; i++)
-    if (!equals(current[i], old[i]))
-      return i;
-  return searchLength;
-}
-
-function sharedSuffix(current, old, searchLength) {
-  let index1 = current.length;
-  let index2 = old.length;
-  let count = 0;
-  while (count < searchLength && equals(current[--index1], old[--index2]))
-    count++;
-
-  return count;
-}
-
-/**
- * Returns an array of splice records indicating the minimum edits required
- * to transform the `previous` array into the `current` array.
- *
- * Splice records are ordered by index and contain the following fields:
- * - `index`: index where edit started
- * - `removed`: array of removed items from this index
- * - `addedCount`: number of items added at this index
- *
- * This function is based on the Levenshtein "minimum edit distance"
- * algorithm. Note that updates are treated as removal followed by addition.
- *
- * The worst-case time complexity of this algorithm is `O(l * p)`
- *   l: The length of the current array
- *   p: The length of the previous array
- *
- * However, the worst-case complexity is reduced by an `O(n)` optimization
- * to detect any shared prefix & suffix between the two arrays and only
- * perform the more expensive minimum edit distance calculation over the
- * non-shared portions of the arrays.
- *
- * @function
- * @param {!Array} current The "changed" array for which splices will be
- * calculated.
- * @param {!Array} previous The "unchanged" original array to compare
- * `current` against to determine the splices.
- * @return {!Array} Returns an array of splice record objects. Each of these
- * contains: `index` the location where the splice occurred; `removed`
- * the array of removed items from this location; `addedCount` the number
- * of items added at this location.
- */
-function calculateSplices(current, previous) {
-  return calcSplices(current, 0, current.length, previous, 0,
-                          previous.length);
-}
-
-function equals(currentValue, previousValue) {
-  return currentValue === previousValue;
-}
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = mixinBehaviors;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__legacy_element_mixin_js__ = __webpack_require__(44);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-let metaProps = {
-  attached: true,
-  detached: true,
-  ready: true,
-  created: true,
-  beforeRegister: true,
-  registered: true,
-  attributeChanged: true,
-  // meta objects
-  behaviors: true
-};
-
-/**
- * Applies a "legacy" behavior or array of behaviors to the provided class.
- *
- * Note: this method will automatically also apply the `LegacyElementMixin`
- * to ensure that any legacy behaviors can rely on legacy Polymer API on
- * the underlying element.
- *
- * @function
- * @template T
- * @param {!Object|!Array<!Object>} behaviors Behavior object or array of behaviors.
- * @param {function(new:T)} klass Element class.
- * @return {?} Returns a new Element class extended by the
- * passed in `behaviors` and also by `LegacyElementMixin`.
- * @suppress {invalidCasts, checkTypes}
- */
-function mixinBehaviors(behaviors, klass) {
-  if (!behaviors) {
-    klass = /** @type {HTMLElement} */(klass); // eslint-disable-line no-self-assign
-    return klass;
-  }
-  // NOTE: ensure the behavior is extending a class with
-  // legacy element api. This is necessary since behaviors expect to be able
-  // to access 1.x legacy api.
-  klass = Object(__WEBPACK_IMPORTED_MODULE_0__legacy_element_mixin_js__["a" /* LegacyElementMixin */])(klass);
-  if (!Array.isArray(behaviors)) {
-    behaviors = [behaviors];
-  }
-  let superBehaviors = klass.prototype.behaviors;
-  // get flattened, deduped list of behaviors *not* already on super class
-  behaviors = flattenBehaviors(behaviors, null, superBehaviors);
-  // mixin new behaviors
-  klass = _mixinBehaviors(behaviors, klass);
-  if (superBehaviors) {
-    behaviors = superBehaviors.concat(behaviors);
-  }
-  // Set behaviors on prototype for BC...
-  klass.prototype.behaviors = behaviors;
-  return klass;
-}
-
-// NOTE:
-// 1.x
-// Behaviors were mixed in *in reverse order* and de-duped on the fly.
-// The rule was that behavior properties were copied onto the element
-// prototype if and only if the property did not already exist.
-// Given: Polymer{ behaviors: [A, B, C, A, B]}, property copy order was:
-// (1), B, (2), A, (3) C. This means prototype properties win over
-// B properties win over A win over C. This mirrors what would happen
-// with inheritance if element extended B extended A extended C.
-//
-// Again given, Polymer{ behaviors: [A, B, C, A, B]}, the resulting
-// `behaviors` array was [C, A, B].
-// Behavior lifecycle methods were called in behavior array order
-// followed by the element, e.g. (1) C.created, (2) A.created,
-// (3) B.created, (4) element.created. There was no support for
-// super, and "super-behavior" methods were callable only by name).
-//
-// 2.x
-// Behaviors are made into proper mixins which live in the
-// element's prototype chain. Behaviors are placed in the element prototype
-// eldest to youngest and de-duped youngest to oldest:
-// So, first [A, B, C, A, B] becomes [C, A, B] then,
-// the element prototype becomes (oldest) (1) PolymerElement, (2) class(C),
-// (3) class(A), (4) class(B), (5) class(Polymer({...})).
-// Result:
-// This means element properties win over B properties win over A win
-// over C. (same as 1.x)
-// If lifecycle is called (super then me), order is
-// (1) C.created, (2) A.created, (3) B.created, (4) element.created
-// (again same as 1.x)
-function _mixinBehaviors(behaviors, klass) {
-  for (let i=0; i<behaviors.length; i++) {
-    let b = behaviors[i];
-    if (b) {
-      klass = Array.isArray(b) ? _mixinBehaviors(b, klass) :
-        GenerateClassFromInfo(b, klass);
-    }
-  }
-  return klass;
-}
-
-/**
- * @param {Array} behaviors List of behaviors to flatten.
- * @param {Array=} list Target list to flatten behaviors into.
- * @param {Array=} exclude List of behaviors to exclude from the list.
- * @return {!Array} Returns the list of flattened behaviors.
- */
-function flattenBehaviors(behaviors, list, exclude) {
-  list = list || [];
-  for (let i=behaviors.length-1; i >= 0; i--) {
-    let b = behaviors[i];
-    if (b) {
-      if (Array.isArray(b)) {
-        flattenBehaviors(b, list);
-      } else {
-        // dedup
-        if (list.indexOf(b) < 0 && (!exclude || exclude.indexOf(b) < 0)) {
-          list.unshift(b);
-        }
-      }
-    } else {
-      console.warn('behavior is null, check for missing or 404 import');
-    }
-  }
-  return list;
-}
-
-/**
- * @param {!PolymerInit} info Polymer info object
- * @param {function(new:HTMLElement)} Base base class to extend with info object
- * @return {function(new:HTMLElement)} Generated class
- * @suppress {checkTypes}
- * @private
- */
-function GenerateClassFromInfo(info, Base) {
-
-  /** @private */
-  class PolymerGenerated extends Base {
-
-    static get properties() {
-      return info.properties;
-    }
-
-    static get observers() {
-      return info.observers;
-    }
-
-    /**
-     * @return {void}
-     */
-    created() {
-      super.created();
-      if (info.created) {
-        info.created.call(this);
-      }
-    }
-
-    /**
-     * @return {void}
-     */
-    _registered() {
-      super._registered();
-      /* NOTE: `beforeRegister` is called here for bc, but the behavior
-       is different than in 1.x. In 1.0, the method was called *after*
-       mixing prototypes together but *before* processing of meta-objects.
-       However, dynamic effects can still be set here and can be done either
-       in `beforeRegister` or `registered`. It is no longer possible to set
-       `is` in `beforeRegister` as you could in 1.x.
-      */
-      if (info.beforeRegister) {
-        info.beforeRegister.call(Object.getPrototypeOf(this));
-      }
-      if (info.registered) {
-        info.registered.call(Object.getPrototypeOf(this));
-      }
-    }
-
-    /**
-     * @return {void}
-     */
-    _applyListeners() {
-      super._applyListeners();
-      if (info.listeners) {
-        for (let l in info.listeners) {
-          this._addMethodEventListenerToNode(this, l, info.listeners[l]);
-        }
-      }
-    }
-
-    // note: exception to "super then me" rule;
-    // do work before calling super so that super attributes
-    // only apply if not already set.
-    /**
-     * @return {void}
-     */
-    _ensureAttributes() {
-      if (info.hostAttributes) {
-        for (let a in info.hostAttributes) {
-          this._ensureAttribute(a, info.hostAttributes[a]);
-        }
-      }
-      super._ensureAttributes();
-    }
-
-    /**
-     * @return {void}
-     */
-    ready() {
-      super.ready();
-      if (info.ready) {
-        info.ready.call(this);
-      }
-    }
-
-    /**
-     * @return {void}
-     */
-    attached() {
-      super.attached();
-      if (info.attached) {
-        info.attached.call(this);
-      }
-    }
-
-    /**
-     * @return {void}
-     */
-    detached() {
-      super.detached();
-      if (info.detached) {
-        info.detached.call(this);
-      }
-    }
-
-    /**
-     * Implements native Custom Elements `attributeChangedCallback` to
-     * set an attribute value to a property via `_attributeToProperty`.
-     *
-     * @param {string} name Name of attribute that changed
-     * @param {?string} old Old attribute value
-     * @param {?string} value New attribute value
-     * @return {void}
-     */
-    attributeChanged(name, old, value) {
-      super.attributeChanged(name, old, value);
-      if (info.attributeChanged) {
-        info.attributeChanged.call(this, name, old, value);
-      }
-   }
-  }
-
-  PolymerGenerated.generatedFrom = info;
-
-  for (let p in info) {
-    // NOTE: cannot copy `metaProps` methods onto prototype at least because
-    // `super.ready` must be called and is not included in the user fn.
-    if (!(p in metaProps)) {
-      let pd = Object.getOwnPropertyDescriptor(info, p);
-      if (pd) {
-        Object.defineProperty(PolymerGenerated.prototype, p, pd);
-      }
-    }
-  }
-
-  return PolymerGenerated;
-}
-
-/**
- * Generates a class that extends `LegacyElement` based on the
- * provided info object.  Metadata objects on the `info` object
- * (`properties`, `observers`, `listeners`, `behaviors`, `is`) are used
- * for Polymer's meta-programming systems, and any functions are copied
- * to the generated class.
- *
- * Valid "metadata" values are as follows:
- *
- * `is`: String providing the tag name to register the element under. In
- * addition, if a `dom-module` with the same id exists, the first template
- * in that `dom-module` will be stamped into the shadow root of this element,
- * with support for declarative event listeners (`on-...`), Polymer data
- * bindings (`[[...]]` and `{{...}}`), and id-based node finding into
- * `this.$`.
- *
- * `properties`: Object describing property-related metadata used by Polymer
- * features (key: property names, value: object containing property metadata).
- * Valid keys in per-property metadata include:
- * - `type` (String|Number|Object|Array|...): Used by
- *   `attributeChangedCallback` to determine how string-based attributes
- *   are deserialized to JavaScript property values.
- * - `notify` (boolean): Causes a change in the property to fire a
- *   non-bubbling event called `<property>-changed`. Elements that have
- *   enabled two-way binding to the property use this event to observe changes.
- * - `readOnly` (boolean): Creates a getter for the property, but no setter.
- *   To set a read-only property, use the private setter method
- *   `_setProperty(property, value)`.
- * - `observer` (string): Observer method name that will be called when
- *   the property changes. The arguments of the method are
- *   `(value, previousValue)`.
- * - `computed` (string): String describing method and dependent properties
- *   for computing the value of this property (e.g. `'computeFoo(bar, zot)'`).
- *   Computed properties are read-only by default and can only be changed
- *   via the return value of the computing method.
- *
- * `observers`: Array of strings describing multi-property observer methods
- *  and their dependent properties (e.g. `'observeABC(a, b, c)'`).
- *
- * `listeners`: Object describing event listeners to be added to each
- *  instance of this element (key: event name, value: method name).
- *
- * `behaviors`: Array of additional `info` objects containing metadata
- * and callbacks in the same format as the `info` object here which are
- * merged into this element.
- *
- * `hostAttributes`: Object listing attributes to be applied to the host
- *  once created (key: attribute name, value: attribute value).  Values
- *  are serialized based on the type of the value.  Host attributes should
- *  generally be limited to attributes such as `tabIndex` and `aria-...`.
- *  Attributes in `hostAttributes` are only applied if a user-supplied
- *  attribute is not already present (attributes in markup override
- *  `hostAttributes`).
- *
- * In addition, the following Polymer-specific callbacks may be provided:
- * - `registered`: called after first instance of this element,
- * - `created`: called during `constructor`
- * - `attached`: called during `connectedCallback`
- * - `detached`: called during `disconnectedCallback`
- * - `ready`: called before first `attached`, after all properties of
- *   this element have been propagated to its template and all observers
- *   have run
- *
- * @param {!PolymerInit} info Object containing Polymer metadata and functions
- *   to become class methods.
- * @template T
- * @param {function(T):T} mixin Optional mixin to apply to legacy base class
- *   before extending with Polymer metaprogramming.
- * @return {function(new:HTMLElement)} Generated class
- */
-const Class = function(info, mixin) {
-  if (!info) {
-    console.warn(`Polymer's Class function requires \`info\` argument`);
-  }
-  const baseWithBehaviors = info.behaviors ?
-    // note: mixinBehaviors ensures `LegacyElementMixin`.
-    mixinBehaviors(info.behaviors, HTMLElement) :
-    Object(__WEBPACK_IMPORTED_MODULE_0__legacy_element_mixin_js__["a" /* LegacyElementMixin */])(HTMLElement);
-  const baseWithMixin = mixin ? mixin(baseWithBehaviors) : baseWithBehaviors;
-  const klass = GenerateClassFromInfo(info, baseWithMixin);
-  // decorate klass with registration info
-  klass.is = info.is;
-  return klass;
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = Class;
-
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_scroll_target_behavior_iron_scroll_target_behavior_js__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_helpers_js__ = __webpack_require__(43);
-/**
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-/**
- * `Polymer.AppScrollEffectsBehavior` provides an interface that allows an
- * element to use scrolls effects.
- *
- * ### Importing the app-layout effects
- *
- * app-layout provides a set of scroll effects that can be used by explicitly
- * importing `app-scroll-effects.js`:
- *
- * ```js
- * import '@polymer/app-layout/app-scroll-effects/app-scroll-effects.js';
- * ```
- *
- * The scroll effects can also be used by individually importing
- * `@polymer/app-layout/app-scroll-effects/effects/[effectName].js`. For
- * example:
- *
- * ```js
- * import '@polymer/app-layout/app-scroll-effects/effects/waterfall.js';
- * ```
- *
- * ### Consuming effects
- *
- * Effects can be consumed via the `effects` property. For example:
- *
- * ```html
- * <app-header effects="waterfall"></app-header>
- * ```
- *
- * ### Creating scroll effects
- *
- * You may want to create a custom scroll effect if you need to modify the CSS
- * of an element based on the scroll position.
- *
- * A scroll effect definition is an object with `setUp()`, `tearDown()` and
- * `run()` functions.
- *
- * To register the effect, you can use
- * `Polymer.AppLayout.registerEffect(effectName, effectDef)` For example, let's
- * define an effect that resizes the header's logo:
- *
- * ```js
- * Polymer.AppLayout.registerEffect('resizable-logo', {
- *   setUp: function(config) {
- *     // the effect's config is passed to the setUp.
- *     this._fxResizeLogo = { logo: Polymer.dom(this).querySelector('[logo]') };
- *   },
- *
- *   run: function(progress) {
- *      // the progress of the effect
- *      this.transform('scale3d(' + progress + ', '+ progress +', 1)',
- * this._fxResizeLogo.logo);
- *   },
- *
- *   tearDown: function() {
- *      // clean up and reset of states
- *      delete this._fxResizeLogo;
- *   }
- * });
- * ```
- * Now, you can consume the effect:
- *
- * ```html
- * <app-header id="appHeader" effects="resizable-logo">
- *   <img logo src="logo.svg">
- * </app-header>
- * ```
- *
- * ### Imperative API
- *
- * ```js
- * var logoEffect = appHeader.createEffect('resizable-logo', effectConfig);
- * // run the effect: logoEffect.run(progress);
- * // tear down the effect: logoEffect.tearDown();
- * ```
- *
- * ### Configuring effects
- *
- * For effects installed via the `effects` property, their configuration can be
- * set via the `effectsConfig` property. For example:
- *
- * ```html
- * <app-header effects="waterfall"
- *   effects-config='{"waterfall": {"startsAt": 0, "endsAt": 0.5}}'>
- * </app-header>
- * ```
- *
- * All effects have a `startsAt` and `endsAt` config property. They specify at
- * what point the effect should start and end. This value goes from 0 to 1
- * inclusive.
- *
- * @polymerBehavior
- */
-const AppScrollEffectsBehavior = [
-  __WEBPACK_IMPORTED_MODULE_1__polymer_iron_scroll_target_behavior_iron_scroll_target_behavior_js__["a" /* IronScrollTargetBehavior */],
-  {
-
-    properties: {
-
-      /**
-       * A space-separated list of the effects names that will be triggered when
-       * the user scrolls. e.g. `waterfall parallax-background` installs the
-       * `waterfall` and `parallax-background`.
-       */
-      effects: {type: String},
-
-      /**
-       * An object that configurates the effects installed via the `effects`
-       * property. e.g.
-       * ```js
-       *  element.effectsConfig = {
-       *   "blend-background": {
-       *     "startsAt": 0.5
-       *   }
-       * };
-       * ```
-       * Every effect has at least two config properties: `startsAt` and
-       * `endsAt`. These properties indicate when the event should start and end
-       * respectively and relative to the overall element progress. So for
-       * example, if `blend-background` starts at `0.5`, the effect will only
-       * start once the current element reaches 0.5 of its progress. In this
-       * context, the progress is a value in the range of `[0, 1]` that
-       * indicates where this element is on the screen relative to the viewport.
-       */
-      effectsConfig: {
-        type: Object,
-        value: function() {
-          return {};
-        }
-      },
-
-      /**
-       * Disables CSS transitions and scroll effects on the element.
-       */
-      disabled: {type: Boolean, reflectToAttribute: true, value: false},
-
-      /**
-       * Allows to set a `scrollTop` threshold. When greater than 0,
-       * `thresholdTriggered` is true only when the scroll target's `scrollTop`
-       * has reached this value.
-       *
-       * For example, if `threshold = 100`, `thresholdTriggered` is true when
-       * the `scrollTop` is at least `100`.
-       */
-      threshold: {type: Number, value: 0},
-
-      /**
-       * True if the `scrollTop` threshold (set in `scrollTopThreshold`) has
-       * been reached.
-       */
-      thresholdTriggered: {
-        type: Boolean,
-        notify: true,
-        readOnly: true,
-        reflectToAttribute: true
-      }
-    },
-
-    observers: ['_effectsChanged(effects, effectsConfig, isAttached)'],
-
-    /**
-     * Updates the scroll state. This method should be overridden
-     * by the consumer of this behavior.
-     *
-     * @method _updateScrollState
-     * @param {number} scrollTop
-     */
-    _updateScrollState: function(scrollTop) {},
-
-    /**
-     * Returns true if the current element is on the screen.
-     * That is, visible in the current viewport. This method should be
-     * overridden by the consumer of this behavior.
-     *
-     * @method isOnScreen
-     * @return {boolean}
-     */
-    isOnScreen: function() {
-      return false;
-    },
-
-    /**
-     * Returns true if there's content below the current element. This method
-     * should be overridden by the consumer of this behavior.
-     *
-     * @method isContentBelow
-     * @return {boolean}
-     */
-    isContentBelow: function() {
-      return false;
-    },
-
-    /**
-     * List of effects handlers that will take place during scroll.
-     *
-     * @type {Array<Function>}
-     */
-    _effectsRunFn: null,
-
-    /**
-     * List of the effects definitions installed via the `effects` property.
-     *
-     * @type {Array<Object>}
-     */
-    _effects: null,
-
-    /**
-     * The clamped value of `_scrollTop`.
-     * @type number
-     */
-    get _clampedScrollTop() {
-      return Math.max(0, this._scrollTop);
-    },
-
-    attached: function() {
-      this._scrollStateChanged();
-    },
-
-    detached: function() {
-      this._tearDownEffects();
-    },
-
-    /**
-     * Creates an effect object from an effect's name that can be used to run
-     * effects programmatically.
-     *
-     * @method createEffect
-     * @param {string} effectName The effect's name registered via `Polymer.AppLayout.registerEffect`.
-     * @param {Object=} effectConfig The effect config object. (Optional)
-     * @return {Object} An effect object with the following functions:
-     *
-     *  * `effect.setUp()`, Sets up the requirements for the effect.
-     *       This function is called automatically before the `effect` function
-     * returns.
-     *  * `effect.run(progress, y)`, Runs the effect given a `progress`.
-     *  * `effect.tearDown()`, Cleans up any DOM nodes or element references
-     * used by the effect.
-     *
-     * Example:
-     * ```js
-     * var parallax = element.createEffect('parallax-background');
-     * // runs the effect
-     * parallax.run(0.5, 0);
-     * ```
-     */
-    createEffect: function(effectName, effectConfig) {
-      var effectDef = __WEBPACK_IMPORTED_MODULE_2__helpers_helpers_js__["a" /* _scrollEffects */][effectName];
-      if (!effectDef) {
-        throw new ReferenceError(this._getUndefinedMsg(effectName));
-      }
-      var prop = this._boundEffect(effectDef, effectConfig || {});
-      prop.setUp();
-      return prop;
-    },
-
-    /**
-     * Called when `effects` or `effectsConfig` changes.
-     */
-    _effectsChanged: function(effects, effectsConfig, isAttached) {
-      this._tearDownEffects();
-
-      if (!effects || !isAttached) {
-        return;
-      }
-      effects.split(' ').forEach(function(effectName) {
-        var effectDef;
-        if (effectName !== '') {
-          if ((effectDef = __WEBPACK_IMPORTED_MODULE_2__helpers_helpers_js__["a" /* _scrollEffects */][effectName])) {
-            this._effects.push(
-                this._boundEffect(effectDef, effectsConfig[effectName]));
-          } else {
-            console.warn(this._getUndefinedMsg(effectName));
-          }
-        }
-      }, this);
-
-      this._setUpEffect();
-    },
-
-    /**
-     * Forces layout
-     */
-    _layoutIfDirty: function() {
-      return this.offsetWidth;
-    },
-
-    /**
-     * Returns an effect object bound to the current context.
-     *
-     * @param {Object} effectDef
-     * @param {Object=} effectsConfig The effect config object if the effect accepts config values. (Optional)
-     */
-    _boundEffect: function(effectDef, effectsConfig) {
-      effectsConfig = effectsConfig || {};
-      var startsAt = parseFloat(effectsConfig.startsAt || 0);
-      var endsAt = parseFloat(effectsConfig.endsAt || 1);
-      var deltaS = endsAt - startsAt;
-      var noop = function() {};
-      // fast path if possible
-      var runFn = (startsAt === 0 && endsAt === 1) ?
-          effectDef.run :
-          function(progress, y) {
-            effectDef.run.call(
-                this, Math.max(0, (progress - startsAt) / deltaS), y);
-          };
-      return {
-        setUp: effectDef.setUp ? effectDef.setUp.bind(this, effectsConfig) :
-                                 noop,
-        run: effectDef.run ? runFn.bind(this) : noop,
-        tearDown: effectDef.tearDown ? effectDef.tearDown.bind(this) : noop
-      };
-    },
-
-    /**
-     * Sets up the effects.
-     */
-    _setUpEffect: function() {
-      if (this.isAttached && this._effects) {
-        this._effectsRunFn = [];
-        this._effects.forEach(function(effectDef) {
-          // install the effect only if no error was reported
-          if (effectDef.setUp() !== false) {
-            this._effectsRunFn.push(effectDef.run);
-          }
-        }, this);
-      }
-    },
-
-    /**
-     * Tears down the effects.
-     */
-    _tearDownEffects: function() {
-      if (this._effects) {
-        this._effects.forEach(function(effectDef) {
-          effectDef.tearDown();
-        });
-      }
-      this._effectsRunFn = [];
-      this._effects = [];
-    },
-
-    /**
-     * Runs the effects.
-     *
-     * @param {number} p The progress
-     * @param {number} y The top position of the current element relative to the viewport.
-     */
-    _runEffects: function(p, y) {
-      if (this._effectsRunFn) {
-        this._effectsRunFn.forEach(function(run) {
-          run(p, y);
-        });
-      }
-    },
-
-    /**
-     * Overrides the `_scrollHandler`.
-     */
-    _scrollHandler: function() {
-      this._scrollStateChanged();
-    },
-
-    _scrollStateChanged: function() {
-      if (!this.disabled) {
-        var scrollTop = this._clampedScrollTop;
-        this._updateScrollState(scrollTop);
-        if (this.threshold > 0) {
-          this._setThresholdTriggered(scrollTop >= this.threshold);
-        }
-      }
-    },
-
-    /**
-     * Override this method to return a reference to a node in the local DOM.
-     * The node is consumed by a scroll effect.
-     *
-     * @param {string} id The id for the node.
-     */
-    _getDOMRef: function(id) {
-      console.warn('_getDOMRef', '`' + id + '` is undefined');
-    },
-
-    _getUndefinedMsg: function(effectName) {
-      return 'Scroll effect `' + effectName + '` is undefined. ' +
-          'Did you forget to import app-layout/app-scroll-effects/effects/' +
-          effectName + '.html ?';
-    }
-
-  }
-];
-/* harmony export (immutable) */ __webpack_exports__["a"] = AppScrollEffectsBehavior;
-
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_case_map_js__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__iron_selection_js__ = __webpack_require__(106);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-
-/**
- * @polymerBehavior
- */
-const IronSelectableBehavior = {
-
-  /**
-   * Fired when iron-selector is activated (selected or deselected).
-   * It is fired before the selected items are changed.
-   * Cancel the event to abort selection.
-   *
-   * @event iron-activate
-   */
-
-  /**
-   * Fired when an item is selected
-   *
-   * @event iron-select
-   */
-
-  /**
-   * Fired when an item is deselected
-   *
-   * @event iron-deselect
-   */
-
-  /**
-   * Fired when the list of selectable items changes (e.g., items are
-   * added or removed). The detail of the event is a mutation record that
-   * describes what changed.
-   *
-   * @event iron-items-changed
-   */
-
-  properties: {
-
-    /**
-     * If you want to use an attribute value or property of an element for
-     * `selected` instead of the index, set this to the name of the attribute
-     * or property. Hyphenated values are converted to camel case when used to
-     * look up the property of a selectable element. Camel cased values are
-     * *not* converted to hyphenated values for attribute lookup. It's
-     * recommended that you provide the hyphenated form of the name so that
-     * selection works in both cases. (Use `attr-or-property-name` instead of
-     * `attrOrPropertyName`.)
-     */
-    attrForSelected: {type: String, value: null},
-
-    /**
-     * Gets or sets the selected element. The default is to use the index of the
-     * item.
-     * @type {string|number}
-     */
-    selected: {type: String, notify: true},
-
-    /**
-     * Returns the currently selected item.
-     *
-     * @type {?Object}
-     */
-    selectedItem: {type: Object, readOnly: true, notify: true},
-
-    /**
-     * The event that fires from items when they are selected. Selectable
-     * will listen for this event from items and update the selection state.
-     * Set to empty string to listen to no events.
-     */
-    activateEvent:
-        {type: String, value: 'tap', observer: '_activateEventChanged'},
-
-    /**
-     * This is a CSS selector string.  If this is set, only items that match the
-     * CSS selector are selectable.
-     */
-    selectable: String,
-
-    /**
-     * The class to set on elements when selected.
-     */
-    selectedClass: {type: String, value: 'iron-selected'},
-
-    /**
-     * The attribute to set on elements when selected.
-     */
-    selectedAttribute: {type: String, value: null},
-
-    /**
-     * Default fallback if the selection based on selected with
-     * `attrForSelected` is not found.
-     */
-    fallbackSelection: {type: String, value: null},
-
-    /**
-     * The list of items from which a selection can be made.
-     */
-    items: {
-      type: Array,
-      readOnly: true,
-      notify: true,
-      value: function() {
-        return [];
-      }
-    },
-
-    /**
-     * The set of excluded elements where the key is the `localName`
-     * of the element that will be ignored from the item list.
-     *
-     * @default {template: 1}
-     */
-    _excludedLocalNames: {
-      type: Object,
-      value: function() {
-        return {
-          'template': 1,
-          'dom-bind': 1,
-          'dom-if': 1,
-          'dom-repeat': 1,
-        };
-      }
-    }
-  },
-
-  observers: [
-    '_updateAttrForSelected(attrForSelected)',
-    '_updateSelected(selected)',
-    '_checkFallback(fallbackSelection)'
-  ],
-
-  created: function() {
-    this._bindFilterItem = this._filterItem.bind(this);
-    this._selection = new __WEBPACK_IMPORTED_MODULE_3__iron_selection_js__["a" /* IronSelection */](this._applySelection.bind(this));
-  },
-
-  attached: function() {
-    this._observer = this._observeItems(this);
-    this._addListener(this.activateEvent);
-  },
-
-  detached: function() {
-    if (this._observer) {
-      Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).unobserveNodes(this._observer);
-    }
-    this._removeListener(this.activateEvent);
-  },
-
-  /**
-   * Returns the index of the given item.
-   *
-   * @method indexOf
-   * @param {Object} item
-   * @returns Returns the index of the item
-   */
-  indexOf: function(item) {
-    return this.items ? this.items.indexOf(item) : -1;
-  },
-
-  /**
-   * Selects the given value.
-   *
-   * @method select
-   * @param {string|number} value the value to select.
-   */
-  select: function(value) {
-    this.selected = value;
-  },
-
-  /**
-   * Selects the previous item.
-   *
-   * @method selectPrevious
-   */
-  selectPrevious: function() {
-    var length = this.items.length;
-    var index = length - 1;
-    if (this.selected !== undefined) {
-      index = (Number(this._valueToIndex(this.selected)) - 1 + length) % length;
-    }
-    this.selected = this._indexToValue(index);
-  },
-
-  /**
-   * Selects the next item.
-   *
-   * @method selectNext
-   */
-  selectNext: function() {
-    var index = 0;
-    if (this.selected !== undefined) {
-      index =
-          (Number(this._valueToIndex(this.selected)) + 1) % this.items.length;
-    }
-    this.selected = this._indexToValue(index);
-  },
-
-  /**
-   * Selects the item at the given index.
-   *
-   * @method selectIndex
-   */
-  selectIndex: function(index) {
-    this.select(this._indexToValue(index));
-  },
-
-  /**
-   * Force a synchronous update of the `items` property.
-   *
-   * NOTE: Consider listening for the `iron-items-changed` event to respond to
-   * updates to the set of selectable items after updates to the DOM list and
-   * selection state have been made.
-   *
-   * WARNING: If you are using this method, you should probably consider an
-   * alternate approach. Synchronously querying for items is potentially
-   * slow for many use cases. The `items` property will update asynchronously
-   * on its own to reflect selectable items in the DOM.
-   */
-  forceSynchronousItemUpdate: function() {
-    if (this._observer && typeof this._observer.flush === 'function') {
-      // NOTE(bicknellr): `dom.flush` above is no longer sufficient to trigger
-      // `observeNodes` callbacks. Polymer 2.x returns an object from
-      // `observeNodes` with a `flush` that synchronously gives the callback any
-      // pending MutationRecords (retrieved with `takeRecords`). Any case where
-      // ShadyDOM flushes were expected to synchronously trigger item updates
-      // will now require calling `forceSynchronousItemUpdate`.
-      this._observer.flush();
-    } else {
-      this._updateItems();
-    }
-  },
-
-  // UNUSED, FOR API COMPATIBILITY
-  get _shouldUpdateSelection() {
-    return this.selected != null;
-  },
-
-  _checkFallback: function() {
-    this._updateSelected();
-  },
-
-  _addListener: function(eventName) {
-    this.listen(this, eventName, '_activateHandler');
-  },
-
-  _removeListener: function(eventName) {
-    this.unlisten(this, eventName, '_activateHandler');
-  },
-
-  _activateEventChanged: function(eventName, old) {
-    this._removeListener(old);
-    this._addListener(eventName);
-  },
-
-  _updateItems: function() {
-    var nodes = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).queryDistributedElements(this.selectable || '*');
-    nodes = Array.prototype.filter.call(nodes, this._bindFilterItem);
-    this._setItems(nodes);
-  },
-
-  _updateAttrForSelected: function() {
-    if (this.selectedItem) {
-      this.selected = this._valueForItem(this.selectedItem);
-    }
-  },
-
-  _updateSelected: function() {
-    this._selectSelected(this.selected);
-  },
-
-  _selectSelected: function(selected) {
-    if (!this.items) {
-      return;
-    }
-
-    var item = this._valueToItem(this.selected);
-    if (item) {
-      this._selection.select(item);
-    } else {
-      this._selection.clear();
-    }
-    // Check for items, since this array is populated only when attached
-    // Since Number(0) is falsy, explicitly check for undefined
-    if (this.fallbackSelection && this.items.length &&
-        (this._selection.get() === undefined)) {
-      this.selected = this.fallbackSelection;
-    }
-  },
-
-  _filterItem: function(node) {
-    return !this._excludedLocalNames[node.localName];
-  },
-
-  _valueToItem: function(value) {
-    return (value == null) ? null : this.items[this._valueToIndex(value)];
-  },
-
-  _valueToIndex: function(value) {
-    if (this.attrForSelected) {
-      for (var i = 0, item; item = this.items[i]; i++) {
-        if (this._valueForItem(item) == value) {
-          return i;
-        }
-      }
-    } else {
-      return Number(value);
-    }
-  },
-
-  _indexToValue: function(index) {
-    if (this.attrForSelected) {
-      var item = this.items[index];
-      if (item) {
-        return this._valueForItem(item);
-      }
-    } else {
-      return index;
-    }
-  },
-
-  _valueForItem: function(item) {
-    if (!item) {
-      return null;
-    }
-    if (!this.attrForSelected) {
-      var i = this.indexOf(item);
-      return i === -1 ? null : i;
-    }
-    var propValue = item[Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_case_map_js__["b" /* dashToCamelCase */])(this.attrForSelected)];
-    return propValue != undefined ? propValue :
-                                    item.getAttribute(this.attrForSelected);
-  },
-
-  _applySelection: function(item, isSelected) {
-    if (this.selectedClass) {
-      this.toggleClass(this.selectedClass, isSelected, item);
-    }
-    if (this.selectedAttribute) {
-      this.toggleAttribute(this.selectedAttribute, isSelected, item);
-    }
-    this._selectionChange();
-    this.fire('iron-' + (isSelected ? 'select' : 'deselect'), {item: item});
-  },
-
-  _selectionChange: function() {
-    this._setSelectedItem(this._selection.get());
-  },
-
-  // observe items change under the given node.
-  _observeItems: function(node) {
-    return Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(node).observeNodes(function(mutation) {
-      this._updateItems();
-      this._updateSelected();
-
-      // Let other interested parties know about the change so that
-      // we don't have to recreate mutation observers everywhere.
-      this.fire(
-          'iron-items-changed', mutation, {bubbles: false, cancelable: false});
-    });
-  },
-
-  _activateHandler: function(e) {
-    var t = e.target;
-    var items = this.items;
-    while (t && t != this) {
-      var i = items.indexOf(t);
-      if (i >= 0) {
-        var value = this._indexToValue(i);
-        this._itemActivate(value, t);
-        return;
-      }
-      t = t.parentNode;
-    }
-  },
-
-  _itemActivate: function(value, item) {
-    if (!this.fire('iron-activate', {selected: value, item: item}, {
-               cancelable: true
-             })
-             .defaultPrevented) {
-      this.select(value);
-    }
-  }
-
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronSelectableBehavior;
-
-
-
-/***/ }),
 /* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-class IronMeta {
-  /**
-   * @param {{
-   *   type: (string|null|undefined),
-   *   key: (string|null|undefined),
-   *   value: *,
-   * }=} options
-   */
-  constructor(options) {
-    IronMeta[' '](options);
-
-    /** @type {string} */
-    this.type = (options && options.type) || 'default';
-    /** @type {string|null|undefined} */
-    this.key = options && options.key;
-    if (options && 'value' in options) {
-      /** @type {*} */
-      this.value = options.value;
-    }
-  }
-
-  /** @return {*} */
-  get value() {
-    var type = this.type;
-    var key = this.key;
-
-    if (type && key) {
-      return IronMeta.types[type] && IronMeta.types[type][key];
-    }
-  }
-
-  /** @param {*} value */
-  set value(value) {
-    var type = this.type;
-    var key = this.key;
-
-    if (type && key) {
-      type = IronMeta.types[type] = IronMeta.types[type] || {};
-      if (value == null) {
-        delete type[key];
-      } else {
-        type[key] = value;
-      }
-    }
-  }
-
-  /** @return {!Array<*>} */
-  get list() {
-    var type = this.type;
-
-    if (type) {
-      var items = IronMeta.types[this.type];
-      if (!items) {
-        return [];
-      }
-
-      return Object.keys(items).map(function(key) {
-        return metaDatas[this.type][key];
-      }, this);
-    }
-  }
-
-  /**
-   * @param {string} key
-   * @return {*}
-   */
-  byKey(key) {
-    this.key = key;
-    return this.value;
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronMeta;
-;
-
-// This function is used to convince Closure not to remove constructor calls
-// for instances that are not held anywhere. For example, when
-// `new IronMeta({...})` is used only for the side effect of adding a value.
-IronMeta[' '] = function() {};
-
-IronMeta.types = {};
-
-var metaDatas = IronMeta.types;
-
-/**
-`iron-meta` is a generic element you can use for sharing information across the
-DOM tree. It uses [monostate pattern](http://c2.com/cgi/wiki?MonostatePattern)
-such that any instance of iron-meta has access to the shared information. You
-can use `iron-meta` to share whatever you want (or create an extension [like
-x-meta] for enhancements).
-
-The `iron-meta` instances containing your actual data can be loaded in an
-import, or constructed in any way you see fit. The only requirement is that you
-create them before you try to access them.
-
-Examples:
-
-If I create an instance like this:
-
-    <iron-meta key="info" value="foo/bar"></iron-meta>
-
-Note that value="foo/bar" is the metadata I've defined. I could define more
-attributes or use child nodes to define additional metadata.
-
-Now I can access that element (and it's metadata) from any iron-meta instance
-via the byKey method, e.g.
-
-    meta.byKey('info');
-
-Pure imperative form would be like:
-
-    document.createElement('iron-meta').byKey('info');
-
-Or, in a Polymer element, you can include a meta in your template:
-
-    <iron-meta id="meta"></iron-meta>
-    ...
-    this.$.meta.byKey('info');
-
-@group Iron Elements
-@demo demo/index.html
-@element iron-meta
-*/
-Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
-
-  is: 'iron-meta',
-
-  properties: {
-
-    /**
-     * The type of meta-data.  All meta-data of the same type is stored
-     * together.
-     * @type {string}
-     */
-    type: {
-      type: String,
-      value: 'default',
-    },
-
-    /**
-     * The key used to store `value` under the `type` namespace.
-     * @type {?string}
-     */
-    key: {
-      type: String,
-    },
-
-    /**
-     * The meta-data to store or retrieve.
-     * @type {*}
-     */
-    value: {
-      type: String,
-      notify: true,
-    },
-
-    /**
-     * If true, `value` is set to the iron-meta instance itself.
-     */
-    self: {type: Boolean, observer: '_selfChanged'},
-
-    __meta: {type: Boolean, computed: '__computeMeta(type, key, value)'}
-  },
-
-  hostAttributes: {hidden: true},
-
-  __computeMeta: function(type, key, value) {
-    var meta = new IronMeta({type: type, key: key});
-
-    if (value !== undefined && value !== meta.value) {
-      meta.value = value;
-    } else if (this.value !== meta.value) {
-      this.value = meta.value;
-    }
-
-    return meta;
-  },
-
-  get list() {
-    return this.__meta && this.__meta.list;
-  },
-
-  _selfChanged: function(self) {
-    if (self) {
-      this.value = this;
-    }
-  },
-
-  /**
-   * Retrieves meta data value by key.
-   *
-   * @method byKey
-   * @param {string} key The key of the meta-data to be returned.
-   * @return {*}
-   */
-  byKey: function(key) {
-    return new IronMeta({type: this.type, key: key}).value;
-  }
-});
-
-
-/***/ }),
-/* 54 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_paper_ripple_paper_ripple_js__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_behaviors_iron_button_state_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_paper_ripple_paper_ripple_js__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_behaviors_iron_button_state_js__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /**
 @license
@@ -15796,141 +14932,28 @@ const PaperRippleBehavior = {
 
 
 /***/ }),
-/* 55 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-const McCreateBehavior = {
-    properties: {
-        mineArray: {
-            type: Array,
-            value: []
-        },
-        width: {
-            type: Number
-        },
-        height: {
-            type: Number
-        },
-        mineNumber: {
-            type: Number
-        },
-        leftNumber: {
-            type: Number
-        }
-    },
-    connectedCallback() {
-        this.leftNumber = this.mineNumber;
-        this.mineInit(this.width, this.height, this.mineNumber);
-    },
-    mineInit(x, y, mine) {
-        let outArray = new Array();
-        for (let i = 0; i < y; i++) {
-            outArray[i] = new Array;
-            for (let j = 0; j < x; j++) {
-                outArray[i][j] = {
-                    mineNumber: 0,
-                    blockCoordinate: {
-                        x: i,
-                        y: j
-                    }
-                };
-            }
-        }
-        outArray = this._arrangementMine(x, y, mine, outArray);
-        outArray = this._calculateMine(x, y, outArray);
-        this.mineArray = outArray;
-        let mineStr = '';
-        for (let i = 0; i < y; i++) {
-            for (let j = 0; j < x; j++) {
-                mineStr += ' ' + outArray[i][j];
-            }
-            mineStr += '\n';
-        }
-    },
-    _arrangementMine(x, y, mine, mineArray) {
-        while (mine > 0) {
-            let i = Math.ceil(Math.random() * y) - 1;
-            let j = Math.ceil(Math.random() * x) - 1;
-            if (mineArray[i][j] !== undefined) {
-                if (mineArray[i][j].mineNumber !== -1) {
-                    mineArray[i][j].mineNumber = -1;
-                    mine--;
-                }
-            }
-        }
-        return mineArray;
-    },
-    _calculateMine(x, y, mineArray) {
-        for (let i = 0; i < y; i++) {
-            for (let j = 0; j < x; j++) {
-                if (mineArray[i][j].mineNumber === -1) {
-                    mineArray = this._addMine(i, j, mineArray);
-                }
-            }
-        }
-        return mineArray;
-    },
-    _addMine(i, j, mineArray) {
-        for (var m = i - 1; m <= (i + 1); m++) {
-            for (var n = j - 1; n <= (j + 1); n++) {
-                if (m > -1 && m > -1 && n < this.width) {
-                    if (mineArray[m] && mineArray[m][n]) {
-                        if (mineArray[m][n].mineNumber !== -1) {
-                            mineArray[m][n].mineNumber++;
-                        }
-                    }
-                }
-            }
-            n = j - 1;
-        }
-        return mineArray;
-    }
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = McCreateBehavior;
-
-
-
-/***/ }),
-/* 56 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__state_store__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ui_McApp_ts__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__state_store__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ui_McApp_ts__ = __webpack_require__(71);
 
 
 
 
 /***/ }),
-/* 57 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export appState */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers_todo_reducer__ = __webpack_require__(73);
-
-
-const reducers = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["a" /* combineReducers */])({
-    todoReducer: __WEBPACK_IMPORTED_MODULE_1__reducers_todo_reducer__["a" /* todoReducer */]
-});
-const store = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["b" /* createStore */])(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(37);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(34);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
 /* unused harmony reexport bindActionCreators */
@@ -15954,16 +14977,16 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 }
 
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(29)))
 
 /***/ }),
-/* 59 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(60);
 
 
 
@@ -15995,11 +15018,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 60 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(58);
 
 
 /** Detect free variable `self`. */
@@ -16012,7 +15035,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 61 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16021,14 +15044,14 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(36)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(33)))
 
 /***/ }),
-/* 62 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(32);
 
 
 /** Used for built-in method references. */
@@ -16078,7 +15101,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 63 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16107,11 +15130,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 64 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(62);
 
 
 /** Built-in value references. */
@@ -16121,7 +15144,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 65 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16143,7 +15166,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 66 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16179,11 +15202,11 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 67 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ponyfill_js__ = __webpack_require__(69);
+/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ponyfill_js__ = __webpack_require__(66);
 /* global window */
 
 
@@ -16204,10 +15227,10 @@ if (typeof self !== 'undefined') {
 var result = Object(__WEBPACK_IMPORTED_MODULE_0__ponyfill_js__["a" /* default */])(root);
 /* harmony default export */ __webpack_exports__["a"] = (result);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(36), __webpack_require__(68)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(33), __webpack_require__(65)(module)))
 
 /***/ }),
-/* 68 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -16237,7 +15260,7 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
-/* 69 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16262,14 +15285,14 @@ function symbolObservablePonyfill(root) {
 
 
 /***/ }),
-/* 70 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(34);
 
 
 
@@ -16400,10 +15423,10 @@ function combineReducers(reducers) {
     return hasChanged ? nextState : state;
   };
 }
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(29)))
 
 /***/ }),
-/* 71 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16457,12 +15480,12 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 72 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(35);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -16513,21 +15536,245 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 73 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return todoReducer; });
+let checkedCoordinate = [];
+let foundNum = 0;
+const mineInit = function (width, height, mine) {
+    checkedCoordinate = [];
+    foundNum = 0;
+    let outArray = new Array();
+    for (let i = 0; i < height; i++) {
+        outArray[i] = new Array;
+        for (let j = 0; j < width; j++) {
+            outArray[i][j] = {
+                mineNumber: 0,
+                open: false,
+                mark: false,
+                blockCoordinate: {
+                    x: i,
+                    y: j
+                }
+            };
+        }
+    }
+    outArray = arrangementMine(width, height, mine, outArray);
+    outArray = calculateMine(width, height, mine, outArray);
+    return outArray;
+};
+const arrangementMine = function (width, height, mine, mineArray) {
+    while (mine > 0) {
+        let i = Math.ceil(Math.random() * height) - 1;
+        let j = Math.ceil(Math.random() * width) - 1;
+        if (mineArray[i][j] !== undefined) {
+            if (mineArray[i][j].mineNumber !== -1) {
+                mineArray[i][j].mineNumber = -1;
+                mine--;
+            }
+        }
+    }
+    return mineArray;
+};
+const calculateMine = function (width, height, mine, mineArray) {
+    for (let i = 0; i < height; i++) {
+        for (let j = 0; j < width; j++) {
+            if (mineArray[i][j].mineNumber === -1) {
+                mineArray = countMine(i, j, mine, mineArray);
+            }
+        }
+    }
+    return mineArray;
+};
+const countMine = function (x, y, mine, mineArray) {
+    for (var m = x - 1; m <= (x + 1); m++) {
+        for (var n = y - 1; n <= (y + 1); n++) {
+            if (m > -1 && m > -1 && n < mine) {
+                if (mineArray[m] && mineArray[m][n]) {
+                    if (mineArray[m][n].mineNumber !== -1) {
+                        mineArray[m][n].mineNumber++;
+                    }
+                }
+            }
+        }
+        n = y - 1;
+    }
+    return mineArray;
+};
+const resolve = function (x, y, mineArray) {
+    if (mineArray[x][y].mineNumber === 0) {
+        if (checkedCoordinate.indexOf(`${x}:${y}`) > 0)
+            return mineArray;
+        checkedCoordinate.push(`${x}:${y}`);
+        if (!mineArray[x][y].open) {
+            mineArray[x][y].open = true;
+            foundNum++;
+        }
+        if (mineArray[x - 1]) {
+            if (mineArray[x - 1][y - 1]) {
+                mineArray = resolve(x - 1, y - 1, mineArray);
+            }
+            if (mineArray[x - 1][y]) {
+                mineArray = resolve(x - 1, y, mineArray);
+            }
+            if (mineArray[x - 1][y + 1]) {
+                mineArray = resolve(x - 1, y + 1, mineArray);
+            }
+        }
+        if (mineArray[x]) {
+            if (mineArray[x][y + 1]) {
+                mineArray = resolve(x, y + 1, mineArray);
+            }
+            if (mineArray[x][y - 1]) {
+                mineArray = resolve(x, y - 1, mineArray);
+            }
+        }
+        if (mineArray[x + 1]) {
+            if (mineArray[x + 1][y - 1]) {
+                mineArray = resolve(x + 1, y - 1, mineArray);
+            }
+            if (mineArray[x + 1][y]) {
+                mineArray = resolve(x + 1, y, mineArray);
+            }
+            if (mineArray[x + 1][y + 1]) {
+                mineArray = resolve(x + 1, y + 1, mineArray);
+            }
+        }
+    }
+    else if (!mineArray[x][y].open) {
+        mineArray[x][y].open = true;
+        foundNum++;
+    }
+    return JSON.parse(JSON.stringify(mineArray));
+};
+const handleDblclick = function (x, y, mineArray) {
+    let newGameOver = false;
+    let mineObj;
+    if (mineArray[x - 1]) {
+        mineObj = mineArray[x - 1][y - 1];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x - 1, y - 1, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+        mineObj = mineArray[x - 1][y];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x - 1, y, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+        mineObj = mineArray[x - 1][y + 1];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x - 1, y + 1, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+    }
+    if (mineArray[x]) {
+        mineObj = mineArray[x][y + 1];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x, y + 1, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+        mineObj = mineArray[x][y - 1];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x, y - 1, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+    }
+    if (mineArray[x + 1]) {
+        mineObj = mineArray[x + 1][y - 1];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x + 1, y - 1, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+        mineObj = mineArray[x + 1][y];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x + 1, y, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+        mineObj = mineArray[x + 1][y + 1];
+        if (mineObj && !mineObj.mark && !mineObj.open) {
+            mineObj.open = true;
+            foundNum++;
+            if (mineObj.mineNumber === 0)
+                mineArray = resolve(x + 1, y + 1, mineArray);
+            if (mineObj.mineNumber === -1)
+                newGameOver = true;
+        }
+    }
+    return {
+        gameOver: newGameOver,
+        mineArray: JSON.parse(JSON.stringify(mineArray))
+    };
+};
 const initialState = {
-    todos: []
+    gameOver: false,
+    victory: false,
+    mineArray: mineInit(9, 9, 10),
+    width: 9,
+    height: 9,
+    mineNumber: 10,
+    markNumber: 0
 };
 const todoReducer = (state, action) => {
     switch (action.type) {
-        case 'ADD': {
-            return Object.assign({}, state, { todos: [...state.todos, action.payload] });
+        case 'INIT': {
+            let width = action.payload.width;
+            let height = action.payload.height;
+            let mineNumber = action.payload.mineNumber;
+            return Object.assign({}, state, { gameOver: false, victory: false, width: width, height: height, mineNumber: mineNumber, markNumber: 0, mineArray: mineInit(width, height, mineNumber) });
         }
-        case 'REMOVE': {
-            return Object.assign({}, state, { todos: [...state.todos.filter((it, index) => index !== action.payload)] });
+        case 'BLOCK-CLICK': {
+            let x = action.payload.x;
+            let y = action.payload.y;
+            let newMineArray = resolve(x, y, state.mineArray);
+            let newGameOver = newMineArray[x][y].mineNumber === -1;
+            let newVictory = (state.width * state.height - state.mineNumber) <= foundNum;
+            return Object.assign({}, state, { gameOver: newGameOver, victory: newVictory, mineArray: newMineArray });
+        }
+        case 'BLOCK-DBLCLICK': {
+            let x = action.payload.x;
+            let y = action.payload.y;
+            let { gameOver, mineArray } = handleDblclick(x, y, state.mineArray);
+            let newVictory = (state.width * state.height - state.mineNumber) <= foundNum;
+            return Object.assign({}, state, { gameOver: gameOver, victory: newVictory, mineArray: mineArray });
+        }
+        case 'TOOGLE-MARK': {
+            let x = action.payload.x;
+            let y = action.payload.y;
+            let newMineArray = JSON.parse(JSON.stringify(state.mineArray));
+            let newMarkNumber = state.markNumber;
+            newMineArray[x][y].mark = !newMineArray[x][y].mark;
+            newMineArray[x][y].mark ? newMarkNumber++ : newMarkNumber--;
+            return Object.assign({}, state, { markNumber: newMarkNumber, mineArray: newMineArray });
         }
         default:
             return initialState;
@@ -16537,24 +15784,18 @@ const todoReducer = (state, action) => {
 
 
 /***/ }),
-/* 74 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export McApp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_AntiShadowElement__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_app_layout_app_layout_js__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_iron_selector_iron_selector_js__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_iron_pages_iron_pages_js__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_paper_icon_button_paper_icon_button_js__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__polymer_iron_icons_iron_icons_js__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_McJunior__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_McNormal__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_McAdvanced__ = __webpack_require__(131);
-
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_AntiShadowElement__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_app_layout_app_layout_js__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_iron_selector_iron_selector_js__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_paper_icon_button_paper_icon_button_js__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_iron_icons_iron_icons_js__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_McContainer__ = __webpack_require__(112);
 
 
 
@@ -16590,6 +15831,14 @@ const _temp = __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__["b"
         color: white;
         font-weight: bold;
       }
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+      }
+      #container {
+        height: 100%;
+      }
     </style>
   </custom-style>
 
@@ -16605,13 +15854,13 @@ const _temp = __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_polymer_element__["b"
 
     <app-toolbar>
       <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+      <h4 main-title>Mine-Clearance-Polymer</h4>
+      <h5>classlfz@qq.com</h5>
     </app-toolbar>
 
-    <iron-pages selected="[[page]]" attr-for-selected="id">
-      <mc-junior id="junior"></mc-junior>
-      <mc-normal id="normal"></mc-normal>
-      <mc-advanced id="advanced"></mc-advanced>
-    </iron-pages>
+    <div class="container">
+      <mc-container id="container" width="[[width]]" height="[[height]]" mine-number="[[mineNumber]]"></mc-container>
+    </div>
 
   </app-drawer-layout>
 `;
@@ -16623,9 +15872,50 @@ class McApp extends __WEBPACK_IMPORTED_MODULE_0__util_AntiShadowElement__["a" /*
         return {
             page: {
                 type: String,
-                value: 'junior'
+                value: 'junior',
+                observer: '_pageChanged'
+            },
+            width: {
+                type: Number,
+                value: 9
+            },
+            height: {
+                type: Number,
+                value: 9
+            },
+            mineNumber: {
+                type: Number,
+                value: 10
+            },
+            gameSettings: {
+                type: Object,
+                value: {
+                    junior: {
+                        width: 9,
+                        height: 9,
+                        mineNumber: 10
+                    },
+                    normal: {
+                        width: 16,
+                        height: 16,
+                        mineNumber: 40
+                    },
+                    advanced: {
+                        width: 30,
+                        height: 16,
+                        mineNumber: 99
+                    }
+                }
             }
         };
+    }
+    _pageChanged(page) {
+        if (this.$[page] && this.gameSettings[page]) {
+            this.set('width', this.gameSettings[page].width);
+            this.set('height', this.gameSettings[page].height);
+            this.set('mineNumber', this.gameSettings[page].mineNumber);
+            this.$.container.restart();
+        }
     }
 }
 customElements.define('mc-app', McApp);
@@ -16633,31 +15923,12 @@ customElements.define('mc-app', McApp);
 
 
 /***/ }),
-/* 75 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(5);
-
-class AntiShadowElement extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* PolymerElement */] {
-    _attachDom(dom) {
-        return this.appendChild(dom);
-    }
-    connectedCallback() {
-        super.connectedCallback();
-    }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = AntiShadowElement;
-
-
-
-/***/ }),
-/* 76 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -17155,13 +16426,13 @@ const TemplateStamp = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /
 
 
 /***/ }),
-/* 77 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__properties_changed_js__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__properties_changed_js__ = __webpack_require__(40);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -17394,18 +16665,18 @@ const PropertiesMixin = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a"
 
 
 /***/ }),
-/* 78 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpers_helpers_js__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_drawer_app_drawer_js__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_drawer_layout_app_drawer_layout_js__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_grid_app_grid_style_js__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_header_app_header_js__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_header_layout_app_header_layout_js__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_toolbar_app_toolbar_js__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_box_app_box_js__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpers_helpers_js__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_drawer_app_drawer_js__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_drawer_layout_app_drawer_layout_js__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_grid_app_grid_style_js__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_header_app_header_js__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_header_layout_app_header_layout_js__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_toolbar_app_toolbar_js__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_box_app_box_js__ = __webpack_require__(100);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -17427,16 +16698,16 @@ found at http://polymer.github.io/PATENTS.txt
 
 
 /***/ }),
-/* 79 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_apply_shim_js__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_template_map_js__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_style_util_js__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_apply_shim_utils_js__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_apply_shim_js__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_template_map_js__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_style_util_js__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_apply_shim_utils_js__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_utils_js__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_custom_style_interface_js__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_custom_style_interface_js__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_style_settings_js__ = __webpack_require__(19);
 /**
 @license
@@ -17663,11 +16934,11 @@ window.ShadyCSS.ApplyShim = applyShim;
 
 
 /***/ }),
-/* 80 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_util_js__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_util_js__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_regex_js__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_utils_js__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_parse_js__ = __webpack_require__(20);
@@ -18199,7 +17470,7 @@ Object.defineProperty(ApplyShim.prototype, 'invalidCallback', {
 
 
 /***/ }),
-/* 81 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18249,7 +17520,7 @@ function isUnscopedStyle(style) {
 }
 
 /***/ }),
-/* 82 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18262,7 +17533,7 @@ function isUnscopedStyle(style) {
 /* unused harmony export startValidating */
 /* harmony export (immutable) */ __webpack_exports__["b"] = startValidatingTemplate;
 /* unused harmony export elementsAreInvalid */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_map_js__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_map_js__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_parse_js__ = __webpack_require__(20);
 /**
 @license
@@ -18416,7 +17687,7 @@ function elementsAreInvalid() {
 
 
 /***/ }),
-/* 83 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18469,12 +17740,12 @@ function documentWait(callback) {
 
 
 /***/ }),
-/* 84 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__property_accessors_js__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__property_accessors_js__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -18660,7 +17931,7 @@ const DirMixin = Object(__WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__["a" /* ded
 
 
 /***/ }),
-/* 85 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18688,12 +17959,12 @@ if (document.readyState === 'interactive' || document.readyState === 'complete')
 
 
 /***/ }),
-/* 86 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__boot_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array_splice_js__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array_splice_js__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__async_js__ = __webpack_require__(8);
 /**
 @license
@@ -19008,11 +18279,377 @@ class FlattenedNodesObserver {
 
 
 /***/ }),
-/* 87 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_templatize_js__ = __webpack_require__(25);
+/* unused harmony export mixinBehaviors */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__legacy_element_mixin_js__ = __webpack_require__(42);
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+let metaProps = {
+  attached: true,
+  detached: true,
+  ready: true,
+  created: true,
+  beforeRegister: true,
+  registered: true,
+  attributeChanged: true,
+  // meta objects
+  behaviors: true
+};
+
+/**
+ * Applies a "legacy" behavior or array of behaviors to the provided class.
+ *
+ * Note: this method will automatically also apply the `LegacyElementMixin`
+ * to ensure that any legacy behaviors can rely on legacy Polymer API on
+ * the underlying element.
+ *
+ * @function
+ * @template T
+ * @param {!Object|!Array<!Object>} behaviors Behavior object or array of behaviors.
+ * @param {function(new:T)} klass Element class.
+ * @return {?} Returns a new Element class extended by the
+ * passed in `behaviors` and also by `LegacyElementMixin`.
+ * @suppress {invalidCasts, checkTypes}
+ */
+function mixinBehaviors(behaviors, klass) {
+  if (!behaviors) {
+    klass = /** @type {HTMLElement} */(klass); // eslint-disable-line no-self-assign
+    return klass;
+  }
+  // NOTE: ensure the behavior is extending a class with
+  // legacy element api. This is necessary since behaviors expect to be able
+  // to access 1.x legacy api.
+  klass = Object(__WEBPACK_IMPORTED_MODULE_0__legacy_element_mixin_js__["a" /* LegacyElementMixin */])(klass);
+  if (!Array.isArray(behaviors)) {
+    behaviors = [behaviors];
+  }
+  let superBehaviors = klass.prototype.behaviors;
+  // get flattened, deduped list of behaviors *not* already on super class
+  behaviors = flattenBehaviors(behaviors, null, superBehaviors);
+  // mixin new behaviors
+  klass = _mixinBehaviors(behaviors, klass);
+  if (superBehaviors) {
+    behaviors = superBehaviors.concat(behaviors);
+  }
+  // Set behaviors on prototype for BC...
+  klass.prototype.behaviors = behaviors;
+  return klass;
+}
+
+// NOTE:
+// 1.x
+// Behaviors were mixed in *in reverse order* and de-duped on the fly.
+// The rule was that behavior properties were copied onto the element
+// prototype if and only if the property did not already exist.
+// Given: Polymer{ behaviors: [A, B, C, A, B]}, property copy order was:
+// (1), B, (2), A, (3) C. This means prototype properties win over
+// B properties win over A win over C. This mirrors what would happen
+// with inheritance if element extended B extended A extended C.
+//
+// Again given, Polymer{ behaviors: [A, B, C, A, B]}, the resulting
+// `behaviors` array was [C, A, B].
+// Behavior lifecycle methods were called in behavior array order
+// followed by the element, e.g. (1) C.created, (2) A.created,
+// (3) B.created, (4) element.created. There was no support for
+// super, and "super-behavior" methods were callable only by name).
+//
+// 2.x
+// Behaviors are made into proper mixins which live in the
+// element's prototype chain. Behaviors are placed in the element prototype
+// eldest to youngest and de-duped youngest to oldest:
+// So, first [A, B, C, A, B] becomes [C, A, B] then,
+// the element prototype becomes (oldest) (1) PolymerElement, (2) class(C),
+// (3) class(A), (4) class(B), (5) class(Polymer({...})).
+// Result:
+// This means element properties win over B properties win over A win
+// over C. (same as 1.x)
+// If lifecycle is called (super then me), order is
+// (1) C.created, (2) A.created, (3) B.created, (4) element.created
+// (again same as 1.x)
+function _mixinBehaviors(behaviors, klass) {
+  for (let i=0; i<behaviors.length; i++) {
+    let b = behaviors[i];
+    if (b) {
+      klass = Array.isArray(b) ? _mixinBehaviors(b, klass) :
+        GenerateClassFromInfo(b, klass);
+    }
+  }
+  return klass;
+}
+
+/**
+ * @param {Array} behaviors List of behaviors to flatten.
+ * @param {Array=} list Target list to flatten behaviors into.
+ * @param {Array=} exclude List of behaviors to exclude from the list.
+ * @return {!Array} Returns the list of flattened behaviors.
+ */
+function flattenBehaviors(behaviors, list, exclude) {
+  list = list || [];
+  for (let i=behaviors.length-1; i >= 0; i--) {
+    let b = behaviors[i];
+    if (b) {
+      if (Array.isArray(b)) {
+        flattenBehaviors(b, list);
+      } else {
+        // dedup
+        if (list.indexOf(b) < 0 && (!exclude || exclude.indexOf(b) < 0)) {
+          list.unshift(b);
+        }
+      }
+    } else {
+      console.warn('behavior is null, check for missing or 404 import');
+    }
+  }
+  return list;
+}
+
+/**
+ * @param {!PolymerInit} info Polymer info object
+ * @param {function(new:HTMLElement)} Base base class to extend with info object
+ * @return {function(new:HTMLElement)} Generated class
+ * @suppress {checkTypes}
+ * @private
+ */
+function GenerateClassFromInfo(info, Base) {
+
+  /** @private */
+  class PolymerGenerated extends Base {
+
+    static get properties() {
+      return info.properties;
+    }
+
+    static get observers() {
+      return info.observers;
+    }
+
+    /**
+     * @return {void}
+     */
+    created() {
+      super.created();
+      if (info.created) {
+        info.created.call(this);
+      }
+    }
+
+    /**
+     * @return {void}
+     */
+    _registered() {
+      super._registered();
+      /* NOTE: `beforeRegister` is called here for bc, but the behavior
+       is different than in 1.x. In 1.0, the method was called *after*
+       mixing prototypes together but *before* processing of meta-objects.
+       However, dynamic effects can still be set here and can be done either
+       in `beforeRegister` or `registered`. It is no longer possible to set
+       `is` in `beforeRegister` as you could in 1.x.
+      */
+      if (info.beforeRegister) {
+        info.beforeRegister.call(Object.getPrototypeOf(this));
+      }
+      if (info.registered) {
+        info.registered.call(Object.getPrototypeOf(this));
+      }
+    }
+
+    /**
+     * @return {void}
+     */
+    _applyListeners() {
+      super._applyListeners();
+      if (info.listeners) {
+        for (let l in info.listeners) {
+          this._addMethodEventListenerToNode(this, l, info.listeners[l]);
+        }
+      }
+    }
+
+    // note: exception to "super then me" rule;
+    // do work before calling super so that super attributes
+    // only apply if not already set.
+    /**
+     * @return {void}
+     */
+    _ensureAttributes() {
+      if (info.hostAttributes) {
+        for (let a in info.hostAttributes) {
+          this._ensureAttribute(a, info.hostAttributes[a]);
+        }
+      }
+      super._ensureAttributes();
+    }
+
+    /**
+     * @return {void}
+     */
+    ready() {
+      super.ready();
+      if (info.ready) {
+        info.ready.call(this);
+      }
+    }
+
+    /**
+     * @return {void}
+     */
+    attached() {
+      super.attached();
+      if (info.attached) {
+        info.attached.call(this);
+      }
+    }
+
+    /**
+     * @return {void}
+     */
+    detached() {
+      super.detached();
+      if (info.detached) {
+        info.detached.call(this);
+      }
+    }
+
+    /**
+     * Implements native Custom Elements `attributeChangedCallback` to
+     * set an attribute value to a property via `_attributeToProperty`.
+     *
+     * @param {string} name Name of attribute that changed
+     * @param {?string} old Old attribute value
+     * @param {?string} value New attribute value
+     * @return {void}
+     */
+    attributeChanged(name, old, value) {
+      super.attributeChanged(name, old, value);
+      if (info.attributeChanged) {
+        info.attributeChanged.call(this, name, old, value);
+      }
+   }
+  }
+
+  PolymerGenerated.generatedFrom = info;
+
+  for (let p in info) {
+    // NOTE: cannot copy `metaProps` methods onto prototype at least because
+    // `super.ready` must be called and is not included in the user fn.
+    if (!(p in metaProps)) {
+      let pd = Object.getOwnPropertyDescriptor(info, p);
+      if (pd) {
+        Object.defineProperty(PolymerGenerated.prototype, p, pd);
+      }
+    }
+  }
+
+  return PolymerGenerated;
+}
+
+/**
+ * Generates a class that extends `LegacyElement` based on the
+ * provided info object.  Metadata objects on the `info` object
+ * (`properties`, `observers`, `listeners`, `behaviors`, `is`) are used
+ * for Polymer's meta-programming systems, and any functions are copied
+ * to the generated class.
+ *
+ * Valid "metadata" values are as follows:
+ *
+ * `is`: String providing the tag name to register the element under. In
+ * addition, if a `dom-module` with the same id exists, the first template
+ * in that `dom-module` will be stamped into the shadow root of this element,
+ * with support for declarative event listeners (`on-...`), Polymer data
+ * bindings (`[[...]]` and `{{...}}`), and id-based node finding into
+ * `this.$`.
+ *
+ * `properties`: Object describing property-related metadata used by Polymer
+ * features (key: property names, value: object containing property metadata).
+ * Valid keys in per-property metadata include:
+ * - `type` (String|Number|Object|Array|...): Used by
+ *   `attributeChangedCallback` to determine how string-based attributes
+ *   are deserialized to JavaScript property values.
+ * - `notify` (boolean): Causes a change in the property to fire a
+ *   non-bubbling event called `<property>-changed`. Elements that have
+ *   enabled two-way binding to the property use this event to observe changes.
+ * - `readOnly` (boolean): Creates a getter for the property, but no setter.
+ *   To set a read-only property, use the private setter method
+ *   `_setProperty(property, value)`.
+ * - `observer` (string): Observer method name that will be called when
+ *   the property changes. The arguments of the method are
+ *   `(value, previousValue)`.
+ * - `computed` (string): String describing method and dependent properties
+ *   for computing the value of this property (e.g. `'computeFoo(bar, zot)'`).
+ *   Computed properties are read-only by default and can only be changed
+ *   via the return value of the computing method.
+ *
+ * `observers`: Array of strings describing multi-property observer methods
+ *  and their dependent properties (e.g. `'observeABC(a, b, c)'`).
+ *
+ * `listeners`: Object describing event listeners to be added to each
+ *  instance of this element (key: event name, value: method name).
+ *
+ * `behaviors`: Array of additional `info` objects containing metadata
+ * and callbacks in the same format as the `info` object here which are
+ * merged into this element.
+ *
+ * `hostAttributes`: Object listing attributes to be applied to the host
+ *  once created (key: attribute name, value: attribute value).  Values
+ *  are serialized based on the type of the value.  Host attributes should
+ *  generally be limited to attributes such as `tabIndex` and `aria-...`.
+ *  Attributes in `hostAttributes` are only applied if a user-supplied
+ *  attribute is not already present (attributes in markup override
+ *  `hostAttributes`).
+ *
+ * In addition, the following Polymer-specific callbacks may be provided:
+ * - `registered`: called after first instance of this element,
+ * - `created`: called during `constructor`
+ * - `attached`: called during `connectedCallback`
+ * - `detached`: called during `disconnectedCallback`
+ * - `ready`: called before first `attached`, after all properties of
+ *   this element have been propagated to its template and all observers
+ *   have run
+ *
+ * @param {!PolymerInit} info Object containing Polymer metadata and functions
+ *   to become class methods.
+ * @template T
+ * @param {function(T):T} mixin Optional mixin to apply to legacy base class
+ *   before extending with Polymer metaprogramming.
+ * @return {function(new:HTMLElement)} Generated class
+ */
+const Class = function(info, mixin) {
+  if (!info) {
+    console.warn(`Polymer's Class function requires \`info\` argument`);
+  }
+  const baseWithBehaviors = info.behaviors ?
+    // note: mixinBehaviors ensures `LegacyElementMixin`.
+    mixinBehaviors(info.behaviors, HTMLElement) :
+    Object(__WEBPACK_IMPORTED_MODULE_0__legacy_element_mixin_js__["a" /* LegacyElementMixin */])(HTMLElement);
+  const baseWithMixin = mixin ? mixin(baseWithBehaviors) : baseWithBehaviors;
+  const klass = GenerateClassFromInfo(info, baseWithMixin);
+  // decorate klass with registration info
+  klass.is = info.is;
+  return klass;
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = Class;
+
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_templatize_js__ = __webpack_require__(24);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -19160,14 +18797,14 @@ const Templatizer = {
 
 
 /***/ }),
-/* 88 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_boot_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_property_effects_js__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_mutable_data_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_gesture_event_listeners_js__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_gesture_event_listeners_js__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_settings_js__ = __webpack_require__(7);
 /**
 @license
@@ -19316,12 +18953,12 @@ customElements.define('dom-bind', DomBind);
 
 
 /***/ }),
-/* 89 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_element_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_templatize_js__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_element_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_templatize_js__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_debounce_js__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_flush_js__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_mutable_data_js__ = __webpack_require__(14);
@@ -20062,12 +19699,12 @@ customElements.define(DomRepeat.is, DomRepeat);
 
 
 /***/ }),
-/* 90 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_element_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_templatize_js__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_element_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_templatize_js__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_debounce_js__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_flush_js__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_async_js__ = __webpack_require__(8);
@@ -20364,15 +20001,15 @@ customElements.define(DomIf.is, DomIf);
 
 
 /***/ }),
-/* 91 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export ArraySelectorMixin */
 /* unused harmony export ArraySelector */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_element_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_array_splice_js__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_element_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_mixin_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_array_splice_js__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_element_mixin_js__ = __webpack_require__(16);
 /**
 @license
@@ -20808,12 +20445,12 @@ customElements.define(ArraySelector.is, ArraySelector);
 
 
 /***/ }),
-/* 92 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__webcomponents_shadycss_entrypoints_custom_style_interface_js__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_style_gather_js__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__webcomponents_shadycss_entrypoints_custom_style_interface_js__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_style_gather_js__ = __webpack_require__(37);
 /**
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -20928,11 +20565,11 @@ window.customElements.define('custom-style', CustomStyle);
 
 
 /***/ }),
-/* 93 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_custom_style_interface_js__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_custom_style_interface_js__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_common_utils_js__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_style_settings_js__ = __webpack_require__(19);
 /**
@@ -21018,7 +20655,7 @@ if (!window.ShadyCSS) {
 window.ShadyCSS.CustomStyleInterface = customStyleInterface;
 
 /***/ }),
-/* 94 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21180,7 +20817,7 @@ const OptionalMutableDataBehavior = {
 
 
 /***/ }),
-/* 95 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21189,7 +20826,7 @@ const OptionalMutableDataBehavior = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_render_status_js__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_render_status_js__ = __webpack_require__(23);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -21852,17 +21489,17 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 96 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_media_query_iron_media_query_js__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_media_query_iron_media_query_js__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_render_status_js__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_layout_behavior_app_layout_behavior_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_render_status_js__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_layout_behavior_app_layout_behavior_js__ = __webpack_require__(25);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -22154,7 +21791,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 97 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22273,7 +21910,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 98 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22482,7 +22119,7 @@ document.head.appendChild($_documentContainer.content);
 
 
 /***/ }),
-/* 99 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22491,8 +22128,8 @@ document.head.appendChild($_documentContainer.content);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_layout_behavior_app_layout_behavior_js__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_scroll_effects_app_scroll_effects_behavior_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_layout_behavior_app_layout_behavior_js__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_scroll_effects_app_scroll_effects_behavior_js__ = __webpack_require__(50);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -23175,7 +22812,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 100 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23464,7 +23101,7 @@ const IronScrollTargetBehavior = {
 
 
 /***/ }),
-/* 101 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23473,7 +23110,7 @@ const IronScrollTargetBehavior = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_layout_behavior_app_layout_behavior_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_layout_behavior_app_layout_behavior_js__ = __webpack_require__(25);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -23690,7 +23327,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 102 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23817,16 +23454,16 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 103 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_flex_layout_iron_flex_layout_js__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_resizable_behavior_iron_resizable_behavior_js__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_resizable_behavior_iron_resizable_behavior_js__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_scroll_effects_app_scroll_effects_behavior_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_scroll_effects_app_scroll_effects_behavior_js__ = __webpack_require__(50);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -24077,13 +23714,13 @@ Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 104 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iron_multi_selectable_js__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iron_multi_selectable_js__ = __webpack_require__(102);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -24175,12 +23812,12 @@ Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 105 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iron_selectable_js__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iron_selectable_js__ = __webpack_require__(103);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -24354,7 +23991,419 @@ const IronMultiSelectableBehavior =
 
 
 /***/ }),
-/* 106 */
+/* 103 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_case_map_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__iron_selection_js__ = __webpack_require__(104);
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+
+
+
+
+
+
+/**
+ * @polymerBehavior
+ */
+const IronSelectableBehavior = {
+
+  /**
+   * Fired when iron-selector is activated (selected or deselected).
+   * It is fired before the selected items are changed.
+   * Cancel the event to abort selection.
+   *
+   * @event iron-activate
+   */
+
+  /**
+   * Fired when an item is selected
+   *
+   * @event iron-select
+   */
+
+  /**
+   * Fired when an item is deselected
+   *
+   * @event iron-deselect
+   */
+
+  /**
+   * Fired when the list of selectable items changes (e.g., items are
+   * added or removed). The detail of the event is a mutation record that
+   * describes what changed.
+   *
+   * @event iron-items-changed
+   */
+
+  properties: {
+
+    /**
+     * If you want to use an attribute value or property of an element for
+     * `selected` instead of the index, set this to the name of the attribute
+     * or property. Hyphenated values are converted to camel case when used to
+     * look up the property of a selectable element. Camel cased values are
+     * *not* converted to hyphenated values for attribute lookup. It's
+     * recommended that you provide the hyphenated form of the name so that
+     * selection works in both cases. (Use `attr-or-property-name` instead of
+     * `attrOrPropertyName`.)
+     */
+    attrForSelected: {type: String, value: null},
+
+    /**
+     * Gets or sets the selected element. The default is to use the index of the
+     * item.
+     * @type {string|number}
+     */
+    selected: {type: String, notify: true},
+
+    /**
+     * Returns the currently selected item.
+     *
+     * @type {?Object}
+     */
+    selectedItem: {type: Object, readOnly: true, notify: true},
+
+    /**
+     * The event that fires from items when they are selected. Selectable
+     * will listen for this event from items and update the selection state.
+     * Set to empty string to listen to no events.
+     */
+    activateEvent:
+        {type: String, value: 'tap', observer: '_activateEventChanged'},
+
+    /**
+     * This is a CSS selector string.  If this is set, only items that match the
+     * CSS selector are selectable.
+     */
+    selectable: String,
+
+    /**
+     * The class to set on elements when selected.
+     */
+    selectedClass: {type: String, value: 'iron-selected'},
+
+    /**
+     * The attribute to set on elements when selected.
+     */
+    selectedAttribute: {type: String, value: null},
+
+    /**
+     * Default fallback if the selection based on selected with
+     * `attrForSelected` is not found.
+     */
+    fallbackSelection: {type: String, value: null},
+
+    /**
+     * The list of items from which a selection can be made.
+     */
+    items: {
+      type: Array,
+      readOnly: true,
+      notify: true,
+      value: function() {
+        return [];
+      }
+    },
+
+    /**
+     * The set of excluded elements where the key is the `localName`
+     * of the element that will be ignored from the item list.
+     *
+     * @default {template: 1}
+     */
+    _excludedLocalNames: {
+      type: Object,
+      value: function() {
+        return {
+          'template': 1,
+          'dom-bind': 1,
+          'dom-if': 1,
+          'dom-repeat': 1,
+        };
+      }
+    }
+  },
+
+  observers: [
+    '_updateAttrForSelected(attrForSelected)',
+    '_updateSelected(selected)',
+    '_checkFallback(fallbackSelection)'
+  ],
+
+  created: function() {
+    this._bindFilterItem = this._filterItem.bind(this);
+    this._selection = new __WEBPACK_IMPORTED_MODULE_3__iron_selection_js__["a" /* IronSelection */](this._applySelection.bind(this));
+  },
+
+  attached: function() {
+    this._observer = this._observeItems(this);
+    this._addListener(this.activateEvent);
+  },
+
+  detached: function() {
+    if (this._observer) {
+      Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).unobserveNodes(this._observer);
+    }
+    this._removeListener(this.activateEvent);
+  },
+
+  /**
+   * Returns the index of the given item.
+   *
+   * @method indexOf
+   * @param {Object} item
+   * @returns Returns the index of the item
+   */
+  indexOf: function(item) {
+    return this.items ? this.items.indexOf(item) : -1;
+  },
+
+  /**
+   * Selects the given value.
+   *
+   * @method select
+   * @param {string|number} value the value to select.
+   */
+  select: function(value) {
+    this.selected = value;
+  },
+
+  /**
+   * Selects the previous item.
+   *
+   * @method selectPrevious
+   */
+  selectPrevious: function() {
+    var length = this.items.length;
+    var index = length - 1;
+    if (this.selected !== undefined) {
+      index = (Number(this._valueToIndex(this.selected)) - 1 + length) % length;
+    }
+    this.selected = this._indexToValue(index);
+  },
+
+  /**
+   * Selects the next item.
+   *
+   * @method selectNext
+   */
+  selectNext: function() {
+    var index = 0;
+    if (this.selected !== undefined) {
+      index =
+          (Number(this._valueToIndex(this.selected)) + 1) % this.items.length;
+    }
+    this.selected = this._indexToValue(index);
+  },
+
+  /**
+   * Selects the item at the given index.
+   *
+   * @method selectIndex
+   */
+  selectIndex: function(index) {
+    this.select(this._indexToValue(index));
+  },
+
+  /**
+   * Force a synchronous update of the `items` property.
+   *
+   * NOTE: Consider listening for the `iron-items-changed` event to respond to
+   * updates to the set of selectable items after updates to the DOM list and
+   * selection state have been made.
+   *
+   * WARNING: If you are using this method, you should probably consider an
+   * alternate approach. Synchronously querying for items is potentially
+   * slow for many use cases. The `items` property will update asynchronously
+   * on its own to reflect selectable items in the DOM.
+   */
+  forceSynchronousItemUpdate: function() {
+    if (this._observer && typeof this._observer.flush === 'function') {
+      // NOTE(bicknellr): `dom.flush` above is no longer sufficient to trigger
+      // `observeNodes` callbacks. Polymer 2.x returns an object from
+      // `observeNodes` with a `flush` that synchronously gives the callback any
+      // pending MutationRecords (retrieved with `takeRecords`). Any case where
+      // ShadyDOM flushes were expected to synchronously trigger item updates
+      // will now require calling `forceSynchronousItemUpdate`.
+      this._observer.flush();
+    } else {
+      this._updateItems();
+    }
+  },
+
+  // UNUSED, FOR API COMPATIBILITY
+  get _shouldUpdateSelection() {
+    return this.selected != null;
+  },
+
+  _checkFallback: function() {
+    this._updateSelected();
+  },
+
+  _addListener: function(eventName) {
+    this.listen(this, eventName, '_activateHandler');
+  },
+
+  _removeListener: function(eventName) {
+    this.unlisten(this, eventName, '_activateHandler');
+  },
+
+  _activateEventChanged: function(eventName, old) {
+    this._removeListener(old);
+    this._addListener(eventName);
+  },
+
+  _updateItems: function() {
+    var nodes = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).queryDistributedElements(this.selectable || '*');
+    nodes = Array.prototype.filter.call(nodes, this._bindFilterItem);
+    this._setItems(nodes);
+  },
+
+  _updateAttrForSelected: function() {
+    if (this.selectedItem) {
+      this.selected = this._valueForItem(this.selectedItem);
+    }
+  },
+
+  _updateSelected: function() {
+    this._selectSelected(this.selected);
+  },
+
+  _selectSelected: function(selected) {
+    if (!this.items) {
+      return;
+    }
+
+    var item = this._valueToItem(this.selected);
+    if (item) {
+      this._selection.select(item);
+    } else {
+      this._selection.clear();
+    }
+    // Check for items, since this array is populated only when attached
+    // Since Number(0) is falsy, explicitly check for undefined
+    if (this.fallbackSelection && this.items.length &&
+        (this._selection.get() === undefined)) {
+      this.selected = this.fallbackSelection;
+    }
+  },
+
+  _filterItem: function(node) {
+    return !this._excludedLocalNames[node.localName];
+  },
+
+  _valueToItem: function(value) {
+    return (value == null) ? null : this.items[this._valueToIndex(value)];
+  },
+
+  _valueToIndex: function(value) {
+    if (this.attrForSelected) {
+      for (var i = 0, item; item = this.items[i]; i++) {
+        if (this._valueForItem(item) == value) {
+          return i;
+        }
+      }
+    } else {
+      return Number(value);
+    }
+  },
+
+  _indexToValue: function(index) {
+    if (this.attrForSelected) {
+      var item = this.items[index];
+      if (item) {
+        return this._valueForItem(item);
+      }
+    } else {
+      return index;
+    }
+  },
+
+  _valueForItem: function(item) {
+    if (!item) {
+      return null;
+    }
+    if (!this.attrForSelected) {
+      var i = this.indexOf(item);
+      return i === -1 ? null : i;
+    }
+    var propValue = item[Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_case_map_js__["b" /* dashToCamelCase */])(this.attrForSelected)];
+    return propValue != undefined ? propValue :
+                                    item.getAttribute(this.attrForSelected);
+  },
+
+  _applySelection: function(item, isSelected) {
+    if (this.selectedClass) {
+      this.toggleClass(this.selectedClass, isSelected, item);
+    }
+    if (this.selectedAttribute) {
+      this.toggleAttribute(this.selectedAttribute, isSelected, item);
+    }
+    this._selectionChange();
+    this.fire('iron-' + (isSelected ? 'select' : 'deselect'), {item: item});
+  },
+
+  _selectionChange: function() {
+    this._setSelectedItem(this._selection.get());
+  },
+
+  // observe items change under the given node.
+  _observeItems: function(node) {
+    return Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(node).observeNodes(function(mutation) {
+      this._updateItems();
+      this._updateSelected();
+
+      // Let other interested parties know about the change so that
+      // we don't have to recreate mutation observers everywhere.
+      this.fire(
+          'iron-items-changed', mutation, {bubbles: false, cancelable: false});
+    });
+  },
+
+  _activateHandler: function(e) {
+    var t = e.target;
+    var items = this.items;
+    while (t && t != this) {
+      var i = items.indexOf(t);
+      if (i >= 0) {
+        var value = this._indexToValue(i);
+        this._itemActivate(value, t);
+        return;
+      }
+      t = t.parentNode;
+    }
+  },
+
+  _itemActivate: function(value, item) {
+    if (!this.fire('iron-activate', {selected: value, item: item}, {
+               cancelable: true
+             })
+             .defaultPrevented) {
+      this.select(value);
+    }
+  }
+
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = IronSelectableBehavior;
+
+
+
+/***/ }),
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24471,99 +24520,14 @@ class IronSelection {
 
 
 /***/ }),
-/* 107 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_resizable_behavior_iron_resizable_behavior_js__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_selector_iron_selectable_js__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-
-/**
-`iron-pages` is used to select one of its children to show. One use is to cycle
-through a list of children "pages".
-
-Example:
-
-    <iron-pages selected="0">
-      <div>One</div>
-      <div>Two</div>
-      <div>Three</div>
-    </iron-pages>
-
-    <script>
-      document.addEventListener('click', function(e) {
-        var pages = document.querySelector('iron-pages');
-        pages.selectNext();
-      });
-    </script>
-
-@group Iron Elements
-@demo demo/index.html
-*/
-Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
-  _template: __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
-    <style>
-      :host {
-        display: block;
-      }
-
-      :host > ::slotted(:not(slot):not(.iron-selected)) {
-        display: none !important;
-      }
-    </style>
-
-    <slot></slot>
-`,
-
-  is: 'iron-pages',
-  behaviors: [__WEBPACK_IMPORTED_MODULE_1__polymer_iron_resizable_behavior_iron_resizable_behavior_js__["a" /* IronResizableBehavior */], __WEBPACK_IMPORTED_MODULE_2__polymer_iron_selector_iron_selectable_js__["a" /* IronSelectableBehavior */]],
-
-  properties: {
-
-    // as the selected page is the only one visible, activateEvent
-    // is both non-sensical and problematic; e.g. in cases where a user
-    // handler attempts to change the page and the activateEvent
-    // handler immediately changes it back
-    activateEvent: {type: String, value: null}
-
-  },
-
-  observers: ['_selectedPageChanged(selected)'],
-
-  _selectedPageChanged: function(selected, old) {
-    this.async(this.notifyResize);
-  }
-});
-
-
-/***/ }),
-/* 108 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_icon_iron_icon_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_paper_styles_default_theme_js__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_paper_behaviors_paper_inky_focus_behavior_js__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_icon_iron_icon_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_paper_styles_default_theme_js__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_paper_behaviors_paper_inky_focus_behavior_js__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
 /**
@@ -24747,12 +24711,12 @@ Object(__WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 109 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__color_js__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__color_js__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
 /**
 @license
@@ -24833,7 +24797,7 @@ document.head.appendChild(template.content);
 
 
 /***/ }),
-/* 110 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25182,14 +25146,14 @@ document.head.appendChild(template.content);
 
 
 /***/ }),
-/* 111 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_behaviors_iron_button_state_js__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_behaviors_iron_control_state_js__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__paper_ripple_behavior_js__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_behaviors_iron_button_state_js__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_behaviors_iron_control_state_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__paper_ripple_behavior_js__ = __webpack_require__(53);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -25248,12 +25212,12 @@ const PaperInkyFocusBehavior = [
 
 
 /***/ }),
-/* 112 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
@@ -25996,12 +25960,12 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 113 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_iron_icon_iron_icon_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_iconset_svg_iron_iconset_svg_js__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_iron_icon_iron_icon_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_iconset_svg_iron_iconset_svg_js__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
 /**
 @license
@@ -26371,12 +26335,12 @@ document.head.appendChild(template.content);
 
 
 /***/ }),
-/* 114 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_meta_iron_meta_js__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_meta_iron_meta_js__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
 /**
@@ -26639,3213 +26603,268 @@ Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 115 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export McJunior */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__McContainer__ = __webpack_require__(31);
+/* unused harmony export McContainer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__state_store__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_AntiShadowElement__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_polymer_element__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_paper_button_paper_button_js__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__McBlock__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_ReduxConnector__ = __webpack_require__(118);
 
 
 
-class McJunior extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* PolymerElement */] {
+
+
+
+const _temp = __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_polymer_element__["b" /* html */] `
+  <style>
+    :host {
+      width: 100%;
+      display: flex;
+      padding: 10px;
+      margin: 0 20px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #table {
+      box-shadow: 0px 0px 6px #633173;
+    }
+    .row {
+      display: flex;
+    }
+    .countBox {
+      width: 100%;
+      padding-bottom: 24px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 0px 0px 0px #6f6f6f;
+      font-size: 18px;
+    }
+    .timing {
+      text-align: center;
+    }
+    .cover-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 24px;
+    }
+    .tipper-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.01);
+      font-size: 24px;
+    }
+    .victory-tipper {
+      color: orange;
+    }
+    .gameover-tipper {
+      color: red;
+      opacity: 0.5;
+    }
+  </style>
+
+  <div class="countBox">
+    <span>mine-matrix：[[width]] * [[height]]</span>
+    <span>tags：[[markNumber]] / [[mineNumber]]</span>
+    <span>
+      <paper-button on-tap="restart">restart</paper-button>
+    </span>
+  </div>
+
+  <div class="timing">timing:  [[timeStr]]</div>
+
+  <div class="cover-container">
+    <template is="dom-if" if="[[victory]]">
+      <div class="tipper-container">
+        <h1 class="victory-tipper">ViCTORY!</h1>
+      </div>
+    </template>
+    <template is="dom-if" if="[[!victory]]">
+      <template is="dom-if" if="[[gameOver]]">
+        <div class="tipper-container">
+          <h1 class="gameover-tipper">GAME OVER!</h1>
+        </div>
+      </template>
+    </template>
+
+    <table id="table" cellspacing="0" cellpadding="0">
+      <template is="dom-repeat" items="[[mineArray]]" items-index-as="x">
+        <div class="row">
+          <template is="dom-repeat" items="[[item]]" items-index-as="y">
+            <mc-block
+              data-x$="[[x]]"
+              data-y$="[[y]]"
+              x="[[x]]"
+              y="[[y]]"
+              mine-object="[[item]]"
+              on-block-click="_blockClick"
+              on-block-dblclick="_blockDblclick"
+              on-toogle-mark="_toogleMark"></mc-block>
+          </template>
+        </div>
+      </template>
+    </table>
+  </div>
+`;
+class McContainer extends __WEBPACK_IMPORTED_MODULE_1__util_AntiShadowElement__["a" /* AntiShadowElement */] {
+    constructor() {
+        super();
+    }
     static get template() {
-        return __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["b" /* html */] `
-      <mc-container width="9" height="9" mine-number="10"></mc-container>
-    `;
+        return _temp;
     }
-}
-customElements.define('mc-junior', McJunior);
-
-
-
-/***/ }),
-/* 116 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_iron_a11y_announcer_iron_a11y_announcer_js__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_overlay_behavior_iron_overlay_behavior_js__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-// Keeps track of the toast currently opened.
-var currentToast = null;
-
-/**
-Material design: [Snackbars &
-toasts](https://www.google.com/design/spec/components/snackbars-toasts.html)
-
-`paper-toast` provides a subtle notification toast. Only one `paper-toast` will
-be visible on screen.
-
-Use `opened` to show the toast:
-
-Example:
-
-    <paper-toast text="Hello world!" opened></paper-toast>
-
-Also `open()` or `show()` can be used to show the toast:
-
-Example:
-
-    <paper-button on-click="openToast">Open Toast</paper-button>
-    <paper-toast id="toast" text="Hello world!"></paper-toast>
-
-    ...
-
-    openToast: function() {
-      this.$.toast.open();
+    stateReceiver(state) {
+        this.victory = state.todoReducer.victory;
+        this.gameOver = state.todoReducer.gameOver;
+        this.markNumber = state.todoReducer.markNumber;
+        this.mineArray = state.todoReducer.mineArray;
     }
-
-Set `duration` to 0, a negative number or Infinity to persist the toast on
-screen:
-
-Example:
-
-    <paper-toast text="Terms and conditions" opened duration="0">
-      <a href="#">Show more</a>
-    </paper-toast>
-
-
-### Styling
-The following custom properties and mixins are available for styling:
-
-Custom property | Description | Default
-----------------|-------------|----------
-`--paper-toast-background-color` | The paper-toast background-color | `#323232`
-`--paper-toast-color` | The paper-toast color | `#f1f1f1`
-
-This element applies the mixin `--paper-font-common-base` but does not import
-`paper-styles/typography.html`. In order to apply the `Roboto` font to this
-element, make sure you've imported `paper-styles/typography.html`.
-
-@group Paper Elements
-@element paper-toast
-@demo demo/index.html
-@hero hero.svg
-*/
-Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
-  _template: __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
-    <style>
-      :host {
-        display: block;
-        position: fixed;
-        background-color: var(--paper-toast-background-color, #323232);
-        color: var(--paper-toast-color, #f1f1f1);
-        min-height: 48px;
-        min-width: 288px;
-        padding: 16px 24px;
-        box-sizing: border-box;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-        border-radius: 2px;
-        margin: 12px;
-        font-size: 14px;
-        cursor: default;
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-        transition: transform 0.3s, opacity 0.3s;
-        opacity: 0;
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
-        @apply --paper-font-common-base;
-      }
-
-      :host(.capsule) {
-        border-radius: 24px;
-      }
-
-      :host(.fit-bottom) {
-        width: 100%;
-        min-width: 0;
-        border-radius: 0;
-        margin: 0;
-      }
-
-      :host(.paper-toast-open) {
-        opacity: 1;
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-      }
-    </style>
-
-    <span id="label">{{text}}</span>
-    <slot></slot>
-`,
-
-  is: 'paper-toast',
-  behaviors: [__WEBPACK_IMPORTED_MODULE_1__polymer_iron_overlay_behavior_iron_overlay_behavior_js__["a" /* IronOverlayBehavior */]],
-
-  properties: {
-    /**
-     * The element to fit `this` into.
-     * Overridden from `Polymer.IronFitBehavior`.
-     */
-    fitInto: {type: Object, value: window, observer: '_onFitIntoChanged'},
-
-    /**
-     * The orientation against which to align the dropdown content
-     * horizontally relative to `positionTarget`.
-     * Overridden from `Polymer.IronFitBehavior`.
-     */
-    horizontalAlign: {type: String, value: 'left'},
-
-    /**
-     * The orientation against which to align the dropdown content
-     * vertically relative to `positionTarget`.
-     * Overridden from `Polymer.IronFitBehavior`.
-     */
-    verticalAlign: {type: String, value: 'bottom'},
-
-    /**
-     * The duration in milliseconds to show the toast.
-     * Set to `0`, a negative number, or `Infinity`, to disable the
-     * toast auto-closing.
-     */
-    duration: {type: Number, value: 3000},
-
-    /**
-     * The text to display in the toast.
-     */
-    text: {type: String, value: ''},
-
-    /**
-     * Overridden from `IronOverlayBehavior`.
-     * Set to false to enable closing of the toast by clicking outside it.
-     */
-    noCancelOnOutsideClick: {type: Boolean, value: true},
-
-    /**
-     * Overridden from `IronOverlayBehavior`.
-     * Set to true to disable auto-focusing the toast or child nodes with
-     * the `autofocus` attribute` when the overlay is opened.
-     */
-    noAutoFocus: {type: Boolean, value: true}
-  },
-
-  listeners: {'transitionend': '__onTransitionEnd'},
-
-  /**
-   * Read-only. Deprecated. Use `opened` from `IronOverlayBehavior`.
-   * @property visible
-   * @deprecated
-   */
-  get visible() {
-    __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_polymer_legacy_js__["a" /* Base */]._warn('`visible` is deprecated, use `opened` instead');
-    return this.opened;
-  },
-
-  /**
-   * Read-only. Can auto-close if duration is a positive finite number.
-   * @property _canAutoClose
-   */
-  get _canAutoClose() {
-    return this.duration > 0 && this.duration !== Infinity;
-  },
-
-  created: function() {
-    this._autoClose = null;
-    __WEBPACK_IMPORTED_MODULE_0__polymer_iron_a11y_announcer_iron_a11y_announcer_js__["a" /* IronA11yAnnouncer */].requestAvailability();
-  },
-
-  /**
-   * Show the toast. Without arguments, this is the same as `open()` from
-   * `IronOverlayBehavior`.
-   * @param {(Object|string)=} properties Properties to be set before opening the toast.
-   * e.g. `toast.show('hello')` or `toast.show({text: 'hello', duration: 3000})`
-   */
-  show: function(properties) {
-    if (typeof properties == 'string') {
-      properties = {text: properties};
+    connectedCallback() {
+        super.connectedCallback();
+        Object(__WEBPACK_IMPORTED_MODULE_5__util_ReduxConnector__["a" /* connectToRedux */])(this);
     }
-    for (var property in properties) {
-      if (property.indexOf('_') === 0) {
-        __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_polymer_legacy_js__["a" /* Base */]._warn(
-            'The property "' + property + '" is private and was not set.');
-      } else if (property in this) {
-        this[property] = properties[property];
-      } else {
-        __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_polymer_legacy_js__["a" /* Base */]._warn('The property "' + property + '" is not valid.');
-      }
+    static get properties() {
+        return {
+            victory: {
+                type: Boolean,
+                value: __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].getState().todoReducer.victory
+            },
+            gameOver: {
+                type: Boolean,
+                value: __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].getState().todoReducer.gameOver
+            },
+            markNumber: {
+                type: Boolean,
+                value: __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].getState().todoReducer.markNumber
+            },
+            width: {
+                type: Number,
+                value: 9
+            },
+            height: {
+                type: Number,
+                value: 9
+            },
+            mineNumber: {
+                type: Number,
+                value: 10
+            },
+            mineArray: {
+                type: Array,
+                value: __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].getState().todoReducer.mineArray
+            },
+            started: {
+                type: Boolean,
+                value: false
+            },
+            timeNumber: {
+                type: Number,
+                value: 0
+            },
+            timeStr: {
+                type: String,
+                computed: '_computeTimeStr(timeNumber)'
+            },
+            timer: {
+                type: Number,
+                value: 0
+            }
+        };
     }
-    this.open();
-  },
-
-  /**
-   * Hide the toast. Same as `close()` from `IronOverlayBehavior`.
-   */
-  hide: function() {
-    this.close();
-  },
-
-  /**
-   * Called on transitions of the toast, indicating a finished animation
-   * @private
-   */
-  __onTransitionEnd: function(e) {
-    // there are different transitions that are happening when opening and
-    // closing the toast. The last one so far is for `opacity`.
-    // This marks the end of the transition, so we check for this to determine
-    // if this is the correct event.
-    if (e && e.target === this && e.propertyName === 'opacity') {
-      if (this.opened) {
-        this._finishRenderOpened();
-      } else {
-        this._finishRenderClosed();
-      }
-    }
-  },
-
-  /**
-   * Overridden from `IronOverlayBehavior`.
-   * Called when the value of `opened` changes.
-   */
-  _openedChanged: function() {
-    if (this._autoClose !== null) {
-      this.cancelAsync(this._autoClose);
-      this._autoClose = null;
-    }
-    if (this.opened) {
-      if (currentToast && currentToast !== this) {
-        currentToast.close();
-      }
-      currentToast = this;
-      this.fire('iron-announce', {text: this.text});
-      if (this._canAutoClose) {
-        this._autoClose = this.async(this.close, this.duration);
-      }
-    } else if (currentToast === this) {
-      currentToast = null;
-    }
-    __WEBPACK_IMPORTED_MODULE_1__polymer_iron_overlay_behavior_iron_overlay_behavior_js__["b" /* IronOverlayBehaviorImpl */]._openedChanged.apply(this, arguments);
-  },
-
-  /**
-   * Overridden from `IronOverlayBehavior`.
-   */
-  _renderOpened: function() {
-    this.classList.add('paper-toast-open');
-  },
-
-  /**
-   * Overridden from `IronOverlayBehavior`.
-   */
-  _renderClosed: function() {
-    this.classList.remove('paper-toast-open');
-  },
-
-  /**
-   * @private
-   */
-  _onFitIntoChanged: function(fitInto) {
-    this.positionTarget = fitInto;
-  }
-
-  /**
-   * Fired when `paper-toast` is opened.
-   *
-   * @event 'iron-announce'
-   * @param {{text: string}} detail Contains text that will be announced.
-   */
-});
-
-
-/***/ }),
-/* 117 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-/**
-`iron-a11y-announcer` is a singleton element that is intended to add a11y
-to features that require on-demand announcement from screen readers. In
-order to make use of the announcer, it is best to request its availability
-in the announcing element.
-
-Example:
-
-    Polymer({
-
-      is: 'x-chatty',
-
-      attached: function() {
-        // This will create the singleton element if it has not
-        // been created yet:
-        Polymer.IronA11yAnnouncer.requestAvailability();
-      }
-    });
-
-After the `iron-a11y-announcer` has been made available, elements can
-make announces by firing bubbling `iron-announce` events.
-
-Example:
-
-    this.fire('iron-announce', {
-      text: 'This is an announcement!'
-    }, { bubbles: true });
-
-Note: announcements are only audible if you have a screen reader enabled.
-
-@group Iron Elements
-@demo demo/index.html
-*/
-const IronA11yAnnouncer = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
-  _template: __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
-    <style>
-      :host {
-        display: inline-block;
-        position: fixed;
-        clip: rect(0px,0px,0px,0px);
-      }
-    </style>
-    <div aria-live$="[[mode]]">[[_text]]</div>
-`,
-
-  is: 'iron-a11y-announcer',
-
-  properties: {
-
-    /**
-     * The value of mode is used to set the `aria-live` attribute
-     * for the element that will be announced. Valid values are: `off`,
-     * `polite` and `assertive`.
-     */
-    mode: {type: String, value: 'polite'},
-
-    _text: {type: String, value: ''}
-  },
-
-  created: function() {
-    if (!IronA11yAnnouncer.instance) {
-      IronA11yAnnouncer.instance = this;
-    }
-
-    document.body.addEventListener(
-        'iron-announce', this._onIronAnnounce.bind(this));
-  },
-
-  /**
-   * Cause a text string to be announced by screen readers.
-   *
-   * @param {string} text The text that should be announced.
-   */
-  announce: function(text) {
-    this._text = '';
-    this.async(function() {
-      this._text = text;
-    }, 100);
-  },
-
-  _onIronAnnounce: function(event) {
-    if (event.detail && event.detail.text) {
-      this.announce(event.detail.text);
-    }
-  }
-});
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronA11yAnnouncer;
-
-
-IronA11yAnnouncer.instance = null;
-
-IronA11yAnnouncer.requestAvailability = function() {
-  if (!IronA11yAnnouncer.instance) {
-    IronA11yAnnouncer.instance = document.createElement('iron-a11y-announcer');
-  }
-
-  document.body.appendChild(IronA11yAnnouncer.instance);
-};
-
-
-/***/ }),
-/* 118 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_fit_behavior_iron_fit_behavior_js__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_resizable_behavior_iron_resizable_behavior_js__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_settings_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iron_focusables_helper_js__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__iron_overlay_manager_js__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__iron_scroll_manager_js__ = __webpack_require__(123);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-
-
-
-
-
-/** @polymerBehavior */
-const IronOverlayBehaviorImpl = {
-
-  properties: {
-
-    /**
-     * True if the overlay is currently displayed.
-     */
-    opened:
-        {observer: '_openedChanged', type: Boolean, value: false, notify: true},
-
-    /**
-     * True if the overlay was canceled when it was last closed.
-     */
-    canceled: {
-      observer: '_canceledChanged',
-      readOnly: true,
-      type: Boolean,
-      value: false
-    },
-
-    /**
-     * Set to true to display a backdrop behind the overlay. It traps the focus
-     * within the light DOM of the overlay.
-     */
-    withBackdrop: {
-      observer: '_withBackdropChanged',
-      type: Boolean,
-    },
-
-    /**
-     * Set to true to disable auto-focusing the overlay or child nodes with
-     * the `autofocus` attribute` when the overlay is opened.
-     */
-    noAutoFocus: {
-      type: Boolean,
-      value: false,
-    },
-
-    /**
-     * Set to true to disable canceling the overlay with the ESC key.
-     */
-    noCancelOnEscKey: {
-      type: Boolean,
-      value: false,
-    },
-
-    /**
-     * Set to true to disable canceling the overlay by clicking outside it.
-     */
-    noCancelOnOutsideClick: {
-      type: Boolean,
-      value: false,
-    },
-
-    /**
-     * Contains the reason(s) this overlay was last closed (see
-     * `iron-overlay-closed`). `IronOverlayBehavior` provides the `canceled`
-     * reason; implementers of the behavior can provide other reasons in
-     * addition to `canceled`.
-     */
-    closingReason: {
-      // was a getter before, but needs to be a property so other
-      // behaviors can override this.
-      type: Object,
-    },
-
-    /**
-     * Set to true to enable restoring of focus when overlay is closed.
-     */
-    restoreFocusOnClose: {
-      type: Boolean,
-      value: false,
-    },
-
-    /**
-     * Set to true to allow clicks to go through overlays.
-     * When the user clicks outside this overlay, the click may
-     * close the overlay below.
-     */
-    allowClickThrough: {
-      type: Boolean,
-    },
-
-    /**
-     * Set to true to keep overlay always on top.
-     */
-    alwaysOnTop: {
-      type: Boolean,
-    },
-
-    /**
-     * Determines which action to perform when scroll outside an opened overlay
-     * happens. Possible values: lock - blocks scrolling from happening, refit -
-     * computes the new position on the overlay cancel - causes the overlay to
-     * close
-     */
-    scrollAction: {
-      type: String,
-    },
-
-    /**
-     * Shortcut to access to the overlay manager.
-     * @private
-     * @type {!IronOverlayManagerClass}
-     */
-    _manager: {
-      type: Object,
-      value: __WEBPACK_IMPORTED_MODULE_6__iron_overlay_manager_js__["a" /* IronOverlayManager */],
-    },
-
-    /**
-     * The node being focused.
-     * @type {?Node}
-     */
-    _focusedChild: {
-      type: Object,
-    }
-
-  },
-
-  listeners: {'iron-resize': '_onIronResize'},
-
-  observers: ['__updateScrollObservers(isAttached, opened, scrollAction)'],
-
-  /**
-   * The backdrop element.
-   * @return {!Element}
-   */
-  get backdropElement() {
-    return this._manager.backdropElement;
-  },
-
-  /**
-   * Returns the node to give focus to.
-   * @return {!Node}
-   */
-  get _focusNode() {
-    return this._focusedChild || Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).querySelector('[autofocus]') || this;
-  },
-
-  /**
-   * Array of nodes that can receive focus (overlay included), ordered by
-   * `tabindex`. This is used to retrieve which is the first and last focusable
-   * nodes in order to wrap the focus for overlays `with-backdrop`.
-   *
-   * If you know what is your content (specifically the first and last focusable
-   * children), you can override this method to return only `[firstFocusable,
-   * lastFocusable];`
-   * @return {!Array<!Node>}
-   * @protected
-   */
-  get _focusableNodes() {
-    return __WEBPACK_IMPORTED_MODULE_5__iron_focusables_helper_js__["a" /* IronFocusablesHelper */].getTabbableNodes(this);
-  },
-
-  /**
-   * @return {void}
-   */
-  ready: function() {
-    // Used to skip calls to notifyResize and refit while the overlay is
-    // animating.
-    this.__isAnimating = false;
-    // with-backdrop needs tabindex to be set in order to trap the focus.
-    // If it is not set, IronOverlayBehavior will set it, and remove it if
-    // with-backdrop = false.
-    this.__shouldRemoveTabIndex = false;
-    // Used for wrapping the focus on TAB / Shift+TAB.
-    this.__firstFocusableNode = this.__lastFocusableNode = null;
-    // Used by to keep track of the RAF callbacks.
-    this.__rafs = {};
-    // Focused node before overlay gets opened. Can be restored on close.
-    this.__restoreFocusNode = null;
-    // Scroll info to be restored.
-    this.__scrollTop = this.__scrollLeft = null;
-    this.__onCaptureScroll = this.__onCaptureScroll.bind(this);
-    // Root nodes hosting the overlay, used to listen for scroll events on them.
-    this.__rootNodes = null;
-    this._ensureSetup();
-  },
-
-  attached: function() {
-    // Call _openedChanged here so that position can be computed correctly.
-    if (this.opened) {
-      this._openedChanged(this.opened);
-    }
-    this._observer = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).observeNodes(this._onNodesChange);
-  },
-
-  detached: function() {
-    Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).unobserveNodes(this._observer);
-    this._observer = null;
-    for (var cb in this.__rafs) {
-      if (this.__rafs[cb] !== null) {
-        cancelAnimationFrame(this.__rafs[cb]);
-      }
-    }
-    this.__rafs = {};
-    this._manager.removeOverlay(this);
-
-    // We got detached while animating, ensure we show/hide the overlay
-    // and fire iron-overlay-opened/closed event!
-    if (this.__isAnimating) {
-      if (this.opened) {
-        this._finishRenderOpened();
-      } else {
-        // Restore the focus if necessary.
-        this._applyFocus();
-        this._finishRenderClosed();
-      }
-    }
-  },
-
-  /**
-   * Toggle the opened state of the overlay.
-   */
-  toggle: function() {
-    this._setCanceled(false);
-    this.opened = !this.opened;
-  },
-
-  /**
-   * Open the overlay.
-   */
-  open: function() {
-    this._setCanceled(false);
-    this.opened = true;
-  },
-
-  /**
-   * Close the overlay.
-   */
-  close: function() {
-    this._setCanceled(false);
-    this.opened = false;
-  },
-
-  /**
-   * Cancels the overlay.
-   * @param {Event=} event The original event
-   */
-  cancel: function(event) {
-    var cancelEvent =
-        this.fire('iron-overlay-canceled', event, {cancelable: true});
-    if (cancelEvent.defaultPrevented) {
-      return;
-    }
-
-    this._setCanceled(true);
-    this.opened = false;
-  },
-
-  /**
-   * Invalidates the cached tabbable nodes. To be called when any of the
-   * focusable content changes (e.g. a button is disabled).
-   */
-  invalidateTabbables: function() {
-    this.__firstFocusableNode = this.__lastFocusableNode = null;
-  },
-
-  _ensureSetup: function() {
-    if (this._overlaySetup) {
-      return;
-    }
-    this._overlaySetup = true;
-    this.style.outline = 'none';
-    this.style.display = 'none';
-  },
-
-  /**
-   * Called when `opened` changes.
-   * @param {boolean=} opened
-   * @protected
-   */
-  _openedChanged: function(opened) {
-    if (opened) {
-      this.removeAttribute('aria-hidden');
-    } else {
-      this.setAttribute('aria-hidden', 'true');
-    }
-
-    // Defer any animation-related code on attached
-    // (_openedChanged gets called again on attached).
-    if (!this.isAttached) {
-      return;
-    }
-
-    this.__isAnimating = true;
-
-    // Deraf for non-blocking rendering.
-    this.__deraf('__openedChanged', this.__openedChanged);
-  },
-
-  _canceledChanged: function() {
-    this.closingReason = this.closingReason || {};
-    this.closingReason.canceled = this.canceled;
-  },
-
-  _withBackdropChanged: function() {
-    // If tabindex is already set, no need to override it.
-    if (this.withBackdrop && !this.hasAttribute('tabindex')) {
-      this.setAttribute('tabindex', '-1');
-      this.__shouldRemoveTabIndex = true;
-    } else if (this.__shouldRemoveTabIndex) {
-      this.removeAttribute('tabindex');
-      this.__shouldRemoveTabIndex = false;
-    }
-    if (this.opened && this.isAttached) {
-      this._manager.trackBackdrop();
-    }
-  },
-
-  /**
-   * tasks which must occur before opening; e.g. making the element visible.
-   * @protected
-   */
-  _prepareRenderOpened: function() {
-    // Store focused node.
-    this.__restoreFocusNode = this._manager.deepActiveElement;
-
-    // Needed to calculate the size of the overlay so that transitions on its
-    // size will have the correct starting points.
-    this._preparePositioning();
-    this.refit();
-    this._finishPositioning();
-
-    // Safari will apply the focus to the autofocus element when displayed
-    // for the first time, so we make sure to return the focus where it was.
-    if (this.noAutoFocus && document.activeElement === this._focusNode) {
-      this._focusNode.blur();
-      this.__restoreFocusNode.focus();
-    }
-  },
-
-  /**
-   * Tasks which cause the overlay to actually open; typically play an
-   * animation.
-   * @protected
-   */
-  _renderOpened: function() {
-    this._finishRenderOpened();
-  },
-
-  /**
-   * Tasks which cause the overlay to actually close; typically play an
-   * animation.
-   * @protected
-   */
-  _renderClosed: function() {
-    this._finishRenderClosed();
-  },
-
-  /**
-   * Tasks to be performed at the end of open action. Will fire
-   * `iron-overlay-opened`.
-   * @protected
-   */
-  _finishRenderOpened: function() {
-    this.notifyResize();
-    this.__isAnimating = false;
-
-    this.fire('iron-overlay-opened');
-  },
-
-  /**
-   * Tasks to be performed at the end of close action. Will fire
-   * `iron-overlay-closed`.
-   * @protected
-   */
-  _finishRenderClosed: function() {
-    // Hide the overlay.
-    this.style.display = 'none';
-    // Reset z-index only at the end of the animation.
-    this.style.zIndex = '';
-    this.notifyResize();
-    this.__isAnimating = false;
-    this.fire('iron-overlay-closed', this.closingReason);
-  },
-
-  _preparePositioning: function() {
-    this.style.transition = this.style.webkitTransition = 'none';
-    this.style.transform = this.style.webkitTransform = 'none';
-    this.style.display = '';
-  },
-
-  _finishPositioning: function() {
-    // First, make it invisible & reactivate animations.
-    this.style.display = 'none';
-    // Force reflow before re-enabling animations so that they don't start.
-    // Set scrollTop to itself so that Closure Compiler doesn't remove this.
-    this.scrollTop = this.scrollTop;
-    this.style.transition = this.style.webkitTransition = '';
-    this.style.transform = this.style.webkitTransform = '';
-    // Now that animations are enabled, make it visible again
-    this.style.display = '';
-    // Force reflow, so that following animations are properly started.
-    // Set scrollTop to itself so that Closure Compiler doesn't remove this.
-    this.scrollTop = this.scrollTop;
-  },
-
-  /**
-   * Applies focus according to the opened state.
-   * @protected
-   */
-  _applyFocus: function() {
-    if (this.opened) {
-      if (!this.noAutoFocus) {
-        this._focusNode.focus();
-      }
-    } else {
-      // Restore focus.
-      if (this.restoreFocusOnClose && this.__restoreFocusNode) {
-        // If the activeElement is `<body>` or inside the overlay,
-        // we are allowed to restore the focus. In all the other
-        // cases focus might have been moved elsewhere by another
-        // component or by an user interaction (e.g. click on a
-        // button outside the overlay).
-        var activeElement = this._manager.deepActiveElement;
-        if (activeElement === document.body ||
-            Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).deepContains(activeElement)) {
-          this.__restoreFocusNode.focus();
+    _blockClick(e) {
+        if (this.gameOver || this.victory)
+            return;
+        if (!this.started) {
+            this.started = true;
+            this._timing();
         }
-      }
-      this.__restoreFocusNode = null;
-      this._focusNode.blur();
-      this._focusedChild = null;
-    }
-  },
-
-  /**
-   * Cancels (closes) the overlay. Call when click happens outside the overlay.
-   * @param {!Event} event
-   * @protected
-   */
-  _onCaptureClick: function(event) {
-    if (!this.noCancelOnOutsideClick) {
-      this.cancel(event);
-    }
-  },
-
-  /**
-   * Keeps track of the focused child. If withBackdrop, traps focus within
-   * overlay.
-   * @param {!Event} event
-   * @protected
-   */
-  _onCaptureFocus: function(event) {
-    if (!this.withBackdrop) {
-      return;
-    }
-    var path = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).path;
-    if (path.indexOf(this) === -1) {
-      event.stopPropagation();
-      this._applyFocus();
-    } else {
-      this._focusedChild = path[0];
-    }
-  },
-
-  /**
-   * Handles the ESC key event and cancels (closes) the overlay.
-   * @param {!Event} event
-   * @protected
-   */
-  _onCaptureEsc: function(event) {
-    if (!this.noCancelOnEscKey) {
-      this.cancel(event);
-    }
-  },
-
-  /**
-   * Handles TAB key events to track focus changes.
-   * Will wrap focus for overlays withBackdrop.
-   * @param {!Event} event
-   * @protected
-   */
-  _onCaptureTab: function(event) {
-    if (!this.withBackdrop) {
-      return;
-    }
-    this.__ensureFirstLastFocusables();
-    // TAB wraps from last to first focusable.
-    // Shift + TAB wraps from first to last focusable.
-    var shift = event.shiftKey;
-    var nodeToCheck =
-        shift ? this.__firstFocusableNode : this.__lastFocusableNode;
-    var nodeToSet =
-        shift ? this.__lastFocusableNode : this.__firstFocusableNode;
-    var shouldWrap = false;
-    if (nodeToCheck === nodeToSet) {
-      // If nodeToCheck is the same as nodeToSet, it means we have an overlay
-      // with 0 or 1 focusables; in either case we still need to trap the
-      // focus within the overlay.
-      shouldWrap = true;
-    } else {
-      // In dom=shadow, the manager will receive focus changes on the main
-      // root but not the ones within other shadow roots, so we can't rely on
-      // _focusedChild, but we should check the deepest active element.
-      var focusedNode = this._manager.deepActiveElement;
-      // If the active element is not the nodeToCheck but the overlay itself,
-      // it means the focus is about to go outside the overlay, hence we
-      // should prevent that (e.g. user opens the overlay and hit Shift+TAB).
-      shouldWrap = (focusedNode === nodeToCheck || focusedNode === this);
-    }
-
-    if (shouldWrap) {
-      // When the overlay contains the last focusable element of the document
-      // and it's already focused, pressing TAB would move the focus outside
-      // the document (e.g. to the browser search bar). Similarly, when the
-      // overlay contains the first focusable element of the document and it's
-      // already focused, pressing Shift+TAB would move the focus outside the
-      // document (e.g. to the browser search bar).
-      // In both cases, we would not receive a focus event, but only a blur.
-      // In order to achieve focus wrapping, we prevent this TAB event and
-      // force the focus. This will also prevent the focus to temporarily move
-      // outside the overlay, which might cause scrolling.
-      event.preventDefault();
-      this._focusedChild = nodeToSet;
-      this._applyFocus();
-    }
-  },
-
-  /**
-   * Refits if the overlay is opened and not animating.
-   * @protected
-   */
-  _onIronResize: function() {
-    if (this.opened && !this.__isAnimating) {
-      this.__deraf('refit', this.refit);
-    }
-  },
-
-  /**
-   * Will call notifyResize if overlay is opened.
-   * Can be overridden in order to avoid multiple observers on the same node.
-   * @protected
-   */
-  _onNodesChange: function() {
-    if (this.opened && !this.__isAnimating) {
-      // It might have added focusable nodes, so invalidate cached values.
-      this.invalidateTabbables();
-      this.notifyResize();
-    }
-  },
-
-  /**
-   * Updates the references to the first and last focusable nodes.
-   * @private
-   */
-  __ensureFirstLastFocusables: function() {
-    var focusableNodes = this._focusableNodes;
-    this.__firstFocusableNode = focusableNodes[0];
-    this.__lastFocusableNode = focusableNodes[focusableNodes.length - 1];
-  },
-
-  /**
-   * Tasks executed when opened changes: prepare for the opening, move the
-   * focus, update the manager, render opened/closed.
-   * @private
-   */
-  __openedChanged: function() {
-    if (this.opened) {
-      // Make overlay visible, then add it to the manager.
-      this._prepareRenderOpened();
-      this._manager.addOverlay(this);
-      // Move the focus to the child node with [autofocus].
-      this._applyFocus();
-
-      this._renderOpened();
-    } else {
-      // Remove overlay, then restore the focus before actually closing.
-      this._manager.removeOverlay(this);
-      this._applyFocus();
-
-      this._renderClosed();
-    }
-  },
-
-  /**
-   * Debounces the execution of a callback to the next animation frame.
-   * @param {!string} jobname
-   * @param {!Function} callback Always bound to `this`
-   * @private
-   */
-  __deraf: function(jobname, callback) {
-    var rafs = this.__rafs;
-    if (rafs[jobname] !== null) {
-      cancelAnimationFrame(rafs[jobname]);
-    }
-    rafs[jobname] = requestAnimationFrame(function nextAnimationFrame() {
-      rafs[jobname] = null;
-      callback.call(this);
-    }.bind(this));
-  },
-
-  /**
-   * @param {boolean} isAttached
-   * @param {boolean} opened
-   * @param {string=} scrollAction
-   * @private
-   */
-  __updateScrollObservers: function(isAttached, opened, scrollAction) {
-    if (!isAttached || !opened || !this.__isValidScrollAction(scrollAction)) {
-      Object(__WEBPACK_IMPORTED_MODULE_7__iron_scroll_manager_js__["b" /* removeScrollLock */])(this);
-      this.__removeScrollListeners();
-    } else {
-      if (scrollAction === 'lock') {
-        this.__saveScrollPosition();
-        Object(__WEBPACK_IMPORTED_MODULE_7__iron_scroll_manager_js__["a" /* pushScrollLock */])(this);
-      }
-      this.__addScrollListeners();
-    }
-  },
-
-  /**
-   * @private
-   */
-  __addScrollListeners: function() {
-    if (!this.__rootNodes) {
-      this.__rootNodes = [];
-      // Listen for scroll events in all shadowRoots hosting this overlay only
-      // when in native ShadowDOM.
-      if (__WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_settings_js__["f" /* useShadow */]) {
-        var node = this;
-        while (node) {
-          if (node.nodeType === Node.DOCUMENT_FRAGMENT_NODE && node.host) {
-            this.__rootNodes.push(node);
-          }
-          node = node.host || node.assignedSlot || node.parentNode;
-        }
-      }
-      this.__rootNodes.push(document);
-    }
-    this.__rootNodes.forEach(function(el) {
-      el.addEventListener('scroll', this.__onCaptureScroll, {
-        capture: true,
-        passive: true,
-      });
-    }, this);
-  },
-
-  /**
-   * @private
-   */
-  __removeScrollListeners: function() {
-    if (this.__rootNodes) {
-      this.__rootNodes.forEach(function(el) {
-        el.removeEventListener('scroll', this.__onCaptureScroll, {
-          capture: true,
-          passive: true,
+        __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].dispatch({
+            type: 'BLOCK-CLICK',
+            payload: e.detail
         });
-      }, this);
     }
-    if (!this.isAttached) {
-      this.__rootNodes = null;
-    }
-  },
-
-  /**
-   * @param {string=} scrollAction
-   * @return {boolean}
-   * @private
-   */
-  __isValidScrollAction: function(scrollAction) {
-    return scrollAction === 'lock' || scrollAction === 'refit' ||
-        scrollAction === 'cancel';
-  },
-
-  /**
-   * @private
-   */
-  __onCaptureScroll: function(event) {
-    if (this.__isAnimating) {
-      return;
-    }
-    // Check if scroll outside the overlay.
-    if (Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).path.indexOf(this) >= 0) {
-      return;
-    }
-    switch (this.scrollAction) {
-      case 'lock':
-        // NOTE: scrolling might happen if a scroll event is not cancellable, or
-        // if user pressed keys that cause scrolling (they're not prevented in
-        // order not to break a11y features like navigate with arrow keys).
-        this.__restoreScrollPosition();
-        break;
-      case 'refit':
-        this.__deraf('refit', this.refit);
-        break;
-      case 'cancel':
-        this.cancel(event);
-        break;
-    }
-  },
-
-  /**
-   * Memoizes the scroll position of the outside scrolling element.
-   * @private
-   */
-  __saveScrollPosition: function() {
-    if (document.scrollingElement) {
-      this.__scrollTop = document.scrollingElement.scrollTop;
-      this.__scrollLeft = document.scrollingElement.scrollLeft;
-    } else {
-      // Since we don't know if is the body or html, get max.
-      this.__scrollTop =
-          Math.max(document.documentElement.scrollTop, document.body.scrollTop);
-      this.__scrollLeft = Math.max(
-          document.documentElement.scrollLeft, document.body.scrollLeft);
-    }
-  },
-
-  /**
-   * Resets the scroll position of the outside scrolling element.
-   * @private
-   */
-  __restoreScrollPosition: function() {
-    if (document.scrollingElement) {
-      document.scrollingElement.scrollTop = this.__scrollTop;
-      document.scrollingElement.scrollLeft = this.__scrollLeft;
-    } else {
-      // Since we don't know if is the body or html, set both.
-      document.documentElement.scrollTop = document.body.scrollTop =
-          this.__scrollTop;
-      document.documentElement.scrollLeft = document.body.scrollLeft =
-          this.__scrollLeft;
-    }
-  },
-
-};
-/* harmony export (immutable) */ __webpack_exports__["b"] = IronOverlayBehaviorImpl;
-
-
-/**
-  Use `Polymer.IronOverlayBehavior` to implement an element that can be hidden
-  or shown, and displays on top of other content. It includes an optional
-  backdrop, and can be used to implement a variety of UI controls including
-  dialogs and drop downs. Multiple overlays may be displayed at once.
-
-  See the [demo source
-  code](https://github.com/PolymerElements/iron-overlay-behavior/blob/master/demo/simple-overlay.html)
-  for an example.
-
-  ### Closing and canceling
-
-  An overlay may be hidden by closing or canceling. The difference between close
-  and cancel is user intent. Closing generally implies that the user
-  acknowledged the content on the overlay. By default, it will cancel whenever
-  the user taps outside it or presses the escape key. This behavior is
-  configurable with the `no-cancel-on-esc-key` and the
-  `no-cancel-on-outside-click` properties. `close()` should be called explicitly
-  by the implementer when the user interacts with a control in the overlay
-  element. When the dialog is canceled, the overlay fires an
-  'iron-overlay-canceled' event. Call `preventDefault` on this event to prevent
-  the overlay from closing.
-
-  ### Positioning
-
-  By default the element is sized and positioned to fit and centered inside the
-  window. You can position and size it manually using CSS. See
-  `Polymer.IronFitBehavior`.
-
-  ### Backdrop
-
-  Set the `with-backdrop` attribute to display a backdrop behind the overlay.
-  The backdrop is appended to `<body>` and is of type `<iron-overlay-backdrop>`.
-  See its doc page for styling options.
-
-  In addition, `with-backdrop` will wrap the focus within the content in the
-  light DOM. Override the [`_focusableNodes`
-  getter](#Polymer.IronOverlayBehavior:property-_focusableNodes) to achieve a
-  different behavior.
-
-  ### Limitations
-
-  The element is styled to appear on top of other content by setting its
-  `z-index` property. You must ensure no element has a stacking context with a
-  higher `z-index` than its parent stacking context. You should place this
-  element as a child of `<body>` whenever possible.
-
-  @demo demo/index.html
-  @polymerBehavior
- */
-const IronOverlayBehavior =
-    [__WEBPACK_IMPORTED_MODULE_1__polymer_iron_fit_behavior_iron_fit_behavior_js__["a" /* IronFitBehavior */], __WEBPACK_IMPORTED_MODULE_2__polymer_iron_resizable_behavior_iron_resizable_behavior_js__["a" /* IronResizableBehavior */], IronOverlayBehaviorImpl];
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronOverlayBehavior;
-
-
-/**
- * Fired after the overlay opens.
- * @event iron-overlay-opened
- */
-
-/**
- * Fired when the overlay is canceled, but before it is closed.
- * @event iron-overlay-canceled
- * @param {Event} event The closing of the overlay can be prevented
- * by calling `event.preventDefault()`. The `event.detail` is the original event
- * that originated the canceling (e.g. ESC keyboard event or click event outside
- * the overlay).
- */
-
-/**
- * Fired after the overlay closes.
- * @event iron-overlay-closed
- * @param {Event} event The `event.detail` is the `closingReason` property
- * (contains `canceled`, whether the overlay was canceled).
- */
-
-
-/***/ }),
-/* 119 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-/**
-`Polymer.IronFitBehavior` fits an element in another element using `max-height`
-and `max-width`, and optionally centers it in the window or another element.
-
-The element will only be sized and/or positioned if it has not already been
-sized and/or positioned by CSS.
-
-CSS properties            | Action
---------------------------|-------------------------------------------
-`position` set            | Element is not centered horizontally or vertically
-`top` or `bottom` set     | Element is not vertically centered
-`left` or `right` set     | Element is not horizontally centered
-`max-height` set          | Element respects `max-height`
-`max-width` set           | Element respects `max-width`
-
-`Polymer.IronFitBehavior` can position an element into another element using
-`verticalAlign` and `horizontalAlign`. This will override the element's css
-position.
-
-    <div class="container">
-      <iron-fit-impl vertical-align="top" horizontal-align="auto">
-        Positioned into the container
-      </iron-fit-impl>
-    </div>
-
-Use `noOverlap` to position the element around another element without
-overlapping it.
-
-    <div class="container">
-      <iron-fit-impl no-overlap vertical-align="auto" horizontal-align="auto">
-        Positioned around the container
-      </iron-fit-impl>
-    </div>
-
-Use `horizontalOffset, verticalOffset` to offset the element from its
-`positionTarget`; `Polymer.IronFitBehavior` will collapse these in order to
-keep the element within `fitInto` boundaries, while preserving the element's
-CSS margin values.
-
-    <div class="container">
-      <iron-fit-impl vertical-align="top" vertical-offset="20">
-        With vertical offset
-      </iron-fit-impl>
-    </div>
-
-@demo demo/index.html
-@polymerBehavior
-*/
-const IronFitBehavior = {
-
-  properties: {
-
-    /**
-     * The element that will receive a `max-height`/`width`. By default it is
-     * the same as `this`, but it can be set to a child element. This is useful,
-     * for example, for implementing a scrolling region inside the element.
-     * @type {!Element}
-     */
-    sizingTarget: {
-      type: Object,
-      value: function() {
-        return this;
-      }
-    },
-
-    /**
-     * The element to fit `this` into.
-     */
-    fitInto: {type: Object, value: window},
-
-    /**
-     * Will position the element around the positionTarget without overlapping
-     * it.
-     */
-    noOverlap: {type: Boolean},
-
-    /**
-     * The element that should be used to position the element. If not set, it
-     * will default to the parent node.
-     * @type {!Element}
-     */
-    positionTarget: {type: Element},
-
-    /**
-     * The orientation against which to align the element horizontally
-     * relative to the `positionTarget`. Possible values are "left", "right",
-     * "center", "auto".
-     */
-    horizontalAlign: {type: String},
-
-    /**
-     * The orientation against which to align the element vertically
-     * relative to the `positionTarget`. Possible values are "top", "bottom",
-     * "middle", "auto".
-     */
-    verticalAlign: {type: String},
-
-    /**
-     * If true, it will use `horizontalAlign` and `verticalAlign` values as
-     * preferred alignment and if there's not enough space, it will pick the
-     * values which minimize the cropping.
-     */
-    dynamicAlign: {type: Boolean},
-
-    /**
-     * A pixel value that will be added to the position calculated for the
-     * given `horizontalAlign`, in the direction of alignment. You can think
-     * of it as increasing or decreasing the distance to the side of the
-     * screen given by `horizontalAlign`.
-     *
-     * If `horizontalAlign` is "left" or "center", this offset will increase or
-     * decrease the distance to the left side of the screen: a negative offset
-     * will move the dropdown to the left; a positive one, to the right.
-     *
-     * Conversely if `horizontalAlign` is "right", this offset will increase
-     * or decrease the distance to the right side of the screen: a negative
-     * offset will move the dropdown to the right; a positive one, to the left.
-     */
-    horizontalOffset: {type: Number, value: 0, notify: true},
-
-    /**
-     * A pixel value that will be added to the position calculated for the
-     * given `verticalAlign`, in the direction of alignment. You can think
-     * of it as increasing or decreasing the distance to the side of the
-     * screen given by `verticalAlign`.
-     *
-     * If `verticalAlign` is "top" or "middle", this offset will increase or
-     * decrease the distance to the top side of the screen: a negative offset
-     * will move the dropdown upwards; a positive one, downwards.
-     *
-     * Conversely if `verticalAlign` is "bottom", this offset will increase
-     * or decrease the distance to the bottom side of the screen: a negative
-     * offset will move the dropdown downwards; a positive one, upwards.
-     */
-    verticalOffset: {type: Number, value: 0, notify: true},
-
-    /**
-     * Set to true to auto-fit on attach.
-     */
-    autoFitOnAttach: {type: Boolean, value: false},
-
-    /** @type {?Object} */
-    _fitInfo: {type: Object}
-  },
-
-  get _fitWidth() {
-    var fitWidth;
-    if (this.fitInto === window) {
-      fitWidth = this.fitInto.innerWidth;
-    } else {
-      fitWidth = this.fitInto.getBoundingClientRect().width;
-    }
-    return fitWidth;
-  },
-
-  get _fitHeight() {
-    var fitHeight;
-    if (this.fitInto === window) {
-      fitHeight = this.fitInto.innerHeight;
-    } else {
-      fitHeight = this.fitInto.getBoundingClientRect().height;
-    }
-    return fitHeight;
-  },
-
-  get _fitLeft() {
-    var fitLeft;
-    if (this.fitInto === window) {
-      fitLeft = 0;
-    } else {
-      fitLeft = this.fitInto.getBoundingClientRect().left;
-    }
-    return fitLeft;
-  },
-
-  get _fitTop() {
-    var fitTop;
-    if (this.fitInto === window) {
-      fitTop = 0;
-    } else {
-      fitTop = this.fitInto.getBoundingClientRect().top;
-    }
-    return fitTop;
-  },
-
-  /**
-   * The element that should be used to position the element,
-   * if no position target is configured.
-   */
-  get _defaultPositionTarget() {
-    var parent = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this).parentNode;
-
-    if (parent && parent.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
-      parent = parent.host;
-    }
-
-    return parent;
-  },
-
-  /**
-   * The horizontal align value, accounting for the RTL/LTR text direction.
-   */
-  get _localeHorizontalAlign() {
-    if (this._isRTL) {
-      // In RTL, "left" becomes "right".
-      if (this.horizontalAlign === 'right') {
-        return 'left';
-      }
-      if (this.horizontalAlign === 'left') {
-        return 'right';
-      }
-    }
-    return this.horizontalAlign;
-  },
-
-  /**
-   * True if the element should be positioned instead of centered.
-   * @private
-   */
-  get __shouldPosition() {
-    return (this.horizontalAlign || this.verticalAlign) && this.positionTarget;
-  },
-
-  attached: function() {
-    // Memoize this to avoid expensive calculations & relayouts.
-    // Make sure we do it only once
-    if (typeof this._isRTL === 'undefined') {
-      this._isRTL = window.getComputedStyle(this).direction == 'rtl';
-    }
-    this.positionTarget = this.positionTarget || this._defaultPositionTarget;
-    if (this.autoFitOnAttach) {
-      if (window.getComputedStyle(this).display === 'none') {
-        setTimeout(function() {
-          this.fit();
-        }.bind(this));
-      } else {
-        // NOTE: shadydom applies distribution asynchronously
-        // for performance reasons webcomponents/shadydom#120
-        // Flush to get correct layout info.
-        window.ShadyDOM && ShadyDOM.flush();
-        this.fit();
-      }
-    }
-  },
-
-  detached: function() {
-    if (this.__deferredFit) {
-      clearTimeout(this.__deferredFit);
-      this.__deferredFit = null;
-    }
-  },
-
-  /**
-   * Positions and fits the element into the `fitInto` element.
-   */
-  fit: function() {
-    this.position();
-    this.constrain();
-    this.center();
-  },
-
-  /**
-   * Memoize information needed to position and size the target element.
-   * @suppress {deprecated}
-   */
-  _discoverInfo: function() {
-    if (this._fitInfo) {
-      return;
-    }
-    var target = window.getComputedStyle(this);
-    var sizer = window.getComputedStyle(this.sizingTarget);
-
-    this._fitInfo = {
-      inlineStyle: {
-        top: this.style.top || '',
-        left: this.style.left || '',
-        position: this.style.position || ''
-      },
-      sizerInlineStyle: {
-        maxWidth: this.sizingTarget.style.maxWidth || '',
-        maxHeight: this.sizingTarget.style.maxHeight || '',
-        boxSizing: this.sizingTarget.style.boxSizing || ''
-      },
-      positionedBy: {
-        vertically: target.top !== 'auto' ?
-            'top' :
-            (target.bottom !== 'auto' ? 'bottom' : null),
-        horizontally: target.left !== 'auto' ?
-            'left' :
-            (target.right !== 'auto' ? 'right' : null)
-      },
-      sizedBy: {
-        height: sizer.maxHeight !== 'none',
-        width: sizer.maxWidth !== 'none',
-        minWidth: parseInt(sizer.minWidth, 10) || 0,
-        minHeight: parseInt(sizer.minHeight, 10) || 0
-      },
-      margin: {
-        top: parseInt(target.marginTop, 10) || 0,
-        right: parseInt(target.marginRight, 10) || 0,
-        bottom: parseInt(target.marginBottom, 10) || 0,
-        left: parseInt(target.marginLeft, 10) || 0
-      }
-    };
-  },
-
-  /**
-   * Resets the target element's position and size constraints, and clear
-   * the memoized data.
-   */
-  resetFit: function() {
-    var info = this._fitInfo || {};
-    for (var property in info.sizerInlineStyle) {
-      this.sizingTarget.style[property] = info.sizerInlineStyle[property];
-    }
-    for (var property in info.inlineStyle) {
-      this.style[property] = info.inlineStyle[property];
-    }
-
-    this._fitInfo = null;
-  },
-
-  /**
-   * Equivalent to calling `resetFit()` and `fit()`. Useful to call this after
-   * the element or the `fitInto` element has been resized, or if any of the
-   * positioning properties (e.g. `horizontalAlign, verticalAlign`) is updated.
-   * It preserves the scroll position of the sizingTarget.
-   */
-  refit: function() {
-    var scrollLeft = this.sizingTarget.scrollLeft;
-    var scrollTop = this.sizingTarget.scrollTop;
-    this.resetFit();
-    this.fit();
-    this.sizingTarget.scrollLeft = scrollLeft;
-    this.sizingTarget.scrollTop = scrollTop;
-  },
-
-  /**
-   * Positions the element according to `horizontalAlign, verticalAlign`.
-   */
-  position: function() {
-    if (!this.__shouldPosition) {
-      // needs to be centered, and it is done after constrain.
-      return;
-    }
-    this._discoverInfo();
-
-    this.style.position = 'fixed';
-    // Need border-box for margin/padding.
-    this.sizingTarget.style.boxSizing = 'border-box';
-    // Set to 0, 0 in order to discover any offset caused by parent stacking
-    // contexts.
-    this.style.left = '0px';
-    this.style.top = '0px';
-
-    var rect = this.getBoundingClientRect();
-    var positionRect = this.__getNormalizedRect(this.positionTarget);
-    var fitRect = this.__getNormalizedRect(this.fitInto);
-
-    var margin = this._fitInfo.margin;
-
-    // Consider the margin as part of the size for position calculations.
-    var size = {
-      width: rect.width + margin.left + margin.right,
-      height: rect.height + margin.top + margin.bottom
-    };
-
-    var position = this.__getPosition(
-        this._localeHorizontalAlign,
-        this.verticalAlign,
-        size,
-        rect,
-        positionRect,
-        fitRect);
-
-    var left = position.left + margin.left;
-    var top = position.top + margin.top;
-
-    // We first limit right/bottom within fitInto respecting the margin,
-    // then use those values to limit top/left.
-    var right = Math.min(fitRect.right - margin.right, left + rect.width);
-    var bottom = Math.min(fitRect.bottom - margin.bottom, top + rect.height);
-
-    // Keep left/top within fitInto respecting the margin.
-    left = Math.max(
-        fitRect.left + margin.left,
-        Math.min(left, right - this._fitInfo.sizedBy.minWidth));
-    top = Math.max(
-        fitRect.top + margin.top,
-        Math.min(top, bottom - this._fitInfo.sizedBy.minHeight));
-
-    // Use right/bottom to set maxWidth/maxHeight, and respect
-    // minWidth/minHeight.
-    this.sizingTarget.style.maxWidth =
-        Math.max(right - left, this._fitInfo.sizedBy.minWidth) + 'px';
-    this.sizingTarget.style.maxHeight =
-        Math.max(bottom - top, this._fitInfo.sizedBy.minHeight) + 'px';
-
-    // Remove the offset caused by any stacking context.
-    this.style.left = (left - rect.left) + 'px';
-    this.style.top = (top - rect.top) + 'px';
-  },
-
-  /**
-   * Constrains the size of the element to `fitInto` by setting `max-height`
-   * and/or `max-width`.
-   */
-  constrain: function() {
-    if (this.__shouldPosition) {
-      return;
-    }
-    this._discoverInfo();
-
-    var info = this._fitInfo;
-    // position at (0px, 0px) if not already positioned, so we can measure the
-    // natural size.
-    if (!info.positionedBy.vertically) {
-      this.style.position = 'fixed';
-      this.style.top = '0px';
-    }
-    if (!info.positionedBy.horizontally) {
-      this.style.position = 'fixed';
-      this.style.left = '0px';
-    }
-
-    // need border-box for margin/padding
-    this.sizingTarget.style.boxSizing = 'border-box';
-    // constrain the width and height if not already set
-    var rect = this.getBoundingClientRect();
-    if (!info.sizedBy.height) {
-      this.__sizeDimension(
-          rect, info.positionedBy.vertically, 'top', 'bottom', 'Height');
-    }
-    if (!info.sizedBy.width) {
-      this.__sizeDimension(
-          rect, info.positionedBy.horizontally, 'left', 'right', 'Width');
-    }
-  },
-
-  /**
-   * @protected
-   * @deprecated
-   */
-  _sizeDimension: function(rect, positionedBy, start, end, extent) {
-    this.__sizeDimension(rect, positionedBy, start, end, extent);
-  },
-
-  /**
-   * @private
-   */
-  __sizeDimension: function(rect, positionedBy, start, end, extent) {
-    var info = this._fitInfo;
-    var fitRect = this.__getNormalizedRect(this.fitInto);
-    var max = extent === 'Width' ? fitRect.width : fitRect.height;
-    var flip = (positionedBy === end);
-    var offset = flip ? max - rect[end] : rect[start];
-    var margin = info.margin[flip ? start : end];
-    var offsetExtent = 'offset' + extent;
-    var sizingOffset = this[offsetExtent] - this.sizingTarget[offsetExtent];
-    this.sizingTarget.style['max' + extent] =
-        (max - margin - offset - sizingOffset) + 'px';
-  },
-
-  /**
-   * Centers horizontally and vertically if not already positioned. This also
-   * sets `position:fixed`.
-   */
-  center: function() {
-    if (this.__shouldPosition) {
-      return;
-    }
-    this._discoverInfo();
-
-    var positionedBy = this._fitInfo.positionedBy;
-    if (positionedBy.vertically && positionedBy.horizontally) {
-      // Already positioned.
-      return;
-    }
-    // Need position:fixed to center
-    this.style.position = 'fixed';
-    // Take into account the offset caused by parents that create stacking
-    // contexts (e.g. with transform: translate3d). Translate to 0,0 and
-    // measure the bounding rect.
-    if (!positionedBy.vertically) {
-      this.style.top = '0px';
-    }
-    if (!positionedBy.horizontally) {
-      this.style.left = '0px';
-    }
-    // It will take in consideration margins and transforms
-    var rect = this.getBoundingClientRect();
-    var fitRect = this.__getNormalizedRect(this.fitInto);
-    if (!positionedBy.vertically) {
-      var top = fitRect.top - rect.top + (fitRect.height - rect.height) / 2;
-      this.style.top = top + 'px';
-    }
-    if (!positionedBy.horizontally) {
-      var left = fitRect.left - rect.left + (fitRect.width - rect.width) / 2;
-      this.style.left = left + 'px';
-    }
-  },
-
-  __getNormalizedRect: function(target) {
-    if (target === document.documentElement || target === window) {
-      return {
-        top: 0,
-        left: 0,
-        width: window.innerWidth,
-        height: window.innerHeight,
-        right: window.innerWidth,
-        bottom: window.innerHeight
-      };
-    }
-    return target.getBoundingClientRect();
-  },
-
-  __getOffscreenArea: function(position, size, fitRect) {
-    var verticalCrop = Math.min(0, position.top) +
-        Math.min(0, fitRect.bottom - (position.top + size.height));
-    var horizontalCrop = Math.min(0, position.left) +
-        Math.min(0, fitRect.right - (position.left + size.width));
-    return Math.abs(verticalCrop) * size.width +
-        Math.abs(horizontalCrop) * size.height;
-  },
-
-
-  __getPosition: function(
-      hAlign, vAlign, size, sizeNoMargins, positionRect, fitRect) {
-    // All the possible configurations.
-    // Ordered as top-left, top-right, bottom-left, bottom-right.
-    var positions = [
-      {
-        verticalAlign: 'top',
-        horizontalAlign: 'left',
-        top: positionRect.top + this.verticalOffset,
-        left: positionRect.left + this.horizontalOffset
-      },
-      {
-        verticalAlign: 'top',
-        horizontalAlign: 'right',
-        top: positionRect.top + this.verticalOffset,
-        left: positionRect.right - size.width - this.horizontalOffset
-      },
-      {
-        verticalAlign: 'bottom',
-        horizontalAlign: 'left',
-        top: positionRect.bottom - size.height - this.verticalOffset,
-        left: positionRect.left + this.horizontalOffset
-      },
-      {
-        verticalAlign: 'bottom',
-        horizontalAlign: 'right',
-        top: positionRect.bottom - size.height - this.verticalOffset,
-        left: positionRect.right - size.width - this.horizontalOffset
-      }
-    ];
-
-    if (this.noOverlap) {
-      // Duplicate.
-      for (var i = 0, l = positions.length; i < l; i++) {
-        var copy = {};
-        for (var key in positions[i]) {
-          copy[key] = positions[i][key];
+    _blockDblclick(e) {
+        if (this.gameOver || this.victory)
+            return;
+        if (!this.started) {
+            this.started = true;
+            this._timing();
         }
-        positions.push(copy);
-      }
-      // Horizontal overlap only.
-      positions[0].top = positions[1].top += positionRect.height;
-      positions[2].top = positions[3].top -= positionRect.height;
-      // Vertical overlap only.
-      positions[4].left = positions[6].left += positionRect.width;
-      positions[5].left = positions[7].left -= positionRect.width;
+        __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].dispatch({
+            type: 'BLOCK-DBLCLICK',
+            payload: e.detail
+        });
     }
-
-    // Consider auto as null for coding convenience.
-    vAlign = vAlign === 'auto' ? null : vAlign;
-    hAlign = hAlign === 'auto' ? null : hAlign;
-
-    if (!hAlign || hAlign === 'center') {
-      positions.push({
-        verticalAlign: 'top',
-        horizontalAlign: 'center',
-        top: positionRect.top + this.verticalOffset +
-            (this.noOverlap ? positionRect.height : 0),
-        left: positionRect.left - sizeNoMargins.width / 2 +
-            positionRect.width / 2 + this.horizontalOffset
-      });
-      positions.push({
-        verticalAlign: 'bottom',
-        horizontalAlign: 'center',
-        top: positionRect.bottom - size.height - this.verticalOffset -
-            (this.noOverlap ? positionRect.height : 0),
-        left: positionRect.left - sizeNoMargins.width / 2 +
-            positionRect.width / 2 + this.horizontalOffset
-      });
+    _toogleMark(e) {
+        if (!this.started) {
+            this.started = true;
+            this._timing();
+        }
+        if (this.gameOver || this.victory)
+            return;
+        __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].dispatch({
+            type: 'TOOGLE-MARK',
+            payload: e.detail
+        });
     }
-
-    if (!vAlign || vAlign === 'middle') {
-      positions.push({
-        verticalAlign: 'middle',
-        horizontalAlign: 'left',
-        top: positionRect.top - sizeNoMargins.height / 2 +
-            positionRect.height / 2 + this.verticalOffset,
-        left: positionRect.left + this.horizontalOffset +
-            (this.noOverlap ? positionRect.width : 0)
-      });
-      positions.push({
-        verticalAlign: 'middle',
-        horizontalAlign: 'right',
-        top: positionRect.top - sizeNoMargins.height / 2 +
-            positionRect.height / 2 + this.verticalOffset,
-        left: positionRect.right - size.width - this.horizontalOffset -
-            (this.noOverlap ? positionRect.width : 0)
-      });
+    _computeTimeStr(timeNumber) {
+        if (timeNumber > 0) {
+            let hour = Math.floor(timeNumber / 3600);
+            let min = Math.floor(timeNumber / 60) % 60;
+            let sec = timeNumber % 60;
+            if (hour < 10)
+                hour = `0${hour}`;
+            if (min < 10)
+                min = `0${min}`;
+            if (sec < 10)
+                sec = `0${sec}`;
+            return `${hour}:${min}:${sec}`;
+        }
+        return '00:00:00';
     }
-
-    if (vAlign === 'middle' && hAlign === 'center') {
-      positions.push({
-        verticalAlign: 'middle',
-        horizontalAlign: 'center',
-        top: positionRect.top - sizeNoMargins.height / 2 +
-            positionRect.height / 2 + this.verticalOffset,
-        left: positionRect.left - sizeNoMargins.width / 2 +
-            positionRect.width / 2 + this.horizontalOffset
-      });
+    _timing() {
+        if (this.victory || this.gameOver) {
+            clearTimeout(this.timer);
+            return;
+        }
+        this.timer = setTimeout(() => {
+            this.timeNumber++;
+            this._timing();
+        }, 1000);
     }
-
-    var position;
-    for (var i = 0; i < positions.length; i++) {
-      var candidate = positions[i];
-      var vAlignOk = candidate.verticalAlign === vAlign;
-      var hAlignOk = candidate.horizontalAlign === hAlign;
-
-      // If both vAlign and hAlign are defined, return exact match.
-      // For dynamicAlign and noOverlap we'll have more than one candidate, so
-      // we'll have to check the offscreenArea to make the best choice.
-      if (!this.dynamicAlign && !this.noOverlap && vAlignOk && hAlignOk) {
-        position = candidate;
-        break;
-      }
-
-      // Align is ok if alignment preferences are respected. If no preferences,
-      // it is considered ok.
-      var alignOk = (!vAlign || vAlignOk) && (!hAlign || hAlignOk);
-
-      // Filter out elements that don't match the alignment (if defined).
-      // With dynamicAlign, we need to consider all the positions to find the
-      // one that minimizes the cropped area.
-      if (!this.dynamicAlign && !alignOk) {
-        continue;
-      }
-
-      candidate.offscreenArea =
-          this.__getOffscreenArea(candidate, size, fitRect);
-      // If not cropped and respects the align requirements, keep it.
-      // This allows to prefer positions overlapping horizontally over the
-      // ones overlapping vertically.
-      if (candidate.offscreenArea === 0 && alignOk) {
-        position = candidate;
-        break;
-      }
-      position = position || candidate;
-      var diff = candidate.offscreenArea - position.offscreenArea;
-      // Check which crops less. If it crops equally, check if at least one
-      // align setting is ok.
-      if (diff < 0 || (diff === 0 && (vAlignOk || hAlignOk))) {
-        position = candidate;
-      }
+    restart() {
+        this.timeNumber = 0;
+        __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].dispatch({
+            type: 'INIT',
+            payload: { width: this.width, height: this.height, mineNumber: this.mineNumber }
+        });
     }
-
-    return position;
-  }
-
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronFitBehavior;
+}
+customElements.define('mc-container', McContainer);
 
 
 
 /***/ }),
-/* 120 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/**
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-var p = Element.prototype;
-var matches = p.matches || p.matchesSelector || p.mozMatchesSelector ||
-    p.msMatchesSelector || p.oMatchesSelector || p.webkitMatchesSelector;
-
-const IronFocusablesHelper = {
-
-  /**
-   * Returns a sorted array of tabbable nodes, including the root node.
-   * It searches the tabbable nodes in the light and shadow dom of the chidren,
-   * sorting the result by tabindex.
-   * @param {!Node} node
-   * @return {!Array<!HTMLElement>}
-   */
-  getTabbableNodes: function(node) {
-    var result = [];
-    // If there is at least one element with tabindex > 0, we need to sort
-    // the final array by tabindex.
-    var needsSortByTabIndex = this._collectTabbableNodes(node, result);
-    if (needsSortByTabIndex) {
-      return this._sortByTabIndex(result);
-    }
-    return result;
-  },
-
-  /**
-   * Returns if a element is focusable.
-   * @param {!HTMLElement} element
-   * @return {boolean}
-   */
-  isFocusable: function(element) {
-    // From http://stackoverflow.com/a/1600194/4228703:
-    // There isn't a definite list, it's up to the browser. The only
-    // standard we have is DOM Level 2 HTML
-    // https://www.w3.org/TR/DOM-Level-2-HTML/html.html, according to which the
-    // only elements that have a focus() method are HTMLInputElement,
-    // HTMLSelectElement, HTMLTextAreaElement and HTMLAnchorElement. This
-    // notably omits HTMLButtonElement and HTMLAreaElement. Referring to these
-    // tests with tabbables in different browsers
-    // http://allyjs.io/data-tables/focusable.html
-
-    // Elements that cannot be focused if they have [disabled] attribute.
-    if (matches.call(element, 'input, select, textarea, button, object')) {
-      return matches.call(element, ':not([disabled])');
-    }
-    // Elements that can be focused even if they have [disabled] attribute.
-    return matches.call(
-        element, 'a[href], area[href], iframe, [tabindex], [contentEditable]');
-  },
-
-  /**
-   * Returns if a element is tabbable. To be tabbable, a element must be
-   * focusable, visible, and with a tabindex !== -1.
-   * @param {!HTMLElement} element
-   * @return {boolean}
-   */
-  isTabbable: function(element) {
-    return this.isFocusable(element) &&
-        matches.call(element, ':not([tabindex="-1"])') &&
-        this._isVisible(element);
-  },
-
-  /**
-   * Returns the normalized element tabindex. If not focusable, returns -1.
-   * It checks for the attribute "tabindex" instead of the element property
-   * `tabIndex` since browsers assign different values to it.
-   * e.g. in Firefox `<div contenteditable>` has `tabIndex = -1`
-   * @param {!HTMLElement} element
-   * @return {!number}
-   * @private
-   */
-  _normalizedTabIndex: function(element) {
-    if (this.isFocusable(element)) {
-      var tabIndex = element.getAttribute('tabindex') || 0;
-      return Number(tabIndex);
-    }
-    return -1;
-  },
-
-  /**
-   * Searches for nodes that are tabbable and adds them to the `result` array.
-   * Returns if the `result` array needs to be sorted by tabindex.
-   * @param {!Node} node The starting point for the search; added to `result`
-   * if tabbable.
-   * @param {!Array<!HTMLElement>} result
-   * @return {boolean}
-   * @private
-   */
-  _collectTabbableNodes: function(node, result) {
-    // If not an element or not visible, no need to explore children.
-    if (node.nodeType !== Node.ELEMENT_NODE || !this._isVisible(node)) {
-      return false;
-    }
-    var element = /** @type {!HTMLElement} */ (node);
-    var tabIndex = this._normalizedTabIndex(element);
-    var needsSort = tabIndex > 0;
-    if (tabIndex >= 0) {
-      result.push(element);
-    }
-
-    // In ShadowDOM v1, tab order is affected by the order of distrubution.
-    // E.g. getTabbableNodes(#root) in ShadowDOM v1 should return [#A, #B];
-    // in ShadowDOM v0 tab order is not affected by the distrubution order,
-    // in fact getTabbableNodes(#root) returns [#B, #A].
-    //  <div id="root">
-    //   <!-- shadow -->
-    //     <slot name="a">
-    //     <slot name="b">
-    //   <!-- /shadow -->
-    //   <input id="A" slot="a">
-    //   <input id="B" slot="b" tabindex="1">
-    //  </div>
-    // TODO(valdrin) support ShadowDOM v1 when upgrading to Polymer v2.0.
-    var children;
-    if (element.localName === 'content' || element.localName === 'slot') {
-      children = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(element).getDistributedNodes();
-    } else {
-      // Use shadow root if possible, will check for distributed nodes.
-      children = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(element.root || element).children;
-    }
-    for (var i = 0; i < children.length; i++) {
-      // Ensure method is always invoked to collect tabbable children.
-      needsSort = this._collectTabbableNodes(children[i], result) || needsSort;
-    }
-    return needsSort;
-  },
-
-  /**
-   * Returns false if the element has `visibility: hidden` or `display: none`
-   * @param {!HTMLElement} element
-   * @return {boolean}
-   * @private
-   */
-  _isVisible: function(element) {
-    // Check inline style first to save a re-flow. If looks good, check also
-    // computed style.
-    var style = element.style;
-    if (style.visibility !== 'hidden' && style.display !== 'none') {
-      style = window.getComputedStyle(element);
-      return (style.visibility !== 'hidden' && style.display !== 'none');
-    }
-    return false;
-  },
-
-  /**
-   * Sorts an array of tabbable elements by tabindex. Returns a new array.
-   * @param {!Array<!HTMLElement>} tabbables
-   * @return {!Array<!HTMLElement>}
-   * @private
-   */
-  _sortByTabIndex: function(tabbables) {
-    // Implement a merge sort as Array.prototype.sort does a non-stable sort
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-    var len = tabbables.length;
-    if (len < 2) {
-      return tabbables;
-    }
-    var pivot = Math.ceil(len / 2);
-    var left = this._sortByTabIndex(tabbables.slice(0, pivot));
-    var right = this._sortByTabIndex(tabbables.slice(pivot));
-    return this._mergeSortByTabIndex(left, right);
-  },
-
-  /**
-   * Merge sort iterator, merges the two arrays into one, sorted by tab index.
-   * @param {!Array<!HTMLElement>} left
-   * @param {!Array<!HTMLElement>} right
-   * @return {!Array<!HTMLElement>}
-   * @private
-   */
-  _mergeSortByTabIndex: function(left, right) {
-    var result = [];
-    while ((left.length > 0) && (right.length > 0)) {
-      if (this._hasLowerTabOrder(left[0], right[0])) {
-        result.push(right.shift());
-      } else {
-        result.push(left.shift());
-      }
-    }
-
-    return result.concat(left, right);
-  },
-
-  /**
-   * Returns if element `a` has lower tab order compared to element `b`
-   * (both elements are assumed to be focusable and tabbable).
-   * Elements with tabindex = 0 have lower tab order compared to elements
-   * with tabindex > 0.
-   * If both have same tabindex, it returns false.
-   * @param {!HTMLElement} a
-   * @param {!HTMLElement} b
-   * @return {boolean}
-   * @private
-   */
-  _hasLowerTabOrder: function(a, b) {
-    // Normalize tabIndexes
-    // e.g. in Firefox `<div contenteditable>` has `tabIndex = -1`
-    var ati = Math.max(a.tabIndex, 0);
-    var bti = Math.max(b.tabIndex, 0);
-    return (ati === 0 || bti === 0) ? bti > ati : ati > bti;
-  }
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronFocusablesHelper;
-
-
-
-/***/ }),
-/* 121 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iron_overlay_backdrop_js__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_gestures_js__ = __webpack_require__(23);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-
-/**
- * @struct
- * @constructor
- * @private
- */
-const IronOverlayManagerClass = function() {
-  /**
-   * Used to keep track of the opened overlays.
-   * @private {!Array<!Element>}
-   */
-  this._overlays = [];
-
-  /**
-   * iframes have a default z-index of 100,
-   * so this default should be at least that.
-   * @private {number}
-   */
-  this._minimumZ = 101;
-
-  /**
-   * Memoized backdrop element.
-   * @private {Element|null}
-   */
-  this._backdropElement = null;
-
-  // Enable document-wide tap recognizer.
-  // NOTE: Use useCapture=true to avoid accidentally prevention of the closing
-  // of an overlay via event.stopPropagation(). The only way to prevent
-  // closing of an overlay should be through its APIs.
-  // NOTE: enable tap on <html> to workaround Polymer/polymer#4459
-  // Pass no-op function because MSEdge 15 doesn't handle null as 2nd argument
-  // https://github.com/Microsoft/ChakraCore/issues/3863
-  __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_lib_utils_gestures_js__["a" /* add */](document.documentElement, 'tap', function() {});
-  document.addEventListener('tap', this._onCaptureClick.bind(this), true);
-  document.addEventListener('focus', this._onCaptureFocus.bind(this), true);
-  document.addEventListener('keydown', this._onCaptureKeyDown.bind(this), true);
-};
-/* unused harmony export IronOverlayManagerClass */
-
-
-IronOverlayManagerClass.prototype = {
-
-  constructor: IronOverlayManagerClass,
-
-  /**
-   * The shared backdrop element.
-   * @return {!Element} backdropElement
-   */
-  get backdropElement() {
-    if (!this._backdropElement) {
-      this._backdropElement = document.createElement('iron-overlay-backdrop');
-    }
-    return this._backdropElement;
-  },
-
-  /**
-   * The deepest active element.
-   * @return {!Element} activeElement the active element
-   */
-  get deepActiveElement() {
-    var active = document.activeElement;
-    // document.activeElement can be null
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement
-    // In IE 11, it can also be an object when operating in iframes.
-    // In these cases, default it to document.body.
-    if (!active || active instanceof Element === false) {
-      active = document.body;
-    }
-    while (active.root && Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(active.root).activeElement) {
-      active = Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(active.root).activeElement;
-    }
-    return active;
-  },
-
-  /**
-   * Brings the overlay at the specified index to the front.
-   * @param {number} i
-   * @private
-   */
-  _bringOverlayAtIndexToFront: function(i) {
-    var overlay = this._overlays[i];
-    if (!overlay) {
-      return;
-    }
-    var lastI = this._overlays.length - 1;
-    var currentOverlay = this._overlays[lastI];
-    // Ensure always-on-top overlay stays on top.
-    if (currentOverlay &&
-        this._shouldBeBehindOverlay(overlay, currentOverlay)) {
-      lastI--;
-    }
-    // If already the top element, return.
-    if (i >= lastI) {
-      return;
-    }
-    // Update z-index to be on top.
-    var minimumZ = Math.max(this.currentOverlayZ(), this._minimumZ);
-    if (this._getZ(overlay) <= minimumZ) {
-      this._applyOverlayZ(overlay, minimumZ);
-    }
-
-    // Shift other overlays behind the new on top.
-    while (i < lastI) {
-      this._overlays[i] = this._overlays[i + 1];
-      i++;
-    }
-    this._overlays[lastI] = overlay;
-  },
-
-  /**
-   * Adds the overlay and updates its z-index if it's opened, or removes it if
-   * it's closed. Also updates the backdrop z-index.
-   * @param {!Element} overlay
-   */
-  addOrRemoveOverlay: function(overlay) {
-    if (overlay.opened) {
-      this.addOverlay(overlay);
-    } else {
-      this.removeOverlay(overlay);
-    }
-  },
-
-  /**
-   * Tracks overlays for z-index and focus management.
-   * Ensures the last added overlay with always-on-top remains on top.
-   * @param {!Element} overlay
-   */
-  addOverlay: function(overlay) {
-    var i = this._overlays.indexOf(overlay);
-    if (i >= 0) {
-      this._bringOverlayAtIndexToFront(i);
-      this.trackBackdrop();
-      return;
-    }
-    var insertionIndex = this._overlays.length;
-    var currentOverlay = this._overlays[insertionIndex - 1];
-    var minimumZ = Math.max(this._getZ(currentOverlay), this._minimumZ);
-    var newZ = this._getZ(overlay);
-
-    // Ensure always-on-top overlay stays on top.
-    if (currentOverlay &&
-        this._shouldBeBehindOverlay(overlay, currentOverlay)) {
-      // This bumps the z-index of +2.
-      this._applyOverlayZ(currentOverlay, minimumZ);
-      insertionIndex--;
-      // Update minimumZ to match previous overlay's z-index.
-      var previousOverlay = this._overlays[insertionIndex - 1];
-      minimumZ = Math.max(this._getZ(previousOverlay), this._minimumZ);
-    }
-
-    // Update z-index and insert overlay.
-    if (newZ <= minimumZ) {
-      this._applyOverlayZ(overlay, minimumZ);
-    }
-    this._overlays.splice(insertionIndex, 0, overlay);
-
-    this.trackBackdrop();
-  },
-
-  /**
-   * @param {!Element} overlay
-   */
-  removeOverlay: function(overlay) {
-    var i = this._overlays.indexOf(overlay);
-    if (i === -1) {
-      return;
-    }
-    this._overlays.splice(i, 1);
-
-    this.trackBackdrop();
-  },
-
-  /**
-   * Returns the current overlay.
-   * @return {!Element|undefined}
-   */
-  currentOverlay: function() {
-    var i = this._overlays.length - 1;
-    return this._overlays[i];
-  },
-
-  /**
-   * Returns the current overlay z-index.
-   * @return {number}
-   */
-  currentOverlayZ: function() {
-    return this._getZ(this.currentOverlay());
-  },
-
-  /**
-   * Ensures that the minimum z-index of new overlays is at least `minimumZ`.
-   * This does not effect the z-index of any existing overlays.
-   * @param {number} minimumZ
-   */
-  ensureMinimumZ: function(minimumZ) {
-    this._minimumZ = Math.max(this._minimumZ, minimumZ);
-  },
-
-  focusOverlay: function() {
-    var current = /** @type {?} */ (this.currentOverlay());
-    if (current) {
-      current._applyFocus();
-    }
-  },
-
-  /**
-   * Updates the backdrop z-index.
-   */
-  trackBackdrop: function() {
-    var overlay = this._overlayWithBackdrop();
-    // Avoid creating the backdrop if there is no overlay with backdrop.
-    if (!overlay && !this._backdropElement) {
-      return;
-    }
-    this.backdropElement.style.zIndex = this._getZ(overlay) - 1;
-    this.backdropElement.opened = !!overlay;
-    // Property observers are not fired until element is attached
-    // in Polymer 2.x, so we ensure element is attached if needed.
-    // https://github.com/Polymer/polymer/issues/4526
-    this.backdropElement.prepare();
-  },
-
-  /**
-   * @return {!Array<!Element>}
-   */
-  getBackdrops: function() {
-    var backdrops = [];
-    for (var i = 0; i < this._overlays.length; i++) {
-      if (this._overlays[i].withBackdrop) {
-        backdrops.push(this._overlays[i]);
-      }
-    }
-    return backdrops;
-  },
-
-  /**
-   * Returns the z-index for the backdrop.
-   * @return {number}
-   */
-  backdropZ: function() {
-    return this._getZ(this._overlayWithBackdrop()) - 1;
-  },
-
-  /**
-   * Returns the top opened overlay that has a backdrop.
-   * @return {!Element|undefined}
-   * @private
-   */
-  _overlayWithBackdrop: function() {
-    for (var i = this._overlays.length - 1; i >= 0; i--) {
-      if (this._overlays[i].withBackdrop) {
-        return this._overlays[i];
-      }
-    }
-  },
-
-  /**
-   * Calculates the minimum z-index for the overlay.
-   * @param {Element=} overlay
-   * @private
-   */
-  _getZ: function(overlay) {
-    var z = this._minimumZ;
-    if (overlay) {
-      var z1 = Number(
-          overlay.style.zIndex || window.getComputedStyle(overlay).zIndex);
-      // Check if is a number
-      // Number.isNaN not supported in IE 10+
-      if (z1 === z1) {
-        z = z1;
-      }
-    }
-    return z;
-  },
-
-  /**
-   * @param {!Element} element
-   * @param {number|string} z
-   * @private
-   */
-  _setZ: function(element, z) {
-    element.style.zIndex = z;
-  },
-
-  /**
-   * @param {!Element} overlay
-   * @param {number} aboveZ
-   * @private
-   */
-  _applyOverlayZ: function(overlay, aboveZ) {
-    this._setZ(overlay, aboveZ + 2);
-  },
-
-  /**
-   * Returns the deepest overlay in the path.
-   * @param {!Array<!Element>=} path
-   * @return {!Element|undefined}
-   * @suppress {missingProperties}
-   * @private
-   */
-  _overlayInPath: function(path) {
-    path = path || [];
-    for (var i = 0; i < path.length; i++) {
-      if (path[i]._manager === this) {
-        return path[i];
-      }
-    }
-  },
-
-  /**
-   * Ensures the click event is delegated to the right overlay.
-   * @param {!Event} event
-   * @private
-   */
-  _onCaptureClick: function(event) {
-    var i = this._overlays.length - 1;
-    if (i === -1)
-      return;
-    var path = /** @type {!Array<!EventTarget>} */ (Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).path);
-    var overlay;
-    // Check if clicked outside of overlay.
-    while ((overlay = /** @type {?} */ (this._overlays[i])) &&
-           this._overlayInPath(path) !== overlay) {
-      overlay._onCaptureClick(event);
-      if (overlay.allowClickThrough) {
-        i--;
-      } else {
-        break;
-      }
-    }
-  },
-
-  /**
-   * Ensures the focus event is delegated to the right overlay.
-   * @param {!Event} event
-   * @private
-   */
-  _onCaptureFocus: function(event) {
-    var overlay = /** @type {?} */ (this.currentOverlay());
-    if (overlay) {
-      overlay._onCaptureFocus(event);
-    }
-  },
-
-  /**
-   * Ensures TAB and ESC keyboard events are delegated to the right overlay.
-   * @param {!Event} event
-   * @private
-   */
-  _onCaptureKeyDown: function(event) {
-    var overlay = /** @type {?} */ (this.currentOverlay());
-    if (overlay) {
-      if (__WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__["a" /* IronA11yKeysBehavior */].keyboardEventMatchesKeys(event, 'esc')) {
-        overlay._onCaptureEsc(event);
-      } else if (__WEBPACK_IMPORTED_MODULE_2__polymer_iron_a11y_keys_behavior_iron_a11y_keys_behavior_js__["a" /* IronA11yKeysBehavior */].keyboardEventMatchesKeys(event, 'tab')) {
-        overlay._onCaptureTab(event);
-      }
-    }
-  },
-
-  /**
-   * Returns if the overlay1 should be behind overlay2.
-   * @param {!Element} overlay1
-   * @param {!Element} overlay2
-   * @return {boolean}
-   * @suppress {missingProperties}
-   * @private
-   */
-  _shouldBeBehindOverlay: function(overlay1, overlay2) {
-    return !overlay1.alwaysOnTop && overlay2.alwaysOnTop;
-  }
-};
-
-const IronOverlayManager = new IronOverlayManagerClass();
-/* harmony export (immutable) */ __webpack_exports__["a"] = IronOverlayManager;
-
-
-
-/***/ }),
-/* 122 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
-/**
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-
-
-
-/*
-`iron-overlay-backdrop` is a backdrop used by `Polymer.IronOverlayBehavior`. It
-should be a singleton.
-
-### Styling
-
-The following custom properties and mixins are available for styling.
-
-Custom property | Description | Default
--------------------------------------------|------------------------|---------
-`--iron-overlay-backdrop-background-color` | Backdrop background color | #000
-`--iron-overlay-backdrop-opacity`          | Backdrop opacity | 0.6
-`--iron-overlay-backdrop`                  | Mixin applied to `iron-overlay-backdrop`.                      | {}
-`--iron-overlay-backdrop-opened`           | Mixin applied to `iron-overlay-backdrop` when it is displayed | {}
-*/
-Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_fn_js__["a" /* Polymer */])({
-  _template: __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_utils_html_tag_js__["a" /* html */]`
-    <style>
-      :host {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--iron-overlay-backdrop-background-color, #000);
-        opacity: 0;
-        transition: opacity 0.2s;
-        pointer-events: none;
-        @apply --iron-overlay-backdrop;
-      }
-
-      :host(.opened) {
-        opacity: var(--iron-overlay-backdrop-opacity, 0.6);
-        pointer-events: auto;
-        @apply --iron-overlay-backdrop-opened;
-      }
-    </style>
-
-    <slot></slot>
-`,
-
-  is: 'iron-overlay-backdrop',
-
-  properties: {
-
-    /**
-     * Returns true if the backdrop is opened.
-     */
-    opened: {
-      reflectToAttribute: true,
-      type: Boolean,
-      value: false,
-      observer: '_openedChanged',
-    }
-
-  },
-
-  listeners: {
-    'transitionend': '_onTransitionend',
-  },
-
-  created: function() {
-    // Used to cancel previous requestAnimationFrame calls when opened changes.
-    this.__openedRaf = null;
-  },
-
-  attached: function() {
-    this.opened && this._openedChanged(this.opened);
-  },
-
-  /**
-   * Appends the backdrop to document body if needed.
-   */
-  prepare: function() {
-    if (this.opened && !this.parentNode) {
-      Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(document.body).appendChild(this);
-    }
-  },
-
-  /**
-   * Shows the backdrop.
-   */
-  open: function() {
-    this.opened = true;
-  },
-
-  /**
-   * Hides the backdrop.
-   */
-  close: function() {
-    this.opened = false;
-  },
-
-  /**
-   * Removes the backdrop from document body if needed.
-   */
-  complete: function() {
-    if (!this.opened && this.parentNode === document.body) {
-      Object(__WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(this.parentNode).removeChild(this);
-    }
-  },
-
-  _onTransitionend: function(event) {
-    if (event && event.target === this) {
-      this.complete();
-    }
-  },
-
-  /**
-   * @param {boolean} opened
-   * @private
-   */
-  _openedChanged: function(opened) {
-    if (opened) {
-      // Auto-attach.
-      this.prepare();
-    } else {
-      // Animation might be disabled via the mixin or opacity custom property.
-      // If it is disabled in other ways, it's up to the user to call complete.
-      var cs = window.getComputedStyle(this);
-      if (cs.transitionDuration === '0s' || cs.opacity == 0) {
-        this.complete();
-      }
-    }
-
-    if (!this.isAttached) {
-      return;
-    }
-
-    // Always cancel previous requestAnimationFrame.
-    if (this.__openedRaf) {
-      window.cancelAnimationFrame(this.__openedRaf);
-      this.__openedRaf = null;
-    }
-    // Force relayout to ensure proper transitions.
-    this.scrollTop = this.scrollTop;
-    this.__openedRaf = window.requestAnimationFrame(function() {
-      this.__openedRaf = null;
-      this.toggleClass('opened', this.opened);
-    }.bind(this));
-  }
-});
-
-
-/***/ }),
-/* 123 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export currentLockingElement */
-/* unused harmony export elementIsScrollLocked */
-/* harmony export (immutable) */ __webpack_exports__["a"] = pushScrollLock;
-/* harmony export (immutable) */ __webpack_exports__["b"] = removeScrollLock;
-/* unused harmony export _lockedElementCache */
-/* unused harmony export _unlockedElementCache */
-/* unused harmony export _hasCachedLockedElement */
-/* unused harmony export _hasCachedUnlockedElement */
-/* unused harmony export _composedTreeContains */
-/* unused harmony export _scrollInteractionHandler */
-/* unused harmony export _boundScrollHandler */
-/* unused harmony export _lockScrollInteractions */
-/* unused harmony export _unlockScrollInteractions */
-/* unused harmony export _shouldPreventScrolling */
-/* unused harmony export _getScrollableNodes */
-/* unused harmony export _getScrollingNode */
-/* unused harmony export _getScrollInfo */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__ = __webpack_require__(3);
-/**
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-
-
-
-/**
- * Used to calculate the scroll direction during touch events.
- * @type {!Object}
- */
-var lastTouchPosition = {pageX: 0, pageY: 0};
-/**
- * Used to avoid computing event.path and filter scrollable nodes (better perf).
- * @type {?EventTarget}
- */
-var lastRootTarget = null;
-/**
- * @type {!Array<!Node>}
- */
-var lastScrollableNodes = [];
-/**
- * @type {!Array<string>}
- */
-var scrollEvents = [
-  // Modern `wheel` event for mouse wheel scrolling:
-  'wheel',
-  // Older, non-standard `mousewheel` event for some FF:
-  'mousewheel',
-  // IE:
-  'DOMMouseScroll',
-  // Touch enabled devices
-  'touchstart',
-  'touchmove'
-];
-// must be defined for modulizer
-var _boundScrollHandler;
-var currentLockingElement;
-
-/**
- * The IronScrollManager is intended to provide a central source
- * of authority and control over which elements in a document are currently
- * allowed to scroll.
- *
- */
-`TODO(modulizer): A namespace named Polymer.IronScrollManager was
-declared here. The surrounding comments should be reviewed,
-and this string can then be deleted`;
-
-/**
- * The current element that defines the DOM boundaries of the
- * scroll lock. This is always the most recently locking element.
- *
- * @return {!Node|undefined}
- */
-
-
-/**
- * Returns true if the provided element is "scroll locked", which is to
- * say that it cannot be scrolled via pointer or keyboard interactions.
- *
- * @param {!HTMLElement} element An HTML element instance which may or may
- * not be scroll locked.
- */
-function elementIsScrollLocked(element) {
-  var lockingElement = currentLockingElement;
-
-  if (lockingElement === undefined) {
-    return false;
-  }
-
-  var scrollLocked;
-
-  if (_hasCachedLockedElement(element)) {
-    return true;
-  }
-
-  if (_hasCachedUnlockedElement(element)) {
-    return false;
-  }
-
-  scrollLocked = !!lockingElement && lockingElement !== element &&
-      !_composedTreeContains(lockingElement, element);
-
-  if (scrollLocked) {
-    _lockedElementCache.push(element);
-  } else {
-    _unlockedElementCache.push(element);
-  }
-
-  return scrollLocked;
-}
-
-/**
- * Push an element onto the current scroll lock stack. The most recently
- * pushed element and its children will be considered scrollable. All
- * other elements will not be scrollable.
- *
- * Scroll locking is implemented as a stack so that cases such as
- * dropdowns within dropdowns are handled well.
- *
- * @param {!HTMLElement} element The element that should lock scroll.
- */
-function pushScrollLock(element) {
-  // Prevent pushing the same element twice
-  if (_lockingElements.indexOf(element) >= 0) {
-    return;
-  }
-
-  if (_lockingElements.length === 0) {
-    _lockScrollInteractions();
-  }
-
-  _lockingElements.push(element);
-  currentLockingElement = _lockingElements[_lockingElements.length - 1];
-
-  _lockedElementCache = [];
-  _unlockedElementCache = [];
-}
-
-/**
- * Remove an element from the scroll lock stack. The element being
- * removed does not need to be the most recently pushed element. However,
- * the scroll lock constraints only change when the most recently pushed
- * element is removed.
- *
- * @param {!HTMLElement} element The element to remove from the scroll
- * lock stack.
- */
-function removeScrollLock(element) {
-  var index = _lockingElements.indexOf(element);
-
-  if (index === -1) {
-    return;
-  }
-
-  _lockingElements.splice(index, 1);
-  currentLockingElement = _lockingElements[_lockingElements.length - 1];
-
-  _lockedElementCache = [];
-  _unlockedElementCache = [];
-
-  if (_lockingElements.length === 0) {
-    _unlockScrollInteractions();
-  }
-}
-
-const _lockingElements = [];
-/* unused harmony export _lockingElements */
-
-let _lockedElementCache = null;
-let _unlockedElementCache = null;
-
-function _hasCachedLockedElement(element) {
-  return _lockedElementCache.indexOf(element) > -1;
-}
-
-function _hasCachedUnlockedElement(element) {
-  return _unlockedElementCache.indexOf(element) > -1;
-}
-
-function _composedTreeContains(element, child) {
-  // NOTE(cdata): This method iterates over content elements and their
-  // corresponding distributed nodes to implement a contains-like method
-  // that pierces through the composed tree of the ShadowDOM. Results of
-  // this operation are cached (elsewhere) on a per-scroll-lock basis, to
-  // guard against potentially expensive lookups happening repeatedly as
-  // a user scrolls / touchmoves.
-  var contentElements;
-  var distributedNodes;
-  var contentIndex;
-  var nodeIndex;
-
-  if (element.contains(child)) {
-    return true;
-  }
-
-  contentElements = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(element).querySelectorAll('content,slot');
-
-  for (contentIndex = 0; contentIndex < contentElements.length;
-       ++contentIndex) {
-    distributedNodes = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(contentElements[contentIndex]).getDistributedNodes();
-
-    for (nodeIndex = 0; nodeIndex < distributedNodes.length; ++nodeIndex) {
-      // Polymer 2.x returns slot.assignedNodes which can contain text nodes.
-      if (distributedNodes[nodeIndex].nodeType !== Node.ELEMENT_NODE)
-        continue;
-
-      if (_composedTreeContains(distributedNodes[nodeIndex], child)) {
-        return true;
-      }
-    }
-  }
-
-  return false;
-}
-
-function _scrollInteractionHandler(event) {
-  // Avoid canceling an event with cancelable=false, e.g. scrolling is in
-  // progress and cannot be interrupted.
-  if (event.cancelable && _shouldPreventScrolling(event)) {
-    event.preventDefault();
-  }
-  // If event has targetTouches (touch event), update last touch position.
-  if (event.targetTouches) {
-    var touch = event.targetTouches[0];
-    lastTouchPosition.pageX = touch.pageX;
-    lastTouchPosition.pageY = touch.pageY;
-  }
-}
-
-/**
- * @private
- */
-
-
-function _lockScrollInteractions() {
-  _boundScrollHandler =
-      _boundScrollHandler || _scrollInteractionHandler.bind(undefined);
-  for (var i = 0, l = scrollEvents.length; i < l; i++) {
-    // NOTE: browsers that don't support objects as third arg will
-    // interpret it as boolean, hence useCapture = true in this case.
-    document.addEventListener(
-        scrollEvents[i], _boundScrollHandler, {capture: true, passive: false});
-  }
-}
-
-function _unlockScrollInteractions() {
-  for (var i = 0, l = scrollEvents.length; i < l; i++) {
-    // NOTE: browsers that don't support objects as third arg will
-    // interpret it as boolean, hence useCapture = true in this case.
-    document.removeEventListener(
-        scrollEvents[i], _boundScrollHandler, {capture: true, passive: false});
-  }
-}
-
-/**
- * Returns true if the event causes scroll outside the current locking
- * element, e.g. pointer/keyboard interactions, or scroll "leaking"
- * outside the locking element when it is already at its scroll boundaries.
- * @param {!Event} event
- * @return {boolean}
- * @private
- */
-function _shouldPreventScrolling(event) {
-  // Update if root target changed. For touch events, ensure we don't
-  // update during touchmove.
-  var target = Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).rootTarget;
-  if (event.type !== 'touchmove' && lastRootTarget !== target) {
-    lastRootTarget = target;
-    lastScrollableNodes = _getScrollableNodes(Object(__WEBPACK_IMPORTED_MODULE_1__polymer_polymer_lib_legacy_polymer_dom_js__["a" /* dom */])(event).path);
-  }
-
-  // Prevent event if no scrollable nodes.
-  if (!lastScrollableNodes.length) {
-    return true;
-  }
-  // Don't prevent touchstart event inside the locking element when it has
-  // scrollable nodes.
-  if (event.type === 'touchstart') {
-    return false;
-  }
-  // Get deltaX/Y.
-  var info = _getScrollInfo(event);
-  // Prevent if there is no child that can scroll.
-  return !_getScrollingNode(lastScrollableNodes, info.deltaX, info.deltaY);
-}
-
-/**
- * Returns an array of scrollable nodes up to the current locking element,
- * which is included too if scrollable.
- * @param {!Array<!Node>} nodes
- * @return {!Array<!Node>} scrollables
- * @private
- */
-function _getScrollableNodes(nodes) {
-  var scrollables = [];
-  var lockingIndex = nodes.indexOf(currentLockingElement);
-  // Loop from root target to locking element (included).
-  for (var i = 0; i <= lockingIndex; i++) {
-    // Skip non-Element nodes.
-    if (nodes[i].nodeType !== Node.ELEMENT_NODE) {
-      continue;
-    }
-    var node = /** @type {!Element} */ (nodes[i]);
-    // Check inline style before checking computed style.
-    var style = node.style;
-    if (style.overflow !== 'scroll' && style.overflow !== 'auto') {
-      style = window.getComputedStyle(node);
-    }
-    if (style.overflow === 'scroll' || style.overflow === 'auto') {
-      scrollables.push(node);
-    }
-  }
-  return scrollables;
-}
-
-/**
- * Returns the node that is scrolling. If there is no scrolling,
- * returns undefined.
- * @param {!Array<!Node>} nodes
- * @param {number} deltaX Scroll delta on the x-axis
- * @param {number} deltaY Scroll delta on the y-axis
- * @return {!Node|undefined}
- * @private
- */
-function _getScrollingNode(nodes, deltaX, deltaY) {
-  // No scroll.
-  if (!deltaX && !deltaY) {
-    return;
-  }
-  // Check only one axis according to where there is more scroll.
-  // Prefer vertical to horizontal.
-  var verticalScroll = Math.abs(deltaY) >= Math.abs(deltaX);
-  for (var i = 0; i < nodes.length; i++) {
-    var node = nodes[i];
-    var canScroll = false;
-    if (verticalScroll) {
-      // delta < 0 is scroll up, delta > 0 is scroll down.
-      canScroll = deltaY < 0 ?
-          node.scrollTop > 0 :
-          node.scrollTop < node.scrollHeight - node.clientHeight;
-    } else {
-      // delta < 0 is scroll left, delta > 0 is scroll right.
-      canScroll = deltaX < 0 ?
-          node.scrollLeft > 0 :
-          node.scrollLeft < node.scrollWidth - node.clientWidth;
-    }
-    if (canScroll) {
-      return node;
-    }
-  }
-}
-
-/**
- * Returns scroll `deltaX` and `deltaY`.
- * @param {!Event} event The scroll event
- * @return {{deltaX: number, deltaY: number}} Object containing the
- * x-axis scroll delta (positive: scroll right, negative: scroll left,
- * 0: no scroll), and the y-axis scroll delta (positive: scroll down,
- * negative: scroll up, 0: no scroll).
- * @private
- */
-function _getScrollInfo(event) {
-  var info = {deltaX: event.deltaX, deltaY: event.deltaY};
-  // Already available.
-  if ('deltaX' in event) {
-    // do nothing, values are already good.
-  }
-  // Safari has scroll info in `wheelDeltaX/Y`.
-  else if ('wheelDeltaX' in event && 'wheelDeltaY' in event) {
-    info.deltaX = -event.wheelDeltaX;
-    info.deltaY = -event.wheelDeltaY;
-  }
-  // IE10 has only vertical scroll info in `wheelDelta`.
-  else if ('wheelDelta' in event) {
-    info.deltaX = 0;
-    info.deltaY = -event.wheelDelta;
-  }
-  // Firefox has scroll info in `detail` and `axis`.
-  else if ('axis' in event) {
-    info.deltaX = event.axis === 1 ? event.detail : 0;
-    info.deltaY = event.axis === 2 ? event.detail : 0;
-  }
-  // On mobile devices, calculate scroll direction.
-  else if (event.targetTouches) {
-    var touch = event.targetTouches[0];
-    // Touch moves from right to left => scrolling goes right.
-    info.deltaX = lastTouchPosition.pageX - touch.pageX;
-    // Touch moves from down to up => scrolling goes down.
-    info.deltaY = lastTouchPosition.pageY - touch.pageY;
-  }
-  return info;
-}
-
-
-/***/ }),
-/* 124 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_iron_flex_layout_iron_flex_layout_js__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_paper_styles_element_styles_paper_material_styles_js__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_paper_behaviors_paper_button_behavior_js__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_paper_styles_element_styles_paper_material_styles_js__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_paper_behaviors_paper_button_behavior_js__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_fn_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
 /**
@@ -30062,12 +27081,12 @@ Object(__WEBPACK_IMPORTED_MODULE_3__polymer_polymer_lib_legacy_polymer_fn_js__["
 
 
 /***/ }),
-/* 125 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shadow_js__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shadow_js__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_polymer_lib_utils_html_tag_js__ = __webpack_require__(2);
 /**
 @license
@@ -30196,7 +27215,7 @@ document.head.appendChild(template.content);
 
 
 /***/ }),
-/* 126 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30286,14 +27305,14 @@ document.head.appendChild(template.content);
 
 
 /***/ }),
-/* 127 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_legacy_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_behaviors_iron_button_state_js__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_behaviors_iron_control_state_js__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__paper_ripple_behavior_js__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_behaviors_iron_button_state_js__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polymer_iron_behaviors_iron_control_state_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__paper_ripple_behavior_js__ = __webpack_require__(53);
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -30391,13 +27410,13 @@ const PaperButtonBehavior = [
 
 
 /***/ }),
-/* 128 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export McBlock */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_icon_iron_icon_js__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polymer_iron_icon_iron_icon_js__ = __webpack_require__(26);
 
 
 
@@ -30429,14 +27448,14 @@ const _temp = __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["b"
     }
   </style>
 
-  <div id="block" class$="[[blockClass]]">
-    <template is="dom-if" if="[[isMark]]">
+  <div id="block" class$="[[blockClass]]" on-mousedown="_blockClick" on-dblclick="_blockDblclick">
+    <template is="dom-if" if="[[mineObject.mark]]">
       <div id="mark">
         <iron-icon icon="grade"></iron-icon>
       </div>
     </template>
 
-    <template is="dom-if" if="[[isOpen]]">
+    <template is="dom-if" if="[[mineObject.open]]">
       <template is="dom-if" if="[[isMine]]">
         <iron-icon icon="error"></iron-icon>
       </template>
@@ -30456,36 +27475,30 @@ class McBlock extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_eleme
     }
     static get properties() {
         return {
+            x: {
+                type: Number,
+                value: 0
+            },
+            y: {
+                type: Number,
+                value: 0
+            },
             mineObject: {
                 type: Object,
                 value: {
                     mineNumber: 1,
+                    open: false,
+                    mark: false,
                     blockCoordinate: { x: 1, y: 1 }
                 }
             },
             mine: {
                 type: String,
-                computed: '_computeMine(mineNumber)'
-            },
-            mineNumber: {
-                type: Number,
-                computed: '_computeMineNumber(mineObject)'
-            },
-            blockXy: {
-                type: Object,
-                computed: '_computeBlockXy(mineObject)'
+                computed: '_computeMine(mineObject.mineNumber)'
             },
             isMine: {
                 type: Boolean,
-                computed: '_computeIsMine(mineNumber)'
-            },
-            isOpen: {
-                type: Boolean,
-                value: false
-            },
-            isMark: {
-                type: Boolean,
-                computed: '_computeIsMark(markStatus)'
+                computed: '_computeIsMine(mineObject.mineNumber)'
             },
             markStatus: {
                 type: Number,
@@ -30493,14 +27506,48 @@ class McBlock extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_eleme
             },
             blockClass: {
                 type: String,
-                computed: '_computeBlockClass(mineNumber, isOpen, isMark)'
+                computed: '_computeBlockClass(mineObject)'
             }
         };
     }
     connectedCallback() {
+        super.connectedCallback();
         this.oncontextmenu = function () {
             return false;
         };
+    }
+    _blockClick(e) {
+        let btnNum = e.button;
+        if (btnNum === 0) {
+            if (this.mineObject.mark)
+                return;
+            this.dispatchEvent(new CustomEvent('block-click', {
+                detail: {
+                    x: this.x,
+                    y: this.y
+                }
+            }));
+        }
+        if (btnNum === 2) {
+            if (this.mineObject.open)
+                return;
+            this.dispatchEvent(new CustomEvent('toogle-mark', {
+                detail: {
+                    x: this.x,
+                    y: this.y
+                }
+            }));
+        }
+    }
+    _blockDblclick(e) {
+        if (this.mineObject.mark)
+            return;
+        this.dispatchEvent(new CustomEvent('block-dblclick', {
+            detail: {
+                x: this.x,
+                y: this.y
+            }
+        }));
     }
     _computeMine(mineNumber) {
         return mineNumber === 0 ? '' : mineNumber;
@@ -30514,24 +27561,10 @@ class McBlock extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_eleme
     _computeBlockXy(mineObject) {
         return mineObject.blockCoordinate;
     }
-    _computeIsMark(markStatus) {
-        if (markStatus === 0) {
-            return false;
-        }
-        if (markStatus === 1) {
-            return true;
-        }
-        this.markStatus = 0;
-        return false;
-    }
-    _computeBlockClass(mineNumber, isOpen, isMark) {
-        if (isOpen) {
-            if (mineNumber === 0) {
-                this.dispatchEvent(new CustomEvent('cleanaround', { detail: this.blockXy }));
-            }
+    _computeBlockClass(mineObject) {
+        if (mineObject.open)
             return 'know';
-        }
-        if (isMark)
+        if (mineObject.mark)
             return 'mark';
         return 'unknow';
     }
@@ -30541,185 +27574,19 @@ customElements.define('mc-block', McBlock);
 
 
 /***/ }),
-/* 129 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const McOperatorBehavior = {
-    properties: {
-        inGame: {
-            type: Boolean,
-            value: true
-        },
-        blockArray: {
-            type: Array
-        },
-        cacheArray: {
-            type: Array,
-            value: []
-        },
-        leftNumber: {
-            type: Number
-        }
-    },
-    blockClick(e) {
-        if (this.inGame) {
-            let mcBlock = e.target;
-            let mineNumber = mcBlock.mineNumber;
-            let btnNum = e.button;
-            if (!this.blockArray) {
-                this._getBlockArray();
-            }
-            if (btnNum === 0 && !mcBlock.isMark) {
-                mcBlock.isOpen = true;
-                if (mineNumber === -1) {
-                    this.inGame = false;
-                    this.openFailTipper();
-                    return;
-                }
-                if (mineNumber === 0) {
-                    this.exposeZeroAroundBlock(mcBlock.blockXy);
-                }
-                if (this.judgeTheGameIsEnd()) {
-                    this.leftNumber = 0;
-                    this.inGame = false;
-                    this.openVictoryTipper();
-                }
-            }
-            if (btnNum === 2 && !mcBlock.isOpen) {
-                mcBlock.markStatus++;
-                return mcBlock.markStatus === 1 ? --this.leftNumber : ++this.leftNumber;
-            }
-        }
-    },
-    _getBlockArray() {
-        this.blockArray = this.$.table.querySelectorAll('mc-block');
-    },
-    exposeZeroAroundBlock(blockXy) {
-        if (this.inGame) {
-            this._getBlockArray();
-            let x = blockXy.x;
-            let y = blockXy.y;
-            let xy = x * this.width + y;
-            for (var m = x - 1; m <= (x + 1); m++) {
-                for (var n = y - 1; n <= (y + 1); n++) {
-                    if (m > -1 && n > -1 && n < this.width) {
-                        var k = m * this.width + n;
-                        if (m >= 0 && m < this.height && n >= 0 && n < this.width && k != xy) {
-                            if (!this.blockArray[k].isOpen) {
-                                this.blockArray[k].isOpen = true;
-                            }
-                        }
-                    }
-                }
-                n = y - 1;
-            }
-        }
-    },
-    exposeAroundBlock(blockXy) {
-        if (this.inGame) {
-            let x = blockXy.x;
-            let y = blockXy.y;
-            let xy = x * this.width + y;
-            for (var m = x - 1; m <= (x + 1); m++) {
-                for (var n = y - 1; n <= (y + 1); n++) {
-                    if (m > -1 && n > -1 && n < this.width) {
-                        var k = m * this.width + n;
-                        if (m >= 0 && m < this.height && n >= 0 && n < this.width && k != xy && !this.blockArray[k].isMark) {
-                            this.blockArray[k].isOpen = true;
-                            if (this.blockArray[k].mineNumber === -1) {
-                                this.isGame = false;
-                                this.openFailTipper();
-                            }
-                        }
-                    }
-                }
-                n = y - 1;
-            }
-        }
-    },
-    reset() {
-        for (let key in this.blockArray) {
-            if (this.blockArray.hasOwnProperty(key)) {
-                this.blockArray[key].isOpen = false;
-                this.blockArray[key].isMark = false;
-                this.blockArray[key].markStatus = 0;
-            }
-        }
-        this.inGame = true;
-        this.leftNumber = this.mineNumber;
-    },
-    judgeTheGameIsEnd: function () {
-        if (this.inGame) {
-            let blockArray = this.blockArray;
-            let total = this.width * this.height;
-            let count = 0;
-            for (let key in this.blockArray) {
-                if (blockArray.hasOwnProperty(key)) {
-                    if (blockArray[key].isOpen) {
-                        count++;
-                    }
-                }
-            }
-            if (count + this.mineNumber === total) {
-                return true;
-            }
-            return false;
-        }
-    },
-    openVictoryTipper: function () {
-        this.$.victoryTipper.open();
-    },
-    openFailTipper: function () {
-        this.$.failTipper.open();
-    }
-};
-/* harmony export (immutable) */ __webpack_exports__["a"] = McOperatorBehavior;
+/* harmony export (immutable) */ __webpack_exports__["a"] = connectToRedux;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__state_store__ = __webpack_require__(15);
 
-
-
-/***/ }),
-/* 130 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export McNormal */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__McContainer__ = __webpack_require__(31);
-
-
-
-class McNormal extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* PolymerElement */] {
-    static get template() {
-        return __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["b" /* html */] `
-      <mc-container width="16" height="16" mine-number="40"></mc-container>
-    `;
-    }
+function connectToRedux(elm) {
+    elm.stateReceiver(__WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].getState());
+    __WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].subscribe(() => {
+        elm.stateReceiver(__WEBPACK_IMPORTED_MODULE_0__state_store__["a" /* appState */].getState());
+    });
 }
-customElements.define('mc-normal', McNormal);
-
-
-
-/***/ }),
-/* 131 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export McAdvanced */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__McContainer__ = __webpack_require__(31);
-
-
-
-class McAdvanced extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* PolymerElement */] {
-    static get template() {
-        return __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["b" /* html */] `
-      <mc-container width="30" height="16" mine-number="99"></mc-container>
-    `;
-    }
-}
-customElements.define('mc-advanced', McAdvanced);
-
 
 
 /***/ })
