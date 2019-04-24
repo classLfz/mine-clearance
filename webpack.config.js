@@ -10,7 +10,7 @@ module.exports = {
     contentBase: './src',
     historyApiFallback: true,
     port: 8484,
-    inline: true,
+    inline: false,
     noInfo: false,
     host: 'localhost',
     disableHostCheck: true
@@ -19,7 +19,7 @@ module.exports = {
   devtool: "source-map",
 
   module: {
-    loaders: [{
+    rules: [{
       test: /\.svg$/,
       loader: ['svg-sprite-loader'],
     }, {
